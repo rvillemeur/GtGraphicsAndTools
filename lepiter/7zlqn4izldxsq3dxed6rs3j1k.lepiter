@@ -691,7 +691,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:31:10.663811-04:00"
+									"dateAndTimeString" : "2022-11-05T15:52:18.65658-04:00"
 								}
 							},
 							"editEmail" : {
@@ -702,17 +702,54 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:49:46.528378-04:00"
+									"dateAndTimeString" : "2022-11-05T15:52:39.126439-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "vjbv9x+pDQCS7OpjAprxhg=="
+								"uidString" : "KpDKQyCpDQCUolv7Aprxhg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Spec transmiss[[Spec Styles]][[Bloc & Brick, the new graphical stack]][[Bloc and Brick introduction]]"
+							"string" : "[[Spec transmission]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:54:00.131548-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:54:00.131548-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "SRXXSSCpDQCUq99XAprxhg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Spec Styles]]"
 						}
 					]
 				},
@@ -746,6 +783,118 @@
 					"__type" : "textStyle"
 				},
 				"string" : "[[Spec interface  definition]]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:31:10.663811-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:54:21.366624-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "vjbv9x+pDQCS7OpjAprxhg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Bloc and Brick introduction]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:55:09.743138-04:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-05T15:55:09.743138-04:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "TMyVTCCpDQCUtWuNAprxhg=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Bloc misk notes]]"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:54:21.35196-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:54:21.35196-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "080aSyCpDQCUr2QMAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[[Bloc & Brick, the new graphical stack]]"
 			}
 		]
 	},
