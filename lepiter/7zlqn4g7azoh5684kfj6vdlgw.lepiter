@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:17:03.504343-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:17:03.504343-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EEKdxR+pDQCSoxexAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Note on Form and diplay color\n\nA bitmap image is a raster image (containing pixel data as opposed to vector\nimages) format. Each pixel of a bitmap image is defined by a single bit or a\ngroup of bits. Hence, it is called the bitmap or a map of bits and pixels.\n\nA Bitmap image is an uncompressed file format which means, every pixel of an\nimage has its own bit (or group of bits) in the file.\n\nIn Pharo, a Form is a rectangular array of pixels, used for holding images.  \nAll pictures, including character images are Forms.\n\nCreation of a Form:\n\n```smalltalk\nForm extent: extentPoint depth: bitsPerPixel fromArray: anArray offset: offsetPoint\n\nextent: the number of point composing the form.\ndepth: the color depth of the form\narray: data of the form.\noffset: Specify an offset to move the form from coordinate 0@0 when combining form.\n```\n\nThe depth of a Form is how many bits are used to specify the color at each pixel.  \nThe supported depths (in bits) are 1, 2, 4, 8, 16, and 32. The color depth is a\nmeasure of an individual image pixel to accurately represent a color. Color\ndepth is calculated in bits-per-pixel or bpp.\n\nThe offset of a form is the amount by which the form should be offset when it is\ndisplayed or when its position is tested. Every form has an assumed origin at the top lefthand comer of the image. When a form is sent a message to display itself, for example,\n\n```smalltalk\nbug displayAt: 150@150\n```\n\nthe form is displayed with its origin at the specified point plus the offset; i.e., 150@150. The bug is therefore displayed so that its center is located at the point ISO@IS0. The ability to specify an offset is particularly useful when defining cursors that have logical origins or \"hot spots.\" For example, the logical origin of the crosshairs cursor is at the center of the crosshairs.\n\nFor example, 1-bit color depth or 1bpp means a pixel can have a 1-bit color or 2\nvalues. Monochromatic images have 1-bit color depth because a pixel can be true\nblack or true white.\n\nThe number of actual colors at these depths are: 2, 4, 16, 256, 32768, and 16 million.\nFor different color depth, you can store a different number of pixel for each\nelement compising the array of data.\n\n| Depth | number of color    | pixel displayed |\n| ----- | ------------------ | --------------- |\n| 1     | 2^1 = 2            | 32              |\n| 2     | 2^2 = 4            | 16              |\n| 4     | 2^4 = 16           | 8               |\n| 8     | 2^8 = 256          | 4               |\n| 16    | 2^16 = 32768       | 2               |\n| 32    | 2^32 = 16 millions | 1               |\n\nThe bits representing the bitmap pixels are packed in rows. The size of each row\nis rounded up to a multiple of 4 bytes (32 bits). The pixel array describes the\nimage pixel by pixel. You can also have an alpha-channel to add transparency in\nthe image using 32-bit color depth.\n\nThe coordinates of a Form start from the top-left corner much like most graphic\nsystem out there (why ? Because Western language are mostly written left to right,\ntop to bottom, and initial text display follow this convention, instead of\nclassic cartesian coordinate). Forms are indexed starting at 0 instead of 1;\nthus, the top-left pixel of a Form has coordinates 0@0.\n\nThe actual bits are held in a Bitmap, whose internal structure is different at\neach depth.\n\n## Example\n\nTo construct an image, we need to know how many bits or byte an individual pixel\ncontains in the Pixel Data.\n\n## 1 bit depth\n\nyou can define the color of 32 pixel with color depth 1\nplaying with color and form.\n\n```smalltalk\n(Form extent: 32@2 \"size of the form\"\n depth: 1 \"color depth\")\n initFromArray: #( \"pixel color, expressed on 4 bytes\"\n        2r10011000000100010000000000000001\n        2r11000000000000000000000000000000\n)\n; magnifyBy: 10.\n```\n\nUsing Bitmap:\n\n```smalltalk\nbitMap := Bitmap newFrom: #( \"pixel color, expressed on 4 byte\"\n        2r10011000000100010000000000000001\n        2r11000000000000000000000000000000\n) .\n\n(Form extent: 32@2 \"size of the form\"\n depth: 1 \"color depth\")\n initFromArray: bitMap\n; magnifyBy: 10.\n```\n\n```smalltalk\n(Form extent: 32@2 \"size of the form\"\n depth: 1 \"color depth - 16 => 2 bits to define color value\")\n initFromArray: #(\n 2r10101010101010101010101010101010\n 2r01010101010101010101010101010101 \"2 colors\"\n)\n; magnifyBy: 25.\n```\n\nThis is how the normal cursor is defined. By default, a cursor size can only\nbe 16@16. However, because data is stored on 32 bits, we need to add 16\nadditional bit as white to store it, even if they wont be displayed.\n\n```smalltalk\n(Form extent: 16@16\n    depth: 1\n    fromArray: #(\n        2r10000001000000000000000000000000\n        2r11000000000000000000000000000000\n        2r11100000000000000000000000000000\n        2r11110000000000000000000000000000\n        2r11111000000000000000000000000000\n        2r11111100000000000000000000000000\n        2r11111110000000000000000000000000\n        2r11111000000000000000000000000000\n        2r11111000000000000000000000000000\n        2r10011000000000000000000000000000\n        2r00001100000000000000000000000000\n        2r00001100000000000000000000000000\n        2r00000110000000000000000000000000\n        2r00000110000000000000000000000000\n        2r00000011000000000000000000000000\n        2r00000011000000000000000000000000)\n    offset: 0@0) magnifyBy: 10.\n```\n\n## 2 bits depth\n\n```smalltalk\n(Form extent: 16@1 \"size of the form\"\n depth: 2 \"color depth - 16 => 2 bits to define color value\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\n    first         second    third    fourth pixel\n  Each pixel can have 2^2 = 4 different color\"\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\"\n 2r00011011000110110001101100011011 \"4 colors\"\n)\n; magnifyBy: 25.\n```\n\n## 4 bits depth\n\nyou can define the color of 8 pixel with color depth 16\n\n```smalltalk\n(Form extent: 8@2 \"size of the form\"\n depth: 4 \"color depth - 16 => 2 bits to define color value\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\n    first         second    third    fourth pixel\n  Each pixel can have 2^4 = 16 different color\"\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\"\n 2r00000001001000110100010101100111 \"8 colors\"\n 2r10001001101010111100110111101111 \"8 colors\"\n)\n; magnifyBy: 25.\n```\n\n## 8 bits depth\n\n\"you can define the color of 4 pixel with color depth 8\"\n\n```smalltalk\n(Form extent: 4@64 \"size of the form\"\n depth: 8 \"color depth - 16 => 2 bits to define color value\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"[ 00000000 00000000 00000000 00000000]\n    first         second    third    fourth pixel\n  Each pixel can have 2^8 = 256 different color\"\n\"[ 00000000 00000000 00000000 00000000]\"\n2r00000000 010000001000000011000000\n2r00000001 010000011000000111000001\n2r00000010010000101000001011000010\n2r00000011010000111000001111000011\n2r00000100010001001000010011000100\n2r00000101010001011000010111000101\n2r00000110010001101000011011000110\n2r00000111010001111000011111000111\n2r00001000010010001000100011001000\n2r00001001010010011000100111001001\n2r00001010010010101000101011001010\n2r00001011010010111000101111001011\n2r00001100010011001000110011001100\n2r00001101010011011000110111001101\n2r00001110010011101000111011001110\n2r00001111010011111000111111001111\n2r00010000010100001001000011010000\n2r00010001010100011001000111010001\n2r00010010010100101001001011010010\n2r00010011010100111001001111010011\n2r00010100010101001001010011010100\n2r00010101010101011001010111010101\n2r00010110010101101001011011010110\n2r00010111010101111001011111010111\n2r00011000010110001001100011011000\n2r00011001010110011001100111011001\n2r00011010010110101001101011011010\n2r00011011010110111001101111011011\n2r00011100010111001001110011011100\n2r00011101010111011001110111011101\n2r00011110010111101001111011011110\n2r00011111010111111001111111011111\n2r00100000011000001010000011100000\n2r00100001011000011010000111100001\n2r00100010011000101010001011100010\n2r00100011011000111010001111100011\n2r00100100011001001010010011100100\n2r00100101011001011010010111100101\n2r00100110011001101010011011100110\n2r00100111011001111010011111100111\n2r00101000011010001010100011101000\n2r00101001011010011010100111101001\n2r00101010011010101010101011101010\n2r00101011011010111010101111101011\n2r00101100011011001010110011101100\n2r00101101011011011010110111101101\n2r00101110011011101010111011101110\n2r00101111011011111010111111101111\n2r00110000011100001011000011110000\n2r00110001011100011011000111110001\n2r00110010011100101011001011110010\n2r00110011011100111011001111110011\n2r00110100011101001011010011110100\n2r00110101011101011011010111110101\n2r00110110011101101011011011110110\n2r00110111011101111011011111110111\n2r00111000011110001011100011111000\n2r00111001011110011011100111111001\n2r00111010011110101011101011111010\n2r00111011011110111011101111111011\n2r00111100011111001011110011111100\n2r00111101011111011011110111111101\n2r00111110011111101011111011111110\n2r00111111011111111011111111111111\n); magnifyBy: 25\n```\n\narray of color using bitmap\n\n```smalltalk\n    | bitmap array |\n    array := ByteArray new: 256.\n    16r0 to: 16rff do: [ :i | array at: i + 1 put: i ].\n    array := (array groupsOf: 4) collect: [ :each | each asInteger ].\n\n    \"bitmap contain 256/8 = 64 items\"\n    bitmap := Bitmap new: 64.\n    1 to: 64 do: [ :i | bitmap at: i put: (array at: i) ].\n\n    \"either a 64 line of 4 color (*8 to reach 32 bits)\"\n    Form extent: 4 @ 64 depth: 8 bits: bitmap.\n    \"or a square of 16 lines composed of 4 color (to get 32 bits) * 4 time\"\n    ^ Form extent: 16 @ 16 depth: 8 bits: bitmap\n```\n\nsame code, but this time without using an intermediary bitmap\n\n```smalltalk\n    | array |\n    array := ByteArray new: 256.\n\n    16r0 to: 16rff do: [ :i | array at: i + 1 put: i ].\n\n    ^(Form extent: 4 @ 64 depth: 8) initFromArray:\n        ((array groupsOf: 4) collect: [ :each | each asInteger ])\n\n```\n\n## 16 bit depth\n\n\"you can define the color of 2 pixel with color depth 16\"\n\n```smalltalk\n(Form extent: 6@1 \"size of the form\"\n depth: 16 \"color depth - 16 => 2 bits to define color value 65K color possible\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"[ 0  XXXXX XXXXX XXXXX ]\n\n----- ----- -----\n\n       R     G     B\n first pixel         second pixel   \"\n2r01111100000000000000000000011111 \"red - blue\"\n2r00000011111000000111111111100000 \"green -yellow\"\n2r01111111111111111000000000000000 \"white -black\"\n)\n; magnifyBy: 25.\n```\n\n## 32 bits depths\n\nFor 32 bits RBG, there is 8 bits allocated to each color component. In\n32 bits, there is an additional alpha channel, to manage transparency.\n\n```smalltalk\n(Form extent: 7@1 \"size of the form\"\n depth: 32 \"color depth\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"colore are:\n2r 00000000 00000000 00000000 00000000\n     ALPHA    RED         BLUE     GREEN   \"\n        16rffff0000 \"red\"\n        16rff0000ff \"blue\"\n        16rff00ff00 \"green\"\n        16rff000000 \"black\"\n        16rffffffff \"white\"\n        16rf0ff00d9 \"pink\"\n        16r2fff0000 \"red with opacity\"\n)\n; magnifyBy: 15.\n```\n\nData is stored in Byte - remember than 8 bit = 1 bytes\nEach entry of the color palette takes 4 bytes to define a color\n\n```smalltalk\n(Form extent: 3@3 \"size of the form\"\n depth: 32 \"color depth\")\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\n\"colore are:\n2r 00000000 00000000 00000000 00000000\n     ALPHA    RED         BLUE     GREEN   \"\n        16rffff0000 \"red\"      16rff000000 \"black\" 16rff0000ff \"blue\"\n        16rff000000 \"black\" 16rffffffff \"white\" 16rff000000 \"black\"\n        16rff00ff00 \"green\" 16rff000000 \"black\" 16rffffff00 \"yello\"\n\n)\n; magnifyBy: 15.\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:17:01.651431-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:27:29.999493-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Bitmap and Forms"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "f0f49bc5-1fa9-0d00-92a2-1237029af186"
+	}
+}

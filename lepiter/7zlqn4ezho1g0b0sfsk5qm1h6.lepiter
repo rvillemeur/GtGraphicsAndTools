@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:22:36.850453-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:22:36.850453-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "xtNr2R+pDQCSuXoeAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Note on spec2\n\n## architecture\nSpec2 is an MVP framework (Model-View-Presenter)\n\n1. The model represent the domain logic of the application\n2. The presenter let the developer do the UI programmaticaly\n3. The UI is then managed by Pharo.\n\nhttps://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter\n\n```\n+-----------------------------------------------+\n| passive view (backend morphic, gtk)           | Managed by Pharo through Spec\n| your code shouldn't directly interact with it |\n+-----------------------------------------------+\n                        |\n+-----------------------------------------------+\n| presenter (your pharo spec code)              | You're responsible of this part\n| Subclass of SpPresenter                       |\n+-----------------------------------------------+\n                        |\n+-----------------------------------------------+\n| model (your application logic)                | You're responsible of this part\n+-----------------------------------------------+\n```\n\n\n### SpApplication & SpNotification\nSpApplication concentrate ressource for user application like\n* which backend to use (Gtk, default is Morphic)\n* which style to apply.\n\n\n\n### SpPresenter\nYour presenter should be a subclass of SpPresenter\nSpPresenter subclass: #MyApplicationUI\nIt must implement:\n- initializePresenters => declare the list of widget that compose the GUI\n\nIt shoud implement:\n- connectPresenters => declare the interaction between the widget\n- initializeWindow: for classic windows (method found in SpWindowPresenter)\n- initializeDialogWindow: for dialog and modal windows (method found in \nSpDialogWindowPresenter and SpModalWindowPresenter)\n=> those method set the title, size, about box, etc... of the window of the UI.\n\n\n\n\n\n## ObservableSlot\nSpObservableSlot is used in variable declaration using slot, to define variable\nthat could change and could be observable. Look for example at the definition of\nclass SpPresenter\n\n\n\n## creating spec 2 widget.\n-> link event: aPresenter eventHandler whenMouseDownDo: aBlock\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:22:33.954306-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:22:44.372179-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Spec graphics"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "fa7e6ad9-1fa9-0d00-92b8-820e029af186"
+	}
+}

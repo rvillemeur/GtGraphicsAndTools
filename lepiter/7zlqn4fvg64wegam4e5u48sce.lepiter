@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:24:29.348506-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:24:29.348506-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GyYs4B+pDQCSxQ+sAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Morphic vs GToolkit graphical stacks\n\nGlutin -> SDL2 (+ OSWindow)\nSparta/skia -> Athens/cairo (+ morphic canvas if we want to use pixel canvas instead of vector canvas)\nBloc -> morphic-core\nBrick -> morphic-polymorph and Morphic-Widgets-(SubPackages)\nSpace -> Morphic World\n\nGtoolkit emphasise on a Single Window. Pharo mimics more the beharior of a \ncomplete operating system desktop.\n\n\n\nOSWindowMorphicEventHandler => gère les évènements au niveau OS Windows, qui fait le lien avec SDL2.\nBlMorphicEventHandler => convertit les évènements Morphic en évenements Bloc\nOSEvent -> Announcement coté Pharo\nBlEvent -> announcement coté Bloc/GToolkit"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:24:27.220645-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:24:37.07319-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Bloc and Brick introduction"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "7ecd2ae0-1fa9-0d00-92c4-182c029af186"
+	}
+}

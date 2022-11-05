@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:46:37.958752-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:46:37.958752-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Or8gLyCpDQCT2psoAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\"\r\nBloc:\r\n\r\nRoot: BlElement\r\n\r\nDefines\r\n\t- geometry and bounds (BlBounds)\r\n\t- size\r\n\r\n\t- background (BlBackground). Paints (BlPaint) are used for background, border, text fill or stroke.\r\n\t- border (BlBorder)\r\n\t- opacity\r\n\r\n\t- layout and children composition. (BlLayout, BlChildren, and their children)\r\n\t\r\n\t- event handling (BlEvent and children)\r\n\r\n\r\nYou can add element with addChild:, and the will be disposed according the \r\nthe layout specified.\r\n\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\nYou can apply transformation to a BlElement:\r\n* rotation\r\n* translation\r\n* Scaling\r\n* reflection\r\n* etc...\r\n\r\nBlSpace is a window in bloc, equivalent of the world in Pharo ??? \r\nBlElement are added or removed from a BlSpace, which act as a scene graph. \r\nSpaces are managed through BlUniverse.\r\n\r\nWe so have\r\nBlUniverse -> BlSpace -> BlElement\r\n\t\t\t\t\t  -> BlEvent and BlBaseEventProcessor\r\n\t\t\t\t\t  -> BlCursor\r\n\t\t\t\t\t  -> BlTime\r\n\t\t\t\t\t  -> BlSpaceFrame\r\n\t\t\t\t\t  \r\nLast, Bloc run on a host, being:\r\n- Morphic\r\n- OsWindow\r\n- SDL2.\r\n\"\r\nClass {\r\n\t#name : #RdvNoteBlock,\r\n\t#superclass : #Object,\r\n\t#category : #RdvNote\r\n}\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:46:31.704981-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:46:48.426329-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Bloc misk notes"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "53d31c2f-20a9-0d00-93d9-43be029af186"
+	}
+}

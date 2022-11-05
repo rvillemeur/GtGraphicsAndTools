@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:18:09.360622-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-05T15:18:09.360622-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AP6NyR+pDQCSpW3kAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# what is RGB\n\nIn RGB space any colour is represented as a point inside a colour cube with\northogonal axes r,g,b. Grey values form a straight line from black to white\nalong the diagonal of the cube, r = g = b.\n\n```txt\n          cyan (0,1,1 ) +------------------------+ White (1,1,1 )\n                       /|                       /|\n                      /                        / |\n                     /  |                     /  |\n                    /                        /   |\n                   /    |                   /    |\n    Blue (0,0,1 ) +------------------------+ Magenta (1,0,1 )\n                  |     |                  |     |\n                  |                        |     |\n                  |     |                  |     |\n         Green (0,1,0 ) +- - - - - - - - - |- - -+ yellow (1,1,0 )\n                  |    /                   |    /\n          `       |                        |   /\n                  |  /                     |  /\n                  |                        | /\n                  |/                       |/\n    Black (0,0,0 )+------------------------+ red(1,0,0 )\n```\n\n## how are the basic color defined\n\nYou may have noticed that the basic color depth (2, 4, and 8) have a predefined set\nof color.\n\nFor example, for a depth of 4, you can have 16 different color. Picking the\ncolor of a specific pixel will give you its name.\n\n```smallalk\n(Form extent: 8@2 depth: 4 )\n initFromArray: #(\n 2r00000001001000110100010101100111\n 2r10001001101010111100110111101111\n) ; colorAt: 1@1\n```\n\ngive **Color Magenta**\n\nThe basic color are initialized in *Color class >> initializeIndexedColors*.\nTake a look at it to find the definition of all base color.\n\n## Color form in Pharo\n\nIf you are not happy with the different base color, you can specify a color palette\nthat will be used as a replacement. They are called indexed color. For each pixel,\n you have a color index that will provide its true color. This is defined as *ColorForm* is Pharo \nIn the Form, the bitmap is an index to a color map index, which size is\n\n$2^{depth}$ color\n\n```smalltalk\n\n    ColorForm extent: 32@2 depth: 8\n```\n\n```txt\n    +-+-+-+-+    |index  | red   | green | blue  |\n    | | | | |    |-------|-------|-------|-------|\n    +-+-+-+-+ -> | 0     |       |       |       |\n    | | | | |    | ...   |0 - 255|0 - 255|0 - 255|\n    +-+-+-+-+    |2^depth|       |       |       |\n```\n\nThrough the color map, you can access different color than the default defined\nin the color depth. Furthermore, Color can be be defined with alpha channel.\n\nClass Color allows you to deal with colors without knowing how they\nare actually encoded inside a Bitmap.\n\n## 1 bit depth with color Form\n\nUse ColorForm if you want to use color other than black and white:\n\n```smalltalk\n|pict map|\npict := ColorForm extent: 32@2 depth: 1.\n\n\"create a color map of 2^depth color\"\nmap := {  Color r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0. \n   Color blue. \n }.\npict colors: map.\npict initFromArray: #(\n2r01010101010101010101010101010101\n2r10101010101010101010101010101010).\npict magnifyBy: 25\n```\n\n## 2bit depth with color Form\n\nWith ColorForm:\n\n```smalltalk\n    |pict map|\n    pict := ColorForm extent: 16@1 depth: 2.\n\n    \"create a color map of 2^depth color\"\n    map := {  Color white. \n    Color r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0.\n    Color blue.\n    Color red.\n    }.\n    pict colors: map.\n    pict initFromArray: #(2r00011011000110110001101100011011).\n    pict magnifyBy: 25\n```\n\n## 4bit depth with color Form\n\nWith ColorForm:\n\n```smalltalk\n|pict map|\npict := ColorForm extent: 8@1 depth: 4.\n\n\"create a color map of 2^depth color\"\nmap := {  Color transparent. \n   Color white. \n   Color r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0.\n   Color gray.\n   Color red.\n   Color green.\n   Color blue.\n   Color yellow.\n   Color transparent. \n   Color white. \n   Color blue.\n   Color gray.\n   Color red.\n   Color green.\n   Color blue.\n   Color yellow. \n }.\npict colors: map.\npict initFromArray: #(2r01000010001100011011110111101111).\npict magnifyBy: 25\n```\n\n## 8bit depth with color Form\n\nUsing ColorForm to reverse the color:\n\n```smalltalk\n|pict map|\npict := ColorForm extent: 4@64 depth: 8.\n\n\"create a color map of 2^depth color\"\nmap := (Color indexedColors copy) reverse .\nmap at: 1 put: Color transparent.\npict colors: map.\n\npict initFromArray: #( \n2r00000000010000001000000011000000\n2r00000001010000011000000111000001\n2r00000010010000101000001011000010\n2r00000011010000111000001111000011\n2r00000100010001001000010011000100\n2r00000101010001011000010111000101\n2r00000110010001101000011011000110\n2r00000111010001111000011111000111\n2r00001000010010001000100011001000\n2r00001001010010011000100111001001\n2r00001010010010101000101011001010\n2r00001011010010111000101111001011\n2r00001100010011001000110011001100\n2r00001101010011011000110111001101\n2r00001110010011101000111011001110\n2r00001111010011111000111111001111\n2r00010000010100001001000011010000\n2r00010001010100011001000111010001\n2r00010010010100101001001011010010\n2r00010011010100111001001111010011\n2r00010100010101001001010011010100\n2r00010101010101011001010111010101\n2r00010110010101101001011011010110\n2r00010111010101111001011111010111\n2r00011000010110001001100011011000\n2r00011001010110011001100111011001\n2r00011010010110101001101011011010\n2r00011011010110111001101111011011\n2r00011100010111001001110011011100\n2r00011101010111011001110111011101\n2r00011110010111101001111011011110\n2r00011111010111111001111111011111\n2r00100000011000001010000011100000\n2r00100001011000011010000111100001\n2r00100010011000101010001011100010\n2r00100011011000111010001111100011\n2r00100100011001001010010011100100\n2r00100101011001011010010111100101\n2r00100110011001101010011011100110\n2r00100111011001111010011111100111\n2r00101000011010001010100011101000\n2r00101001011010011010100111101001\n2r00101010011010101010101011101010\n2r00101011011010111010101111101011\n2r00101100011011001010110011101100\n2r00101101011011011010110111101101\n2r00101110011011101010111011101110\n2r00101111011011111010111111101111\n2r00110000011100001011000011110000\n2r00110001011100011011000111110001\n2r00110010011100101011001011110010\n2r00110011011100111011001111110011\n2r00110100011101001011010011110100\n2r00110101011101011011010111110101\n2r00110110011101101011011011110110\n2r00110111011101111011011111110111\n2r00111000011110001011100011111000\n2r00111001011110011011100111111001\n2r00111010011110101011101011111010\n2r00111011011110111011101111111011\n2r00111100011111001011110011111100\n2r00111101011111011011110111111101\n2r00111110011111101011111011111110\n2r00111111011111111011111111111111\n); magnifyBy: 25\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:18:07.75984-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-11-05T15:18:07.75984-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Page 1"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "bab08cc9-1fa9-0d00-92a4-7584029af186"
+	}
+}
