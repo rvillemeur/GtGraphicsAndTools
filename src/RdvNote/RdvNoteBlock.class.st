@@ -449,33 +449,6 @@ root addChild: a.
 ]
 
 { #category : #accessing }
-RdvNoteBlock >> rainbubblebow [
-<gtExample>
-|stroke root colors a|
-stroke := (BlBorder paint: Color black).
-root := BlElement new size: 640@480; border: stroke.
-
-colors := #(#red #orange #yellow #green #blue #purple).
-(1 to: (colors size)) do: [:i||r el|
-  r := (7-i) * 8.
-  el := BlElement new
-    geometry: BlCircleGeometry new;
-    background: (Color named: (colors at: i) );
-    border: stroke;
-    size: r@r * 10.
-  root addChild: el].
-
-a := BlElement new
-  geometry: BlCircleGeometry new;
-  background: Color pink;
-  border: stroke. 
-a addEventHandler: (BlEventHandler on: BlMouseOverEvent do: [:e | a background: Color pink]).
-a addEventHandler: (BlEventHandler on: BlMouseOutEvent  do: [:e | a background: Color white ]).   
-root addChild: a.
-^root
-]
-
-{ #category : #accessing }
 RdvNoteBlock >> squareSurroundedByNumbers [
 <gtExample>
 ^BlElement new
