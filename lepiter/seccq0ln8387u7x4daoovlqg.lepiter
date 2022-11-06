@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:43:58.005-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:43:58.005-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IHBVJM+gDQC9WYR/DxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## Pharo Startup and shutdown\nWhat happen when you select the menu \"save and quit\". Pharo will \n\nIf you ask to quit, Pharo will execute: *Smalltalk snapshot: false andQuit: true*\nIf you ask to save and quit, Pharo will execute: *Smalltalk snapshot: true andQuit: true*\nIf you only ask to save your current image state, you'll run: *Smalltalk snapshot: true andQuit: false.*\n\nThe Save:Quit: message is implemented by *SessionManager*. I strongly advise\nto read its class comment. It'll give you lots of information on how Pharo stop\nand starts its session, and manage its services\n\n**There is only one active session at a single point of time.**\n\nThe current active session is held by the singleton session manager. It can be accessed by doing:\n  **SessionManager default currentSession.**\n\n\n## Shutdown\n**SessionManager default shutdownList.**\n\n## Startup\n**SessionManager default startupList.**. If you inspect it, you'll get (in my current\nImage) a list containing 54 items. In those items, we will find:\n- Color\n- Cursor\n- Form\n- UIManagerSessionHandler -> this interest us.\n\nOn Pharo/Image startup, the SessionManager will call all the startup method in all\nitems that is in the startuplist (*SessionManager default currentSession*)\n```smalltalk\nWorkingSession runStartup: isImageStarting\n\tself\n\t\trunList: manager startupList\n\t\tdo: [ :each | each startup: isImageStarting ].\n```\n\n```smalltalk\nUIManagerSessionHandler >> startup: isImageStarting\n\t\"Install the right UIManager\"\n\t\n\tUIManager default: UIManager forCurrentSystemConfiguration.\n```\nWhich return MorphicUIManager, a subclass of UIManager\n\nOSWorldRenderer >> doActivate called by AbstractWorldRenderer >> activate, whitch itself is called by MorphicUIManager >> activate\n\nOSWorldRenderer >> pickMostSuitableWindowDriver => an OSSDL2Driver: A window driver used for running things using SDL2 library\n\nOSWorldRenderer >> osWindowRenderer\n\tosWindow ifNil: [ ^ nil ].\n\t^ osWindow renderer ifNil: [\n\t\tosWindow newFormRenderer: display.\n\t\tosWindow renderer\n\t].\n    \n\t\nOSWindow >> newFormRenderer: form\n\t^ backendWindow ifNotNil: [backendWindow newFormRenderer: form]\n    \nbackendWindow := initialAttributes createWindowHandleFor: self.\n\nOSWorldRenderer class >> isApplicableFor: aWorld\n\n\t^ Smalltalk isHeadless and: [ CommandLineArguments new hasOption: 'interactive'  ]\n\n\nWorld is rendered on an OSWindow through the use of OSWorldRenderer\n\nForm are rendered on the screen through OSSDL2FormRenderer\nOSSDL2Driver >> createWindowWithAttributes: attributes osWindow: osWindow\n    aBackendWindow := OSSDL2BackendWindow newWithHandle: handle attributes: attributes.\n\nOSSDL2BackendWindow >> newFormRenderer:\n\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:43:45.453-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:43:57.092-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Pharo GUI Startup and shutdown"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "c8d75424-cfa0-0d00-bd58-84a50f15530d"
+	}
+}

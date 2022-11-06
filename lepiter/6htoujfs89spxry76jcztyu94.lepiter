@@ -1,0 +1,335 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T22:57:43.494-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:37:33.551-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cOFwzRygDQCUPDMnCAoGAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior. \r\n\r\nso, in short, *aptitude* can affect:\r\n- look (style, or appearance of the element)\r\n- structure (insert or remove child element)\r\n- behaviour (add API calls to the element).\r\n\nCombining them should be what one expects from combining: an ordered way in which structure and behavior is affected.\n\nthere's nothing wrong with an aptitude being named *XyzLook* as long as its effect is purely visual. Where the confusion came was aptitudes that affected behavior still being called looks.\n\nThe term look does not convey the full implications of decorating an element with both **look** and **behavior**.\r\n\r\nBoth {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated ton an aptitude, as aptitude can react to event and state defined byt the widget model\r\n\r\nA widget can be made of multiple aptitude and multiple Widget model, and the pattern used is best described by:\r\n\r\n##Actor role pattern:\r\nAdapt an object to different client’s needs through transparently attached role objects, each one representing a role the object has to play in that client’s context. The object manages its role set dynamically. By representing roles as individual objects, different contexts are kept separate and system configuration is simplified\r\n\r\nAn object-oriented system is typically based on a set of key abstractions. Each key abstraction is modeled by a corresponding class in terms of abstract state and behavior. This usually works fine for the design of smaller applications. However, once we want to scale up the system into an integrated suite of applications, we have to deal with different clients that need context-specific views on our key abstractions.\r\n\r\nIntegrating several context-specific views in the same class will most likely lead to key abstractions with bloated interfaces. Such interfaces are difficult to understand and hard to maintain. Unanticipated changes cannot be handled gracefully and will trigger lots of recompilation. Changes to a client-specific part of the class interface are likely to affect clients in other subsystems or applications as well.\r\n\r\nThe Role Object pattern suggests to model context-specific views of an object as separate **role objects** which are dynamically attached to and removed from the **core object**.\r\n\r\nThe Actor Role Object pattern is usefull, if\r\n- you want to handle a key abstraction in different contexts and you do not want to put the resulting contextspecific interfaces into the same class interface.\r\n- you want to handle the available roles dynamically so that they can be attached and removed on demand, that is  at runtime, rather than fixing them statically at compile-time.\r\n- you want to treat the extensions transparently and need to preserve the logical object identity of the resulting object conglomerate.\r\n- you want to keep role/client pairs independent from each other so that changes to a role do not affect clients that are not interested in that role.\r\n[source](https://hillside.net/plop/plop97/Proceedings/riehle.pdf)\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:12:08.97-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:12:08.97-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EF/eHjGgDQCSqNLEBRbWBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Example: BrGlamorousComponentsCheckboxes\r\nYou will instanciate this class to display a checkbox in a UI. What is interesting is how it is implemented. Its interface is composed of three method:\r\n- checked\r\n- unchecked\r\n- indeterminate\r\nFor each method, it reference the {{gtClass:BrCheckbox}} and associate the *aptitude* {{gtClass:BrGlamorousCheckboxAptitude}}, like:\r\n{{gtMethod:BrGlamorousComponentsCheckboxes>>checked|expanded}}\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:12:51.32-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:12:51.32-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wJRkITGgDQCSqnsWBRbWBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtClass:BrGlamorousCheckboxAptitude}}, amounst other things, defind the style for the 3 states of the checkbox."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T22:32:10.687-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:12:51.32-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0Ci8jzCgDQCSpMMzBRbWBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : " BrCheckbox widget model is defined as {{gtMethod:BrCheckbox>>initialize|expanded}}\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T18:03:26.503-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T18:03:26.503-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2LXXziygDQCSjds3BRbWBg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "We will change it to aptitude. BrLook will still be offered as a deprecated class.\n\n- BrGlamorousResizerAptitude\n- BrGlamorousButtonWithIconAptitude\n- BrWithTooltipAptitude \n- BrGlamorousEditorAptitude\n- BrStyleCommonAptitude \n- BrGlamorousWithVerticalResizerAptitude \n\n\nAptitude are developped as Talent. Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is applied to an object, no other instance of the object’s class are affected. \r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T22:14:40.488-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T18:03:27.903-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QFZ7MxygDQCT9xglCAoGAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "TalentTalents may be composed of other talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly resolved.\r\n\r\n{{gtClass:BrStyleCommonAptitude}} and {{gtClass:BrStyleAptitude}} allow the encapsulation of Style (i.e. appearance based on specific states of the BlElement) into a class that can be reused between Brick widget. This is, in my opinion, the part of aptitude that is the closest to CSS styling. By using Style, GToolking will run its magic and display style property in the element inspector."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T22:14:54.978-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T22:15:07.776-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2O+AMxygDQCT+igSCAoGAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A good example to study is: {{gtClass:BrGlamorousComponentsCheckboxes}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-08T14:19:05.162-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-14T23:35:53.053-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EPFv+bCfDQCjWGGuDPDTfw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To have information on how your aptitude class react to event or to its viewModel, one shoud override these methods: {{gtMethod:BrActor>>initializeListeners}} and {{gtMethod:BrAptitude>>initializeRequests}}\r\n\r\nA good example to study is {{gtClass:BrGlamorousButtonLabelAndIconAptitude|expanded}}"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-02-13T10:11:02.969-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-14T22:46:23.942-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Aptitude and Widget model"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "a8f6f971-4994-0d00-b241-c2f201e8b56d"
+	}
+}

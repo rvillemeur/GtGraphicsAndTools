@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:38:42.51-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:39:22.594-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sExGEs+gDQC9QKSODxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Note on spec2\r\n\r\n## architecture\r\nSpec2 is an MVP framework (Model-View-Presenter)\r\n\r\n1. The model represent the domain logic of the application\r\n2. The presenter let the developer do the UI programmaticaly\r\n3. The UI is then managed by Pharo.\r\n\r\nhttps://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter\r\n\r\n```\r\n+-----------------------------------------------+\r\n| passive view (backend morphic, gtk)           | Managed by Pharo through Spec\r\n| your code shouldn't directly interact with it |\r\n+-----------------------------------------------+\r\n                        |\r\n+-----------------------------------------------+\r\n| presenter (your pharo spec code)              | You're responsible of this part\r\n| Subclass of SpPresenter                       |\r\n+-----------------------------------------------+\r\n                        |\r\n+-----------------------------------------------+\r\n| model (your application logic)                | You're responsible of this part\r\n+-----------------------------------------------+\r\n```\r\n\r\nMVP is a user interface architectural pattern engineered to facilitate automated unit testing and improve the separation of concerns in presentation logic:\n\n* The model is an interface defining the data to be displayed or otherwise acted upon in the user interface.\n* The presenter acts upon the model and the view. It retrieves data from repositories (the model), and formats it for display in the view.\n* The view is a passive interface that displays data (the model) and routes user commands (events) to the presenter to act upon that data.\n\nIn Spec, presenter is a derivative of [[ComposableModel]] Class. It manage the logic and the link between widgets and domain objects.\n\r\n### SpApplication & SpNotification\r\nSpApplication concentrate ressource for user application like\r\n* which backend to use (Gtk, default is Morphic)\r\n* which style to apply.\r\n\r\n\r\n\r\n### SpPresenter\r\nYour presenter should be a subclass of SpPresenter\r\nSpPresenter subclass: #MyApplicationUI\r\nIt must implement:\r\n- initializePresenters => declare the list of widget that compose the GUI\r\n\r\nIt shoud implement:\r\n- connectPresenters => declare the interaction between the widget\r\n- initializeWindow: for classic windows (method found in SpWindowPresenter)\r\n- initializeDialogWindow: for dialog and modal windows (method found in \r\nSpDialogWindowPresenter and SpModalWindowPresenter)\r\n=> those method set the title, size, about box, etc... of the window of the UI.\r\n\r\n\r\n\r\n\r\n\r\n## ObservableSlot\r\nSpObservableSlot is used in variable declaration using slot, to define variable\r\nthat could change and could be observable. Look for example at the definition of\r\nclass SpPresenter\r\n\r\n\r\n\r\n## creating spec 2 widget.\r\n-> link event: aPresenter eventHandler whenMouseDownDo: aBlock\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:11:39.442-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:11:57.504-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Spec2 - introduction"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "503f88b1-cea0-0d00-bc6b-eade0f15530d"
+	}
+}

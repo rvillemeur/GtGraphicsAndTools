@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-07T22:03:33.777-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T22:55:06.602-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2KCxV6OfDQCAxPCXAWyuHw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Model -> domain model business (where the UI is used)\r\n\nThe key to remember with the model is that it holds the information, but not behaviors or services that manipulate the information. Business logic is typically kept separate from the model, and encapsulated in other classes that act on the model. This is not always true: for example, some models may contain validation.\n\n**View -> aptitude** (programmer don't touch it - but can defined new aptitude(look) if he wants)\nThe view is what most of us are familiar with and the only thing the end user really interacts with. It is the presentation of the data. The view takes certain liberties to make this data more presentable.\r\n\nA view can also have behaviors associated with it, such as accepting user input. The view manages input (key presses, mouse movements, touch gestures, etc.) which ultimately manipulates properties of the model.\n\r\nIn MVVM, the view is active. As opposed to a passive view which has no knowledge of the model and is completely manipulated by a controller/presenter, the view in MVVM contains behaviors, events, and data-bindings that ultimately require knowledge of the underlying model and viewmodel.\r\n\nOne thing to remember about the view is that it is not responsible for maintaining its state. Instead, it will synchronize this with the *viewmodel*.\n\n##ViewModel (programmer deal with it - it's the API entry to the widget)\nThe view model is responsible for presenting functions, commands, methods, to support the state of the View. It is also accountable to operate the model and activate the events in the View.\n\nViewModel are subclasses of {{gtClass:BrWidgetModel}}\r\n\n***BrGlamorousComponentsCheckboxes*** examples\n\ncomposed of:\r\n```\n BrCheckbox\n       viewModel: (\n\t\tBrButtonModel new\n\t\t\taddAll: {\n\t\t\t\tBrCheckboxModel new.\n\t\t\t\t(BrInteractiveModel new\n\t\t\t\t\taddStates: {\n\t\t\t\t\t\tBrLayoutAlignmentModel center.\n\t\t\t\t\t}) } );\n                    \n\t\taptitude: BrGlamorousCheckboxAptitude.\n```\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude\n\n\n# Reference\n[MVVM template explanation](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-07T22:04:27.937-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-07T22:04:27.937-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6EzsW6OfDQCAxg2+AWyuHw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-07T22:03:16.937-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-07T22:03:32.157-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "MVVM"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "28edb057-a39f-0d00-80c3-5050016cae1f"
+	}
+}

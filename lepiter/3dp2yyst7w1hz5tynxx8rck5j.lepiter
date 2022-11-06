@@ -1,0 +1,144 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:59:11.383951-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:59:22.828951-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "j+EbVXKBDQC9cjrdC6EZOQ=="
+				},
+				"code" : "(Form extent: 7@1 \"size of the form\"\r\n depth: 32 \"color depth\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\r\n\"colore are:\r\n2r 00000000 00000000 00000000 00000000 \r\n     ALPHA    RED \t\tBLUE     GREEN   \"\r\n\t\t16rffff0000 \"red\"\r\n\t\t16rff0000ff \"blue\"\r\n\t\t16rff00ff00 \"green\"\r\n\t\t16rff000000 \"black\"\r\n\t\t16rffffffff \"white\"\r\n\t\t16rf0ff00d9 \"pink\"\r\n\t\t16r2fff0000 \"red with opacity\"\r\n) \r\n; magnifyBy: 25."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:59:37.413951-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-02-13T22:34:55.694-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "N5WASXKBDQC9cctkC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Data is stored in Byte - remember than 8 bit = 1 bytes. Each entry of the color palette takes 4 bytes to define a color"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:59:48.592951-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:59:51.159951-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "N6VTV3KBDQC9c46mC6EZOQ=="
+				},
+				"code" : "(Form extent: 3@3 \"size of the form\"\r\n depth: 32 \"color depth\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\r\n\"colore are:\r\n2r 00000000 00000000 00000000 00000000 \r\n     ALPHA    RED \t\tBLUE     GREEN   \"\r\n\t\t16rffff0000 \"red\" \t 16rff000000 \"black\" 16rff0000ff \"blue\"\r\n\t\t16rff000000 \"black\" 16rffffffff \"white\" 16rff000000 \"black\" \r\n\t\t16rff00ff00 \"green\" 16rff000000 \"black\" 16rffffff00 \"yello\"\r\n\r\n) \r\n; magnifyBy: 15."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T16:55:06.834951-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T16:55:14.026951-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "32 bits depths"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "075c8846-7281-0d00-bd6f-515c0ba11939"
+	}
+}

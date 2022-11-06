@@ -1,0 +1,144 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:02:56.118308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T23:52:35.798-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JOKLdWKBDQCpvAOTCUjNSg=="
+				},
+				"code" : "(Form extent: 16@1 \"size of the form\"\r\n depth: 2 \"color depth - 16 => 2 bits to define color value\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\r\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\r\n\tfirst \t\tsecond    third    fourth pixel   \r\n  Each pixel can have 2^2 = 4 different color\"\r\n\"[ 0000 0000 0000 0000 0000 0000 0000 0000]\"\r\n 2r00011011000110110001101100011011 \"4 colors\"\r\n) \r\n; magnifyBy: 25.\r"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:04:02.738308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:04:02.738308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DOxyeWKBDQCpwaJrCUjNSg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "With ColorForm:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:03:33.046308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T23:52:38.792-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "JFy/d2KBDQCpvw5VCUjNSg=="
+				},
+				"code" : "|pict map|\r\npict := ColorForm extent: 16@1 depth: 2.\r\n\r\n\"create a color map of 2^depth color\"\r\nmap := {  Color white. \r\n\t\t\tColor r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0.\r\n\t\t\tColor blue.\r\n\t\t\tColor red.\r\n }.\r\npict colors: map.\r\npict initFromArray: #(2r00011011000110110001101100011011).\r\npict magnifyBy: 25"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-17T22:02:23.008308-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T17:01:37.908951-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "2 bits depth"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "34aa9273-6281-0d00-a9ba-e2950948cd4a"
+	}
+}

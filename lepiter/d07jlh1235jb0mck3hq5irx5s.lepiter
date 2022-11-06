@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T16:16:04.617-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T16:16:04.617-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KBOMGcWmDQCCQp4aDBev2w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#introduction\r\nA basic operation on *Forms*, referred to as **BitBlt**, support a wide range of representation.\r\n\r\nThe name derives from the BitBLT routine for the Xerox Alto computer, standing for bit-boundary block transfer. Dan Ingalls, Larry Tesler, Bob Sproull, and Diana Merry programmed this operation at Xerox PARC in November 1975 for the Smalltalk-72 system. Dan Ingalls later implemented a redesigned version in microcode. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T16:12:52.758-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T16:17:40.909-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uL/jDMWmDQCCQfZ9DBev2w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Bitblt (which stands for bit block transfer) is a data operation commonly used in computer graphics in which several bitmaps are combined into one using a boolean function.\r\n\r\nThe operation involves at least two bitmaps: a \"source\" (or \"foreground\") and a \"destination\" (or \"background\"), and possibly a third that is often called the \"mask\". The result may be written to a fourth bitmap, though often it replaces the destination. The pixels of each are combined bitwise according to the specified raster operation (ROP) and the result is then written to the destination. The ROP is essentially a boolean formula. The most obvious ROP overwrites the destination with the source. Other ROPs may involve AND, OR, XOR, and NOT operations.\r\n\r\nModern graphics software has almost completely replaced bitwise operations with more general mathematical operations used for effects such as alpha compositing. This is because bitwise operations on color displays do not usually produce results that resemble the physical combination of lights or inks. However, this solution is still present in Pharo, and can still be the basis of Forms manipulation\r\n\r\n#source\r\nSmalltalk 80 blue book - p332 and later.\r\n[wikipedia](https://en.wikipedia.org/wiki/Blitter)"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-10-06T16:12:32.228-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-10-06T16:12:49.013-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "BitBlt"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "a046e30c-c5a6-0d00-8240-76800c17afdb"
+	}
+}

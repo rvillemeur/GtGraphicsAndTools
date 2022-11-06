@@ -1,0 +1,150 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T12:59:33.437109-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:08:38.074131-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ze6jVauBDQC7XV7/C6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Roassal is a visualization engine built in Pharo (and VisualWorks). Roassal has three larger parts:\r\n1. Trachel (the canvas)\r\n2. Element model\r\n3. Builders\r\n\r\nGT (well, Bloc) is already a visualization engine and covers 1. and 2. completely and some more. What is presently lacking is the builders for common visualizations. There are a few already existing, the more prominent being Mondrian (you can see a description in GtMondrianBasicExamples).\r\n[discord reference](https://discord.com/channels/729445214812504107/745659858665341080/770679780488118292]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-07T22:15:00.19-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-07T22:15:00.19-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yxvsdauBDQC6dV+pC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Roassal:\r\n\r\nElement\r\n - has a shape (how it is rendered)\r\n - react to event (drag & drop, click, etc...)\r\n\r\nElements can added to a view, and/or nested in other elements.\r\nThe view is like a camera, that can be translated, rotated, etc...\r\n\r\nShape of an element can be tweaked, and composed with different shapes.\r\n\r\nOne can link different elements together with:\r\n - arrow\r\n - edge\r\n - edge with arrow\r\n - double arrow\r\n - etc...\r\n \r\nLayout define how elements are automatically arranged in a view.\r\n - grid layout\r\n - row layout (horizontal or vertical)\r\n - circle layout\r\n - tree layout\r\n - treeMap layout\r\n - etc..."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:08:40.905131-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:08:40.905131-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "u8rydauBDQC6eBlgC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- Gt phlow views are built on top of Brick and are used to compose views of a particular object.  Their reuse is typically at the application level where the application interface may be composed of multiple Gt phlow views."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-21T12:58:49.688109-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-21T12:58:54.646109-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "visualization"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "2d640853-ab81-0d00-bb5b-978d0ba11939"
+	}
+}

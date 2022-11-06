@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:05:34.799-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:05:34.799-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "OBirm86gDQC8TOMKDxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "*SDL2MappedEvent allSubclasses* implement the visitor pattern, with OSSDL2BackendWindow\r\nis class being visited\r\n\r\nevents are then managed through an event handler, *OSWindowMorphicEventHandler*\r\nwhich is a subclass of *OSWindowEventVisitor*. Then *OSEvent allSubclasses* implement again the\r\nvisitor pattern, with OSWindowMorphicEventHandler being visited.\r\n\r\nTo create your own event handler, subclass *OSWindowEventVisitor* and implement the\r\n*visitXXXEvent* method, like *visitMouseMoveEvent*\r\n\r\nMorphic events are managed with OSWindowMorphicEventHandler, which convert event\r\nto format expected by Morphic.\r\n1. return true to accept specific events in method in category *event handling* \r\n2. implement logic to this events by overriding method in category *event processing*\r\n\r\nTODO: define your own event handler for your morph.\r\n```\r\neventHandler: anEventHandler \r\n\t\"Note that morphs can share eventHandlers and all is OK. \"\r\n\tself assureExtension eventHandler: anEventHandler\r\n```\r\n\r\nEvent handler is created and associated in the open method:\r\n\r\n\twindow := OSWindow createWithAttributes: attrs.\r\n\twindow eventHandler: (self createEventHandler).\r\n\r\n\r\n\tSDL2AthensDrawingExample >> createEventHandler\r\n\t\t^ OSWindowAthensDrawingExampleEventHandler new \r\n\t\t\t\tathensExample: self\r\n\t\t\t\r\nA newly created OSWindow instance can be used and controlled by application.\r\nTo handle events (mouse/keyboard) of newly created window, one must\r\nbind own event handler to it (#eventHandler:) which must understand #handleEvent: message.\r\n\r\nTo render on window's surface, first application must obtain an OSWindowRenderer instance.\r\nCurrently there's two kinds of renderers available:\r\n•\tform renderer (to use existing form for updating window's contents)\r\n•\topengl renderer (to render using OpenGL).\r\n\r\nOSWindowEventVisitor -> OSWindowAthensExampleEventHandler -> OSWindowAthensExampleEventHandler\r\nhas 1 instance variable\r\n\t- athensExample\r\nDefine 4 method (through inheritance):\r\n\t- visitMouseButtonPressEvent: anEvent\r\n\t- visitMouseButtonReleaseEvent: anEvent\r\n\t- visitMouseMoveEvent: anEvent\r\n\t- visitWindowCloseEvent: anEvent\r\n\r\nThe specific events are coming from operating system and converted to corresponding \r\nOSEvent subinstance(s) in order to handle them. Events can implement a default \r\naction, which will be performed after dispatch on event handling,  unless they \r\nare suppressed using #suppressDefaultAction message.\r\n\r\n\r\nChain of event delivery (OSMouseMoveEvent in this example).\r\n##############################################################\r\n# setup\r\n##############################################################\r\n#\tOSSDL2Driver >> initialize\r\n#\t\tself setupEventLoop.\r\n#\t\t\r\n#\t\t\r\n#\tOSSDL2Driver >> setupEventLoop\r\n#\t\tself eventLoopProcessWithVMWindow (forked by VM)\r\n##############################################################\t\t\r\n\t\r\n##############################################################\r\n# processing\r\n##############################################################\r\n#\tOSSDL2Driver >> eventLoopProcessWithVMWindow\r\n#\t\t|event|\r\n#\t\tevent := SDL_Event new.\r\n#\t\tself processEvent: event\r\n#\t\r\n#\r\n#\tOSSDL2Driver >> processEvent: sdlEvent\r\n#\t\t| event |\r\n#\t\tevent := self convertEvent: sdlEvent.\r\n#\r\n#\t\r\n#\tOSSDL2Driver >> convertEvent: sdlEvent\r\n#\t\t| mappedEvent window |\r\n#\t\tmappedEvent := sdlEvent mapped.\r\n#\t\twindow := WindowMap at: mappedEvent windowID\r\n#\t\twindow handleNewSDLEvent: mappedEvent.\r\n#\r\n#\r\n#\tOSSDL2BackendWindow >> handleNewSDLEvent: sdlEvent\r\n#\t\t^ sdlEvent accept: self\r\n#\r\n#\r\n#\tSDL_MouseMotionEvent >> accept: aVisitor\r\n#\t\t^ aVisitor visitMouseMotionEvent: self\r\n#\r\n#\r\n#\tOSSDL2BackendWindow >> visitMouseMotionEvent: sdlEvent\r\n#\t\t| osEvent |\r\n#\t\tosEvent := OSMouseMoveEvent for: osWindow.\r\n#\t\t^ osEvent deliver\r\n#\r\n#\r\n#\tOSEvent >> deliver\r\n#\t\t^ window deliverEvent: self\r\n#\t\t\r\n#\t\t\r\n#\tOSWindow >> DeliverEvent: anEvent\r\n#\t\teventHandler ifNotNil: [ eventHandler handleEvent: anEvent ].\r\n#\r\n# In the open method, we have: window eventHandler: (self createEventHandler).\r\n# which is defined as \r\n#    OSWindowAthensExampleEventHandler new athensExample: self\r\n#\r\n#\tOSWindowAthensDrawingExampleEventHandler >> handleEvent: anEvent\r\n#\r\n#\tinherit code from: \r\n#\tOSWindowEventVisitor >> handleEvent: anEvent\r\n#\t\tanEvent accept: self.\r\n#\r\n#\r\n#\tOSMouseMoveEvent >> accept: aVisitor\r\n#\t\t^ aVisitor visitMouseMoveEvent: self\r\n#\t\t\r\n#\t\t\r\n#\tOSWindowAthensExampleEventHandler >> visitMouseMoveEvent: anEvent\r\n#\t\t\"your code reacting to event here\"\r\n#\t\tathensExample moveAt: anEvent position\r\n##############################################################\t\t\r\n\r\n##############################################################\r\n# event conversion\r\n##############################################################\r\n#In OSSDL2Driver >> convertEvent: sdlEvent, we have: mappedEvent := sdlEvent mapped.\r\n#\r\n#\tSDL_Event >> mapped\r\n#\t\t^ (EventTypeMap at: self type ifAbsent: [ ^ self unknownEvent ]) fromSdlEvent: self\r\n#\r\n#EventTypeMap is defined in the method\r\n#\tSDL_Event class >> initializeEventTypeMap\r\n#\t\t\"self initializeEventTypeMap\"\r\n#\t\tEventTypeMap := Dictionary new.\r\n#\t\tSDL2MappedEvent  allSubclassesDo: [ :cls |\r\n#\t\t\t| eventType |\r\n#\t\t\teventType := cls eventType.\r\n#\t\t\teventType ifNotNil: [ EventTypeMap at: eventType put: cls ] ]\r\n#\t]\r\n#\r\n#And for SDL_MouseMotionEvent class eventType\r\n#\t^ SDL_MOUSEMOTION\r\n#which link SDL enum to Pharo class type.\r\n#\r\n# \r\n# \tSDL2MappedEvent class >> fromSdlEvent: event\r\n#\t\t^  self new setHandle: event getHandle\r\n#which return an instance of the SDL2 event class.\r\n##############################################################"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:05:32.591-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:05:53.837-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "OSWindow and event managements"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "988baa9b-cea0-0d00-bc4b-b63b0f15530d"
+	}
+}

@@ -1,0 +1,113 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T23:47:25.279-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T23:47:25.279-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GK+9i9KgDQCsb7mmDgkDmw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Vector graphics"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:04:45.807-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T23:47:46.825-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wOqymM6gDQC8R4X1DxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "## introduction\r\n\r\nThere are two different computer graphics: vector and raster graphics. Raster graphics represents images as a collection of pixels. Vector graphics is the use of geometric primitives such as points, lines, curves, or polygons to represent images. These primitives are created using mathematical equations.\r\n\r\nBoth types of computer graphics have advantages and disadvantages. The advantages of vector graphics over raster are:\r\n\r\n* smaller size\r\n* ability to zoom indefinitely\r\n* moving, scaling, filling, and rotating does not degrade the quality of an image\r\n\r\nUltimately, picture on a computer are displayed on a screen with a specific\r\ndisplay dimension. However, while raster graphic doesn't scale very well when\r\nthe resolution differ too much from the picture resolutiom, vector graphics\r\nare rasterized to fit the display they will appear on. Rasterization is the\r\ntechnique of taking an image described in a vector graphics format and\r\ntransform it into a set of pixels for output on a screen.\r\n\r\nNote: You have the same concept when doing 3D programming with an API like openGL. You describe your scene with point, vertices, etc..., and in the end,\r\nyou rasterize your scene to display it on your screen.\r\n\r\n## Base class\r\n\r\n*AthensSurface* and its subclass *AthensCairoSurface* \r\n-> initialize a new surface\r\n\r\n*AthensCanvas* is the central object used to perform drawing on an *AthensSurface*\r\nCanvas is not directly instanciated but used through a call like\r\n*surface drawDuring: [:canvas | .... ]*\r\n\r\nThe rendering dispatch is `rendering dispatch  Canvas->receiver->paint`\r\n\r\nThe Athens drawing model relies on a three layer model. Any drawing process \r\ntakes place in three steps:\r\n\r\n1. First a \"\"path\"\" is created, which includes one or more vector primitives , i.e., circles, lines, TrueType fonts, Bézier curves, etc...\r\n2. Then painting must be defined, which may be a color, a color gradient, a bitmap or some vector graphics\r\n3. Finally the result is drawn to the Athens surface, which is provided by the back-end for the output.\r\n\r\n## Athens vocabulary\r\n\r\nThe reason you are using Athens in a program is to draw. \r\nThe *source* and *mask* are freely placed somewhere over the *destination* surface. \r\nThe layers are all pressed together and the paint from the source is \r\ntransferred to the destination wherever the mask allows it. To that extent there \r\nare five drawing verbs, or operations: *Stroke*, *fill*, *drawString*, *paint*\r\nand *mask*. They are all similar, they differ by how they construct the mask.\r\n\r\n### Destination\r\n\r\nThe destination is the *surface* on which you're drawing. This surface collects \r\nthe elements of your graphic as you apply them, allowing you to build up a \r\ncomplex work as though painting on a canvas.\r\n![Athens destination](/media/destination.png)\r\n\r\n### Source\r\n\r\nThe source is the \"paint\" you're about to work with. I show this as it is—plain \r\nblack for several examples—but translucent to show lower layers. Unlike real \r\npaint, it doesn't have to be a single color; it can be a pattern or even a \r\npreviously created destination surface (see How do I paint from one surface to \r\nanother?). Also unlike real paint it can contain transparency information—the \r\nAlpha channel.\r\n![Athens source](/media/source.png)\r\n\r\n### Mask\r\n\r\nThe mask is the most important piece: it controls where you apply the source to \r\nthe destination. I will show it as a yellow layer with holes where it lets the \r\nsource through. When you apply a drawing verb, it's like you stamp the source \r\nto the destination. Anywhere the mask allows, the source is copied. Anywhere \r\nthe mask disallows, nothing happens.\r\n![Athens mask](/media/source.png)\r\n\r\n### Path\r\n\r\nThe path is somewhere between part of the mask and part of the context. \r\nI will show it as thin green lines on the mask layer. It is manipulated by path \r\nverbs, then used by drawing verbs.\r\n\r\n### stroke\r\n\r\n### draw class\r\n\r\nAthensShape and AthensPath\r\n\r\n## Path\r\nAthens always has an active path. \r\n\r\nUse AthensPathBuilder or AthensSimplePathBuilder to build a path\r\nThey will assemble segment for you\r\n\r\ncreatePath: This message exist in all important Athens class:\r\n* AthensCanvas\r\n* AthensSurface\r\n* AthensPathBuilder\r\n\r\n*createPath: aPathCreatingBlock*\r\n\r\nUsing it return a new path:\r\n```smalltalk\r\nsurface createPath: [:builder |\r\n        builder\r\n            absolute;\r\n            moveTo: 100@100;\r\n            lineTo: 100@300;\r\n            lineTo: 300@300;\r\n            lineTo: 300@100;\r\n            close ].\r\n```\r\n\r\nhelper message in *AthensSimplePathBuilder*\r\n- pathStart\r\n- pathBounds -> give the limit of the bounds associated to the path\r\n\r\nIf you want to build path using only straight line, you can use the class\r\n*AthensPolygon*\r\n\r\n\r\n`|path builder Messages  |Object Segment     |comment                     |`` \r\n`|-----------------------|-------------------|----------------------------|`\r\n`|ccwArcTo: angle:       |AthensCCWArcSegment|counter clock wise segment  |`\r\n`|cwArcTo:angle:         |AthensCWArcSegment |clock wise segment          |`\r\n``|lineTo:                |AthensLineSegment  |straight line               |`\r\n`` |moveTo:                |AthensMoveSegment  |start a new contour         |`\r\n `|curveVia: to:          |AthensQuadSegment  |quadric bezier curve        |`\r\n `|curveVia: and: to:     |AthensCubicSegment |Cubic bezier curve          |`\r\n|reflectedCurveVia: to: |AthensCubicSegment |Reflected cubic bezier curve|`\r\n|string: font:          |                   |specific to cairo           |`\r\n``|close                  |AthensCloseSegment |close the current contour   |`\r\n\r\n\r\nCoordinate class: *Absolute* or *Relative*\r\nabsolute: absolute coordinate from surface coordinate.\r\n```smalltalk\r\n    builder absolute;\r\n            moveTo: 100@100;\r\n            lineTo: 100@300;\r\n            lineTo: 300@300;\r\n            lineTo: 300@100;\r\n            close\r\n```\r\n-> will draw a square in a surface which extent is 400@400 using absolute move.\r\n\r\nrelative: each new move is relative to the previous one.\r\n```smalltalk\r\n        builder relative ;\r\n            moveTo: 100@100;\r\n            lineTo: 200@0;\r\n            lineTo: 0@200;\r\n            lineTo: -200@0;\r\n            close\r\n```\r\n-> will draw a square in a surface which extent is 400@400 using relative move.\r\n\r\ncwArcTo:angle: and ccwArcTo: angle: will draw circular arc, connecting  \r\nprevious segment endpoint and current endpoint of given angle, passing in \r\nclockwise or counter clockwise direction. The angle must be specified in Radian.\r\n\r\nPlease remember that the circumference of a circle is equal to 2 * Pi * R.\r\nIf R = 1, half of the circumference is equal to PI, which is the value of half\r\na circle.\r\n\r\n## painting\r\n\r\n\r\n### Paints\r\nPaints can be created either from the surface or directly from a class that will\r\ndo the call to the surface for you.\r\n\r\nany object can be treated as paint:\r\n - athensFillPath: aPath on: aCanvas\r\n - athensFillRectangle: aRectangle on: aCanvas\r\n - asStrokePaint\r\n\r\n|surface message                                  |helper class        |  comment               |\r\n|createFormPaint:                                 |                    |create paint from a Form|\r\n|createLinearGradient: start: stop:               |LinearGradientPaint |linear gradient paint   |\r\n|createRadialGradient: center: radius:            |RadialGradientPaint |Radial gradient paint   |\r\n|createRadialGradient: center: radius: focalPoint:|RadialGradientPaint |Radial gradient paint   |\r\n|createShadowPaint:                               |AthensShadowPaint   |???                     |\r\n|createSolidColorPaint:                           |                    |fill paint              |\r\n|createStrokePaintFor:                            |AthensStrokePaint   |stroke paint            |\r\n\r\na Canvas define its paint method:\r\n* setPaint:\r\n* setStrokePaint:\r\n\r\n### Stroke paint\r\nThe *createStrokePaintFor* operation takes a virtual pen along the path. It allows the source \r\nto transfer through the mask in a thin (or thick) line around the path\r\n\r\nAthensStrokePaint return a stroke paint.\r\n\r\nImport Athens message:\r\n    width: -> specify the width of the stroke.\r\n    joinBevel\r\n    joinMiter\r\n    joinRound\r\n    capButt\r\n    capRound\r\n    capSquare\r\n\r\n\r\n### Solid paint\r\nThe*createSolidColorPaint* operation instead uses the path like the lines of a coloring book, \r\nand allows the source through the mask within the hole whose boundaries are the \r\npath. For complex paths (paths with multiple closed sub-paths—like a donut—or\r\npaths that self-intersect) this is influenced by the fill rule\r\n\r\n\r\n### Gradient\r\nGradient will let you create gradient of color, either linear, or radial.\r\n\r\nThe color ramp is a collection of associations with keys - floating point values \r\nbetween 0 and 1 and values with Colors, for example:\r\n{0 -> Color blue . 0.5 -> Color white. 1 -> Color red}.\r\n\r\nYou can use either helper class or calling surface messages:\r\n```smalltalk\r\nsurface createLinearGradient: {0 -> Color blue .0.5 -> Color white. 1 -> Color red} start:  0@0  stop: 200@100.\r\n```\r\nor\r\n```smalltalk\r\n(LinearGradientPaint from: 0 @ 0 to: self extent) colorRamp: {0 -> Color white. 1 -> Color black}).\r\n```\r\n\r\nStart and stop point are reference to the current shape being drawn.\r\nExemple:\r\nCreate a vertical gradient\r\n```smalltalk\r\ncanvas\r\n    setPaint:\r\n        (canvas surface\r\n            createLinearGradient:\r\n                {(0 -> Color blue).\r\n                (0.5 -> Color white).\r\n                (1 -> Color red)}\r\n            start: 0@200\r\n            stop: 0@400). \r\n    canvas drawShape: (0@200 extent: 300@400).\r\n```\r\n\r\ncreate a horizontal gradient:\r\n```smalltalk\r\ncanvas\r\n    setPaint:\r\n        (canvas surface\r\n            createLinearGradient:\r\n                {(0 -> Color blue).\r\n                (0.5 -> Color white).\r\n                (1 -> Color red)}\r\n            start: 0@200\r\n            stop: 300@200). \r\n    canvas drawShape: (0@200 extent: 300@400).\r\n```\r\n\r\ncreate a diagonal gradient:\r\n```smalltalk\r\ncanvas\r\n    setPaint:\r\n        (canvas surface\r\n            createLinearGradient:\r\n                {(0 -> Color blue).\r\n                (0.5 -> Color white).\r\n                (1 -> Color red)}\r\n            start: 0@200\r\n            stop: 300@400). \r\n    canvas drawShape: (0@200 extent: 300@400).\r\n```\r\n\r\n### drawing\r\nEither you set the shape first and then you call *draw*, or you call the \r\nconvenient method*drawShape:* directly with the path to draw as argument\r\n\r\n# example:\r\n```smalltalk\r\n\"canvas pathTransform loadIdentity.  font1 getPreciseAscent. font getPreciseHeight\"\r\n            surface clear.\r\n            canvas\r\n                setPaint:\r\n                    ((LinearGradientPaint from: 0 @ 0 to: self extent)\r\n                        colorRamp:\r\n                            {(0 -> Color white).\r\n                            (1 -> Color black)}).\r\n            canvas drawShape: (0 @ 0 extent: self extent).\r\n            canvas\r\n                setPaint:\r\n                    (canvas surface\r\n                        createLinearGradient:\r\n                            {(0 -> Color blue).\r\n                            (0.5 -> Color white).\r\n                            (1 -> Color red)}\r\n                        start: 0@200\r\n                        stop: 0@400). \"change to 200 to get an horizontal gradient\"\r\n            canvas drawShape: (0@200 extent: 300@400).\r\n            canvas setFont: font.\r\n            canvas\r\n                setPaint:\r\n                    (canvas surface\r\n                        createLinearGradient:\r\n                            {(0 -> Color blue).\r\n                            (0.5 -> Color white).\r\n                            (1 -> Color red)}\r\n                        start: 50@0\r\n                        stop: (37*5)@0). \"number of caracter * 5\"\r\n            canvas pathTransform\r\n                translateX: 45 Y: 45 + font getPreciseAscent;\r\n                scaleBy: 2;\r\n                rotateByDegrees: 28.\r\n            canvas\r\n                drawString: 'Hello Athens in Pharo/Morphic !!!!!!!'.\r\n```\r\n\r\n```smalltalk\r\nrenderAthens\r\n    surface\r\n        drawDuring: [ :canvas | \r\n            | stroke squarePath circlePath |\r\n            squarePath := canvas\r\n                createPath: [ :builder | \r\n                    builder\r\n                        absolute;\r\n                        moveTo: 100 @ 100;\r\n                        lineTo: 100 @ 300;\r\n                        lineTo: 300 @ 300;\r\n                        lineTo: 300 @ 100;\r\n                        close ].\r\n            circlePath := canvas\r\n                createPath: [ :builder | \r\n                    builder\r\n                        absolute;\r\n                        moveTo: 200 @ 100;\r\n                        cwArcTo: 200 @ 300 angle: 180 degreesToRadians;\r\n                        cwArcTo: 200 @ 100 angle: Float pi ].\r\n            canvas setPaint: Color red.\r\n            canvas drawShape: squarePath.\r\n            stroke := canvas setStrokePaint: Color black.\r\n            stroke\r\n                width: 10;\r\n                joinRound;\r\n                capRound.\r\n            canvas drawShape: squarePath.\r\n            canvas drawShape: circlePath.\r\n            circlePath := canvas\r\n                createPath: [ :builder | \r\n                    builder\r\n                        relative;\r\n                        moveTo: 175 @ 175;\r\n                        cwArcTo: 50 @ 50 angle: 180 degreesToRadians;\r\n                        cwArcTo: -50 @ -50 angle: Float pi ].\r\n            canvas drawShape: circlePath ]\r\n```\r\n\r\n# Playing\r\nTo help you practice your Athens drawing, you can use Athens sketch, migrated from SmalltalkHub:\r\nhttp://smalltalkhub.com/#!/~NicolaiHess/github\r\nhttps://github.com/rvillemeur/AthensSketch\r\n\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:04:42.778-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:05:03.037-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "drawing with vector canvas"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "9075b298-cea0-0d00-bc46-29ec0f15530d"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:37:29.888-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:37:29.888-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wEcYDc+gDQC9Oz51DxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "extend pharo inspector\n\nadd a method to the object you want to represent.\ninspectionForm\n\t<inspectorPresentationOrder: 90 title: 'Form'>\n\n\t^ SpMorphPresenter new\n\t\tmorph: self asMorph;\n\t\tyourself\n        \nn this method, you can instantiate any Spec2 presenter that are present in the\nPharo world, being yours or part of the base image.\n \nWhen you open an inspector, it will look for\n\nStInspectorModel >> objectInspectionContexts\n\n\t^ self inspectedObject inspectionContexts\n\n\nObject >> inspectionContexts\n\t\"This is a utility method that collects all presentations for the current object.\n\tBy default, it simply looks for the #gtInspectorPresentationOrder: pragma.\n\tThe inspector can decice whether or not a presentation should be dispayed.\n\tSubclasses might want to override it for more special behavior.\"\n\n\t^ (StInspectionCollector on: self) collectInspectionContexts\n\nStInspectionCollector >> collectInspectionContexts\n\t| pragmas |\n\t\n\tpragmas := self uniquePragmas: (self extensionPragmas\n\t\tinject: #()\n\t\tinto: [ :all :each | all, (self collectPragmas: each) ]).\n\n\t^ (pragmas \n\t\tcollect: [ :each | self contextFromPragma: each ]\n\t\tthenSelect: [ :each | each isActive ])\n\t\tsorted: #order ascending\n\n\nStInspectionCollector >> extensionPragmas\n\t^ self class defaultExtensionPragmas\n\n\nStInspectionCollector class defaultExtensionPragmas\n\t^ #(inspectorPresentationOrder:title:)"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:37:15.574-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:37:27.813-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Extent pharo inspector"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "f0c2170d-cfa0-0d00-bd3a-80970f15530d"
+	}
+}

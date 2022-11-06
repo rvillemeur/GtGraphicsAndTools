@@ -1,0 +1,261 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-08-29T16:18:39.959-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-08-29T16:18:39.959-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8EPCKBqHDQC8SgTADHFfbg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "note Brick\n\nBrick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and Aptitude, that give its appearance"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-30T13:12:51.075-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-30T13:14:12.222-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uDNfWjKTDQCr2NxCAijurQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick add two mains extention to Bloc, \r\n-  *aptitude* \r\n- viewmodel\r\n\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected.\r\n\r\nLike a trait, a talent represents a set of methods that constitute part of the\nbehavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is\napplied to an object, no other instance of the object’s class are affected. Talents may be composed of\nother talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly\nresolved."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-20T22:18:49.027-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-14T23:05:14.972-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uEEqtKWNDQCdKoYjBEoPhw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick is a subclass of Bloc, and defined through the MVVM Paradigm.\nWidget are composed of\n- appearance (look/aptitude)\n- behaviour (model - method to respond to).\r\n\r\n**BrGlamorousVectorIcons** + package Brick-Glamorous\r\n\r\nBrick-Glamorous will give aptitude and icons used by GToolkit\r\n\r\n**BrGlamorousComponents** provide example of widget used by GToolkit, it will show which aptitude is used with GToolkit components\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T21:31:24.707665-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-20T22:16:35.756-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mbMsfLKBDQCjrSVxCnNgtw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "There are several architectural features of Brick that facilitate flexibility and reuse:\r\n- **Stencils** (subclass of BrStencil) are used to create widgets when lazy creation is required, or when the widget to be created depends on the data being displayed.\r\n- **Aptitude**  (previously Looks - subclass of ${class:BrLook}$) provide the ability to modify the element to which they are attached.  A typical example is the look of a Button, whether it has a border or not, a label or not, an icon or not, etc.  Looks should only be created when the underlying widget is used in many places, e.g. buttons, and should not affect the API of the widget. Aptitude affect and endow an element with looks and behavior. They can be dynamically added and removed. They can be composed. In short, a powerful mechanism for dynamic scenes\r\n- **View Models** are used to maintain the state of a Brick widget, e.g. pressed, focused, hovered, and, like Looks, can be composed by adding multiple models together.  Like Looks, models also receive events.\r\n\r\nViewModel define custom behaviour for Brick widget.\nBloc define widget layout."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T21:32:23.759665-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T21:32:23.759665-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Mc+xf7KBDQCjrkeVCnNgtw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:12:47.519131-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T21:34:49.378665-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "s6n4hKuBDQC6ggiAC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- Brick is built on top of Bloc elements.  If you feel you need to create a Bloc element, ask first, you probably don't.\r\n\r\nfor each widget, take attention to their:\n- look: \n- label\n- action: take a closure to manage \nLayout is given by the different classes:\n- BrFrame(Look)\n- BrHorizontalFlow(Look)\n- BrHorizontalPane(Look)\n- BrVerticalFlow(Look)\n- BrVerticalPane(Look)\n\nCommon widget:\n- BrAccordion (BlElement)\n- BrBadge (BlElement)\n- BrBreadcrumb (BlElement)\n- BrButton (BlElement)\n- BrCard (BlElement)\n- BrCheckbox (BlElement)\n- BrDropdown (Object)\n- BrEditor (BrEditorElement)\n- BrEditableLabel (BrEditor)\n- BrEditorWithToolbar (BrVerticalPane)\n- BrEntailment (BlElement)\n- BrFileBrowser (BrVerticalPane)\n- BrFileSelector (BrVerticalPane)\n- BrLabel(BlElement)\n- BrPager (BlElement) with Stencil.\n- BrPopup (BlElement) with Look and Stencil.\n- BrProgress (BlElement)\n- BrResizer (BlElement)\n- BrScrollPane (BlElement)\n- BrScrollbar (BlElement)\n- BrSwitch\n- BrTab and BrTabGroup (BlElement)\n- BrTagger (BlElement)\n- BrToggle and BrToggleGroup (BlElement)\n- BrToolbar (BlElement)\n- BrTree and subclasses (BlElement).\n- BrTriangle (BlElement) -> display a triangle, as used to open or close block of text\n\nList widget with Stencil\n- BrColumnedList\n- BrFlowList\n- BrGridList\n- BrSimpleList\n\n\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T18:19:45.713222-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T18:19:54.580222-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Brick - high level widget"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "46e44175-7381-0d00-ba9a-668c0ba11939"
+	}
+}

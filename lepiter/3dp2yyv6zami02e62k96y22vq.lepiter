@@ -1,0 +1,187 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T21:48:54.604-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mDgQvxugDQCT3G6BCAoGAw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Root: BlElement\r\n\r\nDefines\r\n\t- geometry (shape) and bounds (BlBounds)\r\n\t- size\r\n\t- background (BlBackground). Paints (BlPaint) are used for background, border, text fill or stroke.\r\n\t- border (BlBorder)\r\n\t- opacity\r\n\t- layout and children composition. (BlLayout, BlChildren, and their children)\r\n\t- event handling (BlEvent and children)\r\n\r\nYou can add element with **addChild:**, and the will be disposed according the \r\nthe layout specified.\r\n\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\nYou can apply transformation to a BlElement:\r\n* rotation\r\n* translation\r\n* Scaling\r\n* reflection\r\n* etc...\r\n\r\n**important class to look at**\r\n{{gtClass:BlElement}}\r\n{{gtClass:BlBackground}}\r\n{{gtClass:BlStyles}}\r\n{{gtClass:BlGeometryVisualAndLayoutBoundsExamples}}\r\n{{gtClass:BlBasicShortcut}}\r\n{{gtClass:BrStencil}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:31:22.628131-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "O+Bvx6uBDQC6xnCEC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:14:41.140131-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:32:37.194131-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "012+i6uBDQC6i7PsC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "also possible to activate in the GT-Inspector's menu, next to the tabs.\r\n\r\nBloc Basic\n----------\n- interacting with Bloc element \n=> coordinate\n=> style\n=> background paint.\n=> Geometry\r\n\r\n\n- creating and drawing your own block\n=> subclass BlElement\n=> Custom drawing is done with drawOnSpartaCanvas: method.\n=> \n\n- handling mouse and keyboard event (shortcut, keybinding, etc...)\n=> subclass BlEventListener, overwrite method which handle event, and add\ninstance of the class to your BlElement with method addEventHandler: \n\nKeyboard shortcut: BlShortcut\n\n\n- Bloc animation\n=> announcer\n=> BlBaseAnimation and subclasses\n=> addAnimation method in BlElement\n\n\n\n- Drag&Drop\nExplore BlBaseDragEvent and subclasses.\n\n\nBloc Example\n------------\nlook at Bloc-example package.\n\n\n\twidget size: 22@14.\n\twidget layout: BlFrameLayout new.\n\twidget padding: (BlInsets all: 3).\n\twidget border: (BlBorder builder width: 1; build).\n\twidget geometry: (BlRoundedRectangleGeometry cornerRadius: 8).\n\n- composing Bloc element\n=> Bloc Layout and addChild method (children Add/remove category)\nBlBasicLayout, BlFrameLayout, BlGridLayout.\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T18:22:35.335222-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-21T13:20:56.055131-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "PuXXcnOBDQC6ma5wC6EZOQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\n\nelement size: 100@200 is equivalent to:\r\nchild constraintsDo: [ :c |\r\n        c horizontal exact: 100.\r\n        c vertical exact: 200 ].\r\n        \r\ncentersAndSizes := { \r\n { 50@10. 100@10 }. \r\n { 50@10. 80@15 } }.\r\ncontainer := BlElement new\r\n    size: 200@100;\r\n    yourself.\r\ncentersAndSizes do: [ :c |\r\n    container addChild: (\r\n        BlElement new\r\n            border: (BlBorder paint: Color red width: 1);\r\n            relocate: c first;\r\n            size: c second;\r\n            yourself)\r\n        ].\r\ncontainer\r\n\r\ncentersAndSizes := { \r\n { 50@10. 100@10 }. \r\n { 50@10. 80@15 } }.\r\ncontainer := BlElement new\r\n    size: 200@100;\r\n    yourself.\r\ncentersAndSizes do: [ :c |\r\n    container addChild: (\r\n        BlElement new\r\n            background: (Color random alpha: 0.5);\r\n            relocate: (c first - (c second / 2));\r\n            size: c second;\r\n            yourself)\r\n        ].\r\ncontainer\r"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T18:19:05.171222-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-18T18:19:40.690222-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Bloc - base element for GUI"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "1645d772-7381-0d00-ba98-b6ab0ba11939"
+	}
+}

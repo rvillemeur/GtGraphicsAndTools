@@ -1,0 +1,357 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:50:54.608308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:56:13.524308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "5HuKSmKBDQCppUhvCUjNSg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can define the color of 32 pixel with color depth 1 playing with color and form."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:51:00.898308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:56:47.037308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "BH7qSmKBDQCpp3GmCUjNSg=="
+				},
+				"code" : "(Form extent: 32@2 \"size of the form\"\r\n depth: 1 \"color depth\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes\"\r\n\t\t2r10011000000100010000000000000001\r\n\t\t2r11000000000000000000000000000000\r\n) \r\n; magnifyBy: 10."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:01:07.618308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:01:10.955308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "dOP/bmKBDQCpthboCUjNSg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Using Bitmap:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:54:48.162308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:54:54.394308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "7Ed2WGKBDQCpq6bKCUjNSg=="
+				},
+				"code" : "\r\nbitMap := Bitmap newFrom: #( \"pixel color, expressed on 4 byte\"\r\n\t\t2r10011000000100010000000000000001\r\n\t\t2r11000000000000000000000000000000\r\n) .\r\n\r\n(Form extent: 32@2 \"size of the form\"\r\n depth: 1 \"color depth\")\r\n initFromArray: bitMap\r\n; magnifyBy: 10."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:57:32.820308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:57:34.227308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "VL9GYmKBDQCprfssCUjNSg=="
+				},
+				"code" : "(Form extent: 32@2 \"size of the form\"\r\n depth: 1 \"color depth - 16 => 2 bits to define color value\")\r\n initFromArray: #( \r\n 2r10101010101010101010101010101010\r\n 2r01010101010101010101010101010101 \"2 colors\"\r\n) \r\n; magnifyBy: 25."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:58:17.607308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:00:36.100308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pCDyZGKBDQCprxV4CUjNSg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\r\nUse ColorForm if you want to use color other than black and white:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:58:22.903308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:58:24.187308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "DPRCZWKBDQCpsIvzCUjNSg=="
+				},
+				"code" : "|pict map|\r\npict := ColorForm extent: 32@2 depth: 1.\r\n\r\n\"create a color map of 2^depth color\"\r\nmap := {  Color r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0. \r\n\t\t\tColor blue. \r\n }.\r\npict colors: map.\r\npict initFromArray: #(\r\n2r01010101010101010101010101010101\r\n2r10101010101010101010101010101010).\r\npict magnifyBy: 25"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T21:49:58.497308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:00:01.986308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pFnhRmKBDQCppKEgCUjNSg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This is how the normal cursor is defined. By default, a cursor size can only\r\nbe 16@16. However, because data is stored on 32 bits, we need to add 16 \r\nadditional bit as white to store it, even if they wont be displayed.\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:00:09.854308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:00:11.906308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ZOWia2KBDQCptJX+CUjNSg=="
+				},
+				"code" : "(Form extent: 16@16\r\n\tdepth: 1\r\n\tfromArray: #(\r\n\t\t2r10000001000000000000000000000000\r\n\t\t2r11000000000000000000000000000000\r\n\t\t2r11100000000000000000000000000000\r\n\t\t2r11110000000000000000000000000000\r\n\t\t2r11111000000000000000000000000000\r\n\t\t2r11111100000000000000000000000000\r\n\t\t2r11111110000000000000000000000000\r\n\t\t2r11111000000000000000000000000000\r\n\t\t2r11111000000000000000000000000000\r\n\t\t2r10011000000000000000000000000000\r\n\t\t2r00001100000000000000000000000000\r\n\t\t2r00001100000000000000000000000000\r\n\t\t2r00000110000000000000000000000000\r\n\t\t2r00000110000000000000000000000000\r\n\t\t2r00000011000000000000000000000000\r\n\t\t2r00000011000000000000000000000000) \r\n\toffset: 0@0) magnifyBy: 10."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-17T21:49:53.146308-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-06-17T22:10:21.901308-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "1 bit depth"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "c4ade046-6281-0d00-a9a3-50110948cd4a"
+	}
+}
