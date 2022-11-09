@@ -13,7 +13,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-22T19:00:06.648-04:00"
+			"dateAndTimeString" : "2022-11-06T22:18:59.973834-05:00"
 		}
 	},
 	"editEmail" : {
@@ -24,15 +24,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-22T19:00:17.522-04:00"
+			"dateAndTimeString" : "2022-11-06T22:18:59.973834-05:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Pharo Graphical Stack"
+		"title" : "Add new element to GToolkit home page"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "d8083d88-cea0-0d00-bc1e-d5770f15530d"
+		"uuid" : "8fe91d9f-3aa9-0d00-92a0-bfd5029af186"
 	}
 }
