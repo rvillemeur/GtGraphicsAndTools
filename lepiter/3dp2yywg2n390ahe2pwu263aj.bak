@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:53:26.334173-05:00"
+						"dateAndTimeString" : "2021-06-21T13:10:10.299131-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "SkiaFontManager default\r\n\r\nlist of per letter properties we can potentially have:\r\nDecoration\r\nFontStyle\r\nFontFamilies\r\nFontSize\r\nHeight\r\nHeightOverride\r\nLocale\r\nLetterSpacing\r\nWordSpacing\r\nTextBaseline\r\nColor\r\nHasBackground\r\nBackground\r\nHasForeground\r\nForeground\r\nTextShadows\r\nTypeface\r\nFontFeatures\n\n\n##Update font in GToolkit\n```smalltalk\r\nTBlTextStyleable compile: 'glamorousRegularFont\n    self fontName: ''Desyrel'''.\nTBlTextStyleable compile: 'glamorousRegularDefaultFont\n    self defaultFontName: ''Desyrel'''.\r\n    ```"
+				"string" : "SkiaFontManager default\r\n\r\nlist of per letter properties we can potentially have:\r\nDecoration\r\nFontStyle\r\nFontFamilies\r\nFontSize\r\nHeight\r\nHeightOverride\r\nLocale\r\nLetterSpacing\r\nWordSpacing\r\nTextBaseline\r\nColor\r\nHasBackground\r\nBackground\r\nHasForeground\r\nForeground\r\nTextShadows\r\nTypeface\r\nFontFeatures"
 			}
 		]
 	},

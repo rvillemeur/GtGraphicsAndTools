@@ -42,40 +42,6 @@
 				"string" : "The depth of a Form is how many bits are used to specify the color at each pixel.  The supported depths (in bits) are 1, 2, 4, 8, 16, and 32. The color depth is a measure of an individual image pixel to accurately represent a color. Color  depth is calculated in bits-per-pixel or bpp.\r\n\r\nFor example, 1-bit color depth or 1bpp means a pixel can have a 1-bit color or 2 values. Monochromatic images have 1-bit color depth because a pixel can be true  black or true white.\r\n\r\nThe number of actual colors at these depths are: 2, 4, 16, 256, 32768, and 16 million. For different color depth, you can store a different number of pixel for each element compising the array of data.\r\n\r\n`|Depth   | number of color  | pixel displayed |`\r\n`|--------|------------------|-----------------|`\r\n`|1       |2^1 = 2           | 32              |`\r\n`|2       |2^2 = 4           | 16              |`\r\n`|4       |2^4 = 16          | 8               |`\r\n`|8       |2^8 = 256         | 4               |`\r\n`|16      |2^16 = 32768      | 2               |`\r\n`|32      |2^32 = 16 millions| 1               |`\r\n\r\nThe bits representing the bitmap pixels are packed in rows. The size of each row is rounded up to a multiple of 4 bytes (32 bits). The pixel array describes the image pixel by pixel. You can also have an alpha-channel to add transparency in the image using 32-bit color depth."
 			},
 			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:28.038205-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:31.727618-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ht92tXOpDQCkKRxFAprxhg=="
-				},
-				"url" : "attachments/d07jlh0ap09vskp4e1vipgs4o/Rgb-raster-image.png"
-			},
-			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
