@@ -1987,7 +1987,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T16:11:30.289975-05:00"
+									"dateAndTimeString" : "2022-11-09T16:11:50.622232-05:00"
 								}
 							},
 							"editEmail" : {
@@ -1998,7 +1998,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T16:11:33.654269-05:00"
+									"dateAndTimeString" : "2022-11-09T16:11:50.622232-05:00"
 								}
 							},
 							"uid" : {
@@ -2008,7 +2008,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Bloc exam"
+							"string" : "[[bloc examples]]"
 						},
 						{
 							"__type" : "textSnippet",

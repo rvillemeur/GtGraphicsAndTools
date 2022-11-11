@@ -597,48 +597,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:34:18.055943-05:00"
+						"dateAndTimeString" : "2022-11-11T10:34:12.061082-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "+XPEW5WpDQCU78wmAprxhg=="
 				},
-				"code" : "\rcanvas := FormCanvas extent: 100@100.\r\nrect := Rectangle origin: 0@0 extent: 100@100.\r\ncanvas drawPolygon: {25@0 . 75@0 . 100@25 . 100@75 . 75@100 . 25@100 . 0@75. 0@25} color: Color yellow borderWidth: 2 borderColor: Color black.\r\ncanvas form magnifyBy: 5."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:34:21.983459-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:34:28.73097-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KdtbXJWpDQCU8a0tAprxhg=="
-				},
-				"code" : "canvas := FormCanvas extent: 100@100.\r\nrect := Rectangle origin: 0@0 extent: 100@100.\rfill := GradientFillStyle ramp: {0.0 -> Color white. 1.0 -> Color black}.\r\tfill origin: 0@0.\r\tfill direction: 100@100.\r\tfill normal: 0@100 .\r\tfill radial: true.\r\ncanvas drawPolygon: {25@0 . 75@0 . 100@25 . 100@75 . 75@100 . 25@100 . 0@75. 0@25} fillStyle: fill borderWidth: 2 borderColor: Color red.\r\ncanvas form magnifyBy: 5."
+				"code" : ""
 			}
 		]
 	},
