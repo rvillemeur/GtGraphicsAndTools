@@ -23,13 +23,17 @@ BaselineOfPharoGraphics >> loadLepiter [
 	| dbExist |
 	dbExist := false.
 	LeDatabasesRegistry defaultLogicalDatabase registeredDBs
-		do: [ :e | e uuidString = 'eeyinywcclrst8qypl6okcb2' ifTrue: [ dbExist := true ] ].
+		do: [ :e | e uuidString = '7zlqn4f9rol35oflyp8ho9zyv' ifTrue: [ dbExist := true ] ].
 	dbExist
 		ifFalse: [ LeDatabasesRegistry defaultLogicalDatabase properties
-				addRegisteredDirectory: (FileReference
-						fileSystem: FileSystem disk
-						path: (Path from: 'C:\devzone\sources\note_gtoolkit\lepiter')).
-			LeDatabasesRegistry default defaultLogicalDatabase reload ]
+				addRegisteredDirectory: FileLocator imageDirectory
+			/ 'pharo-local'
+			/ 'iceberg'
+			/ 'rvillemeur'
+			/ 'PharoGraphics'
+			/ 'lepiter'.
+	
+	LeDatabasesRegistry default defaultLogicalDatabase reload. ]
 ]
 
 { #category : #accessing }
