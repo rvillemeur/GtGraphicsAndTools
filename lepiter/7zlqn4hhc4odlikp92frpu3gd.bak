@@ -13,7 +13,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:32:43.31945-04:00"
+			"dateAndTimeString" : "2022-11-05T15:32:20.526825-04:00"
 		}
 	},
 	"editEmail" : {
@@ -24,15 +24,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:32:51.511092-04:00"
+			"dateAndTimeString" : "2022-11-05T15:32:38.851837-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Morphic Environment"
+		"title" : "Introduction to raster graphics"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "78abbcfd-1fa9-0d00-9300-f7ba029af186"
+		"uuid" : "fde160fc-1fa9-0d00-92fe-af61029af186"
 	}
 }

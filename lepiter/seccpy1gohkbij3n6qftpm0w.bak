@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:15:10.676-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-07-22T19:15:10.676-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8KmZvc6gDQC8igI4DxVTDQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Styling spec2.\r\n\r\nSpec2 allows you to style your widget, either morphic or Gtk.\r\nHere, we'll focus on morphic, which is the only platform  I work on currently.\r\n\r\nSpMorphStyle class >> fromStylesheet: aStyle adapter: anAdapter\r\n\t\"I collect all styles that apply to an adapter.\r\n\t I traverse all styles in a very precise order: from more generic to more specific, this way \r\n\t the order of the collected elements will be in reverse order of execution.\"\r\n\r\n\r\nfind style name for morphic element:\r\n\r\nSpAbstractMorphicAdapter >> styleName\r\n^ ((self className withoutPrefix: 'SpMorphic') allButLast: 7) uncapitalized\r\n\r\n=> SpMorphicLabelAdapter -> Label\r\n\r\n\r\nWe first collect the style for the presenter, then we collect style for is \r\nspecific sub-element. 'application' is the default root level, there is no \r\n'application' adapter.\r\n\r\nA defined stylesheet has to have always a root element, and this root element \r\nneeds to be called '.application'. \r\n\r\nSo each style follow a cascading style, starting from .application\r\nlike\r\n.application.label.header\r\n.application.link\r\n.application.checkBox\r\n\r\n\r\nA style can be declared through the STON notation.\r\nEach style can follow in on of these category with properties taken from\r\nobject messages. \r\n - Container -> SpStyleContainer\r\n - Draw -> SpStyleDraw\r\n - Font -> SpStyleFont\r\n - Geometry -> SpStyleGeometry.\r\n \r\n\r\nExample:\r\n    Geometry { #hResizing: true }\r\n    Draw { #color:  Color{ #red: 1, #green: 0, #blue: 0, #alpha: 1}}\r\n    Draw { #color: #blue}\r\n    Font { #name: \"Lucida Grande\", #size: 10, #bold: true }\r\n    Container { #borderColor: Color { #rgb: 0, #alpha: 0 }, #borderWidth: 2, #padding: 5 },\r\n    \r\nyou can define your style globaly, and to your specific presenter, with the 'addStyle:'\r\nmessage: addStyle: 'section'. This message is specific to the SpAbstractMorphicAdapter backend.\r\n\r\nstyleSheet\r\n\t^ SpStyleSTONReader fromString: '\r\n.application [\r\n\tFont { #name: \"Source Sans Pro\", #size: 10 },\r\n\tGeometry { #height: 25 },\r\n\t.label [\r\n\t\tGeometry { #hResizing: true },\r\n\t\t.headerError [Draw { #color:  Color{ #red: 1, #green: 0, #blue: 0, #alpha: 1}}  ],\r\n\t\t.headerSuccess [Draw { #color: Color{ #red: 0, #green: 1, #blue: 0, #alpha: 1}}  ],\r\n\t\t.header [ \r\n\t\t\tDraw { #color: Color{ #rgb: 622413393 }},\r\n\t\t\tFont { #name: \"Lucida Grande\", #size: 10, #bold: true } ],\r\n\t\t.shortcut [ \r\n\t\t\tDraw { #color: Color{ #rgb: 622413393 } },\r\n\t\t\tFont { #name: \"Lucida Grande\", #size: 10 }\r\n\t\t],\r\n\t\t.fixed [ \r\n\t\t\tGeometry { #hResizing: false, #width: 100 }\r\n\t\t],\r\n\t\t.dim [\r\n\t\t\tDraw { #color : Color{ #rgb: 708480675 } }\r\n\t\t]\r\n\t],\r\n\t.link [  \r\n\t\tGeometry { #hResizing: true }\t\t\r\n\t],\r\n\t.button [  \r\n\t\tGeometry { #width: 100 },\r\n\t\t.small [\r\n\t\t   Geometry { #width: 26 }\r\n\t\t]\r\n\t],\r\n\t.checkBox [  \r\n\t\tGeometry { #hResizing: true }\r\n\t],\r\n\t.radioButton [ \r\n\t\tGeometry { #hResizing: true }\r\n\t],\r\n\t.dropList [ \r\n\t\tGeometry { #width: 150, #hResizing: true }\r\n\t],\r\n\t.list [ \r\n\t\tGeometry { #width: 150, #hResizing: true, #vResizing: true }\r\n\t],\r\n\t.slider [\r\n\t\tGeometry { #width: 150, #hResizing: true }\r\n\t],\r\n\t.actionBar [  \r\n\t\tContainer { \r\n\t\t\t#borderColor: Color { #rgb: 0, #alpha: 0 }, \r\n\t\t\t#borderWidth: 2, \r\n\t\t\t#padding: 5 },\r\n\t\tGeometry { #width: 150, #height: 29, #hResizing: true, #vResizing: false }\r\n\t],\r\n\t.menuBar [\r\n\t\tGeometry { #width: 150, #hResizing: true }\r\n\t],\r\n\t.actionButton [  \r\n\t\tGeometry { #width: 60, #hResizing: false },\r\n\t\t.showIcon [ Geometry { #width: 25 } ]\r\n\t],\r\n\t.toolBar [ \r\n\t\tGeometry { #hResizing: true },\r\n\t\t.icons [ \r\n\t\t\tGeometry { #height: 30 }\r\n\t\t],\r\n\t\t.iconsAndLabel [  \r\n\t\t\tGeometry { #height: 45 }\r\n\t\t]\r\n\t],\r\n\t.text [ \r\n\t\tGeometry { #height: 0 }\r\n\t],\r\n\t.code [\r\n\t\tFont { #name : \"Source Code Pro\", #size : 10 }\r\n\t],\r\n\t.codePopover [ \r\n\t\tDraw { #color : #transparent },\r\n\t\t.button [\r\n\t\t\tGeometry { #width : 25 }\r\n\t\t]\r\n\t],\r\n\t.scrollbarPopoverLarge [ \r\n\t\tGeometry { #height: 350 } \r\n\t]\r\n]\r\n'\r\n\t\t\r\n\r\nstyleSheet\r\n\t^ SpStyle defaultStyleSheet, (SpStyleSTONReader\r\n\t\tfromString:\r\n\t\t\t'\r\n.application [\r\n\tDraw { #backgroundColor: #lightRed},\r\n\t.section [ \r\n\t\t\tDraw { #color: #green, #backgroundColor: #lightYellow},\r\n\t\t\tFont {  #name: \"Verdana\", #size: 12, #italic: true, #bold: true}],\r\n\t.disabled [ Draw { #backgroundColor: #lightGreen} ],\r\n\t.textInputField [ Draw { #backgroundColor: #blue} ],\r\n\t.label [\r\n\t\tFont {  #name: \"Verdana\", #size: 10, #italic: false, #bold: true},\r\n\t\tDraw { #color: #red, #backgroundColor: #lightBlue}\r\n\t]\r\n]\r\n')\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:15:01.88-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-07-22T19:15:08.406-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Spec2 - style"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "c03499bd-cea0-0d00-bc89-2d500f15530d"
+	}
+}
