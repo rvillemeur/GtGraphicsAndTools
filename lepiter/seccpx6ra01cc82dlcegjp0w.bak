@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T20:45:14.454787-05:00"
+						"dateAndTimeString" : "2022-11-15T20:45:02.375805-05:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Morphic has a basic animation framework builtin, where you mainly have to overwrite {{gtMethod:name=Morph>>step}} and {{gtMethod:name=Morph>>stepTime}}\n\nHere is a concrete and complete example.  It shows a F and a E letter, and an inverse F letter, all defined in a Form. Each letter has a size of 4@6 pixel, magnified by 25, so 100@150 pixels.\r\nThe Form itself has been defined with only 1 color depth, to ease its understanding.\r\n\r\nEvery 500ms, the canvas is redisplayed, and a new section of the Form is displayed.\n\n1. First, declare a new Morph:\n{{gtClass:name=RdvBasicMorphAnimation|expanded}}\r\n\n"
+				"string" : "Morphic has a basic animation framework builtin, where you mainly have to overwrite {{gtMethod:name=Morph>>step}} and {{gtMethod:name=}}\n\nHere is a concrete and complete example.  It shows a F and a E letter, and an inverse F letter, all defined in a Form. Each letter has a size of 4@6 pixel, magnified by 25, so 100@150 pixels.\r\nThe Form itself has been defined with only 1 color depth, to ease its understanding.\r\n\r\nEvery 500ms, the canvas is redisplayed, and a new section of the Form is displayed.\n\n1. First, declare a new Morph:\n{{gtClass:name=RdvBasicMorphAnimation|expanded}}\r\n\n"
 			},
 			{
 				"__type" : "textSnippet",
