@@ -653,7 +653,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:23:38.939062-05:00"
+									"dateAndTimeString" : "2022-11-15T19:54:47.425238-05:00"
 								}
 							},
 							"editEmail" : {
@@ -664,86 +664,12 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:23:38.939062-05:00"
+									"dateAndTimeString" : "2022-11-15T19:54:47.425238-05:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "qiFm0G2pDQCTB2hqAprxhg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Morphic Environment]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:29:25.985296-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:29:25.985296-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "Sl9I8R+pDQCS3S8xAprxhg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[Morph widget layout]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T15:09:11.903267-05:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T15:09:11.903267-05:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "h30H93CpDQCXAfsZAprxhg=="
+								"uidString" : "xM2Gp+2pDQCe9ju8B5qlGQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
@@ -764,7 +690,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:29:30.123286-05:00"
+									"dateAndTimeString" : "2022-11-05T15:29:25.985296-04:00"
 								}
 							},
 							"editEmail" : {
@@ -775,17 +701,54 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:29:30.123286-05:00"
+									"dateAndTimeString" : "2022-11-15T19:54:09.144825-05:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "kHUN5W2pDQCTIrCnAprxhg=="
+								"uidString" : "Sl9I8R+pDQCS3S8xAprxhg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[morphic widget composition and layout]]"
+							"string" : "[[Morph composition and layout]]"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-15T19:53:42.690602-05:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-11-15T19:53:42.690602-05:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "knqko+2pDQCe8OjSB5qlGQ=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "[[Morphic Widget]]"
 						}
 					]
 				},
