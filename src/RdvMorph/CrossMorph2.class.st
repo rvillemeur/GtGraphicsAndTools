@@ -7,6 +7,13 @@ Class {
 	#category : #RdvMorph
 }
 
+{ #category : #'geometry testing' }
+CrossMorph2 >> containsPoint: aPoint [
+
+	^ (self horizontalBar containsPoint: aPoint) or: [
+		  self verticalBar containsPoint: aPoint ]
+]
+
 { #category : #accessing }
 CrossMorph2 >> defaultExtent [
 	^ 60@60
@@ -16,6 +23,16 @@ CrossMorph2 >> defaultExtent [
 CrossMorph2 >> defaultLabel [
 
 	^ 'CrossMorph tutorial'
+]
+
+{ #category : #drawing }
+CrossMorph2 >> drawOn: aCanvas [
+
+	| topAndBottom |
+	aCanvas fillRectangle: self horizontalBar color: self color.
+	topAndBottom := self verticalBar areasOutside: self horizontalBar.
+	topAndBottom do: [ :each |
+		aCanvas fillRectangle: each color: self color ]
 ]
 
 { #category : #geometry }
@@ -42,6 +59,25 @@ CrossMorph2 >> initialize [
 { #category : #'instance creation' }
 CrossMorph2 >> open [
 	<script: 'self new openInWorld'>
+]
+
+{ #category : #'event handling' }
+CrossMorph2 >> processKeyDown: anEvent [
+
+	| key |
+	key := anEvent key.
+	key = KeyboardKey up ifTrue: [
+		self position: self position - (0 @ 10) ].
+	key = KeyboardKey down ifTrue: [
+		self position: self position + (0 @ 10) ].
+	key = KeyboardKey right ifTrue: [
+		self position: self position + (10 @ 0) ].
+	key = KeyboardKey left ifTrue: [
+		self position: self position - (10 @ 0) ].
+
+	anEvent controlKeyPressed ifTrue: [
+		anEvent keyCharacter == $d ifTrue: [
+			self position: self position + (0 @ 10) ] ]
 ]
 
 { #category : #'event handling' }
