@@ -66,14 +66,16 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:29.281299-05:00"
+						"dateAndTimeString" : "2024-08-19T17:18:46.988-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ghB/vHOpDQCkMONyAprxhg=="
 				},
-				"url" : "attachments/d07jlh1fokeudchcsklb0hd80/Raster_graphic_fish_20x23squares_sdtv-example.png"
+				"url" : "attachments/d07jlh1fokeudchcsklb0hd80/Raster_graphic_fish_20x23squares_sdtv-example.png",
+				"caption" : "",
+				"previewHeight" : 300
 			},
 			{
 				"__type" : "textSnippet",

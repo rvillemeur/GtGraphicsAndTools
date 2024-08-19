@@ -3,7 +3,45 @@
 	"__type" : "page",
 	"children" : {
 		"__type" : "snippets",
-		"items" : [ ]
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-14T19:42:26.955376-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-14T19:42:26.955376-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "H4T2XNmpDQCgU1xzB5qlGQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Computer are fascinating. I have been lucky to discover the IT world at the end\nof the 90's, when internet was at its very beginning, and Windows 95 was the best\nthings in the world. A whole universe containted in a box, with different layer:\n\n- hardware\n- software\n- operating system\n- programming language\n- database\n- internet\n- etc...\n\nThe possibilities looked endlessly. I wanted to understand how everything was\nworking, and master the *magic* behind it. During my quest, one day, I\ndiscovered *Pharo smalltalk*. At first, curious about its surprising syntax, which\nis completely appart of the dominant language I knew at that time (C/C++, javascript,\na little bit of Python), I quickly went to appreciate the full environment.\n\nComputer are themselvers a full universe, and *Pharo* contain a complete world, completely\nopen to study, with a regular syntax. No more specific tools to master, no obscure\nframework, no hidden code or closed library, everything is available in the image.\n\nWhen I say everything, I really mean everything. Compiler, graphics stacks, syntax,\neverything is defined and available right in the image. The Virtual Machine itself\nis written in *Pharo*, and its code can be browsed and studied with the same tool you\nuse to write and manipulate *Pharo*.\n\nAs a quick reminder, the whole Pharo syntax can be expressed on postcard, as\nillustratred [here](https://commons.wikimedia.org/wiki/File:Pharo_syntax_postcard.svg).\nYou can find all information you need on *Pharo* directly on the project page:\n[pharo](https://www.pharo.org)\n\nThis blog is the result of my exploration. I hope you'll find usefull information\nin here, and get the same fun at deep diving into the *Pharo* World than I had.\n\n## Computer graphics and Pharo graphical stacks\n\nOne of the first things that caught my attention with computer was Graphics. If\ncomputer can be mysterious, graphics looked like magic."
+			}
+		]
 	},
 	"createEmail" : {
 		"__type" : "email",
