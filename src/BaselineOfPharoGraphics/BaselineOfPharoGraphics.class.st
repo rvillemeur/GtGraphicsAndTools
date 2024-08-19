@@ -11,11 +11,7 @@ BaselineOfPharoGraphics >> baseline: spec [
 		for: #common
 		do: [ spec postLoadDoIt: #loadLepiter.
 			spec
-				package: 'RdvBloc';
-				package: 'RDV-Athens-Hello';
-				package: 'RdvMorph';
-				package: 'RdvSpec';
-				package: 'rdv-test']
+				package: 'RdvBloc']
 ]
 
 { #category : #accessing }
