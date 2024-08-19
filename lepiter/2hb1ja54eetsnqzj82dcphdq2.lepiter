@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:55:46.184357-05:00"
+						"dateAndTimeString" : "2023-07-04T08:54:39.212432-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:57:16.26751-05:00"
+						"dateAndTimeString" : "2023-07-04T08:55:14.882841-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "EAXtqu2pDQCe/U8rB5qlGQ=="
+					"uidString" : "2n/jhQq8DQCZt8Q/DBnnKQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Depiste being able to draw low level and interact with a fine grain detail (with bounds, events, drawing, etc...). morphic comes with a full set of high level widget that are ready to use to create user interface. They can be found in the following packages;"
+				"string" : "To open a presentation in a new window"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-04T08:54:51.965825-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-04T08:54:53.09417-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "TBGmhgq8DQCaVH1bDBnnKQ=="
+				},
+				"code" : "GtPresenterSlideShow openInSpace: GtTour"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:57:55.135011-05:00"
+						"dateAndTimeString" : "2023-07-04T08:54:36.512054-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +100,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:58:52.394641-05:00"
+						"dateAndTimeString" : "2023-07-04T08:56:39.777893-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "bA/9se2pDQCfAK+rB5qlGQ=="
+					"uidString" : "mUu6hQq8DQCZtnw6DBnnKQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##basic widget (button, checkbox, etc...)\n{{gtPackage:name=Morphic-Widgets-Basic}}"
+				"string" : "To open a presentation in a new tab"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-04T08:56:43.018661-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2023-07-04T08:56:44.03314-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CZhEjQq8DQCbksihDBnnKQ=="
+				},
+				"code" : "GtPresenterSlideShow create: GtTour new"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +160,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:59:23.888277-05:00"
+						"dateAndTimeString" : "2023-07-04T09:14:44.626576-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +171,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:59:33.0284-05:00"
+						"dateAndTimeString" : "2023-07-04T09:23:12.397067-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "aXdXuO2pDQCfA8J4B5qlGQ=="
+					"uidString" : "/KC8zQq8DQCfTDE5DBnnKQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Color picker\n{{gtPackage:name=Morphic-Widgets-ColorPicker}}"
+				"string" : "Presentation with text pointing to code element example . Look at:\n{{gtMethod:name=GtTour>>viewsExplanationSlideFor:|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +197,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T20:00:14.645992-05:00"
+						"dateAndTimeString" : "2024-03-13T17:05:43.182-04:00"
 					}
 				},
 				"editEmail" : {
@@ -140,91 +208,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T20:00:27.318848-05:00"
+						"dateAndTimeString" : "2024-03-13T17:05:44.166-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CCpqu+2pDQCfB5LcB5qlGQ=="
+					"uidString" : "sN7t3/LPDQC5TBo1DHyM3Q=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Extra widget\n{{gtPackage:name=Morphic-Widgets-Extra}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:50:19.993196-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:58:45.154424-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "Vm0ml+2pDQCe3hBqB5qlGQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##Window widget (Alert, about dialog, etc..)\n{{gtPackage:name=Polymorph-Widgets}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T20:00:59.380176-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T20:02:05.565926-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "OsTdve2pDQCfCpy5B5qlGQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "do not hesitate to explore the various **Morphic-Widgets-** packages. You'll find lot of ready to use widget, that can be composed through morphic layout to create high level graphical user interface"
+				"string" : "See {{gtClass:name=GtSlideShow}}  and {{gtClass:GtPharo101}} for example\r{{gtMethod:name=GtLiveShow class>>create:}}  *MySlideShow*. \r\nSlides are defined  within method with pragma <gtSlide> Theses method accept aSlide, which is an instance of {{gtClass:name=GtLiveSlide}} or one of its subclass,which are themselves subclasses of {{gtClass:name=BrStencil}} \r\nlike {{gtMethod:GtPharo101>>dictionaryExplanationSlideFor:|expanded}}"
 			}
 		]
 	},
@@ -236,7 +230,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-15T19:50:05.372233-05:00"
+			"dateAndTimeString" : "2023-07-04T08:54:23.758075-04:00"
 		}
 	},
 	"editEmail" : {
@@ -247,15 +241,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-15T19:50:17.742685-05:00"
+			"dateAndTimeString" : "2023-07-04T08:54:23.758075-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Morphic Widget"
+		"title" : "GtSlideShow"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "43162597-eda9-0d00-9edd-f7f5079aa519"
+		"uuid" : "ba18a184-0abc-0d00-99ab-c6230c19e729"
 	}
 }

@@ -1,0 +1,184 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-07T18:26:29.732-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-01-26T20:53:57.181529-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qBC4CdumDQCCM6YKDBev2w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#1. customize inspector\rAdd a method on the instance side, with pragma **<gtView>** and **<gtClassView>**\rEx:\rgtViewContactsListOn: aView\r\t<gtView>\r\t\raView is a subtype of {{gtClass:name=GtPhlowProtoView}} or {{gtClass:name=GtPhlowView}} \t\r\r\nTo get a list of all the view in the system:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-07T18:27:23.396-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-07T18:28:01.754-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oBMADdumDQCCOOcZDBev2w=="
+				},
+				"code" : "#gtView gtPragmas"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T18:30:20.753-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T18:31:57.236-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SPud+MamDQCD/HocDBev2w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#async <gtView>\r\nSpeaking of async things, one pattern that I've caught myself using a lot recently is lazy initialization of slots with a promise, and that promise driving one or more views/Blelements/etc. For example:\r\n```smalltalk\r\nexpensiveComputation\r\n  ^ aVariable ifNil: [ aVariable := [ NeoJSONObject fromString: (Znclient new get: 'https://a.big.json.response') ] asAsyncFuture await ]\r\n  ```"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T18:31:19.026-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-06T18:33:21.127-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MNm1/MamDQCEAVOEDBev2w=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Then using a **BrAsyncWidget** inside an explicit view:\r\n```smalltalk\r\ngtRawDataFor: aView\r\n  <gtView>\r\n  ^ aView explicit\r\n    title: 'Raw Data';\r\n    priority: 1;\r\n    stencil: [\r\n    BrAsyncWidget new\r\n    matchParent;\r\n    stencil: [ self expensiveComputation wait.\r\n      (self expensiveComputation gtTreeFor: GtPhlowEmptyView new) asElement\r\n    ]\r\n  ]\r\n  ```\r\n  \r\nThis keeps the UI snappy and things never hang, you get visual 'feedback' while waiting for view/response, you can cancel the future (but hopefully the underlying one is not cancelled so that even if you close inspector it may finish in the background to not waste the computation so next time you open it's not re-fetched under normal conditions, unclear cause haven't tested), you have computation/data cached for next time unless you need to recalculate so can set slot to nil and you can share computation amongst view/elements/other components.\r\n[source](https://discord.com/channels/729445214812504107/737255889517543545/1026718959111786506)"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-10-06T18:30:02.048-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-10-06T18:30:11.709-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "GtInspector"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "18869df8-c6a6-0d00-83fb-b1b30c17afdb"
+	}
+}

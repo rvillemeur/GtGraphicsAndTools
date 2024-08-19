@@ -1,0 +1,289 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:39:31.27-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:40:00.193-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GJbaMFqODQCT3W0LBkwObw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "open file located at: C:\\Users\\renaud\\AppData\\Roaming\\pharo\\PharoStartup.st and put following code"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:38:53.676-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:40:33.415-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4Hn2MVqODQCT4PFnBkwObw=="
+				},
+				"code" : "StartupPreferencesLoader default executeAtomicItems: {\rStartupAction name: 'default lepiter location' code: [\r\n            fileReference := LepiterCoreDefaults defaultLocalLogicalDatabasePropertiesFileReference.\r\n            data := (NeoJSONReader on: fileReference readStream) next.\r\n            data at: #primaryDatabaseDirectory put: 'c:\\devzone\\sources\\lepiter\\default'.\r\n            data at: #playgroundDatabaseDirectory put: 'c:\\devzone\\sources\\lepiter\\default'.\r\n            database := data at: #registeredDatabaseDirectories.\r\n            (database size > 1) ifFalse: [ data at: #registeredDatabaseDirectories put: (Array with:  'C:\\devzone\\sources\\note_gtoolkit\\lepiter' withAll: database)].\r\n            fileReference writeStreamDo: [ :stream |\r\n                (NeoJSONWriter on: stream)\r\n                prettyPrint: true;\r\n                nextPut: data ].\r\n            ] runOnce: true.\r}."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:40:51.476-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-11-29T21:41:15.491-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oDXnOFqODQCT53ahBkwObw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This will update the default location of lepiter database, as well as include one personnal location"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-05-29T21:57:14.267-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-05-29T21:57:55.272-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8MfctZKcDQCXRNhiCJ56vQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "another way to load the lepiter database come from the following snippets: [https://github.com/feenkcom/gt4edx/blob/4d57e4c9993de6e2e22a5d27dd7809f012f67ee1/src/BaselineOfGToolkit4Edx/BaselineOfGToolkit4Edx.class.st#L8]"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-05-29T21:57:45.092-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-05-29T21:58:20.686-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oL8ZuJKcDQCXSavQCJ56vQ=="
+				},
+				"code" : "\t| currentProperties |\r\n\tcurrentProperties := LeDatabasesRegistry defaultLogicalDatabase properties.\r\n\tcurrentProperties\r\n\t\taddRegisteredDirectory: FileLocator imageDirectory\r\n\t\t\t/ 'pharo-local'\r\n\t\t\t/ 'iceberg'\r\n\t\t\t/ 'feenkcom'\r\n\t\t\t/ 'gt4edx'\r\n\t\t\t/ 'lepiter'.\r\n\t\r\n\tLeDatabasesRegistry default defaultLogicalDatabase reload."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-13T11:16:13.666-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-13T11:18:01.382-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0HIM/u3PDQClFGyQDHyM3Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "snippet taken from [AOC2023](https://github.com/onierstrasz/AOC2023/blob/main/src/BaselineOfAOC2023/BaselineOfAOC2023.class.st) demo . You'll simply need to call `#BaselineOfAOC2023 asClass loadLepiter.` "
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-13T11:16:20.882-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-03-13T11:16:21.972-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aIp6/u3PDQClcyjnDHyM3Q=="
+				},
+				"code" : "BaselineOfAOC2023 class >> loadLepiter [\r\n\tIceRepository registry  \r\n\t\tdetect: [ :aRepository |\r\n\t\t\taRepository name = 'AOC2023' ]\r\n\t\tifFound: [ :aRepository | \r\n\t\t\t| defaultDatabase currentProperties |\r\n\t\t\tdefaultDatabase := LeDatabasesRegistry defaultLogicalDatabase.\r\n\t\t\tcurrentProperties := defaultDatabase properties.\r\n\t\t\tcurrentProperties addRegisteredDirectory: aRepository repositoryDirectory / 'lepiter'.\r\n\t\t\tdefaultDatabase reload ]\r\n\t\tifNone: [\r\n\t\t\tself inform: 'Repository not found.' ]\r\n]"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-11-29T21:38:34.993-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2021-11-29T21:38:46.858-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "experiment with lepiter"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "6865d930-5a8e-0d00-93dc-c203064c0e6f"
+	}
+}

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:14:06.313-04:00"
+						"dateAndTimeString" : "2024-01-26T18:31:08.644459-05:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:14:06.313-04:00"
+						"dateAndTimeString" : "2024-01-26T18:38:15.934858-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UBzGuc6gDQC8gBzfDxVTDQ=="
+					"uidString" : "mDx3bUPMDQCrY4ROAR/bNw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Commander\r\nAdd command to menu and action item => see doc in the booklet."
+				"string" : "Add a custom action button to class view or instance view. This is specified by the pragma <gtAction> ou <gtClassAction>. For example, {{gtClass:name=GtPharo101}} get two class method from `TGtSlideShow` traits that add custom button to the toolbar, for launching presentation in a new inspector, or in a new space window"
 			}
 		]
 	},
@@ -51,7 +51,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-22T19:13:57.668-04:00"
+			"dateAndTimeString" : "2024-01-26T18:31:13.946005-05:00"
 		}
 	},
 	"editEmail" : {
@@ -62,15 +62,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-22T19:14:05.397-04:00"
+			"dateAndTimeString" : "2024-01-26T18:31:13.946005-05:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Spec2 - commander"
+		"title" : "GtAction"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "a068c5b9-cea0-0d00-bc7f-b2ab0f15530d"
+		"uuid" : "1ee3766d-43cc-0d00-ab62-b5ad011fdb37"
 	}
 }

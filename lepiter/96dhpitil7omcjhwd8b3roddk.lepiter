@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:13:19.588946-05:00"
+						"dateAndTimeString" : "2022-07-22T20:31:53.627-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:40:22.314077-05:00"
+						"dateAndTimeString" : "2022-07-22T20:32:02.96-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XDiHE+2pDQCeuHpIB5qlGQ=="
+					"uidString" : "CLRaz8+gDQCrwFo6DgkDmw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Every Morph now has the capability to layout it's submorphs if it is given a LayoutPolicy. The default is to have no layout policy. Each Morph may have its own LayoutPolicy: either a *ProportionalLayout* or a *TableLayout* \n\n*AlignmentMorph*, which originaly was the only morph who could implement layout policies, is  available because of compatibility reasons and some utility methods it implements.\n\nYou should also be able to make your own subclasses of **LayoutPolicy**.\n\nexample are given in the method of {{gtClass:name=RdvMorphLayoutExample}}"
+				"string" : "Script powershell pour télécharger Gtoolkit"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-05T15:21:44.486698-04:00"
+						"dateAndTimeString" : "2022-11-09T16:54:11.969438-05:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:48:23.004363-05:00"
+						"dateAndTimeString" : "2022-11-09T16:54:11.969438-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "a3Fb1h+pDQCStTNwAprxhg=="
+					"uidString" : "KHYS0c+gDQCrwZ49DgkDmw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[source 1](https://wiki.squeak.org/squeak/2141)\n\n[source 2](https://wiki.squeak.org/squeak/2765)"
+				"string" : "```\r\n$baseURL = \"https://dl.feenk.com/gt/\"\n$folder = \"c:\\devzone\\\"\n\ncd $folder\n\n\"remove previous version of GToolkit\"\nRemove-Item -Path ($folder + \"GlamorousToolkitWin64\") -Recurse\n\n\"download Gtoolkit\"\n$byte = Invoke-WebRequest -Uri ($baseURL + \"GlamorousToolkitWin64-release\")  | Select-Object -ExpandProperty Content\n$version =  [System.Text.Encoding]::ASCII.GetString($byte).replace(\"`n\",\"\")\n\n$url = $baseURL + $version\nInvoke-WebRequest -Uri $url -OutFile ($folder + $version)\n\n\n\"extract and rename folder\"\nExpand-Archive -Path $version -DestinationPath ($folder + \"GlamorousToolkitWin64\") -verbose\n#$folderName  = $version.Substring(0, $version.IndexOf(\\\".zip\\\"))\n#Rename-Item $folderName GlamorousToolkitWin64\n\n\"remove archive\"\nRemove-Item -Path ($folder + 'GlamorousToolkit-Windows*.zip') \r\n```"
 			}
 		]
 	},
@@ -88,7 +88,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:21:42.543242-04:00"
+			"dateAndTimeString" : "2022-07-22T20:31:34.691-04:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +99,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-15T19:54:09.130382-05:00"
+			"dateAndTimeString" : "2022-07-22T20:31:52.525-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Morph composition and layout"
+		"title" : "get_latest_gtoolkit.ps1"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "87fe59d6-1fa9-0d00-92b4-8553029af186"
+		"uuid" : "b8f059cf-cfa0-0d00-abbf-42c00e09039b"
 	}
 }
