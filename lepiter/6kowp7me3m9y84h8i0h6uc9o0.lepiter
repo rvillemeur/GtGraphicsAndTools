@@ -5,7 +5,7 @@
 		"__type" : "snippets",
 		"items" : [
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:13:19.588946-05:00"
+						"dateAndTimeString" : "2022-06-09T22:27:57.296-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:40:22.314077-05:00"
+						"dateAndTimeString" : "2022-06-09T22:28:19.93-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XDiHE+2pDQCeuHpIB5qlGQ=="
+					"uidString" : "gOlebHCdDQCBzZZABjULeg=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Every Morph now has the capability to layout it's submorphs if it is given a LayoutPolicy. The default is to have no layout policy. Each Morph may have its own LayoutPolicy: either a *ProportionalLayout* or a *TableLayout* \n\n*AlignmentMorph*, which originaly was the only morph who could implement layout policies, is  available because of compatibility reasons and some utility methods it implements.\n\nYou should also be able to make your own subclasses of **LayoutPolicy**.\n\nexample are given in the method of {{gtClass:name=RdvMorphLayoutExample}}"
+				"code" : "LepiterCoreDefaults defaultLocalLogicalDatabasePropertiesFileReference"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +52,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-05T15:21:44.486698-04:00"
+						"dateAndTimeString" : "2022-06-09T22:28:44.276-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +63,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:48:23.004363-05:00"
+						"dateAndTimeString" : "2022-06-09T22:28:49.143-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "a3Fb1h+pDQCStTNwAprxhg=="
+					"uidString" : "GF2IbnCdDQCB0iSvBjULeg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[source 1](https://wiki.squeak.org/squeak/2141)\n\n[source 2](https://wiki.squeak.org/squeak/2765)"
+				"string" : "browsing databases:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-06-09T22:28:53.726-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-06-09T22:28:54.684-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MPe7b3CdDQCB1KqSBjULeg=="
+				},
+				"code" : "(LeDatabasesRegistry defaultLogicalDatabase databasesDo: [ :db | db databaseName = 'notes personnelles' ifTrue: [^true]]) "
 			}
 		]
 	},
@@ -88,7 +119,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:21:42.543242-04:00"
+			"dateAndTimeString" : "2021-11-29T21:44:14.87-05:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +130,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:21:50.957323-04:00"
+			"dateAndTimeString" : "2021-11-29T21:44:34.226-05:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Morph widget layout"
+		"title" : "Lepiter - taking note dynamically"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "87fe59d6-1fa9-0d00-92b4-8553029af186"
+		"uuid" : "f0811b45-5a8e-0d00-93ef-d78a064c0e6f"
 	}
 }

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2023-07-30T23:43:47.318534-04:00"
+						"dateAndTimeString" : "2023-07-30T23:43:25.519626-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Root: BlElement\r\n\r\nDefines\r\n\t- geometry (shape) and bounds (BlBounds)\r\n\t- size\r\n\t- background (BlBackground). Paints (BlPaint) are used for background, border, text fill or stroke.\r\n\t- border (BlBorder)\r\n\t- opacity\r\n\t- layout and children composition. (BlLayout, BlChildren, and their children)\r\n\t- event handling (BlEvent and children)\r\n\r\nYou can add element with **addChild:**, and the will be disposed according the \r\nthe layout specified.\r\n\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\nYou can apply transformation to a BlElement:\r\n* rotation\r\n* translation\r\n* Scaling\r\n* reflection\r\n* etc...\r\n\r\n**important class to look at**\r\n{{gtClass:BlElement}}\r\n{{gtClass:BlBackground}}\r\n{{gtClass:BlGeometryVisualAndLayoutBoundsExamples}}\r\n{{gtClass:BlBasicShortcut}}\r\n{{gtClass:BrStencil}}\n\n**adding style to element state**\n{{gtClass:BlElementStyle}}\n{{gtClass:BlElementProperties}}\n{{gtClass:BlElementState}}"
+				"string" : "Root: BlElement\r\n\r\nDefines\r\n\t- geometry (shape) and bounds (BlBounds)\r\n\t- size\r\n\t- background (BlBackground). Paints (BlPaint) are used for background, border, text fill or stroke.\r\n\t- border (BlBorder)\r\n\t- opacity\r\n\t- layout and children composition. (BlLayout, BlChildren, and their children)\r\n\t- event handling (BlEvent and children)\r\n\r\nYou can add element with **addChild:**, and the will be disposed according the \r\nthe layout specified.\r\n\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\nYou can apply transformation to a BlElement:\r\n* rotation\r\n* translation\r\n* Scaling\r\n* reflection\r\n* etc...\r\n\r\n**important class to look at**\r\n{{gtClass:BlElement}}\r\n{{gtClass:BlBackground}}\r\n{{gtClass:BlGeometryVisualAndLayoutBoundsExamples}}\r\n{{gtClass:BlBasicShortcut}}\r\n{{gtClass:BrStencil}}\n\n**adding style to element state**\n{{gtClass:BlElementStyle}}\n{{gtClass:BlElementPro}}"
 			},
 			{
 				"__type" : "textSnippet",

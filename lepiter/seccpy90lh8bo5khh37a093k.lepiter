@@ -211,7 +211,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:23:39.526-04:00"
+						"dateAndTimeString" : "2022-11-14T19:55:51.033424-05:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +221,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Through the color map, you can access different color than the default defined\r\nin the color depth. Furthermore, Color can be be defined with alpha channel.\r\n\r\nClass Color allows you to deal with colors without knowing how they\r\nare actually encoded inside a Bitmap."
+				"string" : "Through the color map, you can access different color than the default defined in the color depth. Furthermore, Color can be be defined with alpha channel.\r\n\r\nClass **Color** allows you to deal with colors without knowing how they are actually encoded inside a Bitmap."
 			},
 			{
 				"__type" : "textSnippet",

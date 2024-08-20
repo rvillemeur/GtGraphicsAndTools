@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:18.010951-05:00"
+						"dateAndTimeString" : "2021-06-08T22:25:54.116114-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,53 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:28:03.211392-05:00"
+						"dateAndTimeString" : "2022-07-22T20:38:38.35-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AskEvHOpDQCkLsMyAprxhg=="
+					"uidString" : "igIcu62ADQCrqxvED4+utw=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A raster graphic represents a two-dimensional picture as a rectangular matrix or grid of square pixels, viewable via a computer display, paper, or other display medium. A raster is technically characterized by the **width** and **height** of the image in **pixels** and by the **number of bits per pixel**. \n"
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:26.015545-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T17:18:46.988-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ghB/vHOpDQCkMONyAprxhg=="
-				},
-				"url" : "attachments/d07jlh1fokeudchcsklb0hd80/Raster_graphic_fish_20x23squares_sdtv-example.png",
-				"caption" : "",
-				"previewHeight" : 300
+				"string" : "#header 1\r\n##Header 2\r\n###header 3\r\n####header 4\r\n#####header 5\r\n######header 6\r\nnormal text, **bold text**, *italic text*, ***bold and italic text***, `monospaced text`\r\n--------\r\nappuyer sur Alt + enter pour rester dans le même bloc de texte et passer à la ligne suivante.\r\n[[Smalltalk various notes]]\r\n[ouvrir google](https://www.google.com)\r"
 			},
 			{
 				"__type" : "textSnippet",
@@ -91,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:47.473792-05:00"
+						"dateAndTimeString" : "2021-06-05T17:39:36.821326-04:00"
 					}
 				},
 				"editEmail" : {
@@ -102,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:47.473792-05:00"
+						"dateAndTimeString" : "2021-06-08T22:24:00.569114-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "+6WxvXOpDQCkMmq0Aprxhg=="
+					"uidString" : "ri69YW2ADQCqEDz+DIbDBg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Many raster manipulations map directly onto the mathematical formalisms of linear algebra, where mathematical objects of matrix structure are of central concern. "
+				"string" : "1. first item\r\n2. second item\r\n3. third item\r\n---\r\n- first item\r\n- second item\r\n- third item\r\n\r\nréférence à un élément de gToolkit:  {{gtClass:BlElement}}\r\n `BlBackgroundBuilder`"
 			},
 			{
 				"__type" : "textSnippet",
@@ -128,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:28:09.86164-05:00"
+						"dateAndTimeString" : "2021-06-18T16:49:04.194951-04:00"
 					}
 				},
 				"editEmail" : {
@@ -139,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T19:54:22.600099-05:00"
+						"dateAndTimeString" : "2022-07-22T20:39:09.666-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "2Df4vnOpDQCkM3KpAprxhg=="
+					"uidString" : "t+HqMHKBDQC9XsbQC6EZOQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A bitmap image is a raster image (containing pixel data as opposed to vector i images) format. Each pixel of a bitmap image is defined by a single bit or a group of bits. Hence, it is called the bitmap or a map of bits and pixels. A Bitmap image is an uncompressed file format which means, every pixel of an image has its own bit (or group of bits) in the file. "
+				"string" : "`| Column 1       | Column 2     | Column 3     |`\r\n`| :------------- | :----------: | -----------: |`\r\n`|  Cell Contents | More Stuff   | And Again    |`\r\n`| You Can Also   | Put Pipes In | Like this \\| |`"
 			},
 			{
 				"__type" : "textSnippet",
@@ -165,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:28:29.573734-05:00"
+						"dateAndTimeString" : "2021-06-18T16:49:06.368951-04:00"
 					}
 				},
 				"editEmail" : {
@@ -176,17 +140,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:28:29.573734-05:00"
+						"dateAndTimeString" : "2021-06-18T16:49:46.979951-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "/NAstGGBDQCpO2ebCUjNSg=="
+					"uidString" : "r6z6MHKBDQC9X5RKC6EZOQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In Pharo, a **Form** is a rectangular array of pixels, used for holding images.  All pictures, including character images are Forms. \r\nCreation of a Form:"
+				"string" : "Pour définir une page comme étant la table des matières, sur la partie inspection de la page"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:49:24.016951-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-18T16:49:25.366951-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "N18ZMnKBDQC9YLgGC6EZOQ=="
+				},
+				"code" : "self database tableOfContentsPageID: self uid"
 			},
 			{
 				"__type" : "textSnippet",
@@ -202,7 +200,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-17T21:09:12.352308-04:00"
+						"dateAndTimeString" : "2022-11-09T17:13:48.163631-05:00"
 					}
 				},
 				"editEmail" : {
@@ -213,17 +211,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:23:57.643-04:00"
+						"dateAndTimeString" : "2024-08-12T05:17:16.077-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "pEqmtGGBDQCpPB3OCUjNSg=="
+					"uidString" : "CgoTtXKpDQCkB5nEAprxhg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "```smalltalk\r\nForm extent: extentPoint depth: bitsPerPixel fromArray: anArray offset: offsetPoint \r\n\r\nextent: \"the number of point composing the form.\"\r\ndepth: \"the color depth of the form\"\r\narray: \"data of the form\"\r\noffset: \"Specify an offset to move the form from coordinate 0@0 when combining form.\"\r\n```"
+				"string" : "##balise dynamique - gtClass, gtMethod, etc...\r\n###gtClass\r\n{{gtClass:name=Color|label=Color class|full|show=gtRegisteredColorsFor:|expanded}}\r\n{{gtClass:BaselineOfBloc|show=gtDependencyAnalyzerFor:|expanded=true|height=450}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -239,7 +237,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T19:53:41.948391-05:00"
+						"dateAndTimeString" : "2022-11-09T17:18:01.76404-05:00"
 					}
 				},
 				"editEmail" : {
@@ -250,17 +248,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-14T19:54:30.576228-05:00"
+						"dateAndTimeString" : "2024-08-12T05:34:19.327-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "lPAehtmpDQCggd7fB5qlGQ=="
+					"uidString" : "XWoJxHKpDQCkIOvHAprxhg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The offset of a form is the amount by which the form should be offset when it is displayed or when its position is tested. Every form has an assumed origin at the top lefthand comer of the image. When a form is sent a message to display itself, for example,\n\n```smalltalk\nbug displayAt: 150@150\n```\n\nthe form is displayed with its origin at the specified point plus the offset; i.e., 150@150. The bug is therefore displayed so that its center is located at the point ISO@IS0. The ability to specify an offset is particularly useful when defining cursors that have logical origins or \"hot spots.\" For example, the logical origin of the crosshairs cursor is at the center of the crosshairs.\n\nThe coordinates of a Form start from the top-left corner much like most graphic system out there (why ? Because Western language are mostly written left to right, top to bottom, and initial text display follow this convention, instead of classic cartesian coordinate). Forms are indexed starting at 0 instead of 1; thus, the top-left pixel of a Form has coordinates 0@0.\n\nThe actual bits are held in a Bitmap, whose internal structure is different at each depth."
+				"string" : "##gtExample\r\n{{gtExample:name=BlEllipseExamples>>default|noCode|previewExpanded|previewHeight= 200|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -276,7 +274,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T17:03:26.864951-04:00"
+						"dateAndTimeString" : "2022-11-09T17:18:28.080572-05:00"
 					}
 				},
 				"editEmail" : {
@@ -287,17 +285,91 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:23:55.694-04:00"
+						"dateAndTimeString" : "2024-08-12T05:35:25.148-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Zy5WZHKBDQC9kcQgC6EZOQ=="
+					"uidString" : "55oYxXKpDQCkI6XsAprxhg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Example\r\nTo construct an image, we need to know how many bits or byte an individual pixel \r\ncontains in the Pixel Data. \r\n[[1 bit depth]]\r\n[[2 bits depth]]\r\n[[4 bits depth]]\r\n[[8 bits depth]]\r\n[[16 bit depth]]\r\n[[32 bits depths]]"
+				"string" : "\r\nor\r\n{{gtExample:name=BlEllipseExamples>>default|codeExpanded}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T17:14:22.223303-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-20T16:47:30.645-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "whkct3KpDQCkDBQhAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}\r\n\r\n###gtPage\r\n{{gtPage:Gtoolkit introduction}}\r\n\r\n###gtPackage\r\n{{gtPackage:name=BaselineOfBrick}}\r\n##todo\r\n{{gtTodo:label=A Faire|due=2024-08-16|completed=2024-08-16}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T17:14:39.352355-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T17:14:54.709611-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "T4ImuHKpDQCkEGRyAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Integrate local file reference\r\nLoad file: \r\n</home/renaud/devzone>"
 			}
 		]
 	},
@@ -309,7 +381,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-17T21:07:03.978308-04:00"
+			"dateAndTimeString" : "2021-06-05T17:26:28.278326-04:00"
 		}
 	},
 	"editEmail" : {
@@ -320,15 +392,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:14:44.529222-04:00"
+			"dateAndTimeString" : "2021-06-05T17:34:20.000326-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "bitmap graphics, Forms and display color"
+		"title" : "note sur Lepiter using Markdown syntax"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "4449bead-6181-0d00-a939-05060948cd4a"
+		"uuid" : "4e04bd32-6d80-0d00-a9ee-7ec10c86c306"
 	}
 }

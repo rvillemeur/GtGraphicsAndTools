@@ -62,12 +62,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-19T17:27:38.353-04:00"
+			"dateAndTimeString" : "2022-11-05T15:32:38.851837-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "low level raster graphics"
+		"title" : "Introduction to raster graphics"
 	},
 	"uid" : {
 		"__type" : "uuid",

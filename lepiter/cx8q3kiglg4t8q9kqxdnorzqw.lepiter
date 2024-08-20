@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:13:19.588946-05:00"
+						"dateAndTimeString" : "2024-08-19T18:08:46.549-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:40:22.314077-05:00"
+						"dateAndTimeString" : "2024-08-19T18:12:41.583-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XDiHE+2pDQCeuHpIB5qlGQ=="
+					"uidString" : "CBg0SnLcDQCH4u5sAa9K2g=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Every Morph now has the capability to layout it's submorphs if it is given a LayoutPolicy. The default is to have no layout policy. Each Morph may have its own LayoutPolicy: either a *ProportionalLayout* or a *TableLayout* \n\n*AlignmentMorph*, which originaly was the only morph who could implement layout policies, is  available because of compatibility reasons and some utility methods it implements.\n\nYou should also be able to make your own subclasses of **LayoutPolicy**.\n\nexample are given in the method of {{gtClass:name=RdvMorphLayoutExample}}"
+				"string" : "Bloc visual properties are stored in the **visuals** property of {{gtClass:BlElement}}. Default visual come from {{gtClass:BlDefaultVisuals}} and their default value are defined in {{gtMethod:name=BlElementVisuals class>>initialize|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-05T15:21:44.486698-04:00"
+						"dateAndTimeString" : "2024-08-19T18:13:00.828-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-15T19:48:23.004363-05:00"
+						"dateAndTimeString" : "2024-08-19T18:13:30.231-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "a3Fb1h+pDQCStTNwAprxhg=="
+					"uidString" : "kA1cWXLcDQCOZh48Aa9K2g=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[source 1](https://wiki.squeak.org/squeak/2141)\n\n[source 2](https://wiki.squeak.org/squeak/2765)"
+				"string" : "For each element, custom visual properties are stored in {{gtClass:BlCustomVisuals}}"
 			}
 		]
 	},
@@ -88,7 +88,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:21:42.543242-04:00"
+			"dateAndTimeString" : "2024-08-19T18:08:52.34-04:00"
 		}
 	},
 	"editEmail" : {
@@ -99,15 +99,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:21:50.957323-04:00"
+			"dateAndTimeString" : "2024-08-19T18:08:52.34-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Morph widget layout"
+		"title" : "Bloc visuals"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "87fe59d6-1fa9-0d00-92b4-8553029af186"
+		"uuid" : "b8d1334a-72dc-0d00-87e1-149b01af4ada"
 	}
 }
