@@ -137,7 +137,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:07:15.648214-05:00"
+						"dateAndTimeString" : "2024-08-20T19:05:47.431-04:00"
 					}
 				},
 				"uid" : {
@@ -147,7 +147,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#2. document object.\radd comment in the markdown format in the comment part of the class or in the lepiter book\rFor a full definition, look at {{gtPage:note sur Lepiter using Markdown syntax}}"
+				"string" : "#2. document object.\radd comment in the markdown format in the comment part of the class or in the lepiter book\rFor a full definition, look at {{gtPage:Lepiter Text using Markdown syntax}}"
 			},
 			{
 				"__type" : "textSnippet",

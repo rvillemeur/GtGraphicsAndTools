@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:05:55.268456-05:00"
+						"dateAndTimeString" : "2024-08-20T19:01:41.91-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:05:55.268456-05:00"
+						"dateAndTimeString" : "2024-08-20T19:02:20.197-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "jKwVpXGpDQCZLhx2Aprxhg=="
+					"uidString" : "8KFPJYfcDQCzNezXCLAeyQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "BlLayout and constraint\r\n\r\nwhat you get in **constraintsDo:** is an object that represents constraint common to all layouts\r\nfor example not all layout support alignment therefore it is not realistic to expect common constraints to respond to alignments\r\nlet's take a linear layout as an example\r\nyou would say:\r\n\r\nconstraintsDo: [ :c |\r\n   c linear horizontal alignCenter.\r\n   c linear vertical alignBottom ];\r\n   \r\nlayout is a global layout level alignment (see picture)\r\nbut constraints are per child element something like setting padding to each child, \r\nvs padding to a container\r\n"
+				"string" : "##balise dynamique - gtClass, gtMethod, etc...\r\n###gtClass\r\n{{gtClass:name=Color|label=Color class|full|show=gtRegisteredColorsFor:|expanded}}\r\n{{gtClass:BaselineOfBloc|show=gtDependencyAnalyzerFor:|expanded=true|height=450}}"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:07.720414-05:00"
+						"dateAndTimeString" : "2024-08-20T19:02:38.764-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,23 +66,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:07.720414-05:00"
+						"dateAndTimeString" : "2024-08-20T19:02:58.486-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "JIwmw3GpDQCaOaPqAprxhg=="
+					"uidString" : "ECCzKIfcDQCzjPQhCLAeyQ=="
 				},
-				"exampleSelector" : "layout1",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##gtExample\r\n{{gtExample:name=BlEllipseExamples>>default|noCode|previewExpanded|previewHeight= 200|expanded}}\r\n\r\nor\r\n{{gtExample:name=BlEllipseExamples>>default|codeExpanded}}"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -95,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:22.400791-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:20.216-04:00"
 					}
 				},
 				"editEmail" : {
@@ -106,23 +103,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:22.400791-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:21.301-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "nY0GxHGpDQCaOnicAprxhg=="
+					"uidString" : "2KUrK4fcDQCzsefcCLAeyQ=="
 				},
-				"exampleSelector" : "layout2",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -135,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:39.64354-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:48.634-04:00"
 					}
 				},
 				"editEmail" : {
@@ -146,23 +140,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:39.64354-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:52.383-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "4qcNxXGpDQCaO1Z1Aprxhg=="
+					"uidString" : "qEXdLIfcDQCz050JCLAeyQ=="
 				},
-				"exampleSelector" : "layout3",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "###gtPage\r\n{{gtPage:Gtoolkit tools and addition}}"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -175,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:57.059291-05:00"
+						"dateAndTimeString" : "2024-08-20T19:04:16.955-04:00"
 					}
 				},
 				"editEmail" : {
@@ -186,23 +177,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:57.059291-05:00"
+						"dateAndTimeString" : "2024-08-20T19:04:18.506-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "NGYXxnGpDQCaPBvGAprxhg=="
+					"uidString" : "kGqNLofcDQCz7DwZCLAeyQ=="
 				},
-				"exampleSelector" : "layout4",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "###gtPackage\r\n{{gtPackage:name=BaselineOfBrick}}"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -215,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:07:20.24405-05:00"
+						"dateAndTimeString" : "2024-08-20T19:04:35.779-04:00"
 					}
 				},
 				"editEmail" : {
@@ -226,20 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:07:20.24405-05:00"
+						"dateAndTimeString" : "2024-08-20T19:04:36.82-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sit5x3GpDQCaPWhrAprxhg=="
+					"uidString" : "0KWsL4fcDQCz/v3CCLAeyQ=="
 				},
-				"exampleSelector" : "layout5",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##todo\r\n{{gtTodo:label=A Faire|due=2024-08-16|completed=2024-08-16}}"
 			}
 		]
 	},
@@ -251,7 +236,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-09T15:57:43.202169-05:00"
+			"dateAndTimeString" : "2024-08-20T19:01:48.997-04:00"
 		}
 	},
 	"editEmail" : {
@@ -262,15 +247,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-09T15:59:48.066092-05:00"
+			"dateAndTimeString" : "2024-08-20T19:01:48.997-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc layout"
+		"title" : "lepiter extension"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "903414a5-71a9-0d00-992d-4dab029af186"
+		"uuid" : "58674f25-87dc-0d00-b334-240908b01ec9"
 	}
 }

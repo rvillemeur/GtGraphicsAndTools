@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T20:38:38.35-04:00"
+						"dateAndTimeString" : "2024-08-20T19:06:14.904-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#header 1\r\n##Header 2\r\n###header 3\r\n####header 4\r\n#####header 5\r\n######header 6\r\nnormal text, **bold text**, *italic text*, ***bold and italic text***, `monospaced text`\r\n--------\r\nappuyer sur Alt + enter pour rester dans le même bloc de texte et passer à la ligne suivante.\r\n[[Smalltalk various notes]]\r\n[ouvrir google](https://www.google.com)\r"
+				"string" : "#header 1\r\n##Header 2\r\n###header 3\r\n####header 4\r\n#####header 5\r\n######header 6\r\nnormal text, **bold text**, *italic text*, ***bold and italic text***, `monospaced text`\r\n--------\r\nappuyer sur Alt + enter pour rester dans le même bloc de texte et passer à la ligne suivante.\r\n[[]]\r\n[ouvrir google](https://www.google.com)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,225 +129,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:49:06.368951-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:49:46.979951-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "r6z6MHKBDQC9X5RKC6EZOQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Pour définir une page comme étant la table des matières, sur la partie inspection de la page"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:49:24.016951-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:49:25.366951-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "N18ZMnKBDQC9YLgGC6EZOQ=="
-				},
-				"code" : "self database tableOfContentsPageID: self uid"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:13:48.163631-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-12T05:17:16.077-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CgoTtXKpDQCkB5nEAprxhg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##balise dynamique - gtClass, gtMethod, etc...\r\n###gtClass\r\n{{gtClass:name=Color|label=Color class|full|show=gtRegisteredColorsFor:|expanded}}\r\n{{gtClass:BaselineOfBloc|show=gtDependencyAnalyzerFor:|expanded=true|height=450}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:18:01.76404-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-12T05:34:19.327-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "XWoJxHKpDQCkIOvHAprxhg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##gtExample\r\n{{gtExample:name=BlEllipseExamples>>default|noCode|previewExpanded|previewHeight= 200|expanded}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:18:28.080572-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-12T05:35:25.148-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "55oYxXKpDQCkI6XsAprxhg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "\r\nor\r\n{{gtExample:name=BlEllipseExamples>>default|codeExpanded}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:14:22.223303-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T16:47:30.645-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "whkct3KpDQCkDBQhAprxhg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}\r\n\r\n###gtPage\r\n{{gtPage:Gtoolkit introduction}}\r\n\r\n###gtPackage\r\n{{gtPackage:name=BaselineOfBrick}}\r\n##todo\r\n{{gtTodo:label=A Faire|due=2024-08-16|completed=2024-08-16}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-11-09T17:14:39.352355-05:00"
 					}
 				},
@@ -392,12 +173,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-05T17:34:20.000326-04:00"
+			"dateAndTimeString" : "2024-08-20T19:05:47.428-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "note sur Lepiter using Markdown syntax"
+		"title" : "Lepiter Text using Markdown syntax"
 	},
 	"uid" : {
 		"__type" : "uuid",

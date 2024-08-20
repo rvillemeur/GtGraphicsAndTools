@@ -193,8 +193,50 @@
 					"__type" : "uid",
 					"uidString" : "+Rb30HGpDQCb6hKRAprxhg=="
 				},
+				"exampleSelector" : "createSpace",
 				"previewHeight" : 200,
 				"previewShowSelector" : "gtViewsFor:",
+				"exampleBehaviorName" : "RdvNoteBlock",
+				"codeExpanded" : true,
+				"previewExpanded" : false,
+				"noCode" : false
+			},
+			{
+				"__type" : "exampleSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T16:10:15.551229-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T16:10:15.551229-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "RyXs0XGpDQCb6/hcAprxhg=="
+				},
+				"exampleSelector" : "squareSurroundedByNumbers",
+				"previewHeight" : 200,
+				"previewShowSelector" : "gtViewsFor:",
+				"exampleBehaviorName" : "RdvNoteBlock",
 				"codeExpanded" : true,
 				"previewExpanded" : false,
 				"noCode" : false

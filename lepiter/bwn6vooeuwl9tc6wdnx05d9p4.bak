@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-08T22:25:54.116114-04:00"
+						"dateAndTimeString" : "2024-08-20T19:01:41.91-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T19:06:21.453-04:00"
+						"dateAndTimeString" : "2024-08-20T19:02:20.197-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "igIcu62ADQCrqxvED4+utw=="
+					"uidString" : "8KFPJYfcDQCzNezXCLAeyQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#header 1\r\n##Header 2\r\n###header 3\r\n####header 4\r\n#####header 5\r\n######header 6\r\nnormal text, **bold text**, *italic text*, ***bold and italic text***, `monospaced text`\r\n--------\r\nappuyer sur Alt + enter pour rester dans le même bloc de texte et passer à la ligne suivante.\r\n[[lepiter extension]]\r\n[ouvrir google](https://www.google.com)"
+				"string" : "##balise dynamique - gtClass, gtMethod, etc...\r\n###gtClass\r\n{{gtClass:name=Color|label=Color class|full|show=gtRegisteredColorsFor:|expanded}}\r\n{{gtClass:BaselineOfBloc|show=gtDependencyAnalyzerFor:|expanded=true|height=450}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-05T17:39:36.821326-04:00"
+						"dateAndTimeString" : "2024-08-20T19:02:38.764-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-08T22:24:00.569114-04:00"
+						"dateAndTimeString" : "2024-08-20T19:02:58.486-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ri69YW2ADQCqEDz+DIbDBg=="
+					"uidString" : "ECCzKIfcDQCzjPQhCLAeyQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "1. first item\r\n2. second item\r\n3. third item\r\n---\r\n- first item\r\n- second item\r\n- third item\r\n\r\nréférence à un élément de gToolkit:  {{gtClass:BlElement}}\r\n `BlBackgroundBuilder`"
+				"string" : "##gtExample\r\n{{gtExample:name=BlEllipseExamples>>default|noCode|previewExpanded|previewHeight= 200|expanded}}\r\n\r\nor\r\n{{gtExample:name=BlEllipseExamples>>default|codeExpanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:49:04.194951-04:00"
+						"dateAndTimeString" : "2024-08-20T19:03:20.216-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T20:39:09.666-04:00"
+						"dateAndTimeString" : "2024-08-20T19:03:21.301-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "t+HqMHKBDQC9XsbQC6EZOQ=="
+					"uidString" : "2KUrK4fcDQCzsefcCLAeyQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "`| Column 1       | Column 2     | Column 3     |`\r\n`| :------------- | :----------: | -----------: |`\r\n`|  Cell Contents | More Stuff   | And Again    |`\r\n`| You Can Also   | Put Pipes In | Like this \\| |`"
+				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:14:39.352355-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:48.634-04:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T17:14:54.709611-05:00"
+						"dateAndTimeString" : "2024-08-20T19:03:52.383-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "T4ImuHKpDQCkEGRyAprxhg=="
+					"uidString" : "qEXdLIfcDQCz050JCLAeyQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Integrate local file reference\r\nLoad file: \r\n</home/renaud/devzone>"
+				"string" : "###gtPage\r\n{{gtPage:Gtoolkit tools and addition}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-20T19:04:16.955-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-08-20T19:04:16.955-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kGqNLofcDQCz7DwZCLAeyQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},
@@ -162,7 +199,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-05T17:26:28.278326-04:00"
+			"dateAndTimeString" : "2024-08-20T19:01:48.997-04:00"
 		}
 	},
 	"editEmail" : {
@@ -173,15 +210,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-20T19:05:47.428-04:00"
+			"dateAndTimeString" : "2024-08-20T19:01:48.997-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Lepiter Text using Markdown syntax"
+		"title" : "lepiter extension"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "4e04bd32-6d80-0d00-a9ee-7ec10c86c306"
+		"uuid" : "58674f25-87dc-0d00-b334-240908b01ec9"
 	}
 }

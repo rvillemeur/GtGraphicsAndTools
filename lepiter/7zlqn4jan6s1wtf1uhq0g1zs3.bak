@@ -305,6 +305,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "##managing events\r\n###simple case for BlElement\r\n1. use method: {{gtMethod:name=BlElement>>when:do:}}\n2. anEventClass can be a subclass of {{gtClass:name=BlUIEvent}}\n\r\n\r\n###complex case - reusing event handling logic with BlEventListener\r\n1. Subclass {{gtClass:name=BlEventListener}} (which is a subclass of {{gtClass:name=BlBasicEventHandler}} and override all method that match specific event you want to catch, for example {{gtMethod:name=BlEventListener>>clickEvent:}}\r\n2. Add your listener to your BlElement with method: {{gtMethod:name=BlElement>>addEventHandler:}} \n\r\n###using event Handler\nTake a look at {{gtClass:name=BlEventHandler|full}} comments:\r\n\nBlEventHandler: I am a scriptable event handler that allows users to assign a valuable action to the event of chosen type.\n```\nBlEventHandler\n\ton: BlClickEvent\n\tdo: [ :anEvent | self inform: 'Click!' ]\n```"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T15:45:13.645693-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-11-09T15:45:13.645693-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EhdGeHGpDQCYoqarAprxhg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##underlying mecanism\r\nBlEventDispatcher -> announcer qui dispatch event\nBlSpaceEventListener >> handleEvent\n\nBlMouseEnterEvent\r\n\r\n\r\ndouble dispatch: Classe de base: BlEvent\nBlMouseEnterEvent >> sendTo: anObject\n\tanObject mouseEnterEvent: self\n    \nBlEventListener >> mouseEnterEvent: anEvent qui peut être spécialisé par une sous-classe.\n\n\n##On pharo side, using OSWindow\nOSWindowMorphicEventHandler => gère les évènements au niveau OS Windows, qui fait le lien avec SDL2.\nBlMorphicEventHandler => convertit les évènements Morphic en évenements Bloc\nOSEvent -> Announcement coté Pharo\nBlEvent -> announcement coté Bloc/GToolkit\n\n"
 			}
 		]
 	},
