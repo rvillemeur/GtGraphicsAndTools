@@ -710,12 +710,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-20T16:58:51.922-04:00"
+			"dateAndTimeString" : "2024-08-20T16:47:30.63-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Gtoolkit tools and addition"
+		"title" : "Gtoolkit introduction"
 	},
 	"uid" : {
 		"__type" : "uuid",

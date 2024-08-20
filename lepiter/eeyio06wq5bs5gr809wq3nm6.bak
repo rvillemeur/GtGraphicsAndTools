@@ -322,7 +322,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T16:58:51.935-04:00"
+						"dateAndTimeString" : "2024-08-20T16:47:30.645-04:00"
 					}
 				},
 				"uid" : {
@@ -332,7 +332,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}\r\n\r\n###gtPage\r\n{{gtPage:Gtoolkit tools and addition}}\r\n\r\n###gtPackage\r\n{{gtPackage:name=BaselineOfBrick}}\r\n##todo\r\n{{gtTodo:label=A Faire|due=2024-08-16|completed=2024-08-16}}"
+				"string" : "###gtMethod\r\n{{gtMethod:name=BlElement>>addChild:|expanded|label=add child|height=200}}\r\n\r\n###gtPage\r\n{{gtPage:Gtoolkit introduction}}\r\n\r\n###gtPackage\r\n{{gtPackage:name=BaselineOfBrick}}\r\n##todo\r\n{{gtTodo:label=A Faire|due=2024-08-16|completed=2024-08-16}}"
 			},
 			{
 				"__type" : "textSnippet",

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T16:50:08.82-04:00"
+						"dateAndTimeString" : "2022-07-22T20:32:02.96-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Script powershell to download Gtoolkit"
+				"string" : "Script powershell pour télécharger Gtoolkit"
 			},
 			{
 				"__type" : "textSnippet",
