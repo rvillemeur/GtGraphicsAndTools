@@ -26,3 +26,11 @@ Graphics in pharo
 21. Spec application - project selector
 22. Spec application - extend inspector
 23. The future: Bloc, Brick
+
+
+```smalltalk
+Metacello new
+    baseline: 'PharoGraphics';
+    repository: 'github://rvillemeur/PharoGraphics/src';
+    load.
+ ```
