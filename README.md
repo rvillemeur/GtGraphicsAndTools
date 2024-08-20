@@ -1,4 +1,4 @@
-# PharoGraphics
+# Gt Graphics and Tools
 Description of graphics stacks and tools in GToolkit
 
 Graphics in pharo
