@@ -14,7 +14,7 @@ Graphics in pharo
 
 ```smalltalk
 Metacello new
-    baseline: 'PharoGraphics';
+    baseline: 'GtGraphicsAndTools';
     repository: 'github://rvillemeur/GtGraphicsAndTools:main/src';
     load.
  ```
