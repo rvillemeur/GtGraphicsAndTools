@@ -581,7 +581,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-21T09:00:40.835-04:00"
+						"dateAndTimeString" : "2024-08-21T09:00:23.698-04:00"
 					}
 				},
 				"uid" : {
@@ -591,7 +591,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "which will end in {{gtMethod:BlElement>>drawOnSpartaCanvas:|expanded}}"
+				"string" : "which will en in {{gtMethod:BlElement>>drawOnSpartaCanvas:|expanded}}"
 			}
 		]
 	},
