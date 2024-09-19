@@ -1,7 +1,7 @@
 Class {
 	#name : #RdvStyleAptitude,
 	#superclass : #BrStyleAptitude,
-	#category : #RdvBloc
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #accessing }

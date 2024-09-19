@@ -18,77 +18,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:18.531431-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:18.531431-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "17TltHOpDQCkKHfcAprxhg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "The depth of a Form is how many bits are used to specify the color at each pixel.  The supported depths (in bits) are 1, 2, 4, 8, 16, and 32. The color depth is a measure of an individual image pixel to accurately represent a color. Color  depth is calculated in bits-per-pixel or bpp.\r\n\r\nFor example, 1-bit color depth or 1bpp means a pixel can have a 1-bit color or 2 values. Monochromatic images have 1-bit color depth because a pixel can be true  black or true white.\r\n\r\nThe number of actual colors at these depths are: 2, 4, 16, 256, 32768, and 16 million. For different color depth, you can store a different number of pixel for each element compising the array of data.\r\n\r\n`|Depth   | number of color  | pixel displayed |`\r\n`|--------|------------------|-----------------|`\r\n`|1       |2^1 = 2           | 32              |`\r\n`|2       |2^2 = 4           | 16              |`\r\n`|4       |2^4 = 16          | 8               |`\r\n`|8       |2^8 = 256         | 4               |`\r\n`|16      |2^16 = 32768      | 2               |`\r\n`|32      |2^32 = 16 millions| 1               |`\r\n\r\nThe bits representing the bitmap pixels are packed in rows. The size of each row is rounded up to a multiple of 4 bytes (32 bits). The pixel array describes the image pixel by pixel. You can also have an alpha-channel to add transparency in the image using 32-bit color depth."
-			},
-			{
-				"__type" : "pictureSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:28.038205-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:25:31.727618-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "ht92tXOpDQCkKRxFAprxhg=="
-				},
-				"url" : "attachments/d07jlh0ap09vskp4e1vipgs4o/Rgb-raster-image.png"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-07-22T19:22:13.711-04:00"
 					}
 				},
@@ -163,43 +92,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:19:25.17-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:22:37.109-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "8A+szM6gDQC8opQ7DxVTDQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "For **24** and **32** bits RBG, there is 8 bits allocated to each color component. In 32 bits, there is an additional alpha channel, to manage transparencyy. In RGB space any colour is represented as a point inside a colour cube with orthogonal axes r,g,b. Grey values form a straight line from black to white along the diagonal of the cube, r = g = b.\r\n\r\n`          cyan (0,1,1) +------------------------+ White (1,1,1)`\r\n`                      /|                       /|`\r\n`                     /                        / |`\r\n`                    /  |                     /  |`\r\n`                   /                        /   |`\r\n`                  /    |                   /    |`\r\n`    Blue (0,0,1) +------------------------+ Magenta (1,0,1)`\r\n`                 |     |                  |     |`\r\n`                 |                        |     |`\r\n`                 |     |                  |     |`\r\n`         Green (0,1,0) +- - - - - - - - - |- - -+ yellow (1,1,0)`\r\n`                 |    /                   |    /`\r\n`                 |                        |   /`\r\n`                 |  /                     |  /`\r`                 |                        | /`\r`                 |/                       |/`    Black (0,0,0)`\r\n`                 +------------------------+ red(1,0,0)`\r\n\r\n`+-+-+-+-+    | index | red   | green | blue  |`\r`| | | | |    |-------|-------|-------|-------|`\r`+-+-+-+-+ -> | 0     |       |       | `                   | \r\n`| | | | |    | ...   |0 - 255|0 - 255|0 - 255|`\r\n`+-+-+-+-+    |2^depth|       |       |       |`"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-07-22T19:23:39.526-04:00"
 					}
 				},
@@ -211,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-22T19:23:39.526-04:00"
+						"dateAndTimeString" : "2022-11-14T19:55:51.033424-05:00"
 					}
 				},
 				"uid" : {
@@ -221,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Through the color map, you can access different color than the default defined\r\nin the color depth. Furthermore, Color can be be defined with alpha channel.\r\n\r\nClass Color allows you to deal with colors without knowing how they\r\nare actually encoded inside a Bitmap."
+				"string" : "Through the color map, you can access different color than the default defined in the color depth. Furthermore, Color can be be defined with alpha channel.\r\n\r\nClass **Color** allows you to deal with colors without knowing how they are actually encoded inside a Bitmap."
 			},
 			{
 				"__type" : "textSnippet",

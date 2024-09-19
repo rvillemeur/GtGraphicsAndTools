@@ -1065,7 +1065,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:19:27.486064-05:00"
+									"dateAndTimeString" : "2022-11-05T15:31:44.100805-04:00"
 								}
 							},
 							"editEmail" : {
@@ -1076,17 +1076,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-09T11:19:27.486064-05:00"
+									"dateAndTimeString" : "2024-09-19T11:26:07.242-04:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "vq2owW2pDQCS736KAprxhg=="
+								"uidString" : "jSH8+R+pDQCS9LFOAprxhg=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[Color and color depth]]"
+							"string" : "[[color, color depth and RGB definition]]"
 						},
 						{
 							"__type" : "textSnippet",
@@ -1309,43 +1309,6 @@
 								"__type" : "textStyle"
 							},
 							"string" : "[[32 bits depths]]"
-						},
-						{
-							"__type" : "textSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:31:44.100805-04:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:31:44.100805-04:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "jSH8+R+pDQCS9LFOAprxhg=="
-							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "[[RGB and Color definition]]"
 						},
 						{
 							"__type" : "textSnippet",

@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T14:40:36.074-04:00"
+						"dateAndTimeString" : "2024-09-19T14:40:25.409-04:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +150,41 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtExample:RdvFormExperiment>>example4BitFormWithColorMap}}"
+				"string" : "{{gt"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:09:39.037308-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2021-06-17T22:09:40.150308-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "fPCPjWKBDQCpydorCUjNSg=="
+				},
+				"code" : "|pict map|\r\npict := ColorForm extent: 8@1 depth: 4.\r\n\r\n\"create a color map of 2^depth color\"\r\nmap := {  Color transparent. \r\n\t\t\tColor white. \r\n\t\t\tColor r: 0.0 g: 0.5992179863147605 b: 0.19941348973607037 alpha: 1.0.\r\n\t\t\tColor gray.\r\n\t\t\tColor red.\r\n\t\t\tColor green.\r\n\t\t\tColor blue.\r\n\t\t\tColor yellow.\r\n\t\t\tColor transparent. \r\n\t\t\tColor white. \r\n\t\t\tColor blue.\r\n\t\t\tColor gray.\r\n\t\t\tColor red.\r\n\t\t\tColor green.\r\n\t\t\tColor blue.\r\n\t\t\tColor yellow. \r\n }.\r\npict colors: map.\r\npict initFromArray: #(2r01000010001100011011110111101111).\r\npict magnifyBy: 25"
 			}
 		]
 	},

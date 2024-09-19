@@ -1,7 +1,7 @@
 Class {
 	#name : #RdvBlocExperiment,
 	#superclass : #Object,
-	#category : #RdvBloc
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #accessing }

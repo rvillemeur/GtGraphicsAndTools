@@ -42,7 +42,7 @@
 				"string" : "you can define the color of 2 pixel with color depth 16"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-18T16:53:36.633951-04:00"
+						"dateAndTimeString" : "2024-09-19T14:38:00.561-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,14 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-08-11T10:45:31.209+02:00"
+						"dateAndTimeString" : "2024-09-19T14:38:15.132-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "XwAoQXKBDQC9bHsFC6EZOQ=="
+					"uidString" : "gD2G9d7eDQCZFWB3D9l5vg=="
 				},
-				"code" : "(Form extent: 2@3 \"size of the form\"\r\n depth: 16 \"color depth - 16 => 2 bits to define color value 65K color possible\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\r\n\"[ 0  XXXXX XXXXX XXXXX ]\r\n\r\n----- ----- -----\r\n\r\n       R     G     B\r\n     first pixel \t\tsecond pixel   \"\r\n\t2r01111100000000000000000000011111 \"red - blue\"\r\n\t2r00000011111000000111111111100000 \"green -yellow\"\r\n\t2r01111111111111111000000000000000 \"white -black\"\r\n) \r\n; magnifyBy: 25."
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:RdvFormExperiment>>example16BitForm}}"
 			}
 		]
 	},

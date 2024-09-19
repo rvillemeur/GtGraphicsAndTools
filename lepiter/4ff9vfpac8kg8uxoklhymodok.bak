@@ -66,14 +66,16 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:27:29.281299-05:00"
+						"dateAndTimeString" : "2024-08-19T17:18:46.988-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "ghB/vHOpDQCkMONyAprxhg=="
 				},
-				"url" : "attachments/d07jlh1fokeudchcsklb0hd80/Raster_graphic_fish_20x23squares_sdtv-example.png"
+				"url" : "attachments/d07jlh1fokeudchcsklb0hd80/Raster_graphic_fish_20x23squares_sdtv-example.png",
+				"caption" : "",
+				"previewHeight" : 300
 			},
 			{
 				"__type" : "textSnippet",
@@ -259,6 +261,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "The offset of a form is the amount by which the form should be offset when it is displayed or when its position is tested. Every form has an assumed origin at the top lefthand comer of the image. When a form is sent a message to display itself, for example,\n\n```smalltalk\nbug displayAt: 150@150\n```\n\nthe form is displayed with its origin at the specified point plus the offset; i.e., 150@150. The bug is therefore displayed so that its center is located at the point ISO@IS0. The ability to specify an offset is particularly useful when defining cursors that have logical origins or \"hot spots.\" For example, the logical origin of the crosshairs cursor is at the center of the crosshairs.\n\nThe coordinates of a Form start from the top-left corner much like most graphic system out there (why ? Because Western language are mostly written left to right, top to bottom, and initial text display follow this convention, instead of classic cartesian coordinate). Forms are indexed starting at 0 instead of 1; thus, the top-left pixel of a Form has coordinates 0@0.\n\nThe actual bits are held in a Bitmap, whose internal structure is different at each depth."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-19T11:26:37.704-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-19T11:26:38.704-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QMMXSdzeDQCWjQ1zD9l5vg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The coordinates of a Form start from the top-left corner much like most graphic system out there (why ? Because Western language are mostly written left to right, top to bottom, and initial text display follow this convention, instead of classic cartesian coordinate). Forms are indexed starting at 0 instead of 1;  thus, the top-left pixel of a Form has coordinates 0@0.\r\n\r\nThe actual bits are held in a Bitmap, whose internal structure is different at each depth. Class Color allows you to deal with colors without knowing how they are actually encoded inside a Bitmap."
 			},
 			{
 				"__type" : "textSnippet",

@@ -1,7 +1,7 @@
 Class {
 	#name : #RdvHomeSection,
 	#superclass : #GtHomeMultiCardSection,
-	#category : #RdvBloc
+	#category : #'RdvBloc-home'
 }
 
 { #category : #'as yet unclassified' }

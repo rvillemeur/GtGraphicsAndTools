@@ -58,7 +58,7 @@ Last, Bloc run on a host, being:
 Class {
 	#name : #RdvNoteBlock,
 	#superclass : #Object,
-	#category : #RdvBloc
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #accessing }

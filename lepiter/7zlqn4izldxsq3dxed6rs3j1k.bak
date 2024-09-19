@@ -39,7 +39,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-08-19T17:21:52.493-04:00"
+												"dateAndTimeString" : "2024-08-20T19:05:47.434-04:00"
 											}
 										},
 										"uid" : {
@@ -49,7 +49,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[note sur Lepiter using Markdown syntax]]"
+										"string" : "[[Lepiter Text using Markdown syntax]]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -1335,7 +1335,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-11-05T15:31:44.100805-04:00"
+									"dateAndTimeString" : "2024-09-19T11:26:07.242-04:00"
 								}
 							},
 							"uid" : {
@@ -1345,7 +1345,7 @@
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "[[RGB and Color definition]]"
+							"string" : "[[color, color depth and RGB definition]]"
 						},
 						{
 							"__type" : "textSnippet",

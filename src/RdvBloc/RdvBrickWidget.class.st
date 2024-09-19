@@ -1,7 +1,7 @@
 Class {
 	#name : #RdvBrickWidget,
 	#superclass : #BlElement,
-	#category : #RdvBloc
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #accessing }

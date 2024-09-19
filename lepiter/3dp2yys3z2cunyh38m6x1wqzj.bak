@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T14:40:54.877-04:00"
+						"dateAndTimeString" : "2021-06-18T16:53:33.092951-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,20 +29,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T14:41:14.074-04:00"
+						"dateAndTimeString" : "2021-06-18T16:53:33.092951-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SBvq/97eDQCcrtOrD9l5vg=="
+					"uidString" : "r5m4P3KBDQC9a4JYC6EZOQ=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtExample:RdvFormExperiment>>example2BitForm}}"
+				"string" : "you can define the color of 2 pixel with color depth 16"
 			},
 			{
-				"__type" : "textSnippet",
+				"__type" : "pharoSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-17T22:04:02.738308-04:00"
+						"dateAndTimeString" : "2021-06-18T16:53:36.633951-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,54 +66,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-17T22:04:02.738308-04:00"
+						"dateAndTimeString" : "2022-08-11T10:45:31.209+02:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "DOxyeWKBDQCpwaJrCUjNSg=="
+					"uidString" : "XwAoQXKBDQC9bHsFC6EZOQ=="
 				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "With ColorForm:"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T14:41:24.491-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T14:41:33.619-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2DeCAd/eDQCdasS8D9l5vg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:RdvFormExperiment>>example2BitFormWithColorMap}}"
+				"code" : "(Form extent: 2@3 \"size of the form\"\r\n depth: 16 \"color depth - 16 => 2 bits to define color value 65K color possible\")\r\n initFromArray: #( \"pixel color, expressed on 4 bytes or 32 bits, which is the maximum of color depth\"\r\n\"[ 0  XXXXX XXXXX XXXXX ]\r\n\r\n----- ----- -----\r\n\r\n       R     G     B\r\n     first pixel \t\tsecond pixel   \"\r\n\t2r01111100000000000000000000011111 \"red - blue\"\r\n\t2r00000011111000000111111111100000 \"green -yellow\"\r\n\t2r01111111111111111000000000000000 \"white -black\"\r\n) \r\n; magnifyBy: 25."
 			}
 		]
 	},
@@ -125,7 +85,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-17T22:02:23.008308-04:00"
+			"dateAndTimeString" : "2021-06-18T16:53:12.513951-04:00"
 		}
 	},
 	"editEmail" : {
@@ -136,15 +96,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T17:01:37.908951-04:00"
+			"dateAndTimeString" : "2021-06-18T16:53:24.138951-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "2 bits depth"
+		"title" : "16 bit depth"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "34aa9273-6281-0d00-a9ba-e2950948cd4a"
+		"uuid" : "9ff5b73f-7281-0d00-bd6a-f2440ba11939"
 	}
 }
