@@ -32,13 +32,12 @@ BlRunningMan >> initSpritePosition [
 
 { #category : #initialization }
 BlRunningMan >> initialize [
-
 	super initialize.
 
 	self initSpritePosition.
 
 	self
-		size: 32 * self magnifyFactor @ (32 * self magnifyFactor);
+		size: (32 * self magnifyFactor) @ (32 * self magnifyFactor);
 		background: (BlPaintBackground paint: (Color green alpha: 0.2));
 		border: (BlBorder paint: Color black width: 3);
 		addChild: self runningMan
@@ -51,7 +50,8 @@ BlRunningMan >> magnifyFactor [
 
 { #category : #'instance creation' }
 BlRunningMan >> open [
-	<script: 'self new openInNewSpace'>
+<gtExample>
+self class new
 ]
 
 { #category : #'execution - private' }
