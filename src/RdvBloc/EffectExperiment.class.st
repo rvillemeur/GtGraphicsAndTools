@@ -8,9 +8,9 @@ Class {
 }
 
 { #category : #examples }
-EffectExperiment class >> effectComposite [
+EffectExperiment >> effectComposite [
 
-	<sampleInstance>
+	<gtExample>
 	
 	| compositeEffect|
 	
@@ -28,9 +28,9 @@ EffectExperiment class >> effectComposite [
 ]
 
 { #category : #examples }
-EffectExperiment class >> effectGaussianShadow [
+EffectExperiment >> effectGaussianShadow [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  size: 300 @ 150;
 		  geometry: (BlRoundedRectangleGeometry cornerRadius: 2);
@@ -41,9 +41,9 @@ EffectExperiment class >> effectGaussianShadow [
 ]
 
 { #category : #examples }
-EffectExperiment class >> effectSimpleShadow [
+EffectExperiment >> effectSimpleShadow [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  size: 300 @ 150;
 		  geometry: (BlRoundedRectangleGeometry cornerRadius: 2);
@@ -54,9 +54,9 @@ EffectExperiment class >> effectSimpleShadow [
 ]
 
 { #category : #examples }
-EffectExperiment class >> effectSimpleShadow2 [
+EffectExperiment >> effectSimpleShadow2 [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  size: 200 @ 100;
 		  geometry: (BlRoundedRectangleGeometry cornerRadius: 2);
@@ -66,8 +66,4 @@ EffectExperiment class >> effectSimpleShadow2 [
 		  outskirts: BlOutskirts centered;
 		  effect:
 			  (BlSimpleShadowEffect color: Color orange offset: -10 @ -20)
-]
-
-{ #category : #'see class side' }
-EffectExperiment >> seeClassSide [ 
 ]
