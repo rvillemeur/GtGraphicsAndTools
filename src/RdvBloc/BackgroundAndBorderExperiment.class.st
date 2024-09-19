@@ -4,7 +4,7 @@ various example on background and border settings in Bloc
 Class {
 	#name : #BackgroundAndBorderExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

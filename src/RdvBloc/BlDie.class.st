@@ -9,7 +9,7 @@ Class {
 		'dieValue',
 		'animation'
 	],
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #accessing }

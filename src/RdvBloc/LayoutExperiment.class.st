@@ -4,7 +4,7 @@ various demo of layout capabilities of Bloc
 Class {
 	#name : #LayoutExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

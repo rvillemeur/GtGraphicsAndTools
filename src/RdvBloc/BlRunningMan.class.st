@@ -7,7 +7,7 @@ Class {
 	#instVars : [
 		'spriteGrid'
 	],
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #initialization }

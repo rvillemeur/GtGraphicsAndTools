@@ -7,7 +7,7 @@ A couple of example on the transform possibility in bloc
 Class {
 	#name : #TransformExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

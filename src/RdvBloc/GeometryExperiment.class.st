@@ -4,100 +4,8 @@ examples of geometry bonds and possibility within Bloc
 Class {
 	#name : #GeometryExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
-
-{ #category : #examples }
-GeometryExperiment class >> allGeometryExample [
-
-	<sampleInstance>
-	| space root elements  |
-	space := BlSpace new.
-
-	root := BlElement new
-		        border: (BlBorder paint: Color red width: 1);
-		        background: (Color red alpha: 0.2);
-		        layout: BlFlowLayout horizontal;
-		        constraintsDo: [ :c |
-			        c horizontal matchParent.
-			        c vertical fitContent ].
-
-
-	elements := Dictionary new.
-	elements at: 'annulul' put: self annulus.
-	elements at: 'bezier' put: self bezier.
-	elements at: 'circle' put: self circle.
-	elements at: 'ellipse' put: self ellipse.
-	elements at: 'line' put: self line.
-	elements at: 'polygon' put: self polygon.
-	elements at: 'polyline' put: self polyline.
-	elements at: 'rectangle' put: self rectangle.
-	elements
-		at: 'rounded rectangle'
-		put: self roundedRectangle.
-	elements at: 'square' put: self square.
-	elements at: 'triangle' put: self triangle.
-	elements keysAndValuesDo: [ :key :value |
-		root addChild: (self box: value text: key) ].
-
-	space root addChild: root.
-
-	space show.
-	^ space
-]
-
-{ #category : #examples }
-GeometryExperiment class >> annulus [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlAnnulusSectorGeometry new
-				   startAngle: 225;
-				   endAngle: 360;
-				   innerRadius: 0.3;
-				   outerRadius: 0.9);
-		  size: 100 @ 100;
-		  background: self background;
-		  border: self border
-]
-
-{ #category : #'examples - helpers' }
-GeometryExperiment class >> background [
-
-	^ Color yellow
-]
-
-{ #category : #examples }
-GeometryExperiment class >> basicBorder [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: self background;
-		  border: (BlBorder paint: Color red width: 5);
-		  size: 100 @ 100
-]
-
-{ #category : #examples }
-GeometryExperiment class >> bezier [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlBezierCurveGeometry controlPoints: {
-						   (5 @ 0).
-						   (25 @ 80).
-						   (75 @ 30).
-						   (95 @ 100) });
-		  size: 100 @ 100;
-		  background: self background;
-		  outskirts: BlOutskirts centered;
-		  border: self border
-]
 
 { #category : #'examples - helpers' }
 GeometryExperiment class >> border [
@@ -375,6 +283,94 @@ GeometryExperiment class >> triangle [
 		  size: 100 @ 100
 ]
 
-{ #category : #'see class side' }
-GeometryExperiment >> seeClassSide [ 
+{ #category : #examples }
+GeometryExperiment >> allGeometryExample [
+
+	<gtExample>
+	| space root elements  |
+	space := BlSpace new.
+
+	root := BlElement new
+		        border: (BlBorder paint: Color red width: 1);
+		        background: (Color red alpha: 0.2);
+		        layout: BlFlowLayout horizontal;
+		        constraintsDo: [ :c |
+			        c horizontal matchParent.
+			        c vertical fitContent ].
+
+
+	elements := Dictionary new.
+	elements at: 'annulul' put: self annulus.
+	elements at: 'bezier' put: self bezier.
+	elements at: 'circle' put: self circle.
+	elements at: 'ellipse' put: self ellipse.
+	elements at: 'line' put: self line.
+	elements at: 'polygon' put: self polygon.
+	elements at: 'polyline' put: self polyline.
+	elements at: 'rectangle' put: self rectangle.
+	elements
+		at: 'rounded rectangle'
+		put: self roundedRectangle.
+	elements at: 'square' put: self square.
+	elements at: 'triangle' put: self triangle.
+	elements keysAndValuesDo: [ :key :value |
+		root addChild: (self box: value text: key) ].
+
+	space root addChild: root.
+
+	space show.
+	^ space
+]
+
+{ #category : #examples }
+GeometryExperiment >> annulus [
+
+	<gtExample>
+
+	^ BlElement new
+		  geometry: (BlAnnulusSector new
+				   startAngle: 225;
+				   endAngle: 360;
+				   innerRadius: 0.3;
+				   outerRadius: 0.9);
+		  size: 100 @ 100;
+		  background: self background;
+		  border: self border
+]
+
+{ #category : #'examples - helpers' }
+GeometryExperiment >> background [
+
+	^ Color yellow
+]
+
+{ #category : #examples }
+GeometryExperiment >> basicBorder [
+
+	<gtExample>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 50 @ 100;
+				   beLeft);
+		  background: self background;
+		  border: (BlBorder paint: Color red width: 5);
+		  size: 100 @ 100
+]
+
+{ #category : #examples }
+GeometryExperiment >> bezier [
+
+	<gtExample>
+
+	^ BlElement new
+		  geometry: (BlBezierCurve controlPoints: {
+						   (5 @ 0).
+						   (25 @ 80).
+						   (75 @ 30).
+						   (95 @ 100) });
+		  size: 100 @ 100;
+		  background: self background;
+		  outskirts: BlOutskirts centered;
+		  border: self border
 ]

@@ -4,7 +4,7 @@ animation experiment and example in Bloc
 Class {
 	#name : #AnimationExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

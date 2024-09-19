@@ -4,7 +4,7 @@ some example on managing events and keyboard handling with bloc
 Class {
 	#name : #EventExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

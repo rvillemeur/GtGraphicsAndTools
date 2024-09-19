@@ -4,7 +4,7 @@ Some example on applying effect on a bloc element
 Class {
 	#name : #EffectExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }

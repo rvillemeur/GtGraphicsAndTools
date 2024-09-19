@@ -7,7 +7,7 @@ text experiment and example in bloc
 Class {
 	#name : #TextExperiment,
 	#superclass : #Object,
-	#category : #'RdvBloc-Bloc'
+	#category : #'RdvBloc-experiment'
 }
 
 { #category : #examples }
