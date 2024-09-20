@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:03:39.724-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:03:41.28-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4DA5Pu/eDQChtPWVAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can run multiple animations, in parallel or in sequence, which are \r\nmanaged by *BlSequentialAnimation* or *BlParallelAnimation*\r\n\r\nHere is an example of using `BlSequentialAnimation`:\r\n\r\n```smalltalk\r\n| space element translation scale sequential |\r\ntranslation := (BlTransformAnimation translate: 300 @ 300)\r\n   easing: BlEasingElastic new ;\r\n   duration: 2 seconds.\r\n\r\nscale := (BlTransformAnimation scale: 2 @ 2)\r\neasing: BlEasingElastic new;\r\nduration: 2 seconds.\r\n\r\nsequential := BlSequentialAnimation new addAll: {\r\n  translation.\r\n  scale }.\r\n\r\nelement := BlElement new\r\n   background: Color blue;\r\n   size: 100 @ 100;\r\n   position: 100 @ 100.\r\nelement addAnimation: sequential.\r\n\r\nspace := BlSpace new.\r\nspace root addChild: element.\r\nspace show.\r\n^space\r\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T10:03:51.293-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T10:03:51.293-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Sequential and Parallel animation"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "0002393e-efde-0d00-a1b3-6ca1033f2782"
+	}
+}
