@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T16:33:54.957-04:00"
+						"dateAndTimeString" : "2024-09-20T16:33:53.617-04:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtExample:BackgroundAndBorderExperiment>>builderOpacityBorder}}"
+				"string" : "{{gtExample:BackgroundAndBorderExperiment>>builderOpacityBorder}"
 			}
 		]
 	},

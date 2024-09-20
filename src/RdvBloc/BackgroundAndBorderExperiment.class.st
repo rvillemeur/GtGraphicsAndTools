@@ -7,27 +7,8 @@ Class {
 	#category : #'RdvBloc-experiment'
 }
 
-{ #category : #examples }
-BackgroundAndBorderExperiment class >> TriangleColorDashedMulti [
-
-	<sampleInstance>
-	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				 matchExtent: 50 @ 100;
-				 beLeft);
-		  background: Color yellow;
-		  border: (BlBorder builder
-				   width: 5;
-				   paint: (Color red alpha: 1);
-					dashOffset: 0;
-				dashArray: #(6 4 2);
-				   joinBevel  ;
-				   build);
-		  size: 200 @ 200
-]
-
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> box: element text: aText [
+BackgroundAndBorderExperiment >> box: element text: aText [
 
 	| container elt1 elt2 text |
 	container := BlElement new
@@ -57,7 +38,7 @@ BackgroundAndBorderExperiment class >> box: element text: aText [
 			        c vertical matchParent ].
 
 	text := BlTextElement new
-		        position: 5 @ 5;
+		        relocate: 5 @ 5;
 		        text: (aText asRopedText attributes:
 					         { (BlTextForegroundAttribute paint: Color black) });
 		        constraintsDo: [ :c |
@@ -71,12 +52,66 @@ BackgroundAndBorderExperiment class >> box: element text: aText [
 	^ container
 ]
 
-{ #category : #examples }
-BackgroundAndBorderExperiment class >> multipleElementOutskirts [
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderBorder [
 
-	<sampleInstance>
-	| container space |
-	space := BlSpace new.
+	<gtExample>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 50 @ 100;
+				   beLeft);
+		  background: Color yellow;
+		  border: (BlBorder builder
+				   paint: Color red;
+				   width: 5;
+				   build);
+		  size: 100 @ 100
+]
+
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderCapButtBorder [
+
+	<gtExample>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 100 @ 200;
+				   beLeft);
+		  background: Color yellow;
+		  border: (BlBorder builder
+				   paint: Color red;
+				   width: 5;
+				   lineCap: BlStrokeLineCap butt;
+				   lineJoin: BlStrokeLineJoin bevel;
+				   miterLimit: 2.0;
+				   dashArray: #( 10 5 );
+				   dashOffset: 0;
+				   build);
+		  size: 200 @ 200
+]
+
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderOpacityBorder [
+	<gtExample>
+	^ BlElement new
+		geometry: (BlTriangleGeometry new
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: Color yellow;
+		border: (BlBorder builder
+				paint: Color red;
+				width: 5;
+				opacity: 0.1;
+				build);
+		size: 100 @ 100
+]
+
+{ #category : #examples }
+BackgroundAndBorderExperiment >> multipleElementOutskirts [
+
+	<gtExample>
+	| container  |
 	container := BlElement new
 		             geometry: BlRectangleGeometry new;
 		             margin: (BlInsets all: 5);
@@ -95,127 +130,124 @@ BackgroundAndBorderExperiment class >> multipleElementOutskirts [
 		(self box: self outskirtsCentered text: 'outskirts centered').
 	container addChild:
 		(self box: self outskirtsInside text: 'outskirts inside').
-	space root addChild: container.
-	space show.
-	^ space
-]
 
-{ #category : #examples }
-BackgroundAndBorderExperiment class >> multipleElementWithOpacity [
-
-	<sampleInstance>
-	| element1 element2 element3 container box1 box2 box3 |
-	container := BlElement new
-		             size: 450 @ 150;
-		             geometry: BlRectangleGeometry new;
-		             margin: (BlInsets all: 3);
-		             padding: (BlInsets all: 3);
-		             layout: BlLinearLayout horizontal;
-		             background: Color lightGray;
-		             
-		             border: (BlBorder paint: Color black width: 3).
-	box1 := BlElement new
-		        size: 150 @ 150;
-		        geometry: BlRectangleGeometry new;
-		        margin: (BlInsets all: 3);
-		        padding: (BlInsets all: 3);
-		        layout: BlLinearLayout horizontal alignCenter;
-		        constraintsDo: [ :c |
-			        c horizontal matchParent.
-			        c vertical matchParent ];
-		        background: Color lightRed;
-		opacity: 0.1;
-		        border: (BlBorder paint: Color red width: 5).
-	element1 := BlElement new
-		            size: 100 @ 100;
-		            geometry: (BlPolygonGeometry vertices: {
-						             (50 @ 0).
-						             (65 @ 40).
-						             (100 @ 40).
-						             (75 @ 60).
-						             (85 @ 100).
-						             (50 @ 80).
-						             (15 @ 100).
-						             (25 @ 60).
-						             (0 @ 40).
-						             (35 @ 40) });
-		            border: (BlBorder paint: Color orange width: 5);
-		            background: Color lightOrange;
-		            outskirts: BlOutskirts centered.
-
-	box1 addChild: element1.
-	box2 := BlElement new
-		        size: 150 @ 150;
-		        geometry: BlRectangleGeometry new;
-		        margin: (BlInsets all: 3);
-		        padding: (BlInsets all: 3);
-		        layout: BlLinearLayout horizontal alignCenter;
-		        constraintsDo: [ :c |
-			        c horizontal matchParent.
-			        c vertical matchParent ];
-		        background: Color lightYellow;
-		opacity: 0.5;
-		        border: (BlBorder paint: Color yellow width: 5).
-	element2 := BlElement new
-		            size: 100 @ 100;
-		            geometry: (BlPolygonGeometry vertices: {
-						             (50 @ 0).
-						             (65 @ 40).
-						             (100 @ 40).
-						             (75 @ 60).
-						             (85 @ 100).
-						             (50 @ 80).
-						             (15 @ 100).
-						             (25 @ 60).
-						             (0 @ 40).
-						             (35 @ 40) });
-		            border: (BlBorder paint: Color green width: 5);
-		            background: Color lightGreen;
-		            outskirts: BlOutskirts centered.
-
-	box2 addChild: element2.
-
-	box3 := BlElement new
-		        size: 150 @ 150;
-		        geometry: BlRectangleGeometry new;
-		        margin: (BlInsets all: 3);
-		        padding: (BlInsets all: 3);
-		        layout: BlLinearLayout horizontal alignCenter;
-		        constraintsDo: [ :c |
-			        c horizontal matchParent.
-			        c vertical matchParent ];
-		        background: Color lightBlue;
-		opacity: 0.9;
-		        border: (BlBorder paint: Color blue width: 5).
-	element3 := BlElement new
-		            size: 100 @ 100;
-		            geometry: (BlPolygonGeometry vertices: {
-						             (50 @ 0).
-						             (65 @ 40).
-						             (100 @ 40).
-						             (75 @ 60).
-						             (85 @ 100).
-						             (50 @ 80).
-						             (15 @ 100).
-						             (25 @ 60).
-						             (0 @ 40).
-						             (35 @ 40) });
-		            border: (BlBorder paint: Color cyan width: 5);
-		            background: Color lightCyan;
-		            outskirts: BlOutskirts centered.
-
-	box3 addChild: element3.
-	container addChildren: {
-			box1.
-			box2.
-			box3 }.
 	^ container
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> multipleTriangle [
+BackgroundAndBorderExperiment >> multipleElementWithOpacity [
+	<gtExample>
+	| element1 element2 element3 container box1 box2 box3 |
+	container := BlElement new
+			size: 450 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal;
+			background: Color lightGray;
+			border: (BlBorder paint: Color black width: 3).
+	box1 := BlElement new
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal alignCenter;
+			constraintsDo: [ :c | 
+				c horizontal matchParent.
+				c vertical matchParent ];
+			background: Color lightRed;
+			opacity: 0.1;
+			border: (BlBorder paint: Color red width: 5).
+	element1 := BlElement new
+			size: 100 @ 100;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color orange width: 5);
+			background: Color lightOrange;
+			outskirts: BlOutskirts centered.
 
-	<sampleInstance>
+	box1 addChild: element1.
+	box2 := BlElement new
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal alignCenter;
+			constraintsDo: [ :c | 
+				c horizontal matchParent.
+				c vertical matchParent ];
+			background: Color lightYellow;
+			opacity: 0.5;
+			border: (BlBorder paint: Color yellow width: 5).
+	element2 := BlElement new
+			size: 100 @ 100;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color green width: 5);
+			background: Color lightGreen;
+			outskirts: BlOutskirts centered.
+
+	box2 addChild: element2.
+
+	box3 := BlElement new
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal alignCenter;
+			constraintsDo: [ :c | 
+				c horizontal matchParent.
+				c vertical matchParent ];
+			background: Color lightBlue;
+			opacity: 0.9;
+			border: (BlBorder paint: Color blue width: 5).
+	element3 := BlElement new
+			size: 100 @ 100;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color cyan width: 5);
+			background: Color lightCyan;
+			outskirts: BlOutskirts centered.
+
+	box3 addChild: element3.
+	container
+		addChildren: {box1.
+				box2.
+				box3}.
+	^ container
+]
+
+{ #category : #examples }
+BackgroundAndBorderExperiment >> multipleTriangle [
+
+	<gtExample>
 	| element1 element2 element3 container box1 box2 box3 |
 	container := BlElement new
 		             size: 1350 @ 450;
@@ -294,100 +326,85 @@ BackgroundAndBorderExperiment class >> multipleTriangle [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> multipleTriangleBackground [
-
-	<sampleInstance>
-	| container space |
-	space := BlSpace new.
+BackgroundAndBorderExperiment >> multipleTriangleBackground [
+	<gtExample>
+	| container |
 	container := BlElement new
-		             geometry: BlRectangleGeometry new;
-		             margin: (BlInsets all: 3);
-		             padding: (BlInsets all: 3);
-		             layout: BlLinearLayout horizontal;
-		             background: Color lightGray;
-		             border: (BlBorder paint: Color black width: 3);
-		             constraintsDo: [ :c |
-			             c horizontal fitContent.
-			             c vertical fitContent ].
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal;
+			background: Color lightGray;
+			border: (BlBorder paint: Color black width: 3);
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ].
 
-	container addChild:
-		(self box: self triangleBackgroundImage text: 'image').
-	container addChild:
-		(self box: self triangleBackgroundSolidColor text: 'solid color').
-	container addChild:
-		(self box: self triangleBackgroundLinearColor text: 'linear color').
-	container addChild:
-		(self box: self triangleBackgroundRadialColor text: 'radial color').
+	container addChild: (self box: self triangleBackgroundImage text: 'image').
+	container
+		addChild: (self box: self triangleBackgroundSolidColor text: 'solid color').
+	container
+		addChild: (self box: self triangleBackgroundLinearColor text: 'linear color').
+	container
+		addChild: (self box: self triangleBackgroundRadialColor text: 'radial color').
 
-	space root addChild: container.
-	space show.
-	^ space
+
+	^ container
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> multipleTriangleBorderColor [
-
-	<sampleInstance>
-	| container space |
-	space := BlSpace new.
+BackgroundAndBorderExperiment >> multipleTriangleBorderColor [
+	<gtExample>
+	| container |
 	container := BlElement new
-		             geometry: BlRectangleGeometry new;
-		             margin: (BlInsets all: 3);
-		             padding: (BlInsets all: 3);
-		             layout: BlLinearLayout horizontal;
-		             background: Color lightGray;
-		             border: (BlBorder paint: Color black width: 3);
-		             constraintsDo: [ :c |
-			             c horizontal fitContent.
-			             c vertical fitContent ].
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal;
+			background: Color lightGray;
+			border: (BlBorder paint: Color black width: 3);
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ].
 
-	container addChild:
-		(self box: self triangleBorderSolidColor text: 'solid color').
-	container addChild:
-		(self box: self triangleBorderLinearGradient text: 'linear color').
-	container addChild:
-		(self box: self triangleBorderRadialGradient text: 'radial color').
+	container
+		addChild: (self box: self triangleBorderSolidColor text: 'solid color').
+	container
+		addChild: (self box: self triangleBorderLinearGradient text: 'linear color').
+	container
+		addChild: (self box: self triangleBorderRadialGradient text: 'radial color').
 
-	space root addChild: container.
-	space show.
-	^ space
+	^ container
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> multipleTriangleDashed [
-
-	<sampleInstance>
-	| container space |
-	space := BlSpace new.
+BackgroundAndBorderExperiment >> multipleTriangleDashed [
+	<gtExample>
+	| container |
 	container := BlElement new
-		             geometry: BlRectangleGeometry new;
-		             margin: (BlInsets all: 3);
-		             padding: (BlInsets all: 3);
-		             layout: BlLinearLayout horizontal;
-		             background: Color lightGray;
-		             border: (BlBorder paint: Color black width: 3);
-		             constraintsDo: [ :c |
-			             c horizontal fitContent.
-			             c vertical fitContent ].
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			layout: BlLinearLayout horizontal;
+			background: Color lightGray;
+			border: (BlBorder paint: Color black width: 3);
+			constraintsDo: [ :c | 
+				c horizontal fitContent.
+				c vertical fitContent ].
 
-	container addChild:
-		(self box: self triangleDashedSmall text: 'dashedSmall').
-	container addChild: (self
-			 box: self triangleDashedArray
-			 text: 'dashOffset: 0; dashArray: #( 6 4 2 )').
-	container addChild:
-		(self box: self triangleDashedNormal text: 'dashed').
-	space root addChild: container.
-	space show.
-	^ space
+	container addChild: (self box: self triangleDashedSmall text: 'dashedSmall').
+	container
+		addChild: (self box: self triangleDashedArray text: 'dashOffset: 0; dashArray: #( 6 4 2 )').
+	container addChild: (self box: self triangleDashedNormal text: 'dashed').
+
+	^ container
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> multipleTriangleWithCapAndJoin [
+BackgroundAndBorderExperiment >> multipleTriangleWithCapAndJoin [
 
-	<sampleInstance>
-	| container space |
-	space := BlSpace new.
+	<gtExample>
+	| container  |
 	container := BlElement new
 		             geometry: BlRectangleGeometry new;
 		             margin: (BlInsets all: 3);
@@ -405,229 +422,231 @@ BackgroundAndBorderExperiment class >> multipleTriangleWithCapAndJoin [
 		(self box: self triangleJoinBevel text: 'bevel join').
 	container addChild:
 		(self box: self triangleJoinMiter text: 'miter join').
-	space root addChild: container.
-	space show.
-	^ space
+
+	^ container
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> outskirtsCentered [
-
-	| box element1 element2|
-	box := BlElement new
-		       size: 150 @ 150;
-		       geometry: BlRectangleGeometry new;
-		       margin: (BlInsets all: 3);
-		       padding: (BlInsets all: 3);
-		       background: Color lightYellow;
-		       border: (BlBorder paint: Color yellow width: 5).
-	element1 := BlElement new
-		           size: 100 @ 100;
-					position: 25@25;
-		           geometry: (BlPolygonGeometry vertices: {
-						            (50 @ 0).
-						            (65 @ 40).
-						            (100 @ 40).
-						            (75 @ 60).
-						            (85 @ 100).
-						            (50 @ 80).
-						            (15 @ 100).
-						            (25 @ 60).
-						            (0 @ 40).
-						            (35 @ 40) });
-		           border: (BlBorder paint: Color green width: 15);
-		           background: Color lightGreen;
-		           outskirts: BlOutskirts centered.
-element2 := BlElement new
-		           size: 100 @ 100;
-		position: 25@25;
-		           geometry: (BlPolygonGeometry vertices: {
-						            (50 @ 0).
-						            (65 @ 40).
-						            (100 @ 40).
-						            (75 @ 60).
-						            (85 @ 100).
-						            (50 @ 80).
-						            (15 @ 100).
-						            (25 @ 60).
-						            (0 @ 40).
-						            (35 @ 40) });
-		           border: (BlBorder builder
-				            paint: Color black;
-				            width: 2;
-				            dashOffset: 0;
-				            dashArray: #( 6 4 2 );
-				            capButt;
-				            build);
-		           background: Color transparent.
-
-	box addChildren: { element1. element2}.
-	^ box
-]
-
-{ #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> outskirtsInside [
-|box element1 element2|
-box := BlElement new
-		        size: 150 @ 150;
-		        geometry: BlRectangleGeometry new;
-		        margin: (BlInsets all: 3);
-		        padding: (BlInsets all: 3);
-		         background: Color lightBlue;
-		        border: (BlBorder paint: Color blue width: 5).
-	element1 := BlElement new
-		            size: 100 @ 100;
-		position: 25@25;
-		            geometry: (BlPolygonGeometry vertices: {
-						              (50 @ 0).
-						              (65 @ 40).
-						              (100 @ 40).
-						              (75 @ 60).
-						              (85 @ 100).
-						              (50 @ 80).
-						              (15 @ 100).
-						              (25 @ 60).
-						              (0 @ 40).
-						              (35 @ 40) });
-		            border: (BlBorder paint: Color cyan width: 10);
-		            background: Color lightCyan;
-		            outskirts: BlOutskirts inside.
-
-element2 := BlElement new
-		           size: 100 @ 100;
-				position: 25@25;
-		           geometry: (BlPolygonGeometry vertices: {
-						            (50 @ 0).
-						            (65 @ 40).
-						            (100 @ 40).
-						            (75 @ 60).
-						            (85 @ 100).
-						            (50 @ 80).
-						            (15 @ 100).
-						            (25 @ 60).
-						            (0 @ 40).
-						            (35 @ 40) });
-		           border: (BlBorder builder
-				            paint: Color black;
-				            width: 2;
-				            dashOffset: 0;
-				            dashArray: #( 6 4 2 );
-				            capButt;
-				            build);
-		           background: Color transparent.
-	box addChildren: { element1. element2}.
-	^box
-]
-
-{ #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> outskirtsOutside [
-
+BackgroundAndBorderExperiment >> outskirtsCentered [
 	| box element1 element2 |
 	box := BlElement new
-		       size: 150 @ 150;
-		       geometry: BlRectangleGeometry new;
-		       margin: (BlInsets all: 3);
-		       padding: (BlInsets all: 3);
-		       background: Color lightRed;
-		       border: (BlBorder paint: Color red width: 5).
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			background: Color lightYellow;
+			border: (BlBorder paint: Color yellow width: 5).
 	element1 := BlElement new
-		           size: 100 @ 100;
-		position: 25@25;
-		           geometry: (BlPolygonGeometry vertices: {
-						            (50 @ 0).
-						            (65 @ 40).
-						            (100 @ 40).
-						            (75 @ 60).
-						            (85 @ 100).
-						            (50 @ 80).
-						            (15 @ 100).
-						            (25 @ 60).
-						            (0 @ 40).
-						            (35 @ 40) });
-		           border: (BlBorder paint: Color orange width: 10);
-		           background: Color lightOrange;
-		           outskirts: BlOutskirts outside.
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color green width: 15);
+			background: Color lightGreen;
+			outskirts: BlOutskirts centered.
+	element2 := BlElement new
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder builder
+					paint: Color black;
+					width: 2;
+					dashOffset: 0;
+					dashArray: #(6 4 2);
+					capButt;
+					build);
+			background: Color transparent.
 
-element2 := BlElement new
-		           size: 100 @ 100;
-		position: 25@25;
-		           geometry: (BlPolygonGeometry vertices: {
-						            (50 @ 0).
-						            (65 @ 40).
-						            (100 @ 40).
-						            (75 @ 60).
-						            (85 @ 100).
-						            (50 @ 80).
-						            (15 @ 100).
-						            (25 @ 60).
-						            (0 @ 40).
-						            (35 @ 40) });
- border: (BlBorder builder
-				            paint: Color black;
-				            width: 2;
-				            dashOffset: 0;
-				            dashArray: #( 6 4 2 );
-				            capButt;
-				            build);
-		           background: Color transparent.
-	box addChildren: { element1. element2}.
+	box
+		addChildren: {element1.
+				element2}.
+	^ box
+]
+
+{ #category : #'examples - helpers' }
+BackgroundAndBorderExperiment >> outskirtsInside [
+	| box element1 element2 |
+	box := BlElement new
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			background: Color lightBlue;
+			border: (BlBorder paint: Color blue width: 5).
+	element1 := BlElement new
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color cyan width: 10);
+			background: Color lightCyan;
+			outskirts: BlOutskirts inside.
+
+	element2 := BlElement new
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder builder
+					paint: Color black;
+					width: 2;
+					dashOffset: 0;
+					dashArray: #(6 4 2);
+					capButt;
+					build);
+			background: Color transparent.
+	box
+		addChildren: {element1.
+				element2}.
+	^ box
+]
+
+{ #category : #'examples - helpers' }
+BackgroundAndBorderExperiment >> outskirtsOutside [
+	| box element1 element2 |
+	box := BlElement new
+			size: 150 @ 150;
+			geometry: BlRectangleGeometry new;
+			margin: (BlInsets all: 3);
+			padding: (BlInsets all: 3);
+			background: Color lightRed;
+			border: (BlBorder paint: Color red width: 5).
+	element1 := BlElement new
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder paint: Color orange width: 10);
+			background: Color lightOrange;
+			outskirts: BlOutskirts outside.
+
+	element2 := BlElement new
+			size: 100 @ 100;
+			relocate: 25 @ 25;
+			geometry: (BlPolygon
+					vertices: {50 @ 0.
+							65 @ 40.
+							100 @ 40.
+							75 @ 60.
+							85 @ 100.
+							50 @ 80.
+							15 @ 100.
+							25 @ 60.
+							0 @ 40.
+							35 @ 40});
+			border: (BlBorder builder
+					paint: Color black;
+					width: 2;
+					dashOffset: 0;
+					dashArray: #(6 4 2);
+					capButt;
+					build);
+			background: Color transparent.
+	box
+		addChildren: {element1.
+				element2}.
 	^ box
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBackgroundImage [
-"not working currently"
-	<sampleInstance>
+BackgroundAndBorderExperiment >> triangleBackgroundImage [
+	<gtExample>
+	| builder background |
+	builder := BlBackground builder.
+	builder image
+		form: PolymorphSystemSettings pharoLogoForm;
+		opacity: 0.6.
+	background := builder build.
+
 	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: (BlImageBackground image: PolymorphSystemSettings pharoLogoForm);
-		  border: (BlBorder paint: Color lightGray width: 5);
-		  size: 100 @ 100
+		geometry: (BlTriangleGeometry new
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: PolymorphSystemSettings pharoLogoForm;
+		border: (BlBorder paint: Color lightGray width: 5);
+		size: 100 @ 100
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBackgroundLinearColor [
-	"not working currently"
-
-	<sampleInstance>
+BackgroundAndBorderExperiment >> triangleBackgroundLinearColor [
+	<gtExample>
 	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: ((BlLinearGradientPaint direction: 1 @ 1)
-				   from: Color red
-				   to: Color blue);
-		  border: (BlBorder paint: Color lightGray width: 5);
-		  size: 100 @ 100
+		geometry: (BlTriangleGeometry new
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: ((BlLinearGradientPaint direction: 1 @ 1) from: Color red to: Color blue);
+		border: (BlBorder paint: Color lightGray width: 5);
+		size: 100 @ 100
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBackgroundRadialColor [
-	"not working currently"
-
-	<sampleInstance>
+BackgroundAndBorderExperiment >> triangleBackgroundRadialColor [
+	<gtExample>
 	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: (BlRadialGradientPaint new
-				   stops: {
-						   (0 -> Color blue).
-						   (1 -> Color red) };
-				   center: 75 @ 75;
-				   radius: 50;
-				   yourself);
-		  border: (BlBorder paint: Color lightGray width: 5);
-		  size: 100 @ 100
+		geometry: (BlTriangleGeometry new
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: (BlRadialGradientPaint new
+				stops: {0 -> Color blue.
+						1 -> Color red};
+				center: 75 @ 75;
+				radius: 50;
+				yourself);
+		border: (BlBorder paint: Color lightGray width: 5);
+		size: 100 @ 100
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBackgroundSolidColor [
+BackgroundAndBorderExperiment >> triangleBackgroundSolidColor [
 	"not working currently"
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -642,9 +661,9 @@ BackgroundAndBorderExperiment class >> triangleBackgroundSolidColor [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBorderImage [
+BackgroundAndBorderExperiment >> triangleBorderImage [
 "not working currently"
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -657,9 +676,9 @@ BackgroundAndBorderExperiment class >> triangleBorderImage [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBorderLinearGradient [
+BackgroundAndBorderExperiment >> triangleBorderLinearGradient [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -674,9 +693,9 @@ BackgroundAndBorderExperiment class >> triangleBorderLinearGradient [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBorderRadialGradient [
+BackgroundAndBorderExperiment >> triangleBorderRadialGradient [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -695,9 +714,9 @@ BackgroundAndBorderExperiment class >> triangleBorderRadialGradient [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleBorderSolidColor [
+BackgroundAndBorderExperiment >> triangleBorderSolidColor [
 
-	<sampleInstance>
+	<gtExample>
 	^BlElement new
 		geometry: (BlTriangleGeometry new
 				 matchExtent: 50 @ 100;
@@ -708,9 +727,9 @@ BackgroundAndBorderExperiment class >> triangleBorderSolidColor [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleColorDashed [
+BackgroundAndBorderExperiment >> triangleColorDashed [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -721,13 +740,13 @@ BackgroundAndBorderExperiment class >> triangleColorDashed [
 				   paint: (Color red alpha: 1);
 				   dashOffset: 0;
 				   dashArray: #( 6 4 2 );
-				   joinBevel;
+				   lineJoin: BlStrokeLineJoin bevel;
 				   build);
 		  size: 200 @ 200
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleDashedArray [
+BackgroundAndBorderExperiment >> triangleDashedArray [
 
 	| box element |
 	box := BlElement new
@@ -756,9 +775,9 @@ BackgroundAndBorderExperiment class >> triangleDashedArray [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleDashedColorWithBuilder [
+BackgroundAndBorderExperiment >> triangleDashedColorWithBuilder [
 
-	<sampleInstance>
+	<gtExample>
 	^ BlElement new
 		  geometry: (BlTriangleGeometry new
 				   matchExtent: 50 @ 100;
@@ -773,7 +792,7 @@ BackgroundAndBorderExperiment class >> triangleDashedColorWithBuilder [
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleDashedNormal [
+BackgroundAndBorderExperiment >> triangleDashedNormal [
 
 	| box element |
 	box := BlElement new
@@ -791,7 +810,7 @@ BackgroundAndBorderExperiment class >> triangleDashedNormal [
 				            paint: Color cyan;
 				            width: 15;
 				            dashed;
-				            joinRound;
+				            lineJoin: BlStrokeLineJoin round;
 				            build);
 		           background: Color lightCyan;
 		           outskirts: BlOutskirts centered.
@@ -801,7 +820,7 @@ BackgroundAndBorderExperiment class >> triangleDashedNormal [
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleDashedSmall [
+BackgroundAndBorderExperiment >> triangleDashedSmall [
 
 	| box element |
 	box := BlElement new
@@ -819,7 +838,7 @@ BackgroundAndBorderExperiment class >> triangleDashedSmall [
 				            paint: Color orange;
 				            width: 15;
 				            dashedSmall;
-				            joinRound;
+				            lineJoin: BlStrokeLineJoin round;
 				            build);
 		           background: Color lightOrange;
 		           outskirts: BlOutskirts centered.
@@ -829,7 +848,7 @@ BackgroundAndBorderExperiment class >> triangleDashedSmall [
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleJoinBevel [
+BackgroundAndBorderExperiment >> triangleJoinBevel [
 
 	| box element |
 	box := BlElement new
@@ -847,7 +866,7 @@ BackgroundAndBorderExperiment class >> triangleJoinBevel [
 				            paint: Color green;
 				            width: 15;
 				            capButt;
-				            joinBevel;
+				            lineJoin: BlStrokeLineJoin bevel;
 				            build);
 		           background: Color lightGreen;
 		           outskirts: BlOutskirts centered.
@@ -857,7 +876,7 @@ BackgroundAndBorderExperiment class >> triangleJoinBevel [
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleJoinMiter [
+BackgroundAndBorderExperiment >> triangleJoinMiter [
 
 	| box element |
 	box := BlElement new
@@ -875,7 +894,7 @@ BackgroundAndBorderExperiment class >> triangleJoinMiter [
 				            paint: Color cyan;
 				            width: 15;
 				            capSquare;
-				            joinMiter;
+				            lineJoin: BlStrokeLineJoin miter;
 				            build);
 		           background: Color lightCyan;
 		           outskirts: BlOutskirts centered.
@@ -885,7 +904,7 @@ BackgroundAndBorderExperiment class >> triangleJoinMiter [
 ]
 
 { #category : #'examples - helpers' }
-BackgroundAndBorderExperiment class >> triangleJoinRound [
+BackgroundAndBorderExperiment >> triangleJoinRound [
 
 	| box element |
 	box := BlElement new
@@ -903,7 +922,7 @@ BackgroundAndBorderExperiment class >> triangleJoinRound [
 				            paint: Color orange;
 				            width: 15;
 				            capRound;
-				            joinRound;
+				            lineJoin: BlStrokeLineJoin round;
 				            build);
 		           background: Color lightOrange;
 		           outskirts: BlOutskirts centered.
@@ -913,91 +932,28 @@ BackgroundAndBorderExperiment class >> triangleJoinRound [
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleSolidColor [
-
-	<sampleInstance>
-	^BlElement new
+BackgroundAndBorderExperiment >> triangleSolidColor [
+	<gtExample>
+	^ BlElement new
 		geometry: (BlTriangleGeometry new
-				 matchExtent: 50 @ 100;
-				 beLeft);
-		background:  Color yellow;
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: Color yellow;
 		border: (BlBorder paint: Color red width: 5);
 		size: 100 @ 100
 ]
 
 { #category : #examples }
-BackgroundAndBorderExperiment class >> triangleSolidColorWithBuilder [
-
-	<sampleInstance>
+BackgroundAndBorderExperiment >> triangleSolidColorWithBuilder [
+	<gtExample>
 	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: Color yellow;
-		  border: (BlBorder builder
-				   width: 5;
-				   paint: Color red;
-				   build);
-		  size: 100 @ 100
-]
-
-{ #category : #'as yet unclassified' }
-BackgroundAndBorderExperiment >> builderBorder [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: self background;
-		  border: (BlBorder builder
-				   paint: Color red;
-				   width: 5;
-				   build);
-		  size: 100 @ 100
-]
-
-{ #category : #'as yet unclassified' }
-BackgroundAndBorderExperiment >> builderCapButtBorder [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 100 @ 200;
-				   beLeft);
-		  background: self background;
-		  border: (BlBorder builder
-				   paint: Color red;
-				   width: 5;
-				   lineCap: BlStrokeLineCap butt;
-				   lineJoin: BlStrokeLineJoin bevel;
-				   miterLimit: 2.0;
-				   dashArray: #( 10 5 );
-				   dashOffset: 0;
-				   build);
-		  size: 200 @ 200
-]
-
-{ #category : #'as yet unclassified' }
-BackgroundAndBorderExperiment >> builderOpacityBorder [
-
-	<sampleInstance>
-
-	^ BlElement new
-		  geometry: (BlTriangleGeometry new
-				   matchExtent: 50 @ 100;
-				   beLeft);
-		  background: self background;
-		  border: (BlBorder builder
-				   paint: Color red;
-				   width: 5;
-				   opacity: 0.1;
-				   build);
-		  size: 100 @ 100
-]
-
-{ #category : #'see class side' }
-BackgroundAndBorderExperiment >> seeClassSide [ 
+		geometry: (BlTriangleGeometry new
+				matchExtent: 50 @ 100;
+				beLeft);
+		background: Color yellow;
+		border: (BlBorder builder
+				width: 5;
+				paint: Color red;
+				build);
+		size: 100 @ 100
 ]
