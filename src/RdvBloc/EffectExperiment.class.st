@@ -36,7 +36,7 @@ EffectExperiment >> effectGaussianShadow [
 		  geometry: (BlRoundedRectangleGeometry cornerRadius: 2);
 		  background: (Color blue alpha: 0.5);
 		  border: (BlBorder paint: Color red width: 10);
-			effect: (BlGaussianShadowEffect color: Color yellow offset: 10@20 width: 5)
+			effect: (BlGaussianShadowEffect color: Color yellow width: 5 offset: 10@20 )
 		
 ]
 

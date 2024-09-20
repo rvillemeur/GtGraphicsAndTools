@@ -129,80 +129,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T10:55:47.177-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T10:55:47.177-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "KFai+O/eDQCz6natCPfC9Q=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Try the following variation."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T08:50:13.667-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T10:55:58.751-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uBiaN+7eDQCFhBvDAz8ngg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtExample:EffectExperiment>>effectSimpleShadow3|noCode}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-09-20T10:52:33.833-04:00"
 					}
 				},
@@ -214,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T10:52:33.833-04:00"
+						"dateAndTimeString" : "2024-09-20T11:14:40.108-04:00"
 					}
 				},
 				"uid" : {
@@ -224,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#### Gaussian shadow.\r\nThe following produces\r\n"
+				"string" : "#### Gaussian shadow.\r\nThe following produces"
 			},
 			{
 				"__type" : "textSnippet",
