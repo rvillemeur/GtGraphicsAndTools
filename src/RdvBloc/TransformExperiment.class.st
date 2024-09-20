@@ -11,17 +11,17 @@ Class {
 }
 
 { #category : #examples }
-TransformExperiment class >> absoluteTransformationExample [
+TransformExperiment >> absoluteTransformationExample [
 
-	<sampleInstance>
+	<gtExample>
 	| elt frame container |
 	elt := BlElement new
 		       background: (Color red alpha: 0.5);
-		       position: 100 asPoint;
+		       relocate: 100 asPoint;
 		       size: 100 asPoint.
 	frame := BlElement new
 		         background: Color yellow;
-		         position: 100 asPoint;
+		         relocate: 100 asPoint;
 		         size: 100 asPoint.
 	container := BlElement new
 		             background: Color lightGreen;
@@ -38,22 +38,21 @@ TransformExperiment class >> absoluteTransformationExample [
 				  shy: 45 degreesToRadians sin;
 				  sx: 45 degreesToRadians cos;
 				  sy: 45 degreesToRadians cos)).
-	container openInSpace.
 	^ container
 ]
 
 { #category : #examples }
-TransformExperiment class >> shearExample [
+TransformExperiment >> shearExample [
 
-	<sampleInstance>
+	<gtExample>
 	| elt frame container |
 	elt := BlElement new
 		       background: (Color red alpha: 0.5);
-		       position: 100 asPoint;
+		       relocate: 100 asPoint;
 		       size: 100 asPoint.
 	frame := BlElement new
 		         background: Color yellow;
-		         position: 100 asPoint;
+		         relocate: 100 asPoint;
 		         size: 100 asPoint.
 	container := BlElement new
 		             background: Color lightGreen;
@@ -66,22 +65,22 @@ TransformExperiment class >> shearExample [
 		(BlElementAbsoluteTransformation matrix: (BlShearTransformation new
 				  angleX: 0;
 				  angleY: 20) asMatrix).
-	container openInSpace.
+
 	^ container
 ]
 
 { #category : #examples }
-TransformExperiment class >> topLeftOriginExample [
+TransformExperiment >> topLeftOriginExample [
 
-	<sampleInstance>
+	<gtExample>
 	| elt frame container |
 	elt := BlElement new
 		       background: (Color red alpha: 0.5);
-		       position: 100 asPoint;
+		       relocate: 100 asPoint;
 		       size: 100 asPoint.
 	frame := BlElement new
 		         background: Color yellow;
-		         position: 100 asPoint;
+		         relocate: 100 asPoint;
 		         size: 100 asPoint.
 	container := BlElement new
 		             background: Color lightGreen;
@@ -90,42 +89,41 @@ TransformExperiment class >> topLeftOriginExample [
 				             frame.
 				             elt }.
 
-	elt transformation: (BlElementLocalTransformation newWith:
+	elt transformation: (BlElementLocalTransformation with:
 			 ((BlMatrixTransformation matrix:
 				   (BlMatrix2D rotation: 45 degreesToRadians)) origin:
 				  BlAffineTransformationTopLeftOrigin new)).
-	container openInSpace.
+
 	^ container
 ]
 
 { #category : #examples }
-TransformExperiment class >> transformBlBasicLayout [
+TransformExperiment >> transformBlBasicLayout [
 
-	<sampleInstance>
+	<gtExample>
 	| child parent |
 	child := BlElement new
 		         background: Color lightBlue;
 		         geometry: BlCircleGeometry new;
 		         yourself.
 
-	child position: 100 @ 100.
+	child relocate: 100 @ 100.
 
 	parent := BlElement new
 		          size: 200 asPoint;
 		          addChild: child;
 		          background: Color lightRed.
 
-	parent whenLayoutedDoOnce: [
+	parent layout onLayoutDone: [
 		child transformDo: [ :t | t translateBy: child size negated / 2 ] ].
 
-	parent openInSpace.
 	^parent.
 ]
 
 { #category : #examples }
-TransformExperiment class >> transformExample [
+TransformExperiment >> transformExample [
 
-	<sampleInstance>
+	<gtExample>
 	| container node |
 	container := BlElement new
 		              layout: BlFrameLayout new;
@@ -150,24 +148,23 @@ TransformExperiment class >> transformExample [
 			rotateBy: 69;
 			translateBy: 50 @ 50 ].
 
-	container whenLayoutedDoOnce:  [ container addChild: node.].
+	container layout onLayoutDone:  [ container addChild: node.].
 
-	container openInNewSpace. 
 	^ container
 ]
 
 { #category : #examples }
-TransformExperiment class >> usingAnimationPropertyExample [
+TransformExperiment >> usingAnimationPropertyExample [
 
-	<sampleInstance>
+	<gtExample>
 	| elt frame container |
 	elt := BlElement new
 		       background: (Color red alpha: 0.5);
-		       position: 100 asPoint;
+		       relocate: 100 asPoint;
 		       size: 100 asPoint.
 	frame := BlElement new
 		         background: Color yellow;
-		         position: 100 asPoint;
+		         relocate: 100 asPoint;
 		         size: 100 asPoint.
 	container := BlElement new
 		             background: Color lightGreen;
@@ -176,13 +173,8 @@ TransformExperiment class >> usingAnimationPropertyExample [
 				             frame.
 				             elt }.
 
-	elt transformation: (BlElementLocalTransformation newWith:
+	elt transformation: (BlElementLocalTransformation with:
 			 ((BlRotationTransformation new angle: 45) origin:
-				  BlAffineTransformationCenterOrigin defaultInstance)).
-	container openInSpace.
+				  BlAffineTransformationCenterOrigin new)).
 	^ container
-]
-
-{ #category : #'see class side' }
-TransformExperiment >> seeClassSide [ 
 ]
