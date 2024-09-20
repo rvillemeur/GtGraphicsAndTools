@@ -166,6 +166,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:26:59.828-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:27:11.29-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IJG2b/XeDQCFD6qwD+Hlsg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:BackgroundAndBorderExperiment>>multipleTriangleDashed}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-09-20T08:42:34.345-04:00"
 					}
 				},
@@ -203,6 +240,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:26:15.899-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:26:46.944-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kD8YbfXeDQCEsaAlD+Hlsg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:BackgroundAndBorderExperiment>>multipleTriangleWithCapAndJoin}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-09-20T08:42:36.247-04:00"
 					}
 				},
@@ -225,6 +299,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Last, when the lines of your border cross each other, you can define the style of the join \r\n- **round join**\r\n- **bevel join**\r\n- **mitter join**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:21:05.932-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T17:26:09.396-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+IaeWvXeDQCEAW0FD+Hlsg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:BackgroundAndBorderExperiment>>multipleTriangleWithCapAndJoin}}"
 			},
 			{
 				"__type" : "textSnippet",

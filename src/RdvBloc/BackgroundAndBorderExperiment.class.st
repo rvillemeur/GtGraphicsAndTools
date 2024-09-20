@@ -423,7 +423,7 @@ BackgroundAndBorderExperiment >> multipleTriangleWithCapAndJoin [
 	container addChild:
 		(self box: self triangleJoinMiter text: 'miter join').
 
-	^ container
+	^ container transformDo: [:t | t scaleBy: 0.7; topLeftOrigin].
 ]
 
 { #category : #'examples - helpers' }
@@ -608,7 +608,8 @@ BackgroundAndBorderExperiment >> triangleBackgroundImage [
 		geometry: (BlTriangleGeometry new
 				matchExtent: 50 @ 100;
 				beLeft);
-		background: PolymorphSystemSettings pharoLogoForm;
+		"background: PolymorphSystemSettings pharoLogoForm;"
+		background: ((BlPaintBackground paint: Color red  asBlPaint) opacity: 0.75);
 		border: (BlBorder paint: Color lightGray width: 5);
 		size: 100 @ 100
 ]
