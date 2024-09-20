@@ -1,0 +1,409 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:25.921-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:25.921-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ABEH/e7eDQCYuzGFAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Frame layout preferred usage contains only one child. It gives more dynamic control than `BlBasicLayout` which only allows fixed position. It can however contain multiple children."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:22.019-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:25.922-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uIrL/O7eDQCYtLNeAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The alignment attribute controls the position of children within a FrameLayout. Children can be aligned both vertically and horizontally as follows:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:27.671-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:27.671-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2Mgh/e7eDQCYws0PAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- horizontally children can be aligned to the left, center, or right;\r\n- vertically children can be aligned to the top, center, or bottom."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:37.013-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:37.013-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "IFGw/e7eDQCY8XduAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Alignment is a constraint specific to frame layouts, as it's not relevant to all layouts. To access frame-specific constraints, we send *frame* to the current constraint object, which returns an instance of `BlFrameLayoutConstraints` that we can use to set the desired alignment. Other constraints like the size of an element are common to all layouts and can be set directly without requesting a\r\nspecific constraint object."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:41.794-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:41.794-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6ET5/e7eDQCZB+goAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "When using multiple children, if we do not specify any alignment they will beplaced in the top-left corner in the order in which they were added to the parent and they will overlap each other.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:46.493-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:46.493-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ePRA/u7eDQCZDnD4Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Parent definition\r\n\r\n`BlFrameLayout new`\r\n\r\n- align:horizontal\r\n- align:vertical\r\n\r\n*TODO* Check class `BlElementAlignment` and `weight:` message\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:48.083-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:48.083-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UDtZ/u7eDQCZFRpSAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Children constraints\r\n\r\n- horizontal\r\n- alignCenter\r\n- alignLeft\r\n- alignRight\r\n- alignCenterAt:\r\n- alignLeftAt:\r\n- alignRightAt:\r\n- alignNone\r\n\r\n- vertical\r\n- alignBottom\r\n- alignCenter\r\n- alignTop\r\n- alignBottomAt:\r\n- alignCenterAt:\r\n- alignTopAt:\r\n- alignNone\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:50.371-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:50.371-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uCh8/u7eDQCZHDTxAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Example: One children\r\n\r\n```smalltalk\r\ncontainer := BlElement new\r\n\t\t background: (Color red alpha: 0.2);\r\n\t\t border: (BlBorder paint: Color red width: 1);\r\n\t\t layout: BlFrameLayout new;\r\n\t\t constraintsDo: [ :c |\r\n\t\t\t c horizontal matchParent.\r\n\t\t\t c vertical matchParent ].\r\n\r\nchild := BlElement new\r\n\t size: 400 @ 400;\r\n\t clipChildren: false;\r\n\t background: (Color blue alpha: 0.2);\r\n\t border: (BlBorder paint: Color blue width: 1);\r\n\t constraintsDo: [ :c |\r\n\t\t c frame horizontal alignCenter.\r\n\t\t c frame vertical alignCenter ].\r\n\r\ncontainer addChild: child.\r\n```\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:52.702-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:52.702-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SLaf/u7eDQCZJBRYAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Example: multiple children\r\n\r\nA frame can also accept multiple children.\r\n\r\nMultiple children are positioned with size defined by weight. In this case, children\r\nthat match their parents can also be configured to occupy only a fraction of\r\nthe parent's size using the weight attribute. A child can match its parent both\r\nhorizontally and vertically. If no padding or margin is used, the child will\r\noverlap the parent completely.\r\n\r\n```smalltalk\r\n| root elt1 elt2 elt3 elt4 elt5 elt6 elt7 elt8 elt9 |\r\nroot := BlElement new\r\n\tborder: (BlBorder paint: Color red width: 1);\r\n\tbackground: (Color red alpha: 0.2);\r\n\tlayout: BlFrameLayout new;\r\n\tconstraintsDo: [ :c |\r\n\t\tc horizontal matchParent.\r\n\t\tc vertical matchParent ].\r\n\r\n\"weight can only be used if the size, or if fitContent are not specified\"\r\nelt1 := BlElement new\r\n\tborder: (BlBorder paint: Color blue width: 1);\r\n\tbackground: Color random;\r\n\tmargin: (BlInsets all: 5);\r\n\tconstraintsDo: [ :c |\r\n\t\tc frame horizontal alignLeft weight: 0.2.\r\n\t\tc frame vertical alignTop weight: 0.2.\r\n\tc horizontal matchParent.\r\n\tc vertical matchParent ];\r\n\taddChild: (BlTextElement new text: 'left top' asRopedText).\r\nroot addChild: elt1.\r\n\r\n\"...code continue for the 8 other children\"\r\n```\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:44:37.912-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:45:52.705-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wIUq+u7eDQCYgzhtAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Example: multiple children\r\nMultiple children positioned with fixed size.\r\n\r\n```smalltalk\r\n| root elt1 elt2 elt3 elt4 elt5 elt6 elt7 elt8 elt9 |\r\nroot := BlElement new\r\n\tborder: (BlBorder paint: Color red width: 1);\r\n\tbackground: (Color red alpha: 0.2);\r\n\tlayout: BlFrameLayout new;\r\n\tconstraintsDo: [ :c |\r\n\t\tc horizontal matchParent.\r\n\t\tc vertical matchParent ].\r\n\r\nelt1 := BlElement new\r\n\t\tsize: 80 @ 80;\r\n\t\tborder: (BlBorder paint: Color blue width: 1);\r\n\t\tbackground: Color random;\r\n\t\tmargin: (BlInsets all: 5);\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc frame horizontal alignLeft.\r\n\t\t\tc frame vertical alignTop ];\r\n\t\taddChild: (BlTextElement new text: 'left top' asRopedText).\r\nroot addChild: elt1.\r\n\r\n\"...code continue for the 8 other children\""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:44:37.876-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:44:37.876-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Frame Layout"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "38f529fa-eede-0d00-9882-3a47033f2782"
+	}
+}

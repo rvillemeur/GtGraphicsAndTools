@@ -1,0 +1,150 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:28.027-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:28.027-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qHXqIO/eDQCbsrBwAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The drop event should be applied to the element that will receive the dragged content.\r\n`Elt1` uses the dragEnd to know when the drag has ended.\r\n`Elt2` uses the dropEvent to know when something try to be dropped on it.\r\nIf you drop `elt1` on `elt2`, `elt2` opens an inspector on `elt1`.\r\n\r\n```\r\n| elt1 elt2 space |\r\nelt1 := BlElement new \r\n\tbackground: Color lightBlue;\r\n\tposition: 100 asPoint;\r\n\taddEventHandler: BlPullHandler new disallowOutOfBounds;\r\n\tid: #elt1;\r\n\tyourself.\r\n\t\r\nelt2 := BlElement new \r\n\tbackground: Color red;\r\n\tsize: 100 asPoint;\r\n\tposition: 200 asPoint;\r\n\tid: #elt2;\r\n\tyourself.\r\n\t\r\nspace := BlSpace new.\r\nspace root addChildren: { elt1 . elt2 }.\r\n \r\nelt2 \r\n\taddEventHandlerOn: BlDropEvent \r\n\tdo: [ :evt | evt gestureSource inspect ].\r\nelt1 \r\n\taddEventHandlerOn: BlDragEndEvent \r\n\tdo: [ :evt | ].\r\n \r\nspace show.\r\n```\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:29.573-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:29.573-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uAwCIe/eDQCbudy6Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Manually drag and drop\r\n\r\n```\r\nelt := BlElement new background: Color red; size: 200 asPoint.\r\noffset := 0.\r\n\r\nelt addEventHandlerOn: BlDragStartEvent do: [ :e | e consume.\r\n    offset := e position - elt position].\r\nelt addEventHandlerOn: BlDragEvent do: [ :e | elt position: e position - offset ].\r\n\r\nelt openInSpace.\r\n```\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:10.189-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:55:29.576-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yE3aH+/eDQCbkZ34Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### BlPullHandler\r\n\r\n\r\n```\r\nparent := BlElement new background: Color lightGreen; size: 600 asPoint.\r\nelt := BlElement new background: Color red; size: 100 asPoint.\r\nparent addChild: elt.\r\n\r\nelt addEventHandler: BlPullHandler new disallowOutOfBounds.\r\n\r\nparent openInSpace.\r\n```\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:55:19.257-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:55:19.257-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Drag and Drop"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "3013da1f-efde-0d00-9b90-1ee2033f2782"
+	}
+}

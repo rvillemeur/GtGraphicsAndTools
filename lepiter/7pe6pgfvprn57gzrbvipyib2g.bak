@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:51.652-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:25:23.697-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:51.652-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mDgQvxugDQCT3G6BCAoGAw=="
+					"uidString" : "uHjz4e7eDQCU05RkAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\n**important class to look at**\r\n{{gtClass:BlElement}}\r\n{{gtClass:BlBackground}}\r\n{{gtClass:BlGeometryVisualAndLayoutBoundsExamples}}\r\n{{gtClass:BlBasicShortcut}}\r\n{{gtClass:BrStencil}}\n\n**adding style to element state**\n{{gtClass:BlElementStyle}}\n{{gtClass:BlElementProperties}}\n{{gtClass:BlElementState}}"
+				"string" : "If your parent doesn't define any specific layout, it will default to `BlBasicLayout`. Using this layout, children can position themselves at arbitrary positions within the parent coordinate space using the message `position:`.\r\n\r\n```\r\nBlElement new position: 50@50.\r\n```\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:31:22.628131-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:53.285-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:53.285-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "O+Bvx6uBDQC6xnCEC6EZOQ=="
+					"uidString" : "oGMM4u7eDQCU2khnAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "`BlBasicLayout` lets you position your children at the position you want them to\r\nbe. Layout constraints are irrelevant for this layout, you should specify the size\r\nof each child element to be added. Those children can them implement their own\r\nlayout strategy.\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:14:41.140131-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:30.361-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:09:58.898-04:00"
+						"dateAndTimeString" : "2024-09-20T09:37:53.288-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "012+i6uBDQC6i7PsC6EZOQ=="
+					"uidString" : "qJyu4O7eDQCUns2lAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "also possible to activate in the GT-Inspector's menu, next to the tabs.\r\n\n\n- handling mouse and keyboard event (shortcut, keybinding, etc...)\n=> subclass BlEventListener, overwrite method which handle event, and add\ninstance of the class to your BlElement with method addEventHandler: \n\nKeyboard shortcut: BlShortcut\n\n\n- Bloc animation\n=> announcer\n=> BlBaseAnimation and subclasses\n=> addAnimation method in BlElement\r\n\n- Drag&Drop\nExplore BlBaseDragEvent and subclasses.\n"
+				"string" : "#### Example\r\nThe following example shows how you can position children at given positions (see Figure *@defaultlayout@*).\r\n\r\n```smalltalk\r\nroot := BlElement new\r\n\tborder: (BlBorder paint: Color red width: 1);\r\n\tbackground: (Color red alpha: 0.2);\r\n\t\"not necessary, except as reminder, this is the default layout\"\r\n\t  \"layout: BlBasicLayout new;\"\r\n\tconstraintsDo: [ :c |\r\n\t\tc horizontal matchParent.\r\n\t\tc vertical matchParent ].\r\n\r\nelt1 := BlElement new\r\n\tborder: (BlBorder paint: Color blue width: 1);\r\n\tsize: 40 @ 80;\r\n\tbackground: (Color blue alpha: 0.2);\r\n\tposition: 50 @ 40.\r\nelt2 := BlElement new\r\n\tborder: (BlBorder paint: Color yellow width: 1);\r\n\tsize: 40 @ 80;\r\n\tbackground: (Color yellow alpha: 0.2);\r\n\tposition: 60 @ 60.\r\n\r\n\troot addChildren: { elt1 . elt2 }\r\n```"
 			}
 		]
 	},
@@ -125,7 +125,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:19:05.171222-04:00"
+			"dateAndTimeString" : "2024-09-20T09:37:42.02-04:00"
 		}
 	},
 	"editEmail" : {
@@ -136,15 +136,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:19:40.690222-04:00"
+			"dateAndTimeString" : "2024-09-20T09:37:42.02-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc - base element for GUI"
+		"title" : "BlElement default layout: basicLayout"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "1645d772-7381-0d00-ba98-b6ab0ba11939"
+		"uuid" : "884eaee0-eede-0d00-949d-212f033f2782"
 	}
 }

@@ -18,6 +18,191 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:53:17.002-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:53:21.228-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KDEbGe/eDQCbVU/JAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The announcement framwork is an event notification framework. Compared to \"traditional\" Smalltalk event systems in this new framework, an event is a real object rather than a symbol. Announcement is the superclass for events that someone might want to announce, such as a button click or an attribute change. Typically you create subclasses for your own events you want to announce."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:53:01.715-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:53:17.004-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UO4xGO/eDQCa/gd1Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Events are defined as subclasses of {{gtClass:name=BlEvent|expanded}}\r\n\r\n "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:52:26.64-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:53:13.026-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gL4aFu/eDQCayx5vAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "An event someone might want to announce, such as a button click or an attribute  change, is defined as a subclass of the abstract superclass Announcement. The  subclass can have instance variables for additional information to pass along,  such as a timestamp, or mouse coordinates at the time of the event, or the old  value of the parameter that has changed. To signal the actual occurrence of an\r\n event, the \"announcer\" creates and configures an instance of an appropriate  announcement, then broadcasts that instance. Objects subscribed to receive such  broadcasts from the announcer receive a broadcast notification together with  the instance. They can talk to the instance to find out any additional  information about the event that has occurred.!\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:52:23.192-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:52:26.645-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2B3mFe/eDQCaxIvZAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Managing events\r\n\r\nYou have 3 players:\r\n\r\n- The element that will receive the events.\r\n- Events, or announcement in Pharo, subclasses of BlEvent.\r\n- Event handler. Either BlEventHandler, or by subclassing BlEventListener."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:49:20.2-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:52:35.177-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QOX9Cu/eDQCZiqqNAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Event handling\r\n\r\n```smalltalk\r\nBlElement new \r\n  background: Color white; \r\n  border: (BlBorder paint: Color black width: 2); \r\n  size: 300 @ 200;\r\n  addEventHandlerOn: BlMouseEnterEvent do: [ :anEvent | anEvent consumed: true. anEvent currentTarget background: Color veryVeryLightGray];\r\n  addEventHandlerOn: BlMouseLeaveEvent do: [ :anEvent | anEvent consumed: true. anEvent currentTarget background: Color white ]; \r\n  openInNewSpace \r\n```\r\n\r\n`addEventHandlerOn:do:` returns the new handler so that we can store to remove it in case. Add a #yourself send after to return a BlElement.\r\n\r\n`when:do:` is now deprecated and rewritten as `addEventHandlerOn:do:`\r\nSD: we should update the following\r\n\r\nInstead of using addEventHandlerOn:do: you can also see users of `addEventHandler:`.\r\n\r\n```\r\ndeco addEventHandler: (BlEventHandler \r\n\t\t\t\t\t\ton: BlMouseLeaveEvent\r\n\t \t\t\t\t\tdo: [ :event | event currentTarget border: BlBorder empty ]).\r\n```\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-11-09T15:42:07.190222-05:00"
 					}
 				},

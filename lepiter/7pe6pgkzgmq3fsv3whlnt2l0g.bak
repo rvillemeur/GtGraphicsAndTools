@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:15:37.408-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:52.729-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:15:38.838-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:52.729-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "MIJsku7eDQCPxzrQAz8ngg=="
+					"uidString" : "qBTHMu7eDQCE/UI6Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "**Bloc** introduces two key concepts for managing the visual environment: {{gtClass:BlUniverse}} and {{gtClass:BlSpace}}. Imagine `BlUniverse` as a container housing a collection of individual `BlSpace` instances. Each `BlSpace` represents a distinct tab in GToolkit GUI. If you have multiple windows open simultaneously, they'll be neatly organized within the `BlUniverse`, providing a clear overview of your active spaces."
+				"string" : "Let's look at the different possible bounds of your element."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:31:33.382-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:54.082-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:31:33.382-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:54.082-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "cM8unsifDQCMSyFsBYSIMw=="
+					"uidString" : "6LXbMu7eDQCFBEwpAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtClass:BlUniverse}} is the lowest level of the Graphical window stack in Gt. It can contain on or several space.\r\n\r\n*I am Bloc's lowest level. My responsibility is to manage low-level services such as managing windows, event queue and drawing synchronization. My main responsibility is to manage the open {{gtClass:BlSpace|label=spaces}} and keep them in sync. I use a {{gtClass:BlSpaceManager}} to keep track of multiple spaces.*\r\n\r\n*I am the interface used to create/delete windows. To achieve that, I use a {{gtClass:BlHost|label=Host}}*\r\n"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:32:12.522-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:32:13.902-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "EAqEoMifDQCMVF9TBYSIMw=="
-				},
-				"code" : "((BlParallelUniverse all) at:1) spaces at:1"
+				"string" : "**Layout bounds** can be defined explicitly using `size:` method or dynamically Layout bounds are considered by layout algorithms to define mutual locations for all considered elements. You'll know more about layout later."
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:30:45.315-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:55.908-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:31:24.857-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:55.908-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "eEs6m8ifDQCMRQqCBYSIMw=="
+					"uidString" : "0I73Mu7eDQCFC2TBAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Space is the concept of Window in GToolkit. It is the logical representation of a window in Bloc regardless of the current Host in use. All tabs that appear on the top of the main UI window contains a new space. The main window as we know it is a collection of tab, managed by {{gtClass:GtWorldElement}} , which  is a subclass of {{gtClass:GtWorldTabElement}}\r\n\r\n{{gtClass:GtWorld}} is a subclass of {{gtClass:BlSpace}}. When It initialize, it call\r\n{{gtMethod:GtWorldElement>>defaultHomeElement|expanded}}\r\n\r\n{{gtClass:GtWorldTabElement}} and {{gtClass:GtHome}} are all subclasses of {{gtClass:BlElement}} and thus part of the graphical stack.  \r\n\r\n{{gtClass:GtHome}} is one of the tab, that is instanciated by default and always present in defaut GToolkit space:{{gtClass:GtWorld}}"
+				"string" : "**Geometry bounds** area is defined by minimum and maximum values of polygon vertices. This does not take in account the border width"
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:14:53.676-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:59.545-04:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:28:11.304-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:59.545-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kLu8McOfDQCMR45wBYSIMw=="
+					"uidString" : "wBEvM+7eDQCFEtgRAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The main GToolkit windows is populated from {{gtClass:BrStencil}} subclasses, and linked together to create new spaces with a user click on an element, as showed in {{gtClass:GtWorldUtility}} method "
+				"string" : "The geometry is like an invisible line on which your border is represented. The border drawing can happen outside (adding its border size to the size of your element), centered, or inside the geometry of the element. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -200,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:28:17.913-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:35.003-04:00"
 					}
 				},
 				"editEmail" : {
@@ -211,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:30:59.968-04:00"
+						"dateAndTimeString" : "2024-09-20T08:48:59.547-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "MA9QZMOfDQCMYxH2BYSIMw=="
+					"uidString" : "eJq4Me7eDQCE69niAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Tools are created in {{gtMethod:GtHome>>initializePanes}}\twhen it call the {{gtMethod:GtHome>>toolsSection}}\tmethod"
+				"string" : "The final size (geometry + border width) will define the **bounds** of your element.\r\nIf we specify outskirts inside, visual bound and geometry bounds will be the same. But if the outskirts is outside, then visual bounds are larger than geometry bounds to take border width into its calculation."
 			},
 			{
 				"__type" : "textSnippet",
@@ -237,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:20:21.735-04:00"
+						"dateAndTimeString" : "2024-09-20T08:58:05.896-04:00"
 					}
 				},
 				"editEmail" : {
@@ -248,17 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T12:27:26.434-04:00"
+						"dateAndTimeString" : "2024-09-20T08:58:05.896-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ON9BY8OfDQCMYW/QBYSIMw=="
+					"uidString" : "cLW/U+7eDQCHl7nPAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "for example, to create a new playground, the button is defined as {{gtMethod:GtHomeToolsSection>>newPlaygroundButtonStencil|expanded}}"
+				"string" : "*Layout* bounds are drawn with gray dashed rectangles in the figure above. They are of this size in this particular example, because each element defines its size explicitly using **size:** method. Layout bounds are considered by layout algorithms to define mutual locations for all considered elements.\r\n\r\n\"Geometry\" bounds are drawn with red dashed rectangles . The area is defined by minimum and maximum values of a polygon vertices. This does not take in account the border width, for example.\r\n\r\n\"Visual\" bounds are drawn with blue rectangles in the figure above. It is an exact area occupied by an element. Computing visual bounds is the most expensive computation as it takes strokes and rendering into account. \r\n\r\nIf we specify BlOutskirts inside, visual bound and geometry bounds will be the same. But if BlOutskirts is outside, then visual bounds are larger than geometry bounds to take border width into its calculation.\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -274,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T19:12:13.075-04:00"
+						"dateAndTimeString" : "2024-09-20T08:58:09.927-04:00"
 					}
 				},
 				"editEmail" : {
@@ -285,17 +251,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T19:21:29.674-04:00"
+						"dateAndTimeString" : "2024-09-20T08:58:45.13-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "sAiDL8mfDQCMfq1LBYSIMw=="
+					"uidString" : "cCXXU+7eDQCHnp+DAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To display the new space, the code goes up the scene tree, from the initial BrButton, jumping through  {{gtMethod:BlElement>>showSpace:|expanded}}  method,"
+				"string" : "{{gtExample:BlGeometryVisualAndLayoutBoundsExamples>>starWithSmallerGeometryCentered|noCode}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -311,7 +277,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T19:21:49.688-04:00"
+						"dateAndTimeString" : "2024-09-20T08:55:11.148-04:00"
 					}
 				},
 				"editEmail" : {
@@ -322,17 +288,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T19:21:49.688-04:00"
+						"dateAndTimeString" : "2024-09-20T08:59:00.811-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "AJTkUcmfDQCMg6WJBYSIMw=="
+					"uidString" : "+EdVSe7eDQCGSRToAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : " until it reach {{gtMethod:GtWorldTabElement>>showSpace:select:|expanded}}"
+				"string" : "for a full explanation, take a look at  {{gtClass:BlGeometryVisualAndLayoutBoundsExamples|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -348,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:40:21.401-04:00"
+						"dateAndTimeString" : "2024-09-20T08:55:17.5-04:00"
 					}
 				},
 				"editEmail" : {
@@ -359,51 +325,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:40:28.711-04:00"
+						"dateAndTimeString" : "2024-09-20T08:55:17.5-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mJ2RvcifDQCMYHA2BYSIMw=="
+					"uidString" : "eDS2Se7eDQCGWBz5Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The default scene can be accessed at:"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:40:33.151-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-09T18:40:34.231-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "GAhbvsifDQCMYgVABYSIMw=="
-				},
-				"code" : "(((BlParallelUniverse all) at:1) spaces at:1) root"
+				"string" : ""
 			}
 		]
 	},
@@ -415,7 +347,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-08T15:18:14.401-04:00"
+			"dateAndTimeString" : "2024-09-20T08:48:47.738-04:00"
 		}
 	},
 	"editEmail" : {
@@ -426,15 +358,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-08T15:18:40.51-04:00"
+			"dateAndTimeString" : "2024-09-20T08:48:47.738-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Universe, Space and World"
+		"title" : "BlElement bounds and outskirts"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "e807fdcc-b19f-0d00-a3ca-d5c20cf0d37f"
+		"uuid" : "e05fb831-eede-0d00-84ea-3cd9033f2782"
 	}
 }

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:23.903-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:23.903-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0Nt5zN/eDQCpS7knD9l5vg=="
+					"uidString" : "MP9yFO7eDQCANz/6Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "In Bloc, the visual form and boundaries of your UI elements are determined by their geometries. Each element can only possess a single geometry, essentially acting as a blueprint for its shape and size. You can visualize an element as a specific geometry encapsulated within an invisible rectangular container, representing its overall *bounds*."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:22.998-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:27.215-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:01.888-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:27.215-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "IMED0d/eDQCqLAWFD9l5vg=="
+					"uidString" : "sIilFO7eDQCAPv59Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:40.233-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:22.557-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "QMEK0t/eDQCqSnCDD9l5vg=="
-				},
-				"code" : ""
+				"string" : "Bloc provides a diverse range of pre-defined geometry shapes accessible through `BlElementGeometry allSubclasses`. This comprehensive library empowers you to\r\nconstruct elements of varying complexities, from basic rectangles and circles to more intricate forms.\r\nBloc excels in facilitating the creation of custom components with advanced layout possibilities. Imagine building complex layouts by strategically arranging various elements, each defined by its unique geometry, to form a cohesive whole."
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:10.939-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:29.783-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:37.905-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:29.783-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kErf09/eDQCqe3DcD9l5vg=="
+					"uidString" : "8LfMFO7eDQCARYY+Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "1. **Start with a blank canvas:** Begin by creating a new `BlElement`. This serves\r\nas the foundation for your user interface element, initially appearing\r\ninvisible.\r\n2. **Define its shape:** In Bloc, the element's visual representation is\r\ndetermined by its geometry. In this example, we'll use a simple rectangle, but\r\nmore complex shapes are also possible (explored in further detail later).\r\n3. **Set its dimensions and appearance:** Specify the element's size and color\r\nto customize its visual characteristics.\r\n4. **Bring it to life:** Finally, open the element by inspecting it."
+				"string" : "While the Skia canvas provides a foundational set of building drawing primitives, Bloc offers a richer library of pre-defined shapes and the flexibility to construct even more intricate geometries."
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:08:46.549-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:33.469-04:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:12:41.583-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:33.469-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CBg0SnLcDQCH4u5sAa9K2g=="
+					"uidString" : "YPYEFe7eDQCATDioAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Bloc visual properties are stored in the **visuals** property of {{gtClass:BlElement}}. Default visual come from {{gtClass:BlDefaultVisuals}} and their default value are defined in {{gtMethod:name=BlElementVisuals class>>initialize|expanded}}"
+				"string" : "* **Annulus**: `BlAnnulusSectorGeometry new startAngle: 225; endAngle: 360;   innerRadius: 0.3; outerRadius: 0.9);`\r\n* **Bezier**: `BlBezierCurveGeometry controlPoints: { 5@0. 25@80. 75@30. 95@100 }`\r\n* **Circle**: `BlCircleGeometry new matchExtent: 100 @ 50`\r\n* **Ellipse**: `BlEllipseGeometry new matchExtent: 100 @ 50)`\r\n* **Line**: `BlLineGeometry from: 10@10 to: 90@90`\r\n* **Polygon** : `BlPolygonGeometry vertices: {(10 @ 10). (10 @ 90). (50 @ 50). (90 @ 90). (90 @ 10)}`\r\n* **Polyline**: `BlPolylineGeometry vertices: {(10 @ 10). (10 @ 90). (50 @ 50).(90 @ 90). (90 @ 10) }`\r\n* **Rectangle** : `BlRectangleGeometry  new`\r\n* **Rounded rectangle**: `BlRoundedRectangleGeometry cornerRadius: 20`\r\n* **Square**: `BlSquareGeometry new matchExtent: 70 @ 70`\r\n* **Triangle**: `BlTriangleGeometry new matchExtent: 50 @ 100; beLeft`"
 			},
 			{
 				"__type" : "textSnippet",
@@ -200,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:00.828-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:00.979-04:00"
 					}
 				},
 				"editEmail" : {
@@ -211,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:30.231-04:00"
+						"dateAndTimeString" : "2024-09-20T08:40:33.473-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kA1cWXLcDQCOZh48Aa9K2g=="
+					"uidString" : "ODgVE+7eDQCAJf4pAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For each element, custom visual properties are stored in {{gtClass:BlCustomVisuals}}"
+				"string" : "{{gtExample:GeometryExperiment>>allGeometryExample|noCode|previewExpanded}}"
 			}
 		]
 	},
@@ -233,7 +199,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-19T18:08:52.34-04:00"
+			"dateAndTimeString" : "2024-09-20T08:40:20.652-04:00"
 		}
 	},
 	"editEmail" : {
@@ -244,15 +210,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-19T15:51:54.678-04:00"
+			"dateAndTimeString" : "2024-09-20T08:40:20.652-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc element visuals"
+		"title" : "BlElement Geometry"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b8d1334a-72dc-0d00-87e1-149b01af4ada"
+		"uuid" : "e8f11413-eede-0d00-8024-2671033f2782"
 	}
 }

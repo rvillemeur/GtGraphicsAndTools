@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:26.229-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:26.229-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0Nt5zN/eDQCpS7knD9l5vg=="
+					"uidString" : "ILHxse7eDQCQSIiiAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "Elements can be added in the element tree of an element with the `addChild:` method. You can add multiple elements at once with `addChildren:`. You can of course remove sub-element with `removeChild:` and `removeChildren:` methods."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:22.998-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:28.463-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:01.888-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:28.463-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "IMED0d/eDQCqLAWFD9l5vg=="
+					"uidString" : "sMcTsu7eDQCQT86mAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:40.233-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:22.557-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "QMEK0t/eDQCqSnCDD9l5vg=="
-				},
-				"code" : ""
+				"string" : "Browse `BlElement` to find all the available methods to manage the addition and removal of the elements composing your element."
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:10.939-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:36.449-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:37.905-04:00"
+						"dateAndTimeString" : "2024-09-20T09:27:03.715-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kErf09/eDQCqe3DcD9l5vg=="
+					"uidString" : "AKONsu7eDQCQVihwAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "1. **Start with a blank canvas:** Begin by creating a new `BlElement`. This serves\r\nas the foundation for your user interface element, initially appearing\r\ninvisible.\r\n2. **Define its shape:** In Bloc, the element's visual representation is\r\ndetermined by its geometry. In this example, we'll use a simple rectangle, but\r\nmore complex shapes are also possible (explored in further detail later).\r\n3. **Set its dimensions and appearance:** Specify the element's size and color\r\nto customize its visual characteristics.\r\n4. **Bring it to life:** Finally, open the element by inspecting it."
+				"string" : "Layouts constitute a fundamental aspect of *Bloc*. Rather than constructing your entire widget within a single *drawing* method, it advocates for the creation of small elements with distinct geometries and visual attributes, which are then integrated using diverse layout strategies. The layout property determines the visual arrangement of the element and its descendants, specifying their positions and sizes within the parent container. Moreover, it may influence the\r\ndimensions of the parent element itself.When defining layout, two parts must be combined to play together: *parent* and *children* elements.\r\n- Parents define which layout strategy to apply to their children.\r\n- Children specify which constraints they will follow, which could impact their position and size.\r\nLayouts are defined by their *type* and their *constraints*. Types are usually defined at the parent level with the `layout` method, while you can specify constraints to your child element using the `constraintsDo:` message, which supports a set of attributes that define the visual properties of the layout. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:08:46.549-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:51.466-04:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:12:41.583-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:55.91-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CBg0SnLcDQCH4u5sAa9K2g=="
+					"uidString" : "KMdys+7eDQCQebHSAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Bloc visual properties are stored in the **visuals** property of {{gtClass:BlElement}}. Default visual come from {{gtClass:BlDefaultVisuals}} and their default value are defined in {{gtMethod:name=BlElementVisuals class>>initialize|expanded}}"
+				"string" : "A small set of constraints, like padding, margin or minimal and maximum dimensions, are common among all the layouts. Constraints allow you to clearly\r\ndefine the size and the position of your element within its parent."
 			},
 			{
 				"__type" : "textSnippet",
@@ -200,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:00.828-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:53.954-04:00"
 					}
 				},
 				"editEmail" : {
@@ -211,17 +177,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:30.231-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:53.954-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kA1cWXLcDQCOZh48Aa9K2g=="
+					"uidString" : "ALqYs+7eDQCQgLGqAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For each element, custom visual properties are stored in {{gtClass:BlCustomVisuals}}"
+				"string" : "When you change the position or the size of an element, a `requestLayout` is sent but the effect on the element’s bounds is actually visible only after the layout is computed. In Bloc, the layout is computed from a dedicated space Phase, applied on each pulse. Have a look at `BlSpaceFrame` and `BlSpaceFramePhase` and its subclasses."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:24:12.585-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:24:53.956-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KIQhse7eDQCQMTh2Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To ease this kind of script one can use `whenLayoutedDoOnce:` which arms a one shot event handler that reacts to the `BlElementLayoutComputedEvent` event."
 			}
 		]
 	},
@@ -233,7 +236,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-19T18:08:52.34-04:00"
+			"dateAndTimeString" : "2024-09-20T09:24:21.17-04:00"
 		}
 	},
 	"editEmail" : {
@@ -244,15 +247,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-19T15:51:54.678-04:00"
+			"dateAndTimeString" : "2024-09-20T09:25:59.061-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc element visuals"
+		"title" : "BlElement Parent children"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b8d1334a-72dc-0d00-87e1-149b01af4ada"
+		"uuid" : "c04121b1-eede-0d00-9030-14bf033f2782"
 	}
 }

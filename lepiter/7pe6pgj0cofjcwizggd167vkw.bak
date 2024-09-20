@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:38:24.858-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:38:29.313-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kCvu4+7eDQCVHJXSAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#\r\n\r\nChildren can use dynamic size with constraints. The number of element will then fit\r\nits parents available space.\t If you specify their size, and the total is\r\nover its parents, they will be hidden. need to specify their size. If they use\r\nconstraint, the last one will hide previous one. They will fit available space +\r\nmove to next line if necessary\r\n\r\n#### Parent definition\r\n\r\n- horizontal\r\n- vertical\r\n\r\n#### Child constraints\r\n\r\n- horizontal\r\n- alignCenter\r\n- alignLeft\r\n- alignRight\r\n- vertical\r\n- alignBottom\r\n- alignCenter\r\n- alignTop\r\n\r\n#### Example\r\n\r\n```smalltalk\r\nroot := BlElement new\r\n\tborder: (BlBorder paint: Color red width: 1);\r\n\tbackground: (Color red alpha: 0.2);\r\n\tlayout: BlLinearLayout horizontal ;\r\n\t  constraintsDo: [ :c |\r\n\t\tc horizontal fitContent.\r\n\t\tc vertical fitContent ].\r\n\t\r\n\t50 timesRepeat:  [  |elt| elt := BlElement new border: (BlBorder paint: Color blue width: 1);\r\n\t\tsize: 40@80;\r\n\t   background: (Color blue alpha: 0.2);\r\n\t   margin: (BlInsets all: 5);\r\n\t   padding: (BlInsets all: 5).\r\n\r\n\t\t\troot addChild: elt. ].\r\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:38:24.836-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:38:24.836-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "unnamedPage",
+		"defaultTitle" : "Page"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "a0d5ede3-eede-0d00-951b-6897033f2782"
+	}
+}

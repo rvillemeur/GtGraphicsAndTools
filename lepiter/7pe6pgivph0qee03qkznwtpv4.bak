@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:49:49.968-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:50:02.971-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gHowNu7eDQCFWmJqAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#\r\nYou can get the list of all the effects available by executing: `BlElementEffect  allSubclasses`\r\n#### Simple shadow. \r\n\r\n```origin=BlocExamples>>shadow\r\nBlElement new\r\n\tsize: 200 @ 100;\r\n\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 2);\r\n\tbackground: (Color red alpha: 0.2);\r\n\tborder: (BlBorder paint: Color yellow width: 1);\r\n\toutskirts: BlOutskirts centered;\r\n\teffect:\r\n\t    (BlSimpleShadowEffect color: Color orange offset: -10 @ -20)\r\n```\r\nTry the following variation.\r\n\r\n```\r\neffect: (BlSimpleShadowEffect\r\n\tcolor: (Color orange alpha: shadowAlpha)\r\n\toffset: shadowOffset);\r\n```\r\n#### Gaussian shadow.\r\nThe following produces\r\n\r\n```smalltalk\r\nBlElement new\r\n\tsize: 300 @ 150;\r\n\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 2);\r\n\tbackground: (Color blue alpha: 0.5);\r\n\tborder: (BlBorder paint: Color red width: 10);\r\n\teffect: (BlGaussianShadowEffect color: Color yellow offset: 10@20 width: 5)\r\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T08:50:01.322-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T08:50:01.322-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "BlElement effect"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "30343036-eede-0d00-8559-1b93033f2782"
+	}
+}

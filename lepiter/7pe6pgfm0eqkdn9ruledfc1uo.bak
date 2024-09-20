@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:50.536-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:52.812-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:50.536-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:52.812-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WDRTge7eDQCM5WlQAz8ngg=="
+					"uidString" : "+LbZZO7eDQCKy6u7Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Every visual element within **Bloc** stems from the fundamental class {{gtClass:BlElement}}. This versatile class serves as the foundation upon which you can construct more intricate components. By directly customizing and combining `BlElement` instances, you gain granular control over the appearance and behavior of your UI elements."
+				"string" : "Bloc favors `BlElement` composition to create your graphical interface. Most of the time, you will not have to create a custom painting of your element widget. You can already do a lot with existing geometry."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:48.166-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:53.986-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:16.7-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:53.986-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "iAovge7eDQCM2pnwAz8ngg=="
+					"uidString" : "0KTrZO7eDQCK0rBwAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Creating Your First Bloc Component"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:28.299-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:29.31-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "EGyTg+7eDQCNJrfKAz8ngg=="
-				},
-				"code" : "BlElement new\r\n\tgeometry: BlRectangleGeometry  new;\r\n\tsize: 200 @ 100;\r\n\tbackground: Color blue"
+				"string" : "Ultimately, you can define drawing methods on a canvas, but once drawn, a canvas cannot be easily inspected for its elements. However, Bloc element composition creates a tree of elements, that can be inspected, and shaped dynamically."
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:41.401-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:59.814-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:42.372-04:00"
+						"dateAndTimeString" : "2024-09-20T09:02:59.814-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wFdbhO7eDQCNN5d+Az8ngg=="
+					"uidString" : "oIpEZe7eDQCK2YGnAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "1. **Start with a blank canvas:** Begin by creating a new `BlElement`. This serves\r\nas the foundation for your user interface element, initially appearing\r\ninvisible.\r\n2. **Define its shape:** In Bloc, the element's visual representation is\r\ndetermined by its geometry. In this example, we'll use a simple rectangle, but\r\nmore complex shapes are also possible (explored in further detail later).\r\n3. **Set its dimensions and appearance:** Specify the element's size and color\r\nto customize its visual characteristics.\r\n4. **Bring it to life:** Finally, open the element by inspecting it."
+				"string" : "Creating and drawing your element\r\n- subclass `BlElement`\r\n- custom drawing is done with `aeFullDrawOn:` method. Note that 'ae' stands for the Alexandrie canvas.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:02:35.115-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:02:59.817-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+LHLY+7eDQCKtPAZAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can see the `aeFullDrawOn:`\r\n```\r\nBlElement >> aeFullDrawOn: aCanvas\r\n\t\"Main entry point to draw myself and my children on an Alexandrie canvas.\"\r\n\r\n\tself aeDrawInSameLayerOn: aCanvas.\r\n\tself aeCompositionLayersSortedByElevationDo: [ :each | each paintOn: aCanvas ].\r\n```"
 			}
 		]
 	},
@@ -159,7 +162,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:24:27.220645-04:00"
+			"dateAndTimeString" : "2024-09-20T09:02:47.048-04:00"
 		}
 	},
 	"editEmail" : {
@@ -170,15 +173,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-05T15:24:37.07319-04:00"
+			"dateAndTimeString" : "2024-09-20T09:02:47.048-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc and Brick introduction"
+		"title" : "BlElement custom painting"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "7ecd2ae0-1fa9-0d00-92c4-182c029af186"
+		"uuid" : "6077cb63-eede-0d00-8ab3-2526033f2782"
 	}
 }

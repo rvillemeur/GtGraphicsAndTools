@@ -941,6 +941,63 @@ BackgroundAndBorderExperiment class >> triangleSolidColorWithBuilder [
 		  size: 100 @ 100
 ]
 
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderBorder [
+
+	<sampleInstance>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 50 @ 100;
+				   beLeft);
+		  background: self background;
+		  border: (BlBorder builder
+				   paint: Color red;
+				   width: 5;
+				   build);
+		  size: 100 @ 100
+]
+
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderCapButtBorder [
+
+	<sampleInstance>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 100 @ 200;
+				   beLeft);
+		  background: self background;
+		  border: (BlBorder builder
+				   paint: Color red;
+				   width: 5;
+				   lineCap: BlStrokeLineCap butt;
+				   lineJoin: BlStrokeLineJoin bevel;
+				   miterLimit: 2.0;
+				   dashArray: #( 10 5 );
+				   dashOffset: 0;
+				   build);
+		  size: 200 @ 200
+]
+
+{ #category : #'as yet unclassified' }
+BackgroundAndBorderExperiment >> builderOpacityBorder [
+
+	<sampleInstance>
+
+	^ BlElement new
+		  geometry: (BlTriangleGeometry new
+				   matchExtent: 50 @ 100;
+				   beLeft);
+		  background: self background;
+		  border: (BlBorder builder
+				   paint: Color red;
+				   width: 5;
+				   opacity: 0.1;
+				   build);
+		  size: 100 @ 100
+]
+
 { #category : #'see class side' }
 BackgroundAndBorderExperiment >> seeClassSide [ 
 ]

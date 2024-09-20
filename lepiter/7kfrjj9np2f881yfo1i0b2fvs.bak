@@ -18,43 +18,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:15:37.408-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:15:38.838-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "MIJsku7eDQCPxzrQAz8ngg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "**Bloc** introduces two key concepts for managing the visual environment: {{gtClass:BlUniverse}} and {{gtClass:BlSpace}}. Imagine `BlUniverse` as a container housing a collection of individual `BlSpace` instances. Each `BlSpace` represents a distinct tab in GToolkit GUI. If you have multiple windows open simultaneously, they'll be neatly organized within the `BlUniverse`, providing a clear overview of your active spaces."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-07-09T18:31:33.382-04:00"
 					}
 				},

@@ -1,0 +1,224 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:04.755-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:04.755-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UP117e7eDQCWlucPAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Elements are disposed in a grid. An element can span over multiple rows or columns.\r\n\r\nAll children of an element with GridLayout must use GridConstraints that allows users to configure how children are located within grid independently."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:06.54-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:06.54-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EDaR7e7eDQCWnQooAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A grid consists of cells that are separated by invisible lines. Each line is assigned to an index, meaning that a grid with N columns would have N+1 line. Indices lie in closed interval [ 1, N + 1 ]."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:40:58.802-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:06.542-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aCcb7e7eDQCWiInvAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Grid Layout supports fitContent, matchParent and exact resizing mode of the owner. Children are allowed to have fitContent and exact resizing modes. Because child's matchParent does not make sense in case of grid users should use #fill to declare that child should take all available cell's space.\r\n\r\nBy default grid layout does not specify how many columns and rows exist, instead it tries to compute necessary amount of columns or rows depending on amount of children. User can specify amount of columns or rows by sending `columnCount:` or `rowCount:` to an instance of grid layout.\r\n\r\nGrid Layout supports spacing between cells which can be set sending `cellSpacing:`\r\nmessage.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:00.603-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:00.603-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kKI27e7eDQCWjz6eAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##### Public API and Key Messages\r\n \r\n* `columnCount: aNumber` specifies the amount of columns.\r\n* `rowCount:** aNumber` specifies the amount of rows.\r\n* `cellSpacing: aNumber` to specifies spacing between cells.\r\n* `alignMargins` bounds of each element are extended outwards, according to their margins, before the edges of the resulting rectangle are aligned.\r\n* `alignBounds`  alignment is made between the edges of each component's raw bounds.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:40:24.792-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:41:00.607-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wDcU6+7eDQCWEtwYAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##### Example\r\n\r\n```smalltalk\r\n\te1 := BlElement new\r\n\tconstraintsDo: [ :c |\r\n\t\tc horizontal matchParent.\r\n\t\tc vertical matchParent ];\r\n\t background: (Color red alpha: 0.2);\r\n\t border: (BlBorder paint: Color red width: 1).\r\n\r\n\te2 := BlElement new\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc horizontal matchParent.\r\n\t\t\tc vertical matchParent ];\r\n\t background: (Color yellow alpha: 0.2);\r\n\t border: (BlBorder paint: Color yellow width: 1).\r\n\te3 := BlElement new\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc horizontal matchParent.\r\n\t\t\tc vertical matchParent ];\r\n\t\tbackground: (Color blue alpha: 0.2);\r\n\t\tborder: (BlBorder paint: Color blue width: 1).\r\n\r\n\te4 := BlElement new\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc horizontal matchParent.\r\n\t\t\tc vertical matchParent ];\r\n\t\tbackground: (Color green alpha: 0.2);\r\n\t\tmargin: (BlInsets all: 5);\r\n\t\tborder: (BlBorder paint: Color green width: 1).\r\n\r\n\te5 := BlElement new\r\n\t\tconstraintsDo: [ :c |\r\n\t\tc horizontal matchParent.\r\n\t\t\tc vertical matchParent.\r\n\t\t\tc grid horizontal span: 4 ];\r\n\t\tbackground: (Color purple alpha: 0.2);\r\n\t\tborder: (BlBorder paint: Color purple width: 1).\r\n\r\n\tcontainer := BlElement new\r\n\t\tlayout: (BlGridLayout new\r\n\t\t\tcolumnCount: 4;\r\n\t\t\tcellSpacing: 10);\r\n\t\tbackground: Color veryLightGray;\r\n\t\tborder: (BlBorder paint: Color gray width: 3);\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc horizontal matchParent.\r\n\t\t\tc vertical matchParent ];\r\n\t\t addChildren: {e1 . e2 . e3 . e4 . e5 };\r\n\t\t yourself.\r\n```"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:40:37.177-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:40:37.177-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Grid layout"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "d0e113eb-eede-0d00-9611-2118033f2782"
+	}
+}

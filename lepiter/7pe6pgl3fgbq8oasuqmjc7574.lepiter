@@ -1,0 +1,76 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:30:50.878-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:31:29.472-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MPzeyO7eDQCSJ5KBAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "By default, all your bloc scene will be rendered using the same Canvas and .\r\nIn scenarios of \"complex enough\" elements that don't change on every frame, you can improve performance by using composition layer to saves time by caching the pixels instead of rasterizing on next space redraw.\r\n\r\nYou can tell your element to be in a composition layer with *compositing:* message. \r\nYou can change this using *beInSeparateCompositionLayer*, *beInSingleCompositionLayer* or *beWithoutCompositionLayer* message. \r\n*beInSingleCompositionLayer* and *beInSeparateCompositionLayer* are 2 different strategies, \r\nand tell how children of your element in composition layer will be rendered. \r\nBy default, BlElement is in *BlCompositingWithoutLayerMode*.\r\nBlElement  effect can also be applied in their own composition layer, with message *wantCompositionLayer*.\r\n\r\nWith composition layer activated, your element will be rendered on it's own Canvas and Ae surface, \r\nand the result will be added as a separated layer in your parent element canvas. \r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:31:17.907-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:31:17.907-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "BlElement rendering"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "10aedec8-eede-0d00-9226-e9dc033f2782"
+	}
+}

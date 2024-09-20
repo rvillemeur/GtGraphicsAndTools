@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:08:15.967821-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:51.298-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T16:48:20.258-04:00"
+						"dateAndTimeString" : "2024-09-20T09:00:51.298-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "OxDNyETMDQCIrFfBAR/bNw=="
+					"uidString" : "6I6bXe7eDQCKIETWAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Two major innovation of GToolkit, for *moldable* development.\r\n\r\n1.  provide a custom view for object, instead of a generic representation\r2. give a way to interact with the environment, to query it more easily.\r\n\r\"everything about software, including code, is data (object)\""
+				"string" : "You can apply transformations to a `BlElement`:"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:09:45.817031-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:52.343-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:09:45.817031-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:52.343-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "TRwozkTMDQCKOKQhAR/bNw=="
+					"uidString" : "2ISrXe7eDQCKJ/RyAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#1. Add custom inspector to object\r\n{{gtPage:GtInspector}} and *gtView* pragma"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:10:02.710552-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:10:12.731529-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "6tEpz0TMDQCKYX6VAR/bNw=="
-				},
-				"code" : "#gtView gtPragmas"
+				"string" : "- rotation\r\n- translation\r\n- scaling\r\n- reflection\r\n- etc..."
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:34:41.190194-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:54.798-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-20T19:05:47.431-04:00"
+						"dateAndTimeString" : "2024-09-20T09:00:54.798-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "08dE1XOpDQCkTyDEAprxhg=="
+					"uidString" : "yPbQXe7eDQCKLqSnAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#2. document object.\radd comment in the markdown format in the comment part of the class or in the lepiter book\rFor a full definition, look at {{gtPage:Lepiter Text using Markdown syntax}}"
+				"string" : "Transformation are affine transformation. For more detail, you can search on the internet, there are countless references to it. To simplify it, I'll say we apply  a transformation matrix (*BlMatrix2D*) to all point of our figure path, each point represented as *BlVector*. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:10:35.618266-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:55.632-04:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-13T17:05:13.742-04:00"
+						"dateAndTimeString" : "2024-09-20T09:00:55.632-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CvYf0UTMDQCKx0kUAR/bNw=="
+					"uidString" : "mLDdXe7eDQCKNZzMAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#3. add item to the main board.\r\n[[Add new element to GToolkit home page]]"
+				"string" : "You have 3 type of tranformation available in Bloc:"
 			},
 			{
 				"__type" : "textSnippet",
@@ -200,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:35:01.825322-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:57.334-04:00"
 					}
 				},
 				"editEmail" : {
@@ -211,51 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:10:35.624297-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:57.334-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "9TWQ13OpDQCkU7CVAprxhg=="
+					"uidString" : "CKn3Xe7eDQCKPLuvAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#4. provide example on how to use objects and methods\rAdd the pragma <gtExample> to a method. For examples, look at"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:35:57.911789-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:35:59.862104-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "MvsB23OpDQCkVkaFAprxhg=="
-				},
-				"code" : "#gtExample gtPragmas"
+				"string" : "- **BlElementLocalTransformation**: This transformation combine an affine transformation (*BlAffineTransformation* subclasses), with a point of origin (*BlAffineTransformationOrigin* subclasses). By default, origin is the center of your element, BlAffineTransformationCenterOrigin."
 			},
 			{
 				"__type" : "textSnippet",
@@ -271,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:35:27.471029-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:58.455-04:00"
 					}
 				},
 				"editEmail" : {
@@ -282,51 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-13T17:06:02.685-04:00"
+						"dateAndTimeString" : "2024-09-20T09:00:58.455-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ENU3aHCdDQCByeEcBjULeg=="
+					"uidString" : "8MMIXu7eDQCKQ9V7Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#5. create slideshow\r[[GtSlideShow]]"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-06-09T22:27:16.739-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:35:40.938724-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uA/0aXCdDQCBy6xVBjULeg=="
-				},
-				"code" : "#gtSlide gtPragmas"
+				"string" : "- **BlElementAbsoluteTransformation**: This transformation apply a transformation matrix to your shape, without point of origin. Its  result is similar to *BlElementLocalTransformation*, with origin set to *BlAffineTransformationTopLeftOrigin*"
 			},
 			{
 				"__type" : "textSnippet",
@@ -342,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:36:29.074536-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:01.017-04:00"
 					}
 				},
 				"editEmail" : {
@@ -353,17 +251,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T18:36:37.99335-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:01.017-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SJLF3HOpDQCkXMbEAprxhg=="
+					"uidString" : "2NcvXu7eDQCKSucDAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#6. Graphic stack\r\nLook at Sparta (drawing), Block (low level, layout, event) and Brick (high level widget) described in {{gtPage:GToolkit graphical stack}} and its subpages"
+				"string" : "- **BlElementCompositeTransformation** which are combination of *BlElementLocalTransformation* and/or *BlElementAbsoluteTransformation*"
 			},
 			{
 				"__type" : "textSnippet",
@@ -379,7 +277,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:11:16.249947-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:03.576-04:00"
 					}
 				},
 				"editEmail" : {
@@ -390,17 +288,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:11:32.755451-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:03.576-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "EPOL00TMDQCLPG6lAR/bNw=="
+					"uidString" : "2OdWXu7eDQCKUcDzAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##7. add custom action to inspector or coder"
+				"string" : "Most of the time, you won't have to deal with matrix definition. You'll use the helper method `transformDo`, and define your transformation using *BlTransformationBuilder*."
 			},
 			{
 				"__type" : "textSnippet",
@@ -416,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-13T17:06:52.404-04:00"
+						"dateAndTimeString" : "2024-09-20T09:01:05.055-04:00"
 					}
 				},
 				"editEmail" : {
@@ -427,51 +325,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-03-13T17:06:52.41-04:00"
+						"dateAndTimeString" : "2024-09-20T09:01:05.055-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ANHj4/LPDQC5ooJlDHyM3Q=="
+					"uidString" : "MHltXu7eDQCKWJ56Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[[GtAction]]"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:11:36.828872-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:11:42.715805-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "G/3F1ETMDQCMPJ1OAR/bNw=="
-				},
-				"code" : "#gtAction gtPragmas"
+				"string" : "When you're defining a transformation using `transformDo:` , you'll, by default, use *BlAffineCompositeTransformation*. All transformation move added subsequently will be composed together."
 			},
 			{
 				"__type" : "textSnippet",
@@ -487,7 +351,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:12:07.439179-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:07.144-04:00"
 					}
 				},
 				"editEmail" : {
@@ -498,17 +362,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:21:21.986873-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:07.144-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "/xCZ1kTMDQCMlzziAR/bNw=="
+					"uidString" : "cFWNXu7eDQCKX3FtAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# 8. add linter in code (to be further explained)\n "
+				"string" : "The origin will be set to *BlAffineTransformationCenterOrigin*.\r\nThose two transformation below are strictly equivalent, and rotate your element by 45 degree. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -524,7 +388,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:22:46.717687-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:09.829-04:00"
 					}
 				},
 				"editEmail" : {
@@ -535,51 +399,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:53:17.949428-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:09.829-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "6LWz/ETMDQCSX2UVAR/bNw=="
+					"uidString" : "oFG2Xu7eDQCKZjs6Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Example with {{gtMethod:name=ClassDescription>>gtInstanceVariableCase:}}. If one of your instance variable begin with an uppercase, you'll see an Icon on the right of your class name, with linter advice to put it lowercase. Other example are available in the image."
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:12:30.82434-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T20:12:37.318884-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "zd7910TMDQCN63KHAR/bNw=="
-				},
-				"code" : "#gtAdvice gtPragmas"
+				"string" : "One use the underlying object, while the other use the helper methods:\r\n```smalltalk\r\nelt transformation: (BlElementLocalTransformation \r\n\tnewWith: ((BlRotationTransformation new angle: 45) \r\n\torigin: (BlAffineTransformationCenterOrigin defaultInstance ) )).\r\n```\r\n\r\n```smalltalk\r\nelt transformDo: [ :t | t rotateBy: 45 ].\r\n```\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -595,7 +425,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:02:13.806197-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:11.387-04:00"
 					}
 				},
 				"editEmail" : {
@@ -606,17 +436,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:06:10.798995-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:11.387-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "wZjKiUXMDQCa7hPgAR/bNw=="
+					"uidString" : "kBfOXu7eDQCKbTMiAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#9. Custom search"
+				"string" : "A transformation is applied in the scope of the message `transformDo:` as shown below."
 			},
 			{
 				"__type" : "textSnippet",
@@ -632,7 +462,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:06:25.747559-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:21.322-04:00"
 					}
 				},
 				"editEmail" : {
@@ -643,20 +473,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:06:37.244226-05:00"
+						"dateAndTimeString" : "2024-09-20T09:01:21.322-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "TOnOmEXMDQCoBQGdAR/bNw=="
+					"uidString" : "KLBlX+7eDQCKgxxtAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "look for custom search in gtoolkit book"
+				"string" : "```\r\nelement transformDo: [ :b | b scaleBy: 0.2; translateBy: -25 @ -15 ];\r\n```\r\n"
 			},
 			{
-				"__type" : "pharoSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -669,7 +499,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:02:40.486075-05:00"
+						"dateAndTimeString" : "2024-09-20T09:00:31.971-04:00"
 					}
 				},
 				"editEmail" : {
@@ -680,14 +510,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-01-26T21:03:05.219636-05:00"
+						"dateAndTimeString" : "2024-09-20T09:02:13.049-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "TLBhi0XMDQCbU5kkAR/bNw=="
+					"uidString" : "uKp0XO7eDQCKBCudAz8ngg=="
 				},
-				"code" : "#gtSearch gtPragmas"
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "```smalltalk\r\naContainer := BlElement new\r\n\t\tlayout: BlFrameLayout new;\r\n\t\tconstraintsDo: [ :c |\r\n\t\t\tc horizontal fitContent.\r\n\t\t\tc vertical fitContent ];\r\n\t\tpadding: (BlInsets all: 20);\r\n\t\tbackground: (Color gray alpha: 0.2).\r\n\r\nnode := BlElement new\r\n\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 4);\r\n\tborder: (BlBorder paint: Color black width: 2);\r\n\tbackground: Color white;\r\n\tconstraintsDo: [ :c |\r\n\t\tc frame horizontal alignCenter.\r\n\t\tc frame vertical alignBottom ];\r\n\tsize: 20 @ 20.\r\n\r\naContainer transformDo: [ :t |\r\n\tt\r\n\t\tscaleBy: 2.0;\r\n\t\trotateBy: 69;\r\n\t\ttranslateBy: 50 @ 50 ].\r\n\t\t\r\naContainer addChild: node.\r\naContainer forceLayout.\r\n```\r\ntransform is something extra that is applied on top of position. For example if you want to have a short of animation, you would use transform as it is not  taken into account by layouts\r\n### Transform catches\r\nThe message `transformDo:` can be applied at any moment during the life of an object.\r\nYou can use any static or pre-computed properties with `transformDo:` as in the following snippet.\r\nHere ` -25 asPoint` does not depend on the child or parent size.\r\n\r\n```\r\n| child parent |\r\nchild := BlElement new \r\n\tbackground: Color lightBlue; \r\n\tgeometry: BlCircleGeometry new;\r\n\tyourself.\r\n \r\nchild position: 100@100.\r\nchild  transformDo: [ :t | t translateBy: -25 asPoint ].\r\n\r\nparent := BlElement new \r\n\tsize: 200 asPoint; \r\n\taddChild: child;\r\n\tbackground: Color lightRed.\r\n\r\nparent openInSpace.\r\n```\r\n\r\n**Important.**\r\nif you want to use dynamic layout properties (such as `size`) with `transformDo:`, you need to wait for layout phase to be completed using `whenLayoutedDoOnce:`.\r\nCompare the two examples below:\r\n```\r\n| child parent |\r\nchild := BlElement new \r\n\tbackground: Color lightBlue; \r\n\tgeometry: BlCircleGeometry new;\r\n\tyourself.\r\n\t\r\n \r\nchild position: 100@100.\r\nchild transformDo: [ :t | t translateBy: child size negated / 2 ];\r\n\r\nparent := BlElement new \r\n\tsize: 200 asPoint; \r\n\taddChild: child;\r\n\tbackground: Color lightRed.\r\n\r\nparent openInSpace.\r\n```\r\n\r\n\r\n\r\n```\r\n| child parent |\r\nchild := BlElement new \r\n\tbackground: Color lightBlue; \r\n\tgeometry: BlCircleGeometry new;\r\n\tyourself.\r\n \r\nchild position: 100@100.\r\n\r\nparent := BlElement new \r\n\tsize: 200 asPoint; \r\n\taddChild: child;\r\n\tbackground: Color lightRed.\r\n\r\nparent whenLayoutedDoOnce: [ \r\n\tchild  transformDo: [ :t | t translateBy: (child size negated / 2) ]  ].\r\n\r\nparent openInSpace.\r\n```` "
 			}
 		]
 	},
@@ -699,7 +532,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:24:24.326222-04:00"
+			"dateAndTimeString" : "2024-09-20T09:00:45.458-04:00"
 		}
 	},
 	"editEmail" : {
@@ -710,15 +543,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-20T16:58:51.922-04:00"
+			"dateAndTimeString" : "2024-09-20T09:00:45.458-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Gtoolkit tools and addition"
+		"title" : "BlElement transformation"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "4e30dd85-7381-0d00-baa6-47120ba11939"
+		"uuid" : "386c745c-eede-0d00-8a03-7c66033f2782"
 	}
 }

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:26.229-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:25:23.697-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:26.229-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "mDgQvxugDQCT3G6BCAoGAw=="
+					"uidString" : "ILHxse7eDQCQSIiiAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\r\nUI element model can use Announcer (observer) pattern to tell when their state\r\nchange:\r\n\tcard announcer when: CardFlipped send: #onFlipped to: self.\r\n\tcard announcer when: CardDisappeared send: #onDisappear to: self.\r\n\r\nDrawing is done through method 'drawOnSpartaCanvas', which receive a sparta\r\n(vector) canvas as an argument.\r\n\r\nTo add event to an element, you first need to subclass 'BlEventListener' and\r\noverride the event you want to manage. You then add your event handler to your\r\nbloc element with method 'addEventHandler'. Event are bloc announcement method \r\nand classes.\r\n\r\n**important class to look at**\r\n{{gtClass:BlElement}}\r\n{{gtClass:BlBackground}}\r\n{{gtClass:BlGeometryVisualAndLayoutBoundsExamples}}\r\n{{gtClass:BlBasicShortcut}}\r\n{{gtClass:BrStencil}}\n\n**adding style to element state**\n{{gtClass:BlElementStyle}}\n{{gtClass:BlElementProperties}}\n{{gtClass:BlElementState}}"
+				"string" : "Elements can be added in the element tree of an element with the `addChild:` method. You can add multiple elements at once with `addChildren:`. You can of course remove sub-element with `removeChild:` and `removeChildren:` methods."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:31:22.628131-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:28.463-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,54 +66,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T21:42:07.311-04:00"
+						"dateAndTimeString" : "2024-09-20T09:24:28.463-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "O+Bvx6uBDQC6xnCEC6EZOQ=="
+					"uidString" : "sMcTsu7eDQCQT86mAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Browse `BlElement` to find all the available methods to manage the addition and removal of the elements composing your element."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:27:26.986-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:27:26.986-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AKONsu7eDQCQVihwAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
 				"string" : ""
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:14:41.140131-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:09:58.898-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "012+i6uBDQC6i7PsC6EZOQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "also possible to activate in the GT-Inspector's menu, next to the tabs.\r\n\n\n- handling mouse and keyboard event (shortcut, keybinding, etc...)\n=> subclass BlEventListener, overwrite method which handle event, and add\ninstance of the class to your BlElement with method addEventHandler: \n\nKeyboard shortcut: BlShortcut\n\n\n- Bloc animation\n=> announcer\n=> BlBaseAnimation and subclasses\n=> addAnimation method in BlElement\r\n\n- Drag&Drop\nExplore BlBaseDragEvent and subclasses.\n"
 			}
 		]
 	},
@@ -125,7 +125,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:19:05.171222-04:00"
+			"dateAndTimeString" : "2024-09-20T09:24:21.17-04:00"
 		}
 	},
 	"editEmail" : {
@@ -136,15 +136,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-18T18:19:40.690222-04:00"
+			"dateAndTimeString" : "2024-09-20T09:25:59.061-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc - base element for GUI"
+		"title" : "BlElement Parent children"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "1645d772-7381-0d00-ba98-b6ab0ba11939"
+		"uuid" : "c04121b1-eede-0d00-9030-14bf033f2782"
 	}
 }

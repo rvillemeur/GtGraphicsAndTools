@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:32.276-04:00"
+						"dateAndTimeString" : "2024-09-20T09:27:54.181-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:40.225-04:00"
+						"dateAndTimeString" : "2024-09-20T09:27:54.181-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "OEA2B+DeDQCwRO8RD9l5vg=="
+					"uidString" : "oMlWvu7eDQCRNtAmAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Parent children\r\n\r\nElements can be added in the element tree of an element with the `addChild:` method. You can add multiple elements at once with `addChildren:`. You can of course remove sub-element with `removeChild:` and `removeChildren:` methods.\r\n\r\nBrowse `BlElement` to find all the available methods to manage the addition and removal of the elements composing your element."
+				"string" : "Layouts constitute a fundamental aspect of *Bloc*. Rather than constructing your entire widget within a single *drawing* method, it advocates for the creation of small elements with distinct geometries and visual attributes, which are then integrated using diverse layout strategies. The layout property determines the visual arrangement of the element and its descendants, specifying their positions and sizes within the parent container. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:05.109-04:00"
+						"dateAndTimeString" : "2024-09-20T09:27:59.748-04:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:05.109-04:00"
+						"dateAndTimeString" : "2024-09-20T09:27:59.748-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CEIrCeDeDQCwmLmAD9l5vg=="
+					"uidString" : "uLurvu7eDQCRQv5sAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Layouts constitute a fundamental aspect of *Bloc*. Rather than constructing your entire widget within a single *drawing* method, it advocates for the creation of small elements with distinct geometries and visual attributes, which are then integrated using diverse layout strategies. The layout property determines the visual arrangement of the element and its descendants, specifying their positions and sizes within the parent container. Moreover, it may influence the\r\ndimensions of the parent element itself."
+				"string" : "Moreover, it may influence thedimensions of the parent element itself.When defining layout, two parts must be combined to play together: *parent* and *children* elements."
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:06.334-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:01.326-04:00"
 					}
 				},
 				"editEmail" : {
@@ -177,49 +177,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:06.334-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:01.326-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "SO89CeDeDQCwn80wD9l5vg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "When defining layout, two parts must be combined to play together: *parent* and *children* elements."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:51.159-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:06.337-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CF5WCODeDQCwXJ2pD9l5vg=="
+					"uidString" : "yM/Dvu7eDQCRSabLAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -240,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:17.403-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:10.519-04:00"
 					}
 				},
 				"editEmail" : {
@@ -251,17 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:55:37.937-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:10.519-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kNXmCeDeDQCwpT1yD9l5vg=="
+					"uidString" : "8BVQv+7eDQCRVyQFAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Layouts are defined by their *type* and their *constraints*. Types are usually defined at the parent level with the `layout` method, while you can specify constraints to your child element using the `constraintsDo:` message, which supports a set of attributes that define the visual properties of the layout. A small set of constraints, like padding, margin or minimal and maximum dimensions, are common among all the layouts. Constraints allow you to clearly\r\ndefine the size and the position of your element within its parent.\r\n\r\nWhen you change the position or the size of an element, a `requestLayout` is sent but the effect on the element’s bounds is actually visible only after the layout is computed. In Bloc, the layout is computed from a dedicated space Phase, applied on each pulse. Have a look at `BlSpaceFrame` and `BlSpaceFramePhase` and its subclasses.\r\n\r\nTo ease this kind of script one can use `whenLayoutedDoOnce:` which arms a one shot event handler that reacts to the `BlElementLayoutComputedEvent` event."
+				"string" : "Layouts are defined by their *type* and their *constraints*. Types are usually defined at the parent level with the `layout` method, while you can specify constraints to your child element using the `constraintsDo:` message, which supports a set of attributes that define the visual properties of the layout. A small set of constraints, like padding, margin or minimal and maximum dimensions, are common among all the layouts. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -277,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:17.043-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:17.404-04:00"
 					}
 				},
 				"editEmail" : {
@@ -288,17 +251,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:17.043-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:17.404-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UN50DeDeDQCxHEv+D9l5vg=="
+					"uidString" : "YCi5v+7eDQCRbc3SAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## element order and overlap"
+				"string" : "Constraints allow you to clearly define the size and the position of your element within its parent."
 			},
 			{
 				"__type" : "textSnippet",
@@ -314,7 +277,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:23.841-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:22.632-04:00"
 					}
 				},
 				"editEmail" : {
@@ -325,17 +288,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:23.841-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:22.632-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "GJXcDeDeDQCxMpe8D9l5vg=="
+					"uidString" : "WOoIwO7eDQCRdHNhAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Your element will be displayed in the order you added them to your parent. You can, however, specify their *zIndex*. They will then follow this index order, from low to high."
+				"string" : "When you change the position or the size of an element, a `requestLayout` is sent but the effect on the element’s bounds is actually visible only after the layout is computed. In Bloc, the layout is computed from a dedicated space Phase, applied on each pulse. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -351,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:11.86-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:05.777-04:00"
 					}
 				},
 				"editEmail" : {
@@ -362,128 +325,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:32.434-04:00"
+						"dateAndTimeString" : "2024-09-20T09:28:22.635-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "UMQlDeDeDQCxEpwOD9l5vg=="
+					"uidString" : "gLoHv+7eDQCRUNkqAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "In the example below, with zIndex, element shoud appears from black to red. With zIndex, you can reorder the order of display of the elements. Note that zIndex can be negative.\r\n\r\n```smalltalk\r\ncontainer:= BlElement new geometry: BlRectangleGeometry new; size: 150@150; background: Color lightGray .\r\n        \r\nelt1 := BlElement new geometry: BlCircleGeometry new;  size: 100 asPoint; zIndex: 1;  background:Color  black.\r\nelt2 := BlElement new geometry: BlCircleGeometry new;  size: 100 asPoint; zIndex: 2; position:10@10; background: Color blue.\r\nelt3 := BlElement new geometry: BlCircleGeometry new; size: 100 asPoint; zIndex: -1; position:20@20; background: Color red.\r\n        \r\ncontainer addChildren: {elt1 . elt2 . elt3}.\r\n\r\ncontainer.\r\n```\r\n\r\nwe have different ways to manage the overlap of your elements in a Bloc scene. This also depends of the layout strategy used for your element.\r\n\r\n1. When element are added (though addChild: or addChildren:), they are process and displayed one after the other, with the same order they were added, from left to right. You can tell if element must be added before or after another element. This apply as well if some element overlap another, the first one will appear below the next one.\r\n2. If some element overlap each other, you can specify in which order they should be displayed with  zIndex:."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:57:01.717-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:57:01.717-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "IIoeEODeDQCxZas+D9l5vg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "## element rendering\r\n\r\nBy default, all your bloc scene will be rendered using the same Alexandrie Canvas and surface.\r\nIn scenarios of \"complex enough\" elements that don't change on every frame, you can improve performance by using composition layer to saves time by caching the pixels instead of rasterizing on next space redraw."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:56:49.729-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:57:21.821-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "6KFnD+DeDQCxUSppD9l5vg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "You can tell your element to be in a composition layer with *compositing:* message. You can change this using *beInSeparateCompositionLayer*, *beInSingleCompositionLayer* or *beWithoutCompositionLayer* message. *beInSingleCompositionLayer* and *beInSeparateCompositionLayer* are 2 different strategies, and tell how children of your element in composition layer will be rendered. By default, BlElement is in *BlCompositingWithoutLayerMode*.\r\nBlElement  effect can also be applied in their own composition layer, with message *wantCompositionLayer*.\r\n\r\nWith composition layer activated, your element will be rendered on it's own Canvas and Ae surface, and the result will be added as a separated layer in your parent element canvas. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:57:46.291-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:57:46.291-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "UK/GEuDeDQCxxYbcD9l5vg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "## Space around elements\r\n\r\nBefore jumping on the definition of the position of each element, you can already define how close your elements will be from each other, with those 2 properties"
+				"string" : "Have a look at `BlSpaceFrame` and `BlSpaceFramePhase` and its subclasses.To ease this kind of script one can use `whenLayoutedDoOnce:` which arms a one shot event handler that reacts to the `BlElementLayoutComputedEvent` event."
 			},
 			{
 				"__type" : "textSnippet",
@@ -954,7 +806,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:59:01.518-04:00"
+						"dateAndTimeString" : "2024-09-19T15:59:08.496-04:00"
 					}
 				},
 				"uid" : {
@@ -964,7 +816,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal matchParent.\r\n\tc vertical fitContent ];\r\n```\r\n\r\n**Beware to not mix those properties** between parent and child.\r\nIf your child tries to match its parent, while its parent tries to fit its child's content, the size will be 0 plus the border width.\r\n\r\nWhen the parent uses \"fit content\" and the child uses \"match parent\", there is\r\nno way to determine the size. In such cases, the size of both the parent and\r\nthe child will be 0@0.\r\n"
+				"string" : "```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal matchParent.\r\n\tc vertical fitContent ];\r\n```\r\n\r\n**Beware to not mix those properties** between parent and child.\r\nIf your child tries to match its parent, while its parent tries to fit its child's content, the size will be 0 plus the border width.\r\n\r\nWhen the parent uses \"fit content\" and the child uses \"match parent\", there is no way to determine the size. In such cases, the size of both the parent and the child will be 0@0."
 			},
 			{
 				"__type" : "textSnippet",

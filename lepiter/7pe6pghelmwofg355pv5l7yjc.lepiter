@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:22.686-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:10:43.042-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:22.686-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "0Nt5zN/eDQCpS7knD9l5vg=="
+					"uidString" : "MH+HG+7eDQCBbPS9Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "The geometry is like an invisible line on which your border is painted. The painting is a subclass of `BlPaint`, and one of the three:\r\n- solid color\r\n- linear gradient color\r\n- radial gradient color"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:22.998-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:25.012-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,51 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:01.888-04:00"
+						"dateAndTimeString" : "2024-09-20T08:44:32.235-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "IMED0d/eDQCqLAWFD9l5vg=="
+					"uidString" : "OPmqG+7eDQCBc9fLAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##"
-			},
-			{
-				"__type" : "pharoSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:39:40.233-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:11:22.557-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "QMEK0t/eDQCqSnCDD9l5vg=="
-				},
-				"code" : ""
+				"string" : "Your border opacity can be specified as well: **`opacity: 0.5;`**"
 			},
 			{
 				"__type" : "textSnippet",
@@ -126,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:10.939-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:29.408-04:00"
 					}
 				},
 				"editEmail" : {
@@ -137,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:40:37.905-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:29.408-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kErf09/eDQCqe3DcD9l5vg=="
+					"uidString" : "MAnuG+7eDQCBelb1Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "1. **Start with a blank canvas:** Begin by creating a new `BlElement`. This serves\r\nas the foundation for your user interface element, initially appearing\r\ninvisible.\r\n2. **Define its shape:** In Bloc, the element's visual representation is\r\ndetermined by its geometry. In this example, we'll use a simple rectangle, but\r\nmore complex shapes are also possible (explored in further detail later).\r\n3. **Set its dimensions and appearance:** Specify the element's size and color\r\nto customize its visual characteristics.\r\n4. **Bring it to life:** Finally, open the element by inspecting it."
+				"string" : "By default, your border will be a full line, but it can also be dashed, with\r\n**dash array** and **dash offset**. Dash arrays define the number of element, and\r\ndash offset, the space between elements."
 			},
 			{
 				"__type" : "textSnippet",
@@ -163,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:08:46.549-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:32.784-04:00"
 					}
 				},
 				"editEmail" : {
@@ -174,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:12:41.583-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:32.784-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "CBg0SnLcDQCH4u5sAa9K2g=="
+					"uidString" : "mJAhHO7eDQCBgQIRAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Bloc visual properties are stored in the **visuals** property of {{gtClass:BlElement}}. Default visual come from {{gtClass:BlDefaultVisuals}} and their default value are defined in {{gtMethod:name=BlElementVisuals class>>initialize|expanded}}"
+				"string" : "You also have a pre-defined option, available in a single call:\r\n\r\n- **dashed**\r\n- **dashed small**"
 			},
 			{
 				"__type" : "textSnippet",
@@ -200,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:00.828-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:34.345-04:00"
 					}
 				},
 				"editEmail" : {
@@ -211,17 +177,91 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-08-19T18:13:30.231-04:00"
+						"dateAndTimeString" : "2024-09-20T08:42:34.345-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kA1cWXLcDQCOZh48Aa9K2g=="
+					"uidString" : "QGI5HO7eDQCBiL//Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "For each element, custom visual properties are stored in {{gtClass:BlCustomVisuals}}"
+				"string" : "If the path is not closed, The style extent of your border can be defined with\r\n\r\n- **cap square**\r\n- **cap round**\r\n- **cap butt**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:42:36.247-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:42:36.247-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8GdWHO7eDQCBj/XmAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Last, when the lines of your border cross each other, you can define the style of the join \r\n- **round join**\r\n- **bevel join**\r\n- **mitter join**"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:41:59.487-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:42:36.251-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GIIlGu7eDQCBQShEAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You have two options to define your border:\r\n\r\n* short call: `element border: (BlBorder paint: Color orange width: 5)`\r\n* with a builder:`element border: (BlBorder builder dashed; paint: Color red; width: 3; build)`\r\n\r\nThe first one is very helpful for solid line definition. The builder lets use customize all the details of your border."
 			}
 		]
 	},
@@ -233,7 +273,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-08-19T18:08:52.34-04:00"
+			"dateAndTimeString" : "2024-09-20T08:42:10.225-04:00"
 		}
 	},
 	"editEmail" : {
@@ -244,15 +284,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-19T15:51:54.678-04:00"
+			"dateAndTimeString" : "2024-09-20T08:42:10.225-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc element visuals"
+		"title" : " BlElement border"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "b8d1334a-72dc-0d00-87e1-149b01af4ada"
+		"uuid" : "9843251a-eede-0d00-8140-f161033f2782"
 	}
 }

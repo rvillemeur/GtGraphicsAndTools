@@ -1,0 +1,557 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:20.833-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:20.833-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AMKjJ+/eDQCcLNRgAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Bloc comes with a full API to deal with text. Not only you can deal with raw text, but you can apply styles as well."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:26.049-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:26.049-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6FzzJ+/eDQCcPZ4FAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Before being displayed, you define your text as an instance of `BlRopedText`, which you can then style with **attributes** such as:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:28.074-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:28.074-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KD8SKO/eDQCcRH7fAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- font name\r\n- font size\r\n- font foreground and background color\r\n- font style (normal, italic, bold).\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:31.34-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:31.34-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EBFEKO/eDQCcS7nrAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "```smalltalk\r\nlabelText := 'hello from bloc' asRopedText\r\nforeground: Color orange;\r\nfontSize: 16;\r\nfontName: 'Helvetica';\r\nthin.\r\n\r\nlabel := BlTextElement new.\r\nlabel text: labelText.\r\n\r\nlabel openInNewSpace\r\n```\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:35.599-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:35.599-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sBGFKO/eDQCcXDoxAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Another way to define attributes is to pass them as a collection:\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:37.49-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:37.49-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aOyhKO/eDQCcY33hAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "```smalltalk\r\nBlTextElement new\r\n        position: 5 @ 5;\r\n        text: ('Rainbow!' asRopedText attributes:\r\n        { (BlTextForegroundAttribute paint: Color black)})\r\n\r\n```\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:39.612-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:39.612-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eE3CKO/eDQCcaq39Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Take a look at `BlText` method for a full list of available text attributes.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:44.158-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:44.158-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "SKsHKe/eDQCccdBxAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Fonts are managed directly by Alexandrie. To get the list of available fonts,\r\ntake a look at the result of `AeFontManager globalInstance familyNames`\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:46.156-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:46.156-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4CsmKe/eDQCceO7AAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "text is like a collection, and you can apply different attributes to different\r\npart of your text:\r\n\r\n```smalltalk\r\n    labelText := 'a := A->B->>C <= c|=>d~~>e.' asRopedText\r\n                        background: Color orange;\r\n                        fontSize: 25;\r\n                        fontName: 'Cascadia Code';\r\n                            underline;\r\n                            underlineColor: Color red.\r\n\r\n    (labelText from: 1 to: 5) foreground: Color blue.\r\n    (labelText from: 7 to: 11) foreground: Color white.\r\n    (labelText from: 12 to: 15) foreground: Color red.\r\n\r\n    label := (BlTextElement text: labelText)\r\n                    position: 50 @ 10;\r\n                    background: Color yellow;\r\n                    margin: (BlInsets all: 10);\r\n                    padding: (BlInsets all: 5);\r\n                    outskirts: BlOutskirts centered;\r\n                    border: (BlBorder paint: Color red width: 5).\r\n    label tightMeasurement.\r\n```\r\n\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:56.151-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:57:56.151-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Kq+Ke/eDQCck7afAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Text size\r\n\r\nThe size of your text will depend on the font you have selected. This font will constrain aspect of the size of letters, words, and text.  Let's familiarize ourselves with those basic measures. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:03.942-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:03.942-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "iIw1Ku/eDQCcpPPuAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Bloc will get the measures (in `BATextParagraphSpan >> measure`) to get the size of your text, and position it into your element.\r\n\r\nFigure *@MulAttri@* describes the information listed below: \r\n\r\n**width**\r\n:  This is the width of the glyph image's bounding box.\r\n\r\n**height**\r\n: This is the height of the glyph image's bounding box.\r\n\r\n**advance**\r\n:  Distance to increment the pen position when the glyph is drawn as part of a string of text.\r\n\r\n**bearingX**\r\n:  Distance from the current cursor position to the leftmost border of the glyph image's bounding box.\r\n\r\n**bearingY**\r\n: Distance from the current cursor position (on the baseline) to the topmost border of the glyph image's bounding box.\r\n\r\n\r\n**ascent**\r\n:    portion of letter that extends above the mean line of a font.\r\n\r\n**descent**\r\n:    portion of a letter that extends below the baseline of a font.\r\n\r\n**baseline**\r\n:    line upon which most letters sit and below which descenders extend.\r\n\r\nReferences:\r\n\r\n- [wikipedia](https://en.wikipedia.org/wiki/Ascender_(typography))\r\n- [freetype](https://freetype.org/freetype2/docs/tutorial/step2.html)\r\n\r\nInternally, your text will be split into a collection of *spans*. \r\nA span is a homogeneous styled piece of text where every character has the same set of\r\nattributes.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:06.924-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:06.924-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+AxjKu/eDQCcqwBiAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Text bounds\r\n\r\nText can after be rendered as `BlTextElement`, which will take care of\r\ndisplaying properly the text with all properties defined on it.\r\n\r\nOnce you have a `BlTextElement`, all properties of `BlElement` apply. \r\nYou can add your element to any existing `BlElement`, and integrate it easily in\r\nyour graphical interface; it'll follow the same layout rules.\r\n\r\n`BlTextElement` has 3 available measures by default that determine its bounds.\r\n\r\n- tight measurement: Exact width and height of the used glyphs.\r\n- label measurement: Same width that tight measurement. The height will add to itself the *ascent* and *descent* of the glyph.\r\n- editor measurement. Same height as label measurement. The width will add to itself the *advance* of the glyph.\r\n\r\nBy default, *BlTextElement* will follow the *tightMeasurement* measure.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:10.179-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:10.179-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0LeUKu/eDQCcsuz6Az8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### Examples\r\n\r\nRectangle surrounded by number:\r\n\r\n```smalltalk\r\nBlElement new\r\n    layout: (BlGridLayout horizontal columnCount: 3);\r\n    constraintsDo: [ :c |\r\n        c horizontal matchParent.\r\n        c vertical matchParent ];\r\n    addChildren: {\r\n        \"top row\"\r\n        (BlTextElement new text: '5,0' asRopedText).\r\n        (BlElement new size: 0@0).\r\n        (BlTextElement new text: '13,0' asRopedText).\r\n        \r\n        \"middle row\"\r\n        (BlElement new size: 0@0).\r\n        (BlElement new\r\n            constraintsDo: [ :c |\r\n                c horizontal matchParent.\r\n                c vertical matchParent ];\r\n            border: (BlBorder paint: Color gray width: 1)).\r\n        (BlElement new size: 0@0).\r\n        \r\n        \"bottom row\"\r\n        (BlTextElement new text: '5,25' asRopedText).\r\n        (BlElement new size: 0@0).\r\n        (BlTextElement new text: '13,25' asRopedText). }.\r\n\r\n```\r\n\r\nwhose result is shown in Figure *@rect@*.\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:56:18.694-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T09:58:10.182-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cJvvI+/eDQCb3gkNAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "### BlText vs. BlTextElement\r\n\r\nYou have 2 different levels to manage text in Bloc.\r\n- `BlText` and its subclass `BlRopedText` create a text model where you can specify its attributes and style.\r\n- `BlTextElement` and its subclasses will properly display the text inside a Bloc element.\r\n\r\nA small example. You can notice that `BlText` background is different from `BlTextElement` background. \r\n\r\n```smalltalk\r\n| labelText label |\r\nlabelText := 'hello from bloc' asRopedText\r\n             background: Color orange ;\r\n             fontSize: 75;\r\n             fontName: 'Source Code Pro';\r\n             italic;\r\n             underline;\r\n             underlineColor: Color red;\r\n             vertical.\r\n\r\n(labelText from: 1 to: 5) foreground: Color blue.\r\n(labelText from: 7 to: 11) foreground: Color white.\r\n(labelText from: 12 to: 15) foreground: Color red.\r\n\r\nlabel := (BlTextElement text: labelText) position: 50 @ 10; background: Color yellow.\r\n```\r\n\r\nyou can define the style of your text through BlTextAttributesStyler\r\n\r\n````smalltalk\r\ntext := 'Hi John' asRopedText.\r\n\r\nstyler := BlTextAttributesStyler on: (text from: 3 to: 7).\r\nstyler\r\nbold;\r\nitalic;\r\nfontSize: 30;\r\nfontName: 'Roboto';\r\nmonospace;\r\nforeground: Color green.\r\nstyler style.\r\n```\r\n\r\nor using a fluent API\r\n\r\n````smalltalk\r\ntext := 'Hi John' asRopedText.\r\n(text from: 3 to: 7) stylerDo: [ :aStyler | aStyler bold italic foreground: Color red ].\r\n````\r\n\r\nAs you may have noticed, this gives you a very fine-grained control over the style of your text.\r\nYou also need to re-specify attributes when your text changes.\r\nIf you want all your text to use the same attribute, you can then use `BlAttributedTextElement`. \r\nYou can then change your text, `BlAttributedTextElement` will reuse its attributes.\r\n\r\n\r\n```smalltalk\r\ntext := 'Hi John' asRopedText.\r\n\r\nelement := BlAttributedTextElement new.\r\nattributes := element attributesBuilder\r\n              foreground: Color green;\r\n              monospace;\r\n              bold;\r\n              italic;\r\n              fontSize: 30;\r\n              fontName: 'Roboto';\r\n              monospace.\r\n\r\nlabel := (element text: text)\r\n         position: 50 @ 10;\r\n         background: Color yellow;\r\n         margin: (BlInsets all: 2);\r\n         padding: (BlInsets all: 2);\r\n         outskirts: BlOutskirts centered;\r\n         border: (BlBorder paint: Color red width: 2).\r\n\r\nelement text: 'hello world' asRopedText.\r\nlabel.\r\n```\r\n\r\n\r\n"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:56:23.967-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-09-20T09:56:23.967-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Bloc Text"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "d860ef23-efde-0d00-9bdd-0e45033f2782"
+	}
+}

@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:21.627-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:30.181-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:21.627-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:30.181-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "kMKTBuDeDQCwPmeeD9l5vg=="
+					"uidString" : "oHyN8u7eDQCXEC5+Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Widgets aren't just simple components; they're complex assemblies of various elements. To create more intricate Bloc elements, you'll need to blend them together seamlessly. Each element can be developed and examined independently, which is advantageous during the development phase.  However, to construct a complete graphical interface, you'll need to seamlessly integrate these elements with each other or, at the very least, place them within a Bloc *space*."
+				"string" : "Inside a GridLayout, children do not especially share the same size but they all by default share the same span which means they occupy a single cell of the layout (ie horizontal span = vertical span = 1)."
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:53:50.947-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:31.309-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-19T15:54:21.629-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:31.309-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "uKK/BODeDQCv0oH/D9l5vg=="
+					"uidString" : "4LKe8u7eDQCXF9qZAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Element in a Bloc scene are added to each other, ending in a tree-like structure where parents and children can identify each other, and each element is an instance of `BlElement`, the root element of Bloc. Each element has its own visual properties, like background, border, geometry, etc. The final appearance depends on the graphical properties of each element and how they're arranged together in the layout."
+				"string" : "You can change this parameter so your element takes a certain amount of cells."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:27:54.181-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:32.561-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:27:54.181-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:32.561-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "oMlWvu7eDQCRNtAmAz8ngg=="
+					"uidString" : "gM2x8u7eDQCXHpJ/Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Layouts constitute a fundamental aspect of *Bloc*. Rather than constructing your entire widget within a single *drawing* method, it advocates for the creation of small elements with distinct geometries and visual attributes, which are then integrated using diverse layout strategies. The layout property determines the visual arrangement of the element and its descendants, specifying their positions and sizes within the parent container. "
+				"string" : "It is possible to add a child with a larger span and still add smaller elements into the grid layout and fill the space the bigger child left. "
 			},
 			{
 				"__type" : "textSnippet",
@@ -129,7 +129,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:27:59.748-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:35.852-04:00"
 					}
 				},
 				"editEmail" : {
@@ -140,17 +140,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:27:59.748-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:35.852-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "uLurvu7eDQCRQv5sAz8ngg=="
+					"uidString" : "EAHk8u7eDQCXJR3NAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Moreover, it may influence thedimensions of the parent element itself.When defining layout, two parts must be combined to play together: *parent* and *children* elements."
+				"string" : "```st\r\ngrid := BlElement new \r\n\tsize: 400 asPoint; \r\n\tlayout: (BlGridLayout horizontal columnCount: 4).\r\n\r\nchildren := (1 to: 12) collect: [ :i | BlElement new background: Color lightGreen; border: (BlBorder paint: Color black width: 1) ].\r\n\r\nsquare := BlElement new \r\n\tbackground: Color purple; \r\n\tsize: 100 asPoint.\r\nsquare constraintsDo: [ :c | \r\n\tc grid horizontal span: 2. \r\n\tc grid vertical span: 2 ].\r\n\t\r\n1 to: 5 do: [ :i | grid addChild: (children at: i) ].\r\ngrid addChild: square.\r\n6 to: 12 do: [ :i | grid addChild: (children at: i) ].\r\n\r\ngrid openInSpace.\r\n```\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:01.326-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:40.441-04:00"
 					}
 				},
 				"editEmail" : {
@@ -177,17 +177,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:01.326-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:40.441-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "yM/Dvu7eDQCRSabLAz8ngg=="
+					"uidString" : "wAoq8+7eDQCXLAc5Az8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "- Parents define which layout strategy to apply to their children.\r\n- Children specify which constraints they will follow, which could impact their position and size."
+				"string" : "This snippet creates a 4x4 grid and adds a 2x2 purple square in the middle (See Figure *@gridspan1@*). "
 			},
 			{
 				"__type" : "textSnippet",
@@ -203,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:10.519-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:41.514-04:00"
 					}
 				},
 				"editEmail" : {
@@ -214,17 +214,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:10.519-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:41.514-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8BVQv+7eDQCRVyQFAz8ngg=="
+					"uidString" : "EG468+7eDQCXM1LsAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Layouts are defined by their *type* and their *constraints*. Types are usually defined at the parent level with the `layout` method, while you can specify constraints to your child element using the `constraintsDo:` message, which supports a set of attributes that define the visual properties of the layout. A small set of constraints, like padding, margin or minimal and maximum dimensions, are common among all the layouts. "
+				"string" : "We can see that after adding the first five green squares, we add the purple square but we can wonder how the grid layout will display other children added afterwards, here we can see that it fills the blank space as if the grid cells were taken by the purple square didn't exist."
 			},
 			{
 				"__type" : "textSnippet",
@@ -240,7 +240,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:17.404-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:42.363-04:00"
 					}
 				},
 				"editEmail" : {
@@ -251,17 +251,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:17.404-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:42.363-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "YCi5v+7eDQCRbc3SAz8ngg=="
+					"uidString" : "eGJH8+7eDQCXOh1SAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Constraints allow you to clearly define the size and the position of your element within its parent."
+				"string" : "On the example, we can add the notion of visibility on children."
 			},
 			{
 				"__type" : "textSnippet",
@@ -277,7 +277,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:22.632-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:43.497-04:00"
 					}
 				},
 				"editEmail" : {
@@ -288,17 +288,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:22.632-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:43.497-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WOoIwO7eDQCRdHNhAz8ngg=="
+					"uidString" : "QKxY8+7eDQCXQR3UAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "When you change the position or the size of an element, a `requestLayout` is sent but the effect on the element’s bounds is actually visible only after the layout is computed. In Bloc, the layout is computed from a dedicated space Phase, applied on each pulse. "
+				"string" : "In Bloc, the visibility is an attribute that lets us display or not an element. However, when hiding an element, we have two options : `BlVisibilityHidden` and `BlVisibilityGone`."
 			},
 			{
 				"__type" : "textSnippet",
@@ -314,7 +314,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:05.777-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:45.466-04:00"
 					}
 				},
 				"editEmail" : {
@@ -325,20 +325,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:28:22.635-04:00"
+						"dateAndTimeString" : "2024-09-20T09:42:45.466-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "gLoHv+7eDQCRUNkqAz8ngg=="
+					"uidString" : "qLd28+7eDQCXSLAqAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Have a look at `BlSpaceFrame` and `BlSpaceFramePhase` and its subclasses.To ease this kind of script one can use `whenLayoutedDoOnce:` which arms a one shot event handler that reacts to the `BlElementLayoutComputedEvent` event."
+				"string" : "Let's start with BlVisibilityGone, it simply removes the element from the drawing phase but it also makes the element ignored in the layouting phase. In this example if we apply a BlVisibilityGone to the first little green square, the purple square gets moved to the left and every element gets a new place (see Figure *@gone@*)."
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -351,7 +351,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:07.720414-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:47.768-04:00"
 					}
 				},
 				"editEmail" : {
@@ -362,23 +362,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:07.720414-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:47.768-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "JIwmw3GpDQCaOaPqAprxhg=="
+					"uidString" : "wNuZ8+7eDQCXTwIjAz8ngg=="
 				},
-				"exampleSelector" : "layout1",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "```st\r\nremoved := children first.\r\nremoved visibility: BlVisibilityGone new\r\n```\r\n"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -391,7 +388,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:22.400791-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:48.897-04:00"
 					}
 				},
 				"editEmail" : {
@@ -402,23 +399,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:22.400791-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:48.897-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "nY0GxHGpDQCaOnicAprxhg=="
+					"uidString" : "ABKr8+7eDQCXVrVBAz8ngg=="
 				},
-				"exampleSelector" : "layout2",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "`BlVisibilityHidden` just hides the element and doesn't display it with the new drawing phase, but the element is still present and can interact. With this visibility, we see the blank space left by the element and we can inspect it when clicking on this blank space when adding an event handler (see Figure *@hidden@*)."
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -431,7 +425,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:39.64354-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:50.574-04:00"
 					}
 				},
 				"editEmail" : {
@@ -442,23 +436,20 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:39.64354-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:50.574-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "4qcNxXGpDQCaO1Z1Aprxhg=="
+					"uidString" : "+KDE8+7eDQCXXWwxAz8ngg=="
 				},
-				"exampleSelector" : "layout3",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "```st\r\nremoved addEventHandlerOn: BlClickEvent do: [ removed inspect ].\r\nremoved visibility: BlVisibilityHidden new.\r\n```\r\n"
 			},
 			{
-				"__type" : "exampleSnippet",
+				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
 					"items" : [ ]
@@ -471,7 +462,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:57.059291-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:03.677-04:00"
 					}
 				},
 				"editEmail" : {
@@ -482,60 +473,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:06:57.059291-05:00"
+						"dateAndTimeString" : "2024-09-20T09:42:50.576-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "NGYXxnGpDQCaPBvGAprxhg=="
+					"uidString" : "SBX58O7eDQCW5acUAz8ngg=="
 				},
-				"exampleSelector" : "layout4",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
-			},
-			{
-				"__type" : "exampleSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
+				"paragraphStyle" : {
+					"__type" : "textStyle"
 				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:07:20.24405-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-09T16:07:20.24405-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "sit5x3GpDQCaPWhrAprxhg=="
-				},
-				"exampleSelector" : "layout5",
-				"previewHeight" : 200,
-				"previewShowSelector" : "gtViewsFor:",
-				"exampleBehaviorName" : "RdvLayoutBlock",
-				"codeExpanded" : true,
-				"previewExpanded" : false,
-				"noCode" : false
+				"string" : "Note: we can make the element disappear with BlVisibilityGone and then apply a hidden visibility and the element will get its layouting properties back because the element was not \"removed from existence\", just gone from layouting phase."
 			}
 		]
 	},
@@ -547,7 +495,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-09T15:57:43.202169-05:00"
+			"dateAndTimeString" : "2024-09-20T09:42:22.509-04:00"
 		}
 	},
 	"editEmail" : {
@@ -558,15 +506,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-11-09T15:59:48.066092-05:00"
+			"dateAndTimeString" : "2024-09-20T09:43:25.198-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Bloc layout"
+		"title" : "Grid span "
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "903414a5-71a9-0d00-992d-4dab029af186"
+		"uuid" : "10cbf8f0-eede-0d00-96e4-cafc033f2782"
 	}
 }
