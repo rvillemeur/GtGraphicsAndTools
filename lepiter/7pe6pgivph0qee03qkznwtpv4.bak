@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T08:49:49.968-04:00"
+						"dateAndTimeString" : "2024-09-20T08:50:06.881-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,202 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T08:50:02.971-04:00"
+						"dateAndTimeString" : "2024-09-20T08:50:06.881-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "gHowNu7eDQCFWmJqAz8ngg=="
+					"uidString" : "6IwyN+7eDQCFdvCPAz8ngg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#\r\nYou can get the list of all the effects available by executing: `BlElementEffect  allSubclasses`\r\n#### Simple shadow. \r\n\r\n```origin=BlocExamples>>shadow\r\nBlElement new\r\n\tsize: 200 @ 100;\r\n\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 2);\r\n\tbackground: (Color red alpha: 0.2);\r\n\tborder: (BlBorder paint: Color yellow width: 1);\r\n\toutskirts: BlOutskirts centered;\r\n\teffect:\r\n\t    (BlSimpleShadowEffect color: Color orange offset: -10 @ -20)\r\n```\r\nTry the following variation.\r\n\r\n```\r\neffect: (BlSimpleShadowEffect\r\n\tcolor: (Color orange alpha: shadowAlpha)\r\n\toffset: shadowOffset);\r\n```\r\n#### Gaussian shadow.\r\nThe following produces\r\n\r\n```smalltalk\r\nBlElement new\r\n\tsize: 300 @ 150;\r\n\tgeometry: (BlRoundedRectangleGeometry cornerRadius: 2);\r\n\tbackground: (Color blue alpha: 0.5);\r\n\tborder: (BlBorder paint: Color red width: 10);\r\n\teffect: (BlGaussianShadowEffect color: Color yellow offset: 10@20 width: 5)\r\n```"
+				"string" : "You can get the list of all the effects available by executing: `BlElementEffect  allSubclasses`"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:49:22.829-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:51:57.9-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+J654e/eDQCxU+0QCPfC9Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Simple shadow. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:49:25.423-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:51:43.168-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sDfh4e/eDQCxX+G7CPfC9Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:EffectExperiment>>effectSimpleShadow2|previewExpanded|noCode}}\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T08:50:13.667-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:54:10.026-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uBiaN+7eDQCFhBvDAz8ngg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Try the following variation.\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:52:33.833-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:52:33.833-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QCAc7e/eDQCyqvpHCPfC9Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#### Gaussian shadow.\r\nThe following produces\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:52:36.728-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-09-20T10:53:09.068-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2ExI7e/eDQCysfC6CPfC9Q=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtExample:EffectExperiment>>effectGaussianShadow|noCode}}"
 			}
 		]
 	},
