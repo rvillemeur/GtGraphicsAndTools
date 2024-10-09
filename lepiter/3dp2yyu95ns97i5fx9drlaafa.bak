@@ -66,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-09T10:27:15.854-04:00"
+						"dateAndTimeString" : "2024-10-09T10:26:41.37-04:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Brick follows a component based ui design, which means each widget is independent and they do not inherit any style from the parents. Component based UI appears to be a de-facto standard pattern when it comes to creating and managing large scale UI applications. It means that by design there is no way to apply a global stylesheet. Each widget keeps its style to itself. \r\n[reference](https://discord.com/channels/223421264751099906/375240886319316994/1293518433220296734)"
+				"string" : "Brick follows a component based ui design, which means each widget is independent and they do not inherit any style from the parents. Component based UI appears to be a de-facto standard pattern when it comes to creating and managing large scale UI applications. It means that by design there is no way to apply a global stylesheet. Each widget keeps its style to itself. "
 			},
 			{
 				"__type" : "textSnippet",
