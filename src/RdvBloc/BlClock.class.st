@@ -16,24 +16,6 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-BlClock >> background [
-
-	^ BlBackground  paint: Color lightGray
-]
-
-{ #category : #'as yet unclassified' }
-BlClock >> border [
-
-	^ BlBorder paint: Color black width: 4
-]
-
-{ #category : #'as yet unclassified' }
-BlClock >> geometry [
-
-	^ BlCircleGeometry new matchExtent: self extent.
-]
-
-{ #category : #'as yet unclassified' }
 BlClock >> initAnimation [
 
 	| animation |
@@ -135,7 +117,6 @@ BlClock >> initElements [
 BlClock >> initialize [
 	super initialize.
 	model := BlClockModel new.
-	self aptitude: BlClockAptitude new.
 	self addEventHandlerOn: BlElementExtentChangedEvent do: [ :e | self resize ]
 ]
 
