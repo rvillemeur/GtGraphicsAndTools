@@ -203,43 +203,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:32:06.787-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:32:06.787-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0D+t9JvgDQCK9giAAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Aptitude are developped as Talent. Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is applied to an object, no other instance of the object’s class are affected. Talents may be composed of other talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly resolved."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-07-14T18:03:26.503-04:00"
 					}
 				},
@@ -251,7 +214,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:32:06.79-04:00"
+						"dateAndTimeString" : "2024-10-11T17:31:59.828-04:00"
 					}
 				},
 				"uid" : {
@@ -261,7 +224,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtClass:BrStyleCommonAptitude}} and {{gtClass:BrStyleAptitude}} allow the encapsulation of Style (i.e. appearance based on specific states of the BlElement) into a class that can be reused between Brick widget. This is, in my opinion, the part of aptitude that is the closest to CSS styling. By using Style, GToolking will run its magic and display style property in the element inspector."
+				"string" : "Aptitude are developped as Talent. Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is applied to an object, no other instance of the object’s class are affected. Talents may be composed of other talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly resolved.\r\n\r\n{{gtClass:BrStyleCommonAptitude}} and {{gtClass:BrStyleAptitude}} allow the encapsulation of Style (i.e. appearance based on specific states of the BlElement) into a class that can be reused between Brick widget. This is, in my opinion, the part of aptitude that is the closest to CSS styling. By using Style, GToolking will run its magic and display style property in the element inspector."
 			},
 			{
 				"__type" : "textSnippet",

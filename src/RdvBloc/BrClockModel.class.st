@@ -1,5 +1,5 @@
 Class {
-	#name : #BlClockModel,
+	#name : #BrClockModel,
 	#superclass : #Object,
 	#instVars : [
 		'time'
@@ -8,7 +8,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-BlClockModel >> hourCoordinate [
+BrClockModel >> hourCoordinate [
 
 	| angleHours y angleTime  angleMinutes x |
 	angleHours := Float pi / 6 * time hours.
@@ -22,7 +22,7 @@ BlClockModel >> hourCoordinate [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockModel >> minuteCoordinate [
+BrClockModel >> minuteCoordinate [
 
 	| x y angle |
 	angle := Float pi / 30 * time minutes.
@@ -32,7 +32,7 @@ BlClockModel >> minuteCoordinate [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockModel >> secondCoordinate [
+BrClockModel >> secondCoordinate [
 
 	| x y angle  |
 	angle := Float pi / 30 * time seconds.
@@ -42,7 +42,7 @@ BlClockModel >> secondCoordinate [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockModel >> time: anObject [
+BrClockModel >> time: anObject [
 
 	time := anObject
 ]

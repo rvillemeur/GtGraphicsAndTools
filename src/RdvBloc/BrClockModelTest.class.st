@@ -1,14 +1,14 @@
 Class {
-	#name : #BlClockModelTest,
+	#name : #BrClockModelTest,
 	#superclass : #TestCase,
 	#category : #'RdvBloc-BlocClock'
 }
 
 { #category : #tests }
-BlClockModelTest >> testHourCoordinate [
+BrClockModelTest >> testHourCoordinate [
 
 	| clock |
-	clock := BlClockModel new.
+	clock := BrClockModel new.
 
 	clock time: (Time fromString: '6:00:00').
 	self assert: (clock hourCoordinate) closeTo: 0 @ 1.
@@ -25,10 +25,10 @@ BlClockModelTest >> testHourCoordinate [
 ]
 
 { #category : #tests }
-BlClockModelTest >> testMinuteCoordinate [
+BrClockModelTest >> testMinuteCoordinate [
 
 	| clock |
-	clock := BlClockModel new.
+	clock := BrClockModel new.
 
 	clock time: (Time fromString: '6:00:00').
 	self assert: (clock minuteCoordinate) closeTo: 0 @ -1.
@@ -44,10 +44,10 @@ BlClockModelTest >> testMinuteCoordinate [
 ]
 
 { #category : #tests }
-BlClockModelTest >> testSecondCoordinate [
+BrClockModelTest >> testSecondCoordinate [
 
 	| clock |
-	clock := BlClockModel new.
+	clock := BrClockModel new.
 
 	clock time: (Time fromString: '6:00:00').
 	self assert: (clock secondCoordinate) closeTo: 0 @ -1.

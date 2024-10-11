@@ -1,11 +1,11 @@
 Class {
-	#name : #BlClockAptitude,
+	#name : #BrClockAptitude,
 	#superclass : #BrAptitude,
 	#category : #'RdvBloc-BlocClock'
 }
 
 { #category : #'as yet unclassified' }
-BlClockAptitude >> initialize [
+BrClockAptitude >> initialize [
 	super initialize.
 
 	self

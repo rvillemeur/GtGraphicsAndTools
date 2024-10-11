@@ -1,5 +1,5 @@
 Class {
-	#name : #BlClock,
+	#name : #BrClock,
 	#superclass : #BlElement,
 	#instVars : [
 		'hourNeedle',
@@ -16,7 +16,7 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-BlClock >> initAnimation [
+BrClock >> initAnimation [
 
 	| animation |
 	animation := BlAnimation new
@@ -34,7 +34,7 @@ BlClock >> initAnimation [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> initClock [
+BrClock >> initClock [
 	self removeChildren.
 
 	self initConstant.
@@ -44,7 +44,7 @@ BlClock >> initClock [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> initClockFrame [
+BrClock >> initClockFrame [
 	"draw small lines around clock frame"
 
 	| quarterLength quarterWidth hourLength hourWidth |
@@ -78,7 +78,7 @@ BlClock >> initClockFrame [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> initConstant [
+BrClock >> initConstant [
 
 	center := radius @ radius.
 	hourNeedleSize := radius / 2.
@@ -87,7 +87,7 @@ BlClock >> initConstant [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> initElements [
+BrClock >> initElements [
 
 	hourNeedle := BlElement new
 		              id: #hourNeedle;
@@ -114,21 +114,22 @@ BlClock >> initElements [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> initialize [
+BrClock >> initialize [
 	super initialize.
-	model := BlClockModel new.
+	"model := BlClockModel new."
+	self viewModel: BrClockWidgetModel new.
 	self addEventHandlerOn: BlElementExtentChangedEvent do: [ :e | self resize ]
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> resize [
+BrClock >> resize [
 
 	radius := self extent min / 2.0.
 	self initClock
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> size: aPoint [
+BrClock >> size: aPoint [
 	super size: aPoint.
 
 	radius := aPoint x / 2.
@@ -136,7 +137,7 @@ BlClock >> size: aPoint [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> updateHourNeedlePosition [
+BrClock >> updateHourNeedlePosition [
 
 	| coordinate |
 	coordinate := model  hourCoordinate.
@@ -144,7 +145,7 @@ BlClock >> updateHourNeedlePosition [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> updateMinuteNeedlePosition [
+BrClock >> updateMinuteNeedlePosition [
 
 	| coordinate |
 	coordinate := model  minuteCoordinate.
@@ -152,7 +153,7 @@ BlClock >> updateMinuteNeedlePosition [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> updateNeedlesPosition [
+BrClock >> updateNeedlesPosition [
 
 	self updateHourNeedlePosition.
 	self updateMinuteNeedlePosition.
@@ -160,7 +161,7 @@ BlClock >> updateNeedlesPosition [
 ]
 
 { #category : #'as yet unclassified' }
-BlClock >> updateSecondNeedlePosition [
+BrClock >> updateSecondNeedlePosition [
 
 	| coordinate |
 	coordinate :=  model secondCoordinate.

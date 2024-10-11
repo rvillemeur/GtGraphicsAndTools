@@ -1828,7 +1828,7 @@
 														"__type" : "time",
 														"time" : {
 															"__type" : "dateAndTime",
-															"dateAndTimeString" : "2024-09-20T10:09:40.669-04:00"
+															"dateAndTimeString" : "2024-09-20T10:09:45.625-04:00"
 														}
 													},
 													"uid" : {
@@ -1838,7 +1838,44 @@
 													"paragraphStyle" : {
 														"__type" : "textStyle"
 													},
-													"string" : "[[Color "
+													"string" : "[[Color transition animation]]"
+												},
+												{
+													"__type" : "textSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-09-20T10:09:46.506-04:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2024-09-20T10:09:58.07-04:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "ENcVVO/eDQCkraaQAz8ngg=="
+													},
+													"paragraphStyle" : {
+														"__type" : "textStyle"
+													},
+													"string" : "[[Number transition animation]]"
 												}
 											]
 										},

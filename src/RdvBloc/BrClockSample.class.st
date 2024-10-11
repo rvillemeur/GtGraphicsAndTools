@@ -1,11 +1,11 @@
 Class {
-	#name : #BlClockSample,
+	#name : #BrClockSample,
 	#superclass : #Object,
 	#category : #'RdvBloc-BlocClock'
 }
 
 { #category : #'as yet unclassified' }
-BlClockSample >> clockContainer [
+BrClockSample >> clockContainer [
 
 	<gtExample>
 	^BlElement new
@@ -19,7 +19,7 @@ BlClockSample >> clockContainer [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> clockDynamicContainer [
+BrClockSample >> clockDynamicContainer [
 
 	<gtExample>
 	^BlElement new
@@ -33,15 +33,15 @@ BlClockSample >> clockDynamicContainer [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> clockDynamicSize [
+BrClockSample >> clockDynamicSize [
 <gtExample>
-^BlClock new constraintsDo: [ :c |
+^BrClock new constraintsDo: [ :c |
 		         c horizontal matchParent.
 		         c vertical matchParent ].
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> clockFixedContainer [
+BrClockSample >> clockFixedContainer [
 <gtExample>
 ^BlElement new
 		border: (BlBorder paint: Color red width: 1);
@@ -51,30 +51,30 @@ BlClockSample >> clockFixedContainer [
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> clockFixedSize [
+BrClockSample >> clockFixedSize [
 	<gtExample>
-	^ BlClock new size: 300 @ 300
+	^ BrClock new size: 300 @ 300
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> openInDynamicLayout [
+BrClockSample >> openInDynamicLayout [
 
 	<gtExample>
 	| clock container |
 	container := self clockFixedContainer.
 	clock := self clockDynamicSize.
-	clock aptitude: BlClockAptitude.
+	clock aptitude: BrClockAptitude.
 	container addChild: clock.
 	^ container
 ]
 
 { #category : #'as yet unclassified' }
-BlClockSample >> openInFixedSize [
+BrClockSample >> openInFixedSize [
 	<gtExample>
 	| clock container |
 	container := self clockDynamicContainer.
 	clock := self clockFixedSize.
-	clock aptitude: BlClockAptitude.
+	clock aptitude: BrClockAptitude.
 
 	container addChild: clock.
 	^ container
