@@ -5,9 +5,25 @@ Class {
 }
 
 { #category : #'as yet unclassified' }
-BlClockAptitude >> onAttachedTo: anElement [.
-super onAttachedTo: anElement.
-	anElement geometry: (BlCircleGeometry new matchExtent: anElement extent).
-	anElement border: (BlBorder paint: Color black width: 4).
-	anElement background: (BlBackground paint: Color lightBlue)
+BlClockAptitude >> initialize [
+	super initialize.
+
+	self
+		addChangeProperty: #(widget background)
+		with: [BlBackground paint: Color lightOrange ].
+	self
+		addChangeProperty: #(widget border)
+		with: [BlBorder paint: Color blue width: 4 ].
+		
+	self
+		addChangeProperty: #(widget geometry)
+		with: [BlCircleGeometry new matchExtent: widget extent ].
+		
+	"self
+		addChange: (BrLookChange new
+				up: [ :e | 
+					e widget
+						border: (BlBorder paint: Color black width: 4);
+						background: (BlBackground paint: Color lightBlue);
+						geometry: (BlCircleGeometry new matchExtent: e widget extent) ])"
 ]
