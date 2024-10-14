@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-08-29T16:18:39.959-04:00"
+						"dateAndTimeString" : "2024-10-13T22:11:24.174733-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "note Brick\n\nBrick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and Aptitude, that give its appearance"
+				"string" : "Brick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and multitple Aptitude, that give its appearance"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,6 +92,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-13T22:05:58.798497-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-13T22:05:58.798497-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rZTIA8jgDQC+6V3SDzHoEA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick add two mains extention to Bloc, \r\n-  *aptitude* \r\n- viewmodel\r\n\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2022-01-30T13:12:51.075-05:00"
 					}
 				},
@@ -103,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-30T13:14:12.222-05:00"
+						"dateAndTimeString" : "2024-10-13T22:05:58.802056-04:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +150,44 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Brick add two mains extention to Bloc, \r\n-  *aptitude* \r\n- viewmodel\r\n\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected.\r\n\r\nLike a trait, a talent represents a set of methods that constitute part of the\nbehavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is\napplied to an object, no other instance of the object’s class are affected. Talents may be composed of\nother talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly\nresolved."
+				"string" : "Like a trait, a talent represents a set of methods that constitute part of the\nbehavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is\napplied to an object, no other instance of the object’s class are affected. Talents may be composed of\nother talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly\nresolved."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-13T22:06:01.438455-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-13T22:09:20.342698-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "L97wA8jgDQC+77FADzHoEA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick also rely a lot on {{gtClass:BlElementStyles}} and {{gtClass:BlElementState}} properties of a BlElement. "
 			},
 			{
 				"__type" : "textSnippet",
