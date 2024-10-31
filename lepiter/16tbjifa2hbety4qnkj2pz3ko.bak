@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:00:39.22-04:00"
+						"dateAndTimeString" : "2024-10-31T12:54:33.01-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,81 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:00:45.399-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "OEMrhJvgDQCrOy+uAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#Brick widget"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:01:31.314-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:16:42.823-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "aCdGh5vgDQCt2AtCAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Define the public API for the widget. It's a BlElement that is enriched with two additional components: \r\n- aptitude for **appearance** and **interaction**\r\n- Widgetmodel for **behavior**\r\nas shown in:  {{gtExample:BrButtonLabelAptitudeExamples>>buttonWithModelAndLookWithConstraints}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:16:49.756-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:18:21.045-04:00"
+						"dateAndTimeString" : "2024-10-31T12:54:33.01-04:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "You can notice that at first, the button is a bare new {{gtClass:BlElement}}, on which we add a {{gtMethod:BlElement>>viewModel:}} and {{gtMethod:BlElement>>aptitude:}}"
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -140,7 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:18:48.304-04:00"
+						"dateAndTimeString" : "2024-10-31T12:55:36.474-04:00"
 					}
 				},
 				"uid" : {
@@ -150,7 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Example details for BrButton"
+				"string" : "##"
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:02:01.629-04:00"
+						"dateAndTimeString" : "2024-10-31T12:56:02.124-04:00"
 					}
 				},
 				"editEmail" : {
@@ -177,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:19:19.649-04:00"
+						"dateAndTimeString" : "2024-10-31T12:56:02.124-04:00"
 					}
 				},
 				"uid" : {
@@ -187,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Let look in detail at {{gtClass:BrButton}}. In the {{gtMethod:BrButton>>initialize}}, it reference its widget model. Note that you can have more than one model per widget. In the method listed in `API-Widget`  protocols, state is managed through the  dedicated widget model, like {{gtMethod:BrButton>>action:}} or {{gtMethod:BrButton>>icon:}}"
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",
@@ -214,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:08:35.218-04:00"
+						"dateAndTimeString" : "2024-10-31T12:56:18.551-04:00"
 					}
 				},
 				"uid" : {
@@ -224,7 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "To specify the appearance of your widget, you must declare which aptitude it will use, like in {{gtExample:BrGlamorousComponentsButtons>>withLabel}}"
+				"string" : "}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -240,7 +166,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:21:38.173-04:00"
+						"dateAndTimeString" : "2024-10-31T12:56:39.936-04:00"
 					}
 				},
 				"editEmail" : {
@@ -251,197 +177,12 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:23:20.569-04:00"
+						"dateAndTimeString" : "2024-10-31T12:56:39.936-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "eFg1z5vgDQCFkDlFAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Aptitude and WidgetModel manage to communicate with each other through event, which are subclasses of {{gtClass:BrRequest}} and {{gtClass:BrChangeEvent}} as demonstrated in {{gtClass:BrTextLabelAptitude}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:28:47.72-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:28:47.72-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "WBY8EpvgDQCqJceBAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "#actor\r\nactor is the ancestor of aptitude and viewModel.\r\n\r\nWhen an actor (look or model) is not attached to the element it can not send or receive events\r\n\r\nCommunication between element is based on event.\r\n\r\nYou don’t have to create view models. The logic is like this: ha, we use this \r\nspecific composition of elements often. Let’s give it a name and put in Brick. \r\nFor example button with a label. It is annoying to build one every time from \r\nelements. So we provide it in Brick. \r\n\r\nThere is a \"widget\" Tab when inspecting an element. It shows the composition of \r\nthe widget including all aptitudes it is usin g\r\n\r\n"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:24.868-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:24.868-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uOtyFJvgDQCqnKapAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# BrAptitude\r\nYou can add aptitude to another aptitude. Aptitudes can include functionality of their own. If you inspect a tab in the driller and ask for `self aptitude` in the inspector, you can actually see the aptitude(s)...\r\n\r\nAptitudes are a powerful tool in Bloc. It's like CSS but with the ability of adding functionality and changing the element tree. you can think of them as object talents for the rendering.\r\n\r\nthey are kind of like traits but for components. So you can compose aptitudes to build up additional visual functionality, such as making an element have a dropdown etc. The important difference is that Trait is a compile time entity while aptitude with functionality is a runtime entity. Another interesting \r\naspect is that there is no clear boundary between functional looks and pure visual looks creating two separate hierarchies would limit flexibility of the look system\r\n\r\nWe have an element with a look ( *BrShadowAptitude* ). Then we add a look dynamically on top of that ( *BrGlamorousWithMaximizerAptitude* ). This adds a button with a new ability that allows the element to maximize. It's as close to UI magic as it gets. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:28:56.737-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:24.87-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "AK3FEpvgDQCqVKwlAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##question\r\n- Can someone explain what the relationship between *BrGlamorousWithDropdownAptitude*\r\nand *BrGlamorousDropdownAptitude* is? Specifically, why two parallel hierarchies?\r\n- The first one is added to the Button widget to add an ability to show a \r\ndropdown, the latter defines the style and look of the dropdown itself\r\n\r\n**look at BrWithDropdownAptitude as well**\r\n\r\n- Is there an aptitude to resize an accordion?\r\n- you can add BrGlamorousWith{Horizontal|Vertical}ResizerAptitude to any element to make it resizable\r\n"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:35.535-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:38.313-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CDWxFJvgDQCqop07AqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##reference"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:39.416-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:29:39.416-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2OdQFZvgDQCrN6uPAqsWFA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
@@ -462,7 +203,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:27:46.723-04:00"
+						"dateAndTimeString" : "2024-10-11T16:28:47.72-04:00"
 					}
 				},
 				"editEmail" : {
@@ -473,17 +214,91 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T16:28:56.741-04:00"
+						"dateAndTimeString" : "2024-10-31T12:44:31.256-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "uFyZDpvgDQCp5DQ9AqsWFA=="
+					"uidString" : "WBY8EpvgDQCqJceBAqsWFA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#BrWidgetModel"
+				"string" : "#\r\n\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-11T16:29:24.868-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:45:29.043-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "uOtyFJvgDQCqnKapAqsWFA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:55:04.401-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:55:04.401-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "AK3FEpvgDQCqVKwlAqsWFA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},

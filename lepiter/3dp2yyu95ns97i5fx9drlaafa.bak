@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-08-29T16:18:39.959-04:00"
+						"dateAndTimeString" : "2024-10-13T22:11:24.174733-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,155 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "note Brick\n\nBrick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and Aptitude, that give its appearance"
+				"string" : "Brick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and multitple Aptitude, that give its appearance"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:53:56.717-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:54:19.004-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4H2yZiriDQCxGNmEC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "\"Define the public API for the widget. It's a BlElement that is enriched with two additional components: \r\n- aptitude for **appearance** and **interaction**\r\n- Widgetmodel for **behavior**\r\nhas shown in:  {{gtExample:BrButtonLabelAptitudeExamples>>buttonWithModelAndLookWithConstraints}}\""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:54:38.655-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:54:42.047-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "GG4yaSriDQCxaivqC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can notice that at first, the button is a bare new {{gtClass:BlElement}}, on which we add a {{gtMethod:BlElement>>viewModel:}} and {{gtMethod:BlElement>>aptitude:}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:49:04.809-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:49:05.873-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "QFRMVSriDQCu3/WxC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Add two main abstraction to {{gtClass:BlElement}}, both subclass of {{gtClass:BrActor}} to create high-level widget. It strongly event based, with custom event as subclass of {{gtClass:BrRequest}} and {{gtClass:BrChangeEvent}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:49:44.207-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:52:55.116-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qOQzVyriDQCu/t5jC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Both {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated to an aptitude, as aptitude can react to event and state defined byt the widget model"
 			},
 			{
 				"__type" : "textSnippet",
@@ -114,6 +262,80 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Brick add two mains extention to Bloc, \r\n-  *aptitude* \r\n- viewmodel\r\n\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:49:50.636-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:49:51.606-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4JsHWCriDQCvDMxjC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "- **Aptitude**\r\nprovide graphical definition to your element, which at first is invisible\r\n- **viewModel**\r\nprovide internal state to your widet, following **MVVM** design patterm"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:50:07.192-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:50:08.161-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wDsEWSriDQCvHHzmC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "you  can {{gtMethod:BlElement>>addAptitude:}} and {{gtMethod:BlElement>>addViewModel:}} and of course {{gtMethod:BlElement>>removeAptitude:}} and update {{gtMethod:BlElement>>viewModel:}}. Aptitude can be composed (think CSS on steroïd), to define precisely the appearance and behaviour of your widget when you interact with it through event"
 			},
 			{
 				"__type" : "textSnippet",
@@ -225,6 +447,117 @@
 					"__type" : "textStyle"
 				},
 				"string" : "Brick is a subclass of Bloc, and defined through the MVVM Paradigm.\nWidget are composed of\n- appearance (look/aptitude)\n- behaviour (model - method to respond to).\r\n\r\n**BrGlamorousVectorIcons** + package Brick-Glamorous\r\n\r\nBrick-Glamorous will give aptitude and icons used by GToolkit\r\n\r\n**BrGlamorousComponents** provide example of widget used by GToolkit, it will show which aptitude is used with GToolkit components\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:55:50.503-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:55:56.295-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cLp6bSriDQCxlKKCC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Example details for BrButton"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:55:53.276-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:56:08.003-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eAqlbSriDQCxnatcC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Let look in detail at {{gtClass:BrButton}}. In the {{gtMethod:BrButton>>initialize}}, it reference its widget model. Note that you can have more than one model per widget. In the method listed in `API-Widget`  protocols, state is managed through the  dedicated widget model, like {{gtMethod:BrButton>>action:}} or {{gtMethod:BrButton>>icon:}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:56:09.433-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T12:56:28.884-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qJebbiriDQCxtth3C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To specify the appearance of your widget, you must declare which aptitude it will use, like in {{gtExample:BrGlamorousComponentsButtons>>withLabel}}"
 			},
 			{
 				"__type" : "textSnippet",

@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:55.312-04:00"
+						"dateAndTimeString" : "2024-10-31T12:52:49.898-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior. \r\n\r\nso, in short, *aptitude* can affect:\r\n- look (style, or appearance of the element)\r\n- structure (insert or remove child element)\r\n- behaviour (add API calls to the element). ** => to be confirmed**\r\n\nCombining them should be what one expects from combining: an ordered way in which structure and behavior is affected.\n\nthere's nothing wrong with an aptitude being named *XyzLook* as long as its effect is purely visual. Where the confusion came was aptitudes that affected behavior still being called looks.\n\nThe term look does not convey the full implications of decorating an element with both **look** and **behavior**.\r\n\r\nBoth {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated to an aptitude, as aptitude can react to event and state defined byt the widget model\r\n"
+				"string" : "\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:25:03.34-04:00"
+						"dateAndTimeString" : "2024-10-31T12:46:52.992-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,81 +66,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:25:03.34-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "+IUduBbiDQCpako4BIsDPQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##about BrAptitude >> addChangeAddChild: aCollection with: aBlock"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:58.052-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:25:03.343-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uNXMtxbiDQCpYBqQBIsDPQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "A collection is a path  that lead to the property that need change.\r\n\n- 1st element is always a method of BrAptitude or subclasses.\n- Other element refer to method and properties of 1st element returned until you  reach your destination. Then, **aBlock** is applied to it. \n\nExample: #(widget constraints vertical resizer), or #(widget layout)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:47.57-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:55.317-04:00"
+						"dateAndTimeString" : "2024-10-31T12:46:52.992-04:00"
 					}
 				},
 				"uid" : {
@@ -150,44 +76,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "A widget can be made of multiple aptitude and multiple Widget model, and the pattern used is best described by:"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T22:57:43.494-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:47.575-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "cOFwzRygDQCUPDMnCAoGAw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "##Actor role pattern:\r\nAdapt an object to different client’s needs through transparently attached role objects, each one representing a role the object has to play in that client’s context. The object manages its role set dynamically. By representing roles as individual objects, different contexts are kept separate and system configuration is simplified\r\n\r\nAn object-oriented system is typically based on a set of key abstractions. Each key abstraction is modeled by a corresponding class in terms of abstract state and behavior. This usually works fine for the design of smaller applications. However, once we want to scale up the system into an integrated suite of applications, we have to deal with different clients that need context-specific views on our key abstractions.\r\n\r\nIntegrating several context-specific views in the same class will most likely lead to key abstractions with bloated interfaces. Such interfaces are difficult to understand and hard to maintain. Unanticipated changes cannot be handled gracefully and will trigger lots of recompilation. Changes to a client-specific part of the class interface are likely to affect clients in other subsystems or applications as well.\r\n\r\nThe Role Object pattern suggests to model context-specific views of an object as separate **role objects** which are dynamically attached to and removed from the **core object**.\r\n\r\nThe Actor Role Object pattern is usefull, if\r\n- you want to handle a key abstraction in different contexts and you do not want to put the resulting context specific interfaces into the same class interface.\r\n- you want to handle the available roles dynamically so that they can be attached and removed on demand, that is  at runtime, rather than fixing them statically at compile-time.\r\n- you want to treat the extensions transparently and need to preserve the logical object identity of the resulting object conglomerate.\r\n- you want to keep role/client pairs independent from each other so that changes to a role do not affect clients that are not interested in that role.\r\n[source](https://hillside.net/plop/plop97/Proceedings/riehle.pdf)\r\n"
+				"string" : ""
 			},
 			{
 				"__type" : "textSnippet",

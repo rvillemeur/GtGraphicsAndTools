@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:37:29.501986-05:00"
+						"dateAndTimeString" : "2022-10-07T18:26:29.732-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,51 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:37:29.501986-05:00"
+						"dateAndTimeString" : "2024-01-26T20:53:57.181529-05:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Sx+JZ5WpDQCXagOUAprxhg=="
+					"uidString" : "qBC4CdumDQCCM6YKDBev2w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Roassal is a visualization engine built in Pharo (and VisualWorks). Roassal has three larger parts:\r\n1. Trachel (the canvas)\r\n2. Element model\r\n3. Builders\r\n\r\nGT (well, Bloc) is already a visualization engine and covers 1. and 2. completely and some more. What is presently lacking is the builders for common visualizations. There are a few already existing, the more prominent being Mondrian (you can see a description in {{gtClass:GtMondrianBasicExamples}} )."
+				"string" : "#1. customize inspector\rAdd a method on the instance side, with pragma **<gtView>** and **<gtClassView>**\rEx:\rgtViewContactsListOn: aView\r\t<gtView>\r\t\raView is a subtype of {{gtClass:name=GtPhlowProtoView}} or {{gtClass:name=GtPhlowView}} \t\r\r\nTo get a list of all the view in the system:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-07T18:27:23.396-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-10-07T18:28:01.754-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oBMADdumDQCCOOcZDBev2w=="
+				},
+				"code" : "#gtView gtPragmas"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +89,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:37:37.998071-05:00"
+						"dateAndTimeString" : "2022-10-06T18:30:20.753-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +100,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-11-11T10:37:37.998071-05:00"
+						"dateAndTimeString" : "2022-10-06T18:31:57.236-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "ze6jVauBDQC7XV7/C6EZOQ=="
+					"uidString" : "SPud+MamDQCD/HocDBev2w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[discord reference](https://discord.com/channels/729445214812504107/745659858665341080/770679780488118292])"
+				"string" : "#async <gtView>\r\nSpeaking of async things, one pattern that I've caught myself using a lot recently is lazy initialization of slots with a promise, and that promise driving one or more views/Blelements/etc. For example:\r\n```smalltalk\r\nexpensiveComputation\r\n  ^ aVariable ifNil: [ aVariable := [ NeoJSONObject fromString: (Znclient new get: 'https://a.big.json.response') ] asAsyncFuture await ]\r\n  ```"
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +126,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-07T22:15:00.19-04:00"
+						"dateAndTimeString" : "2022-10-06T18:31:19.026-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,54 +137,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-07T22:15:00.19-04:00"
+						"dateAndTimeString" : "2022-10-06T18:33:21.127-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "yxvsdauBDQC6dV+pC6EZOQ=="
+					"uidString" : "MNm1/MamDQCEAVOEDBev2w=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Roassal:\r\n\r\nElement\r\n - has a shape (how it is rendered)\r\n - react to event (drag & drop, click, etc...)\r\n\r\nElements can added to a view, and/or nested in other elements.\r\nThe view is like a camera, that can be translated, rotated, etc...\r\n\r\nShape of an element can be tweaked, and composed with different shapes.\r\n\r\nOne can link different elements together with:\r\n - arrow\r\n - edge\r\n - edge with arrow\r\n - double arrow\r\n - etc...\r\n \r\nLayout define how elements are automatically arranged in a view.\r\n - grid layout\r\n - row layout (horizontal or vertical)\r\n - circle layout\r\n - tree layout\r\n - treeMap layout\r\n - etc..."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:08:40.905131-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T13:08:40.905131-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "u8rydauBDQC6eBlgC6EZOQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "- Gt phlow views are built on top of Brick and are used to compose views of a particular object.  Their reuse is typically at the application level where the application interface may be composed of multiple Gt phlow views."
+				"string" : "Then using a **BrAsyncWidget** inside an explicit view:\r\n```smalltalk\r\ngtRawDataFor: aView\r\n  <gtView>\r\n  ^ aView explicit\r\n    title: 'Raw Data';\r\n    priority: 1;\r\n    stencil: [\r\n    BrAsyncWidget new\r\n    matchParent;\r\n    stencil: [ self expensiveComputation wait.\r\n      (self expensiveComputation gtTreeFor: GtPhlowEmptyView new) asElement\r\n    ]\r\n  ]\r\n  ```\r\n  \r\nThis keeps the UI snappy and things never hang, you get visual 'feedback' while waiting for view/response, you can cancel the future (but hopefully the underlying one is not cancelled so that even if you close inspector it may finish in the background to not waste the computation so next time you open it's not re-fetched under normal conditions, unclear cause haven't tested), you have computation/data cached for next time unless you need to recalculate so can set slot to nil and you can share computation amongst view/elements/other components.\r\n[source](https://discord.com/channels/729445214812504107/737255889517543545/1026718959111786506)"
 			}
 		]
 	},
@@ -162,7 +159,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-21T12:58:49.688109-04:00"
+			"dateAndTimeString" : "2022-10-06T18:30:02.048-04:00"
 		}
 	},
 	"editEmail" : {
@@ -173,15 +170,15 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2021-06-21T12:58:54.646109-04:00"
+			"dateAndTimeString" : "2022-10-06T18:30:11.709-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "visualization"
+		"title" : "GtInspector"
 	},
 	"uid" : {
 		"__type" : "uuid",
-		"uuid" : "2d640853-ab81-0d00-bb5b-978d0ba11939"
+		"uuid" : "18869df8-c6a6-0d00-83fb-b1b30c17afdb"
 	}
 }

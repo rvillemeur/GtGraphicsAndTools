@@ -2073,7 +2073,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-10-11T17:28:33.822-04:00"
+												"dateAndTimeString" : "2024-10-31T12:46:18.816-04:00"
 											}
 										},
 										"editEmail" : {
@@ -2084,17 +2084,17 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-10-11T17:28:33.828-04:00"
+												"dateAndTimeString" : "2024-10-31T12:46:18.82-04:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "UOOC55vgDQCJqO4AAqsWFA=="
+											"uidString" : "GAAoSyriDQCuawemC2HBGA=="
 										},
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[Note on BrAptitude and BrWidgetModel]]"
+										"string" : "[[Actor pattern]]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -2132,43 +2132,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[MVVM]]"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-08-19T17:25:49.748-04:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-08-19T17:25:49.752-04:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "6JlssHHcDQCFPhx5Aa9K2g=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[Brick]]"
 									}
 								]
 							},
