@@ -2010,7 +2010,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-10-18T14:13:40.488-04:00"
+												"dateAndTimeString" : "2024-10-31T16:16:32.106-04:00"
 											}
 										},
 										"uid" : {
@@ -2020,7 +2020,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "[[aptitude]]"
+										"string" : "[[BrAptitude, customizing widget appearance and visual behavior]]"
 									},
 									{
 										"__type" : "textSnippet",
@@ -2058,43 +2058,6 @@
 											"__type" : "textStyle"
 										},
 										"string" : "[[widgetModel description and MVVM]]"
-									},
-									{
-										"__type" : "textSnippet",
-										"children" : {
-											"__type" : "snippets",
-											"items" : [ ]
-										},
-										"createEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"createTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-11-09T14:56:17.245999-05:00"
-											}
-										},
-										"editEmail" : {
-											"__type" : "email",
-											"emailString" : "<unknown>"
-										},
-										"editTime" : {
-											"__type" : "time",
-											"time" : {
-												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2024-10-31T15:08:36.272-04:00"
-											}
-										},
-										"uid" : {
-											"__type" : "uid",
-											"uidString" : "LbwbyHCpDQCUq6kHAprxhg=="
-										},
-										"paragraphStyle" : {
-											"__type" : "textStyle"
-										},
-										"string" : "[[BrCheckBox study]]"
 									},
 									{
 										"__type" : "textSnippet",

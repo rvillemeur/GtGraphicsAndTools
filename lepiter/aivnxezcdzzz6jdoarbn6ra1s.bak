@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T15:35:53.746-04:00"
+						"dateAndTimeString" : "2024-10-31T15:53:07.315-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected."
+				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected. You can also think of Aptitudes as CSS classes with behavior and with the ability to modify the DOM and add event handling"
 			},
 			{
 				"__type" : "textSnippet",
@@ -728,12 +728,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-10-18T14:07:52.098-04:00"
+			"dateAndTimeString" : "2024-10-31T16:16:17.797-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "aptitude"
+		"title" : "BrAptitude, customizing widget appearance"
 	},
 	"uid" : {
 		"__type" : "uuid",

@@ -210,12 +210,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-14T22:46:23.942-04:00"
+			"dateAndTimeString" : "2024-10-31T15:08:36.249-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "Aptitude and Widget model"
+		"title" : "BrCheckBox study"
 	},
 	"uid" : {
 		"__type" : "uuid",

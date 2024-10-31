@@ -728,12 +728,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-10-18T14:07:52.098-04:00"
+			"dateAndTimeString" : "2024-10-31T16:16:32.1-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "aptitude"
+		"title" : "BrAptitude, customizing widget appearance and visual behavior"
 	},
 	"uid" : {
 		"__type" : "uuid",

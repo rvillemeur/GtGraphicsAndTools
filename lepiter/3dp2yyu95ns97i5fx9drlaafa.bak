@@ -473,7 +473,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T15:47:43.131-04:00"
+						"dateAndTimeString" : "2024-10-31T16:13:16.283-04:00"
 					}
 				},
 				"uid" : {
@@ -483,7 +483,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\r\n\n#Common widget:\n- BrAccordion (BlElement)\n- BrBadge (BlElement)\n- BrBreadcrumb (BlElement)\n- BrButton (BlElement)\n- BrCard (BlElement)\n- BrCheckbox (BlElement)\n- BrDropdown (Object)\n- BrEditor (BrEditorElement)\n- BrEditableLabel (BrEditor)\n- BrEditorWithToolbar (BrVerticalPane)\n- BrEntailment (BlElement)\n- BrFileBrowser (BrVerticalPane)\n- BrFileSelector (BrVerticalPane)\n- BrLabel(BlElement)\n- BrPager (BlElement) with Stencil.\n- BrPopup (BlElement) with Look and Stencil.\n- BrProgress (BlElement)\n- BrResizer (BlElement)\n- BrScrollPane (BlElement)\n- BrScrollbar (BlElement)\n- BrSwitch\n- BrTab and BrTabGroup (BlElement)\n- BrTagger (BlElement)\n- BrToggle and BrToggleGroup (BlElement)\n- BrToolbar (BlElement)\n- BrTree and subclasses (BlElement).\n- BrTriangle (BlElement) -> display a triangle, as used to open or close block of text\n\nList widget with Stencil\n- BrColumnedList\n- BrFlowList\n- BrGridList\n- BrSimpleList"
+				"string" : "#Common existing widget (as of 2023):\n- {{gtClass:BrAccordion}} \n-  {{gtClass:BrBadge}} \n-  {{gtClass:BrBreadcrumb}} \n-  {{gtClass:BrButton}} \n-  {{gtClass:BrCard}}\n-  {{gtClass:BrCheckbox}} \n-  {{gtClass: BrEditor}} \n-  {{gtClass:BrEditableLabel}} \n-  {{gtClass:BrEditorWithToolbar}} \n-  {{gtClass:BrEntailment}} \n-  {{gtClass:BrFileBrowser}} \n-  {{gtClass:BrFileSelector}} \n-  {{gtClass:BrLabel}}\n-  {{gtClass:BrPager}} \n-  {{gtClass:BrPopup}} \n-  {{gtClass:BrProgress}} \n-  {{gtClass:BrResizer}} \n- {{gtClass: BrScrollPane}} \n-  {{gtClass:BrScrollbar}} \n-  {{gtClass:BrSwitch}}\n-  {{gtClass:BrTab}} and  {{gtClass:BrTabGroup}} \n-  {{gtClass:BrTagger}} \n-  {{gtClass:BrToggle}} and {{gtClass:BrToggleGroup}} \n-  {{gtClass:BrToolbar}} \n-  {{gtClass:BrTree}} and subclasses\n-  {{gtClass: BrTriangle}}-> display a triangle, as used to open or close block of text\n\nList widget with Stencil\n- {{gtClass: BrColumnedList}}\n-  {{gtClass:BrFlowList}}\n-  {{gtClass:BrGridList}}\n-  {{gtClass:BrSimpleList}}"
 			}
 		]
 	},
