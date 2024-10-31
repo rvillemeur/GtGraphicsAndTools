@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:47:46.78-04:00"
+						"dateAndTimeString" : "2024-10-31T15:34:15.47-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,239 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:47:48.068-04:00"
+						"dateAndTimeString" : "2024-10-31T15:53:07.315-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "eLOlUCriDQCusjXRC2HBGA=="
+					"uidString" : "yAMFpCziDQC5JjAdC2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior. \r\n\r\nso, in short, *aptitude* can affect:\r\n- look (style, or appearance of the element)\r\n- structure (insert or remove child element)\r\n- behaviour (add API calls to the element). ** => to be confirmed**\r\n\nCombining them should be what one expects from combining: an ordered way in which structure and behavior is affected.\n\nthere's nothing wrong with an aptitude being named *XyzLook* as long as its effect is purely visual. Where the confusion came was aptitudes that affected behavior still being called looks.\n\nThe term look does not convey the full implications of decorating an element with both **look** and **behavior**."
+				"string" : "##Definition\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected. You can also think of Aptitudes as CSS classes with behavior and with the ability to modify the DOM and add event handling"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:51:08.502-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:51:08.502-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8Ktm4CziDQC/RpxJC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can add aptitude to another aptitude. Aptitudes can include functionality of their own. If you inspect a tab in the driller and ask for `self aptitude` in the inspector, you can actually see the aptitude(s)..."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:50:48.858-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:51:08.504-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "wOU63yziDQC/DoZkC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Aptitudes are a powerful tool in Bloc. It's like CSS but with the ability of adding functionality and changing the element tree. you can think of them as object talents for the rendering. There is a *widget* Tab when inspecting an element. It shows the composition of the widget including all aptitudes it is using. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:35:50.221-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:50:48.86-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yNCqqSziDQC6Djg/C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "they are kind of like traits but for components. So you can compose aptitudes to build up additional visual functionality, such as making an element have a dropdown etc. The important difference is that Trait is a compile time entity while aptitude with functionality is a runtime entity. Another interesting \r\naspect is that there is no clear boundary between functional looks and pure visual looks creating two separate hierarchies would limit flexibility of the look system"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:37:05.325-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:37:06.266-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4MskriziDQC6ks5sC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Aptitude are developped as Talent. Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is applied to an object, no other instance of the object’s class are affected. Talents may be composed of other talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly resolved."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:36:15.062-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:36:24.369-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "8NslqyziDQC6IT31C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "For example, we have an element with a look ( *BrShadowAptitude* ). Then we add a look dynamically on top of that ( *BrGlamorousWithMaximizerAptitude* ). This adds a button with a new ability that allows the element to maximize. It's as close to UI magic as it gets. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:34:17.169-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:37:50.381-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "aPQepCziDQC5Mh5QC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "BrAptitude really manage 3 responsabilities as shown in {{gtMethod:BrAptitude>>onInstalledIn:}}\r\n- Add specific action when attached on an element\r\n- customize visual appearance of the widget, including look (style, or appearance of the element) and structure (insert or remove child element)\r\n- connect Request and event between  aptitude and widget model\n\nthere's nothing wrong with an aptitude being named *XyzLook* as long as its effect is purely visual. Where the confusion came was aptitudes that affected behavior still being called looks.\n\nThe initial term *look* does not convey the full implications of decorating an element with both **look** and **behavior**."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,154 +314,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-18T14:07:44.853-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-18T14:10:10.523-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CKCy6iXhDQCqPbl6DzPFsQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "BrAptitude really manage 3 responsabilities as shown in {{gtMethod:BrAptitude>>onInstalledIn:}}\r\n- Add specific action when attached on an element\r\n- customize visual appearance of the widget\r\n- connect Request and event between  aptitude and widget model"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-18T14:08:12.686-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-18T14:11:49.22-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "sFJb7CXhDQCq2rJJDzPFsQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "About {{gtMethod:BrAptitude>>addChangeProperty:with:}} and path definition\n1st element  always refer to a method of BrAptitude or one of its subclasses.\nOther element refer to method and properties of 1st element returned until you reach your destination. Then, the bloc within the *with* argument is applied to it. \n\nExample of path: #(widget constraints vertical resizer), or #(widget layout)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:45:37.661-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:45:42.186-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "YIDzSCriDQCuWOruC2HBGA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# BrAptitude\r\nYou can add aptitude to another aptitude. Aptitudes can include functionality of their own. If you inspect a tab in the driller and ask for `self aptitude` in the inspector, you can actually see the aptitude(s)...\r\n\r\nAptitudes are a powerful tool in Bloc. It's like CSS but with the ability of adding functionality and changing the element tree. you can think of them as object talents for the rendering.\r\n\r\nthey are kind of like traits but for components. So you can compose aptitudes to build up additional visual functionality, such as making an element have a dropdown etc. The important difference is that Trait is a compile time entity while aptitude with functionality is a runtime entity. Another interesting \r\naspect is that there is no clear boundary between functional looks and pure visual looks creating two separate hierarchies would limit flexibility of the look system\r\n\r\nWe have an element with a look ( *BrShadowAptitude* ). Then we add a look dynamically on top of that ( *BrGlamorousWithMaximizerAptitude* ). This adds a button with a new ability that allows the element to maximize. It's as close to UI magic as it gets. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:50:55.563-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:50:59.78-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "+FDmWyriDQCvgNmvC2HBGA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "# Using the magic of GToolkit on aptitude\r\n1. subclass {{gtClass:BrAptitude}} and create custom {{gtClass:BrRequest }} and {{gtClass:BrChangeEvent}} on which your widget could react and update\r\n2. override {{gtMethod:BrAptitude>>initializeRequests}} to implement requests to the view model to synchronise its properties\r\n3. Override  {{gtMethod:BrActor>>initializeListeners}}  to initialize event listeners such as property updates from the view model\r\nTake a look at {{gtClass:BrIconAptitude}} or {{gtClass:BrTextLabelAptitude}} for an example"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-10-31T12:51:20.073-04:00"
 					}
 				},
@@ -277,6 +351,117 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T14:23:58.504-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T14:23:59.994-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WDirqCviDQC27j2JC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick also rely a lot on {{gtClass:BlElementStyles}} and {{gtClass:BlElementState}} properties of a BlElement. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T14:24:35.786-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T14:24:59.403-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EB3kqiviDQC3ClSkC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "{{gtClass:BrStyleCommonAptitude}} and {{gtClass:BrStyleAptitude}} allow the encapsulation of Style (i.e. appearance based on specific {{gtClass:BlElementState}} of the BlElement) into a class that can be reused between Brick widget. This is, in my opinion, the part of aptitude that is the closest to CSS styling. By using Style, GToolking will run its magic and display style property in the element inspector."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:05.615-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:07.904-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "sEZQtSziDQC7zF8gC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "you can customize the appearance of your BlElement with:\r\n- {{gtMethod:BlElement>>background:}}\r\n- {{gtMethod:BlElement>>border:}}\r\n- {{gtMethod:BlElement>>geometry:}}\r\n- {{gtMethod:BlElement>>outskirts:}}\r\n- {{gtMethod:BlElement>>padding:}}\r\n- {{gtMethod:BlElement>>margin:}}\r\n- {{gtMethod:BlElement>>layout:}} and {{gtMethod:BlElement>>size:}}\r\n- {{gtMethod:BlElement>>opacity:}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-10-31T12:51:22.252-04:00"
 					}
 				},
@@ -288,7 +473,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:51:32.796-04:00"
+						"dateAndTimeString" : "2024-10-31T15:39:05.62-04:00"
 					}
 				},
 				"uid" : {
@@ -298,7 +483,192 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "you can customize the appearance of your BlElement with:\r\n- {{gtMethod:BlElement>>background:}}\r\n- {{gtMethod:BlElement>>border:}}\r\n- {{gtMethod:BlElement>>geometry:}}\r\n- {{gtMethod:BlElement>>outskirts:}}\r\n- {{gtMethod:BlElement>>padding:}}\r\n- {{gtMethod:BlElement>>margin:}}\r\n- {{gtMethod:BlElement>>layout:}} and {{gtMethod:BlElement>>size:}}\r\n- {{gtMethod:BlElement>>opacity:}}\r\nThese properties can also be specified as {{gtClass:BlAbstractStyles}} ortyle}} and {{gtClass:BlElementStyles}}.  Individual style are defined by  {{gtClass:BlElementStyle}} a factory to define styles for most commonly used {{gtClass:BlElementState}}, definition of your elements specific events. . You can subclass {{gtClass:BrStyleAptitude}} or {{gtClass:BrLazyStyleAptitude}} and integrate it into your own aptitude definition to use this mecanism and apply style to your element. "
+				"string" : "These properties can also be specified as {{gtClass:BlAbstractStyles}} ortyle}} and {{gtClass:BlElementStyles}}.  Individual style are defined by  {{gtClass:BlElementStyle}} a factory to define styles for most commonly used {{gtClass:BlElementState}}, definition of your elements specific events. . You can subclass {{gtClass:BrStyleAptitude}} or {{gtClass:BrLazyStyleAptitude}} and integrate it into your own aptitude definition to use this mecanism and apply style to your element. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:37:26.461-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:21.717-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "YE5nryziDQC6qLctC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##About {{gtMethod:BrAptitude>>addChangeProperty:with:}} and path definition\n1st element  always refer to a method of BrAptitude or one of its subclasses.\nOther element refer to method and properties of 1st element returned until you reach your destination. Then, the bloc within the *with* argument is applied to it. \n\nExample of path: #(widget constraints vertical resizer), or #(widget layout)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:47:06.003-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:47:10.831-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UGry0SziDQC+XGL/C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Layout is given by the different classes:\n- BrFrame(Look)\n- BrHorizontalFlow(Look)\n- BrHorizontalPane(Look)\n- BrVerticalFlow(Look)\n- BrVerticalPane(Look)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:38:48.65-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:38:50.009-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "KGlNtCziDQC7vnMvC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Connecting Aptitude and widgetModel\r\n1. subclass {{gtClass:BrAptitude}} and create custom {{gtClass:BrRequest }} and {{gtClass:BrChangeEvent}} on which your widget could react and update\r\n2. override {{gtMethod:BrAptitude>>initializeRequests}} to implement requests to the view model to synchronise its properties\r\n3. Override  {{gtMethod:BrActor>>initializeListeners}}  to initialize event listeners such as property updates from the view model\r\nTake a look at {{gtClass:BrIconAptitude}} or {{gtClass:BrTextLabelAptitude}} for an example"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:44.892-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:47.078-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "eJintyziDQC77otOC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To have information on how your aptitude class react to event or to its viewModel, one shoud override these methods: {{gtMethod:BrActor>>initializeListeners}} and {{gtMethod:BrAptitude>>initializeRequests}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T14:26:15.954-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:39:44.895-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "UI7csCviDQC3TGHmC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A good example to study is {{gtClass:BrGlamorousButtonLabelAndIconAptitude}}"
 			},
 			{
 				"__type" : "textSnippet",

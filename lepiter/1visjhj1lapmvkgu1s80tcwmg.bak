@@ -18,6 +18,117 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:08.984-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:08.984-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2DoK/SziDQC/by99C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##Model -> domain model business (where the UI is used)\r\n\nThe key to remember with the model is that it holds the information, but not behaviors or services that manipulate the information. Business logic is typically kept separate from the model, and encapsulated in other classes that act on the model. This is not always true: for example, some models may contain validation.\n\n**View -> aptitude** (programmer don't touch it - but can defined new aptitude(look) if he wants)\nThe view is what most of us are familiar with and the only thing the end user really interacts with. It is the presentation of the data. The view takes certain liberties to make this data more presentable."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:13.889-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:13.889-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ABNV/SziDQC/hLwiC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "A view can also have behaviors associated with it, such as accepting user input. The view manages input (key presses, mouse movements, touch gestures, etc.) which ultimately manipulates properties of the model."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:15.228-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:59:15.228-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kH1p/SziDQC/i3VDC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "In MVVM, the view is active. As opposed to a passive view which has no knowledge of the model and is completely manipulated by a controller/presenter, the view in MVVM contains behaviors, events, and data-bindings that ultimately require knowledge of the underlying model and viewmodel."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-10-11T17:29:32.245-04:00"
 					}
 				},
@@ -29,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:29:32.245-04:00"
+						"dateAndTimeString" : "2024-10-31T15:59:15.23-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +150,118 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Model -> domain model business (where the UI is used)\r\n\nThe key to remember with the model is that it holds the information, but not behaviors or services that manipulate the information. Business logic is typically kept separate from the model, and encapsulated in other classes that act on the model. This is not always true: for example, some models may contain validation.\n\n**View -> aptitude** (programmer don't touch it - but can defined new aptitude(look) if he wants)\nThe view is what most of us are familiar with and the only thing the end user really interacts with. It is the presentation of the data. The view takes certain liberties to make this data more presentable.\r\n\nA view can also have behaviors associated with it, such as accepting user input. The view manages input (key presses, mouse movements, touch gestures, etc.) which ultimately manipulates properties of the model.\n\r\nIn MVVM, the view is active. As opposed to a passive view which has no knowledge of the model and is completely manipulated by a controller/presenter, the view in MVVM contains behaviors, events, and data-bindings that ultimately require knowledge of the underlying model and viewmodel.\r\n\nOne thing to remember about the view is that it is not responsible for maintaining its state. Instead, it will synchronize this with the *viewmodel*.\n"
+				"string" : "One thing to remember about the view is that it is not responsible for maintaining its state. Instead, it will synchronize this with the *viewmodel*."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:57:11.354-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:57:12.31-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "qFYH9iziDQC/Wc2oC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You don’t have to create view models. The logic is like this: ha, we use this specific composition of elements often. Let’s give it a name and put in Brick. For example button with a label. It is annoying to build one every time from elements. So we provide it in Brick. But there is no guideline about aptitudes or view models, only freedom. As long as your widget is reusable and abstract enough - great"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-11T17:29:49.711-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-11T17:29:49.711-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "yJ6B7JvgDQCJ9W8iAqsWFA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "##ViewModel (programmer deal with it - it's the API entry to the widget)\nThe view model is responsible for presenting functions, commands, methods, to support the state of the View. It is also accountable to operate the model and activate the events in the View.\n\nViewModel are subclasses of {{gtClass:BrWidgetModel}}\r\n"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-11T17:29:55.067-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-11T17:29:55.067-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "kFzT7JvgDQCJ/uiQAqsWFA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "***BrGlamorousComponentsCheckboxes*** examples\n\ncomposed of:\r\n```\n BrCheckbox\n       viewModel: (\n\t\tBrButtonModel new\n\t\t\taddAll: {\n\t\t\t\tBrCheckboxModel new.\n\t\t\t\t(BrInteractiveModel new\n\t\t\t\t\taddStates: {\n\t\t\t\t\t\tBrLayoutAlignmentModel center.\n\t\t\t\t\t}) } );\n                    \n\t\taptitude: BrGlamorousCheckboxAptitude.\n```\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude\n\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -66,7 +288,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:29:32.249-04:00"
+						"dateAndTimeString" : "2024-10-11T17:29:55.071-04:00"
 					}
 				},
 				"uid" : {
@@ -76,7 +298,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##ViewModel (programmer deal with it - it's the API entry to the widget)\nThe view model is responsible for presenting functions, commands, methods, to support the state of the View. It is also accountable to operate the model and activate the events in the View.\n\nViewModel are subclasses of {{gtClass:BrWidgetModel}}\r\n\n***BrGlamorousComponentsCheckboxes*** examples\n\ncomposed of:\r\n```\n BrCheckbox\n       viewModel: (\n\t\tBrButtonModel new\n\t\t\taddAll: {\n\t\t\t\tBrCheckboxModel new.\n\t\t\t\t(BrInteractiveModel new\n\t\t\t\t\taddStates: {\n\t\t\t\t\t\tBrLayoutAlignmentModel center.\n\t\t\t\t\t}) } );\n                    \n\t\taptitude: BrGlamorousCheckboxAptitude.\n```\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude\n\n\n# Reference\n[MVVM template explanation](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained)"
+				"string" : "# Reference\n[MVVM template explanation](https://www.codeproject.com/Articles/100175/Model-View-ViewModel-MVVM-Explained)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -136,12 +358,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2022-07-07T22:03:32.157-04:00"
+			"dateAndTimeString" : "2024-10-31T15:58:42.801-04:00"
 		}
 	},
 	"pageType" : {
 		"__type" : "namedPage",
-		"title" : "MVVM"
+		"title" : "widgetModel description and MVVM"
 	},
 	"uid" : {
 		"__type" : "uuid",

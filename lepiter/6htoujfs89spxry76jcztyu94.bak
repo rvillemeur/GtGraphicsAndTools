@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-30T13:24:55.312-04:00"
+						"dateAndTimeString" : "2024-10-31T14:27:32.291-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:48:01.523-04:00"
+						"dateAndTimeString" : "2024-10-31T14:27:32.291-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "gAqjtxbiDQCpWqN/BIsDPQ=="
+					"uidString" : "6FVptSviDQC3kT4OC2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Both {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated to an aptitude, as aptitude can react to event and state defined byt the widget model\r\n"
+				"string" : "##Example: BrGlamorousComponentsCheckboxes\r\nYou will instanciate this class to display a checkbox in a UI. What is interesting is how it is implemented. Its interface is composed of three method:\r\n- checked\r\n- unchecked\r\n- indeterminate"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:46:52.992-04:00"
+						"dateAndTimeString" : "2024-10-31T14:27:33.987-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:46:52.992-04:00"
+						"dateAndTimeString" : "2024-10-31T14:27:34.956-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "aOQstxbiDQCpTiBBBIsDPQ=="
+					"uidString" : "0DqDtSviDQC3lyG2C2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : ""
+				"string" : "A good example to study is: {{gtClass:BrGlamorousComponentsCheckboxes}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -103,7 +103,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T23:12:08.97-04:00"
+						"dateAndTimeString" : "2024-10-31T14:27:32.294-04:00"
 					}
 				},
 				"uid" : {
@@ -113,7 +113,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "##Example: BrGlamorousComponentsCheckboxes\r\nYou will instanciate this class to display a checkbox in a UI. What is interesting is how it is implemented. Its interface is composed of three method:\r\n- checked\r\n- unchecked\r\n- indeterminate\r\nFor each method, it reference the {{gtClass:BrCheckbox}} and associate the *aptitude* {{gtClass:BrGlamorousCheckboxAptitude}}, like:\r\n{{gtMethod:BrGlamorousComponentsCheckboxes>>checked|expanded}}\r\n"
+				"string" : "For each method, it reference the {{gtClass:BrCheckbox}} and associate the *aptitude* {{gtClass:BrGlamorousCheckboxAptitude}}, like:\r\n{{gtMethod:BrGlamorousComponentsCheckboxes>>checked|expanded}}"
 			},
 			{
 				"__type" : "textSnippet",
@@ -140,7 +140,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T23:12:51.32-04:00"
+						"dateAndTimeString" : "2024-10-31T14:26:57.614-04:00"
 					}
 				},
 				"uid" : {
@@ -150,44 +150,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "{{gtClass:BrGlamorousCheckboxAptitude}}, amounst other things, defind the style for the 3 states of the checkbox."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T22:32:10.687-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T23:12:51.32-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0Ci8jzCgDQCSpMMzBRbWBg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : " BrCheckbox widget model is defined as {{gtMethod:BrCheckbox>>initialize|expanded}}\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude"
+				"string" : "{{gtClass:BrGlamorousCheckboxAptitude}}, amounst other things, defind the style for the 3 states of the checkbox. BrCheckbox widget model is defined as {{gtMethod:BrCheckbox>>initialize}}\n\r\n*BrCheckboxModel* simply defined the *clickEvent* behaviour\n\nIn Brick, BrCheckbox definition is splitted on multiple packages:\n- Checkbox Events => reaction to event (checked, unchecked, undertermined)\n- Checkbox look => aptitude, which style to apply to different states\n- Checkbox Model => behaviour on clickEvent\n- Checkbox States => definition of the different states\n- Checkbox support => trait definition on a checkable element\n- Checkbox UI => API to position the checkbox in a UI.\n     \nBrGlamorousCheckboxAptitude itself composed of:\n* BrLayoutResizerAptitude\n* BrLayoutAlignmentAptitude\n* BrIconAptitude\n* BrCheckboxAptitude\n    where state is determined by BrCheckboxState which use the state pattern:\n        * BrCheckboxCheckedState\n        * BrCheckboxIndeterminateState\n        * BrCheckboxUncheckedState\n* BrSizeAdjustmentAptitude"
 			},
 			{
 				"__type" : "textSnippet",
@@ -225,154 +188,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "We will change it to aptitude. BrLook will still be offered as a deprecated class.\n\n- BrGlamorousResizerAptitude\n- BrGlamorousButtonWithIconAptitude\n- BrWithTooltipAptitude \n- BrGlamorousEditorAptitude\n- BrStyleCommonAptitude \n- BrGlamorousWithVerticalResizerAptitude \n"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:32:06.787-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-11T17:32:06.787-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "0D+t9JvgDQCK9giAAqsWFA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Aptitude are developped as Talent. Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is applied to an object, no other instance of the object’s class are affected. Talents may be composed of other talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly resolved."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T18:03:26.503-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:10:17.115874-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2LXXziygDQCSjds3BRbWBg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "{{gtClass:BrStyleCommonAptitude}} and {{gtClass:BrStyleAptitude}} allow the encapsulation of Style (i.e. appearance based on specific {{gtClass:BlElementState}} of the BlElement) into a class that can be reused between Brick widget. This is, in my opinion, the part of aptitude that is the closest to CSS styling. By using Style, GToolking will run its magic and display style property in the element inspector."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T22:14:54.978-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-13T22:15:07.776-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "2O+AMxygDQCT+igSCAoGAw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "A good example to study is: {{gtClass:BrGlamorousComponentsCheckboxes}}"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-08T14:19:05.162-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-07-14T23:35:53.053-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "EPFv+bCfDQCjWGGuDPDTfw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "To have information on how your aptitude class react to event or to its viewModel, one shoud override these methods: {{gtMethod:BrActor>>initializeListeners}} and {{gtMethod:BrAptitude>>initializeRequests}}\r\n\r\nA good example to study is {{gtClass:BrGlamorousButtonLabelAndIconAptitude|expanded}}"
 			}
 		]
 	},

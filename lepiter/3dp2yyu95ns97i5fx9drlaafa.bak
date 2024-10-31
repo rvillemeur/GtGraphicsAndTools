@@ -18,7 +18,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-08-29T16:18:39.959-04:00"
+						"dateAndTimeString" : "2024-10-31T15:40:46.767-04:00"
 					}
 				},
 				"editEmail" : {
@@ -29,17 +29,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:11:24.174733-04:00"
+						"dateAndTimeString" : "2024-10-31T15:40:54.801-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "8EPCKBqHDQC8SgTADHFfbg=="
+					"uidString" : "sLtXuyziDQC8BfjXC2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "Brick is a high level widget library build on top of Bloc\r\nBrick follow the **MVVM** pattern (Model-view-ViewModel)\r\nBrick widget are composed of multiple viewModel that provide its behaviour, and multitple Aptitude, that give its appearance"
+				"string" : "Brick is a high level widget library build on top of Bloc. Brick follow the **MVVM** pattern (Model-view-ViewModel).  Brick follows a component based ui design, which means each widget is independent and they do not inherit any style from the parents. Component based UI appears to be a de-facto standard pattern when it comes to creating and managing large scale UI applications. It means that by design there is no way to apply a global stylesheet. Each widget keeps its style to itself. \r\n[reference](https://discord.com/channels/223421264751099906/375240886319316994/1293518433220296734)"
 			},
 			{
 				"__type" : "textSnippet",
@@ -55,7 +55,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:53:56.717-04:00"
+						"dateAndTimeString" : "2024-10-31T15:42:33.97-04:00"
 					}
 				},
 				"editEmail" : {
@@ -66,17 +66,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:54:19.004-04:00"
+						"dateAndTimeString" : "2024-10-31T15:47:34.616-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "4H2yZiriDQCxGNmEC2HBGA=="
+					"uidString" : "aIW7wSziDQC8SgLvC2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "\"Define the public API for the widget. It's a BlElement that is enriched with two additional components: \r\n- aptitude for **appearance** and **interaction**\r\n- Widgetmodel for **behavior**\r\nhas shown in:  {{gtExample:BrButtonLabelAptitudeExamples>>buttonWithModelAndLookWithConstraints}}\""
+				"string" : "Brick widget define the public API for the widget. Brick is built on top of Bloc elements.  If you feel you need to create a Bloc element, ask first, you probably don't."
 			},
 			{
 				"__type" : "textSnippet",
@@ -92,7 +92,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:54:38.655-04:00"
+						"dateAndTimeString" : "2024-10-31T15:42:36.504-04:00"
 					}
 				},
 				"editEmail" : {
@@ -103,17 +103,165 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:54:42.047-04:00"
+						"dateAndTimeString" : "2024-10-31T15:43:45.007-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "GG4yaSriDQCxaivqC2HBGA=="
+					"uidString" : "2C/iwSziDQC8UIuzC2HBGA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "You can notice that at first, the button is a bare new {{gtClass:BlElement}}, on which we add a {{gtMethod:BlElement>>viewModel:}} and {{gtMethod:BlElement>>aptitude:}}"
+				"string" : "There are several architectural features of Brick that facilitate flexibility and reuse:\r\n- **Stencils** (subclass of BrStencil) are used to create widgets when lazy creation is required, or when the widget to be created depends on the data being displayed.\r\n- **Aptitude**  (previously Looks - provide the ability to modify the element to which they are attached.  A typical example is the look of a Button, whether it has a border or not, a label or not, an icon or not, etc.  Looks should only be created when the underlying widget is used in many places, e.g. buttons, and should not affect the API of the widget. Aptitude affect and endow an element with looks and behavior. They can be dynamically added and removed. They can be composed. In short, a powerful mechanism for dynamic scenes. Aptitude provide graphical definition to your element, which at first is invisible for **appearance** and **interaction**\r\n- **View Models** are used to maintain the state of a Brick widget, e.g. pressed, focused, hovered, and, like Looks, can be composed by adding multiple models together.  Like Aptitude, models also receive events. widget Model  helps following **MVVM** design patterm"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:41:45.227-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:41:46.26-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "EMPTviziDQC8OWcwC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Aptitude and WidgetModel manage to communicate with each other through event, which are subclasses of {{gtClass:BrRequest}} and {{gtClass:BrChangeEvent}} as demonstrated in {{gtClass:BrTextLabelAptitude}}"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:44:05.763-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:44:05.763-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0Cs0xyziDQC9n/tOC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Brick-Glamorous will give aptitude and icons used by GToolkit. **BrGlamorousVectorIcons** + package Brick-Glamorous\r\n\r\n**BrGlamorousComponents** provide example of widget used by GToolkit, it will show which aptitude is used with GToolkit components"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:46:19.889-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:46:21.321-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gMUyzyziDQC+QCr5C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Both {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated to an aptitude, as aptitude can react to event and state defined byt the widget model"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:07:24.583-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T15:44:54.445-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "cNQARCziDQC4zd3cC2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "You can notice that at first, the button is a bare new {{gtClass:BlElement}}, on which we add a {{gtMethod:BlElement>>viewModel:}} and {{gtMethod:BlElement>>aptitude:}} as shown in:  {{gtExample:BrButtonLabelAptitudeExamples>>buttonWithModelAndLookWithConstraints}}\""
 			},
 			{
 				"__type" : "textSnippet",
@@ -166,154 +314,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:49:44.207-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:52:55.116-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "qOQzVyriDQCu/t5jC2HBGA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Both {{gtClass:BrAptitude}} and {{gtClass:BrWidgetModel}} inherit from {{gtClass:BrActor}}. They are used to provide the behavior and style interface to the widget. A widget **must** have a model before it can be associated to an aptitude, as aptitude can react to event and state defined byt the widget model"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-09T10:26:39.296-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-09T10:27:15.854-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "GOZvx23gDQCUDyO2BYfRCw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Brick follows a component based ui design, which means each widget is independent and they do not inherit any style from the parents. Component based UI appears to be a de-facto standard pattern when it comes to creating and managing large scale UI applications. It means that by design there is no way to apply a global stylesheet. Each widget keeps its style to itself. \r\n[reference](https://discord.com/channels/223421264751099906/375240886319316994/1293518433220296734)"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:05:58.798497-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:05:58.798497-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "rZTIA8jgDQC+6V3SDzHoEA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Brick add two mains extention to Bloc, \r\n-  *aptitude* \r\n- viewmodel\r\n\r\nAptitudes are like traits/talents for elements. What you do with them is up to you. It’s like CSS, but that can also affect structure and behavior.  Combining them should be what one expects from combining: an ordered way in which structure and behavior is affected."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:49:50.636-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-31T12:49:51.606-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "4JsHWCriDQCvDMxjC2HBGA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "- **Aptitude**\r\nprovide graphical definition to your element, which at first is invisible\r\n- **viewModel**\r\nprovide internal state to your widet, following **MVVM** design patterm"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-10-31T12:50:07.192-04:00"
 					}
 				},
@@ -336,117 +336,6 @@
 					"__type" : "textStyle"
 				},
 				"string" : "you  can {{gtMethod:BlElement>>addAptitude:}} and {{gtMethod:BlElement>>addViewModel:}} and of course {{gtMethod:BlElement>>removeAptitude:}} and update {{gtMethod:BlElement>>viewModel:}}. Aptitude can be composed (think CSS on steroïd), to define precisely the appearance and behaviour of your widget when you interact with it through event"
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-30T13:12:51.075-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:05:58.802056-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uDNfWjKTDQCr2NxCAijurQ=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Like a trait, a talent represents a set of methods that constitute part of the\nbehavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is\napplied to an object, no other instance of the object’s class are affected. Talents may be composed of\nother talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly\nresolved."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:06:01.438455-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-10-13T22:09:20.342698-04:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "L97wA8jgDQC+77FADzHoEA=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Brick also rely a lot on {{gtClass:BlElementStyles}} and {{gtClass:BlElementState}} properties of a BlElement. "
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T22:18:49.027-05:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-14T23:05:14.972-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "uEEqtKWNDQCdKoYjBEoPhw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "Brick is a subclass of Bloc, and defined through the MVVM Paradigm.\nWidget are composed of\n- appearance (look/aptitude)\n- behaviour (model - method to respond to).\r\n\r\n**BrGlamorousVectorIcons** + package Brick-Glamorous\r\n\r\nBrick-Glamorous will give aptitude and icons used by GToolkit\r\n\r\n**BrGlamorousComponents** provide example of widget used by GToolkit, it will show which aptitude is used with GToolkit components\r\n"
 			},
 			{
 				"__type" : "textSnippet",
@@ -573,43 +462,6 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T21:31:24.707665-04:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-11-20T22:16:35.756-05:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "mbMsfLKBDQCjrSVxCnNgtw=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "There are several architectural features of Brick that facilitate flexibility and reuse:\r\n- **Stencils** (subclass of BrStencil) are used to create widgets when lazy creation is required, or when the widget to be created depends on the data being displayed.\r\n- **Aptitude**  (previously Looks - subclass of ${class:BrLook}$) provide the ability to modify the element to which they are attached.  A typical example is the look of a Button, whether it has a border or not, a label or not, an icon or not, etc.  Looks should only be created when the underlying widget is used in many places, e.g. buttons, and should not affect the API of the widget. Aptitude affect and endow an element with looks and behavior. They can be dynamically added and removed. They can be composed. In short, a powerful mechanism for dynamic scenes\r\n- **View Models** are used to maintain the state of a Brick widget, e.g. pressed, focused, hovered, and, like Looks, can be composed by adding multiple models together.  Like Looks, models also receive events.\r\n\r\nViewModel define custom behaviour for Brick widget.\nBloc define widget layout."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [ ]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2021-06-21T13:12:47.519131-04:00"
 					}
 				},
@@ -621,7 +473,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2021-06-21T21:34:49.378665-04:00"
+						"dateAndTimeString" : "2024-10-31T15:47:43.131-04:00"
 					}
 				},
 				"uid" : {
@@ -631,7 +483,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "- Brick is built on top of Bloc elements.  If you feel you need to create a Bloc element, ask first, you probably don't.\r\n\r\nfor each widget, take attention to their:\n- look: \n- label\n- action: take a closure to manage \nLayout is given by the different classes:\n- BrFrame(Look)\n- BrHorizontalFlow(Look)\n- BrHorizontalPane(Look)\n- BrVerticalFlow(Look)\n- BrVerticalPane(Look)\n\nCommon widget:\n- BrAccordion (BlElement)\n- BrBadge (BlElement)\n- BrBreadcrumb (BlElement)\n- BrButton (BlElement)\n- BrCard (BlElement)\n- BrCheckbox (BlElement)\n- BrDropdown (Object)\n- BrEditor (BrEditorElement)\n- BrEditableLabel (BrEditor)\n- BrEditorWithToolbar (BrVerticalPane)\n- BrEntailment (BlElement)\n- BrFileBrowser (BrVerticalPane)\n- BrFileSelector (BrVerticalPane)\n- BrLabel(BlElement)\n- BrPager (BlElement) with Stencil.\n- BrPopup (BlElement) with Look and Stencil.\n- BrProgress (BlElement)\n- BrResizer (BlElement)\n- BrScrollPane (BlElement)\n- BrScrollbar (BlElement)\n- BrSwitch\n- BrTab and BrTabGroup (BlElement)\n- BrTagger (BlElement)\n- BrToggle and BrToggleGroup (BlElement)\n- BrToolbar (BlElement)\n- BrTree and subclasses (BlElement).\n- BrTriangle (BlElement) -> display a triangle, as used to open or close block of text\n\nList widget with Stencil\n- BrColumnedList\n- BrFlowList\n- BrGridList\n- BrSimpleList\n\n\r\n\r\n"
+				"string" : "\r\n\n#Common widget:\n- BrAccordion (BlElement)\n- BrBadge (BlElement)\n- BrBreadcrumb (BlElement)\n- BrButton (BlElement)\n- BrCard (BlElement)\n- BrCheckbox (BlElement)\n- BrDropdown (Object)\n- BrEditor (BrEditorElement)\n- BrEditableLabel (BrEditor)\n- BrEditorWithToolbar (BrVerticalPane)\n- BrEntailment (BlElement)\n- BrFileBrowser (BrVerticalPane)\n- BrFileSelector (BrVerticalPane)\n- BrLabel(BlElement)\n- BrPager (BlElement) with Stencil.\n- BrPopup (BlElement) with Look and Stencil.\n- BrProgress (BlElement)\n- BrResizer (BlElement)\n- BrScrollPane (BlElement)\n- BrScrollbar (BlElement)\n- BrSwitch\n- BrTab and BrTabGroup (BlElement)\n- BrTagger (BlElement)\n- BrToggle and BrToggleGroup (BlElement)\n- BrToolbar (BlElement)\n- BrTree and subclasses (BlElement).\n- BrTriangle (BlElement) -> display a triangle, as used to open or close block of text\n\nList widget with Stencil\n- BrColumnedList\n- BrFlowList\n- BrGridList\n- BrSimpleList"
 			}
 		]
 	},
