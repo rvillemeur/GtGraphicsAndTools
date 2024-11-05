@@ -1,0 +1,73 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-05T11:25:27.879-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-11-05T11:28:23.313-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "WJUMlo7iDQCG5NF/Bsctrg=="
+				},
+				"code" : "example := GtTranscriptExamples new.\ranim := example blocAnimation.\r\rspace := BlSpace new host: BlHeadlessHost new; addChild: anim target; show.\ranim addEventHandlerOn: BlAnimationStepEvent do: [:anEvent | |snapshot| \rsnapshot := anim target asSpartaForm.\rTranscript cr. \rTranscript next expanded: [snapshot asElement];\rputAll: 'Animation: ',\r(anEvent progress printShowingDecimalPlaces: 8)]; onFinishedDo: [space close].\rTranscript"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-11-05T11:25:08.777-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2024-11-05T11:25:08.777-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "printing an animation"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "d01f5294-8ee2-0d00-8618-000306c72dae"
+	}
+}
