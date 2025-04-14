@@ -55,6 +55,43 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2024-10-31T13:33:44.792-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-14T11:24:24.971-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2J8J9SriDQC2uFj5C2HBGA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Like a trait, a talent represents a set of methods that constitute part of the behavior of an object. Unlike traits, talents can be acquired (or lost) dynamically. When a talent is\napplied to an object, no other instance of the object’s class are affected. Talents may be composed of\nother talents, however, as with traits, the composition order is irrelevant. Conflicts must be explicitly\nresolved."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
 						"dateAndTimeString" : "2024-10-31T12:47:16.421-04:00"
 					}
 				},
@@ -114,6 +151,43 @@
 					"__type" : "textStyle"
 				},
 				"string" : "#Actor role pattern:\r\n\r\nAdapt an object to different client’s needs through transparently attached role objects, each one representing a role the object has to play in that client’s context. The object manages its role set dynamically. By representing roles as individual objects, different contexts are kept separate and system configuration is simplified\r\n\r\nAn object-oriented system is typically based on a set of key abstractions. Each key abstraction is modeled by a corresponding class in terms of abstract state and behavior. This usually works fine for the design of smaller applications. However, once we want to scale up the system into an integrated suite of applications, we have to deal with different clients that need context-specific views on our key abstractions.\r\n\r\nIntegrating several context-specific views in the same class will most likely lead to key abstractions with bloated interfaces. Such interfaces are difficult to understand and hard to maintain. Unanticipated changes cannot be handled gracefully and will trigger lots of recompilation. Changes to a client-specific part of the class interface are likely to affect clients in other subsystems or applications as well.\r\n\r\nThe Role Object pattern suggests to model context-specific views of an object as separate **role objects** which are dynamically attached to and removed from the **core object**.\r\n\r\nThe Actor Role Object pattern is usefull, if\r\n- you want to handle a key abstraction in different contexts and you do not want to put the resulting context specific interfaces into the same class interface.\r\n- you want to handle the available roles dynamically so that they can be attached and removed on demand, that is  at runtime, rather than fixing them statically at compile-time.\r\n- you want to treat the extensions transparently and need to preserve the logical object identity of the resulting object conglomerate.\r\n- you want to keep role/client pairs independent from each other so that changes to a role do not affect clients that are not interested in that role.\r\n[source](https://hillside.net/plop/plop97/Proceedings/riehle.pdf)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-14T11:24:03.573-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-14T11:24:03.573-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CIkOYSDvDQC2xz/6CMtA9A=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
 			}
 		]
 	},
