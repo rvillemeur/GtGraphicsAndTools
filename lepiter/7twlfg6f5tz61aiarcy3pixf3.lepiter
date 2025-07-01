@@ -74,6 +74,40 @@
 					"uidString" : "0BfjhR31DQCKhedgA2evOg=="
 				},
 				"code" : "editorElement := GtSourceCoderEditorElement new\r\t\ttextualCoderViewModel: (GtPharoMethodCoderViewModel new\r\t\t\t\tcoder: (GtPharoMethodCoder\r\t\t\t\t\t\tforClass: self class\r\t\t\t\t\t\tsource: 'defaultSelectionColor\r\t^ (Color r: 0 g: 112 b: 252 range: 255) alpha: 0.3' asRopedText));\r\t\tyourself"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-01T15:13:57.847886-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-01T15:18:29.001312-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "vq7hrkT1DQCna4ZIBtm+JQ=="
+				},
+				"code" : "text := 'Hello world' asRopedText.\r(text from: 1 to: 5) foreground: Color blue.\r(text from: 7 to: 11) foreground: Color red.\rtext."
 			}
 		]
 	},
