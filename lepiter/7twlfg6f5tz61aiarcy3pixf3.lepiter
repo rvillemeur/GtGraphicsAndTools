@@ -1,0 +1,110 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-01T14:27:13.464754-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-01T14:51:08.558688-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2DW6B0T1DQCcZ5ttBtm+JQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "An expanded coder windows is {{gtClass:GtSourceCoderExpandedContentElement}}. If it is still collapsed, it will be {{gtClass:GtExpandableMethodCoderElement}}\n\nCoder itself is {{gtClass:GtSourceCoderEditorElement}} which is a subclass of {{gtClass:BlInfiniteElement}} and each line is composed of  {{gtClass:BrTextEditorParagraphElement}}\n\nEach segment is created with  {{gtMethod:BrTextEditorParagraphSegmentHolder>>createSegmentElement}}. What's more important is {{gtMethod:BrTextEditorParagraphSegmentHolder>>buildSegment:}}\n\nCoder is a subclass of {{gtClass:BrEditor}}, which is the originator of `Album` in Pharo. The real parent that bring most of the functionnalities is {{gtClass:GtTextualCoderEditorElement}}, which may look more like `ToAlbum`. It is associated with {{gtClass:GtTextualCoderViewModel}}, which bring all method necessary for a code editor, like *styler* for syntax highlightning."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-06-29T16:30:46.34893-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-07-01T14:50:05.5237-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0BfjhR31DQCKhedgA2evOg=="
+				},
+				"code" : "editorElement := GtSourceCoderEditorElement new\r\t\ttextualCoderViewModel: (GtPharoMethodCoderViewModel new\r\t\t\t\tcoder: (GtPharoMethodCoder\r\t\t\t\t\t\tforClass: self class\r\t\t\t\t\t\tsource: 'defaultSelectionColor\r\t^ (Color r: 0 g: 112 b: 252 range: 255) alpha: 0.3' asRopedText));\r\t\tyourself"
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-29T15:57:11.588534-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-06-29T15:57:11.588534-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Coder editor exploration"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "af3e0c0d-1df5-0d00-aa7d-e30609214584"
+	}
+}
