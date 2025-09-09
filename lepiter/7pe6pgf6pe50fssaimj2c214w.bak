@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2024-09-20T09:33:35.069-04:00"
+						"dateAndTimeString" : "2024-09-20T09:33:45.113-04:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "#\r\n\r\nSize can be determined **statically** or **dynamically**.\r\nAttention, if you don't use dynamic size, you **must** define it using the message `size:`. \r\n\r\nThe overall bounds of an element are not deduced from its geometry, and its default size\r\nwill be `50@50`, which will certainly be different from *your* own element.\r\n\r\n#### Statically.\r\nIf you use the message `size:`, the size of the element will be static.\r\nNote that the expression `element size: aPoint` is a synonym for\r\n\r\n```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal exact: aPoint x.\r\n\tc vertical exact: aPoint y ];\r\n```\r\n\r\n#### Dynamically.\r\nIf you use the constraints `matchParent` or `fitContent` in a child definition, the size of the element will be computed dynamically, dependent on its parent constraints and child space.\r\n\r\n- `matchParent` -- child size will fill the space left available in parent element.\r\n- `fitContent` --  parent size will depend on the space used by its children.\r\n\r\n```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal matchParent.\r\n\tc vertical fitContent ];\r\n```\r\n\r\n**Beware to not mix those properties** between parent and child.\r\nIf your child tries to match its parent, while its parent tries to fit its child's\r\ncontent, the size will be 0 plus the border width.\r\n\r\nWhen the parent uses \"fit content\" and the child uses \"match parent\", there is\r\nno way to determine the size. In such cases, the size of both the parent and\r\nthe child will be 0@0."
+				"string" : "Size can be determined **statically** or **dynamically**.\r\nAttention, if you don't use dynamic size, you **must** define it using the message `size:`. \r\n\r\nThe overall bounds of an element are not deduced from its geometry, and its default size\r\nwill be `50@50`, which will certainly be different from *your* own element.\r\n\r\n#### Statically.\r\nIf you use the message `size:`, the size of the element will be static.\r\nNote that the expression `element size: aPoint` is a synonym for\r\n\r\n```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal exact: aPoint x.\r\n\tc vertical exact: aPoint y ];\r\n```\r\n\r\n#### Dynamically.\r\nIf you use the constraints `matchParent` or `fitContent` in a child definition, the size of the element will be computed dynamically, dependent on its parent constraints and child space.\r\n\r\n- `matchParent` -- child size will fill the space left available in parent element.\r\n- `fitContent` --  parent size will depend on the space used by its children.\r\n\r\n```smalltalk\r\nconstraintsDo: [ :c |\r\n\tc horizontal matchParent.\r\n\tc vertical fitContent ];\r\n```\r\n\r\n**Beware to not mix those properties** between parent and child.\r\nIf your child tries to match its parent, while its parent tries to fit its child's\r\ncontent, the size will be 0 plus the border width.\r\n\r\nWhen the parent uses \"fit content\" and the child uses \"match parent\", there is\r\nno way to determine the size. In such cases, the size of both the parent and\r\nthe child will be 0@0."
 			}
 		]
 	},
@@ -51,7 +51,7 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-20T09:33:31.112-04:00"
+			"dateAndTimeString" : "2024-09-20T09:33:42.22-04:00"
 		}
 	},
 	"editEmail" : {
@@ -62,12 +62,12 @@
 		"__type" : "time",
 		"time" : {
 			"__type" : "dateAndTime",
-			"dateAndTimeString" : "2024-09-20T09:33:31.112-04:00"
+			"dateAndTimeString" : "2024-09-20T09:33:42.22-04:00"
 		}
 	},
 	"pageType" : {
-		"__type" : "unnamedPage",
-		"defaultTitle" : "Page"
+		"__type" : "namedPage",
+		"title" : "BlElement size"
 	},
 	"uid" : {
 		"__type" : "uuid",
